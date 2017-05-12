@@ -13,6 +13,6 @@ in
     buildInputs = [ jekyll_env ];
 
     shellHook = ''
-      exec ${jekyll_env}/bin/jekyll serve --watch
+      jekyll serve --watch
     '';
   }
