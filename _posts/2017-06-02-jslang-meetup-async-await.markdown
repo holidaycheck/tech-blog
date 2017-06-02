@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Async Function Kata at #jslang Meetup"
+date:   2017-06-02 08:03:00 +0200
+categories: meetup javascript kata
+---
+
 The callback-hell times are long over. We have better tools now. But which of the new kids on the block do you want to 
 play with? In this meetup, last night we tried out [async functions][async-funcs], also known by the name "async/await". 
 It was a fun learning experience. Keep reading and get inspired.
