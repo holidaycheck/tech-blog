@@ -75,8 +75,8 @@ open-space for, with and by people who deeply care about crafting (software).
 
 [async-funcs]: https://github.com/tc39/ecmascript-asyncawait/
 [jslang-meetup]: https://www.meetup.com/de-DE/JavaScript-The-Language/events/240120367/
-[slides]: 
 [kata]: https://twitter.com/wolframkriesing/status/870383195849674753
 [chris]: https://twitter.com/c089
 [es6katas]: http://es6katas.org
 [jscc]: http://jscraftcamp.org
+[slides]: I need to upload the slides somewhere :)
