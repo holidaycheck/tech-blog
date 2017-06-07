@@ -11,22 +11,23 @@ play with? In this meetup, last night we tried out [async functions][async-funcs
 It was a fun learning experience. Keep reading and get inspired.
 
 ## The meetup
-["JavaScript The Language" (#jslang)][jslang-meetup] a hands-on meetup only about JavaScript the language. Not about any library, 
-framework or the latest programming technique. You could argue that the language JavaScript has become kind of a 
-framework itself, you need(ed) a transpiler, the language changes as fast as those hipster frameworks. 
-Let's put that aside.
-We focus on language features only. We try to get a handle on a specific one at a time and sharpen this one 
-feature for our tool belts. That's why this is a very hands-on meetup.
+["JavaScript The Language" (#jslang)][jslang-meetup] is a hands-on meetup just about the language JavaScript (as specified).
+Not about any library,
+framework or the latest programming techniques. You could argue that the language JavaScript has become kind of a
+framework itself. The language changes as fast as those hipster frameworks.
+But let's put that aside.
+We focus on language features only. We try to get a handle on a specific feature. One at a time and we sharpen our knowledge
+about this one feature for our tool belts. That's why this is a very hands-on meetup.
 Also there are no talks or anything alike, just a short intro and then the crowd works together. All attendees are actively
 participating, by coding, discussing or facilitating.
-You want to do that too, in your city? Just start a meetup, take katas for example those that we solve
-(we try to link them on the [meetup page][jslang-meetup-home]) or find many at [kata-log] and make it happen.
+If you want to do something like that in your city too, just start a meetup. Use the katas, for example those that we solve
+(we try to link them on the [meetup page][jslang-meetup-home]) or find one at [kata-log], and make it happen.
 
 ## Our Scope and the Kata
 I announced the meetup about two weeks ago. There was no #jslang meetup since April 2016, for more than a year.
 So I had to restart this meetup. The language JavaScript is moving forward and we need to keep up with what it offers.
 Async functions are one of the most interesting things that is changing in the language. In order to understand 
-them in the JS context I prepared a [short slide set sumarizing the state the async functions feature][slides]. 
+them in the JS context I prepared a [short slide set summarizing the state the async functions feature][slides].
 That was all of presentation we had. I set the context and introduced [the kata][kata] that we wanted to work on.
 In the kata we want to combine two asynchronous functionalities, 1) getting the geolocation and 2) loading the 
 (nearest) airports depending on that result.
