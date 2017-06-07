@@ -18,24 +18,24 @@ We focus on language features only. We try to get a handle on a specific one at 
 feature for our tool belts. That's why this is a very hands-on meetup.
 Also there is no talks or alike, just a short intro and the crowd works together. All attendees are actively 
 participating, by coding, discussing or facilitating.
-You want to do that too, in your city? Just start a meetup, take our katas that we solve and make it happen.
+You want to do that too, in your city? Just start a meetup, take katas for example those that we solve
+(we try to link them on the [meetup page][jslang-meetup-home]) or find many at [kata-log] and make it happen.
 
 ## Our Scope and the Kata
-I announced the meetup about two weeks ago. There was no #jslang meetup since April 2016, more than one year ago. 
-But since I joined HolidayCheck in May 2017 and it is in my DNA to promote things I enjoy, I had to do restart this 
-meetup. The language JavaScript is moving forward and we need to keep up with what it offers.
+I announced the meetup about two weeks ago. There was no #jslang meetup since April 2016, for more than a year.
+So I had to restart this meetup. The language JavaScript is moving forward and we need to keep up with what it offers.
 Async functions are one of the most interesting things that is changing in the language. In order to understand 
 them in the JS context I prepared a [short slide set sumarizing the state the async functions feature][slides]. 
-That was all of presentation we had. I set the context and introduced [the kata][kata] that we want to work on. 
+That was all of presentation we had. I set the context and introduced [the kata][kata] that we wanted to work on.
 In the kata we want to combine two asynchronous functionalities, 1) getting the geolocation and 2) loading the 
 (nearest) airports depending on that result.
 The interesting part is actually not (only) the implementation but it already starts with the tests. Have you ever 
-had trouble writing asynchronous tests? Do this kata and practice even more!
+had trouble writing asynchronous tests? Do [this kata][kata] and practice even more!
 
 ## How we did it
 We were twelve people at the event. And a quick hand-sign and we all agreed on setting up two mobs and solve the 
 problem by mob-programming. We had two mobs of 6 people each. Thanks to [Chris Neuroth][chris] who facilitated the 
-mob-programming for us. The most important rule I took away from it was that the one sitting at the keyboard should 
+mob-programming for us. The most important rule I took away from it was, that the one sitting at the keyboard should
 not act unless told to.
 Both teams started and solve the first task, which was to implement the kata by using promises. This was the first 
 step in order to get familiar with the kata and also to feel the pain of using promises and test them properly. 
@@ -46,7 +46,7 @@ Back to the kata, the next step was to move the tests to use async+await keyword
 and makes tests more readable. But it has it's own challenges.
 In step three, which at this time kind of merged with step 2 we used async+await in all places. We learned about 
 async functions this way and naturally put `await` where it felt right. I had the impression this did not really 
-cause many problems and made it very easy to understand how async+await work. This was also the intention of this 
+cause many problems and made it very easy to understand how async+await works. This was also the intention of this
 meetup: allow us to learn without breaking a sweat and without falling asleep at some talk, but doing it.
 
 ## The Discussion afterwards
@@ -74,9 +74,11 @@ want a two-day learning event come to [JSCraftCamp][jscc], it will take place Ju
 open-space for, with and by people who deeply care about crafting (software).
 
 [async-funcs]: https://github.com/tc39/ecmascript-asyncawait/
+[jslang-meetup-home]: https://www.meetup.com/de-DE/JavaScript-The-Language/
 [jslang-meetup]: https://www.meetup.com/de-DE/JavaScript-The-Language/events/240120367/
 [kata]: https://twitter.com/wolframkriesing/status/870383195849674753
 [chris]: https://twitter.com/c089
 [es6katas]: http://es6katas.org
 [jscc]: http://jscraftcamp.org
+[kata-log]: http://kata-log.rocks/
 [slides]: I need to upload the slides somewhere :)
