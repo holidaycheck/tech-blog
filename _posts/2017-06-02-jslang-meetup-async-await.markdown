@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "Async Function Kata at #jslang Meetup"
-date:   2017-06-02 08:03:00 +0200
+date: 2017-06-02 08:03:00 +0200
 categories: meetup javascript kata
+author: Wolfram Kriesing
 ---
 
 The callback-hell times are long over. We have better tools now. But which of the new kids on the block do you want to 
@@ -16,7 +17,7 @@ framework itself, you need(ed) a transpiler, the language changes as fast as tho
 Let's put that aside.
 We focus on language features only. We try to get a handle on a specific one at a time and sharpen this one 
 feature for our tool belts. That's why this is a very hands-on meetup.
-Also there is no talks or alike, just a short intro and the crowd works together. All attendees are actively 
+Also there are no talks or anything alike, just a short intro and then the crowd works together. All attendees are actively
 participating, by coding, discussing or facilitating.
 You want to do that too, in your city? Just start a meetup, take katas for example those that we solve
 (we try to link them on the [meetup page][jslang-meetup-home]) or find many at [kata-log] and make it happen.
@@ -37,7 +38,7 @@ We were twelve people at the event. And a quick hand-sign and we all agreed on s
 problem by mob-programming. We had two mobs of 6 people each. Thanks to [Chris Neuroth][chris] who facilitated the 
 mob-programming for us. The most important rule I took away from it was, that the one sitting at the keyboard should
 not act unless told to.
-Both teams started and solve the first task, which was to implement the kata by using promises. This was the first 
+Both teams solved the first task, which was to implement the kata by using promises. This was the first
 step in order to get familiar with the kata and also to feel the pain of using promises and test them properly. 
 Because every team also had the ambition to write good tests, and boy they did. This took about one hour. After that 
 we took a five minutes break and did some physical activity, playing table tennis. The table tennis challenge was 
@@ -51,10 +52,12 @@ meetup: allow us to learn without breaking a sweat and without falling asleep at
 
 ## The Discussion afterwards
 The last part after about 1,5 hours of mob-programming we used to discuss aspects of the kata. Topics we touched on were:
+
 - The source code of the two mobs
 - Pros and cons of async functions
 - How valuable is the contract test we wrote?
 - How clear/good are the requirements?
+
 It was a very lively and inspiring discussion. What I liked about it was the sharp focus the group had. We didn't 
 get carried away but went very much into depth of the topic. All statements were very objective and everyone tried 
 to learn from the crowd and share insights. 
