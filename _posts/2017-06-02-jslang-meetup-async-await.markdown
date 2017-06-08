@@ -88,4 +88,4 @@ open-space for, with and by people who deeply care about crafting (software).
 [jscc]: http://jscraftcamp.org
 [kata-log]: http://kata-log.rocks/
 [mob-programming]: https://en.wikipedia.org/wiki/Mob_programming
-[slides]: I need to upload the slides somewhere :)
+[slides]: https://www.slideshare.net/wolframkriesing/javascript-the-language-meetup-async-functions
