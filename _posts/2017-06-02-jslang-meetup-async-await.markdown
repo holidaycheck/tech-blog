@@ -11,11 +11,12 @@ play with? In this meetup, last night we tried out [async functions][async-funcs
 It was a fun learning experience. Keep reading and get inspired.
 
 ## The meetup
-["JavaScript The Language" (#jslang)][jslang-meetup] is a hands-on meetup just about the language JavaScript (as specified).
+["JavaScript The Language" #jslang][jslang-meetup] is a hands-on meetup just about the language JavaScript (as specified).
 Not about any library,
 framework or the latest programming techniques. You could argue that the language JavaScript has become kind of a
 framework itself. The language changes as fast as those hipster frameworks.
 But let's put that aside.
+
 We focus on language features only. We try to get a handle on a specific feature. One at a time and we sharpen our knowledge
 about this one feature for our tool belts. That's why this is a very hands-on meetup.
 Also there are no talks or anything alike, just a short intro and then the crowd works together. All attendees are actively
@@ -35,13 +36,14 @@ The interesting part is actually not (only) the implementation but it already st
 had trouble writing asynchronous tests? Do [this kata][kata] and practice even more!
 
 ## How we did it
-We were twelve people at the event. And a quick show-hands and we all agreed on setting up two mobs and solve the
+We were twelve people at the event. After a quick show-hands we all agreed on setting up two mobs and solve the
 problem by [mob-programming]. We had two mobs of 6 people each. Thanks to [Chris Neuroth][chris] who facilitated the
 mob-programming for us. The most important rule I took away from it was, that the one sitting at the keyboard should
 not act unless told to.
+
 Both teams solved the first task, which was to implement the kata by using promises. This was the first
 step in order to get familiar with the kata and also to feel the pain of using promises and test them properly. 
-Every team also had the ambition to write good tests, and boy they did. This took about one hour. After that
+Every team had the ambition to write good tests, and boy they did. This took about one hour. After that
 we took a five minutes break and did some physical activity, playing table tennis. The table tennis challenge was 
 that we had to pass on one of the four rackets to the person who had none, while running around the table.
 Back to the kata, the next step was to move the tests to use async+await keywords, which mostly replaces promises 
