@@ -35,13 +35,13 @@ The interesting part is actually not (only) the implementation but it already st
 had trouble writing asynchronous tests? Do [this kata][kata] and practice even more!
 
 ## How we did it
-We were twelve people at the event. And a quick hand-sign and we all agreed on setting up two mobs and solve the 
-problem by mob-programming. We had two mobs of 6 people each. Thanks to [Chris Neuroth][chris] who facilitated the 
+We were twelve people at the event. And a quick show-hands and we all agreed on setting up two mobs and solve the
+problem by [mob-programming]. We had two mobs of 6 people each. Thanks to [Chris Neuroth][chris] who facilitated the
 mob-programming for us. The most important rule I took away from it was, that the one sitting at the keyboard should
 not act unless told to.
 Both teams solved the first task, which was to implement the kata by using promises. This was the first
 step in order to get familiar with the kata and also to feel the pain of using promises and test them properly. 
-Because every team also had the ambition to write good tests, and boy they did. This took about one hour. After that 
+Every team also had the ambition to write good tests, and boy they did. This took about one hour. After that
 we took a five minutes break and did some physical activity, playing table tennis. The table tennis challenge was 
 that we had to pass on one of the four rackets to the person who had none, while running around the table.
 Back to the kata, the next step was to move the tests to use async+await keywords, which mostly replaces promises 
@@ -85,4 +85,5 @@ open-space for, with and by people who deeply care about crafting (software).
 [es6katas]: http://es6katas.org
 [jscc]: http://jscraftcamp.org
 [kata-log]: http://kata-log.rocks/
+[mob-programming]: https://en.wikipedia.org/wiki/Mob_programming
 [slides]: I need to upload the slides somewhere :)
