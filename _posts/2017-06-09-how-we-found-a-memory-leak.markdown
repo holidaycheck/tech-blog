@@ -69,7 +69,7 @@ As a consequence, we resorted to some kind of "manual profiling": we logged the 
   external: 43177 }
 ```
 
-Here, we were only looking at the `rss` ("[Resident Set Size](https://www.dynatrace.com/blog/understanding-garbage-collection-and-hunting-memory-leaks-in-node-js/)") value, as this is the only value including the non-heap memory usage.
+Here, we were only looking at the `rss` ("[Resident Set Size](https://www.dynatrace.com/blog/understanding-garbage-collection-and-hunting-memory-leaks-in-node-js/)") value, as only this value includes the non-heap memory.
 
 Then, we started `sync-logs-to-stackdriver` basically via running `node index.js` on the command line and watching the output. If we saw that the `rss` value increased for several minutes without any upper border, we declared the application to have a memory leak. If the `rss` value was stable for several minutes, we declared the application to have no memory leak.
 
@@ -80,6 +80,84 @@ Unfortunately, in the beginning we could not reproduce the leak locally. But aft
 
 
 
+## Tracking down the actual cause
 
-No more memory leak image:
-https://github.hc.ag/pages/checkin/img/2017-05-10-memory-leak/no-more-memory-leak.png
+For starters, we skimmed the code manually for obvious bugs that could cause a  memory leak. However, we found none. Therefore, without clear indiciation what was causing the leak, we investigated in different directions.
+
+
+### Promises & functions
+
+We suspected that we might have hit a bug/known issue with promises in Node.js that is also [mentioned in the Promise spec](https://github.com/promises-aplus/promises-spec/issues/179). When constructing an infite chain of promises a memory leak might appear under certain conditions. As we used and chained Promises heavily in `sync-logs-to-stackdriver`, we tried to get rid of them and rewrote the code question in callback style. Unfortunately, to no avail.
+
+Still, the log polling loop was implemented recursively in a rather functional way. While we deemed it unlikely, we wanted to ensure that the rather high level of recursion was not causing the leak. Thus, we rewrote the log polling loop iteratively using a `while` loop. This did not get rid of the leak either.
+
+
+### Dependencies
+
+Another idea was to check if one of our dependencies might be causing the problem. We were relying on different npm modules, that could possible cause the leak, e.g. `@google-cloud/logging`, or `promise-sleep`. However, after have replaced these dependencies with stubs or a custom implementation, the memory leak was still present.
+
+
+### Idling considered harmful?
+
+As mentioned before, the development instance of our application was affected far more than the production one. The main difference between the two instances are the amount of logs they synchronize. The production instance synchronizes logs almost continously and only waits rarely for new logs to appear. On the contrary, the development instance syncs only very few logs, leaving the job waiting and checking for new logs most of the time.
+
+This led us to the assumption, that the memory leak was actual caused by the constant polling for new logs, and not the actual synchronization. 
+
+We could confirm this assumption by removing and stubbing out all code related to synchronizing the logs. After that, with only the waiting logic left, the leak was still present.
+
+
+### Getting to the root
+
+Following the previous approach, we stripped down the log polling code more and more until we could pinpoint a single line to cause the memory leak:
+
+```JavaScript
+const response = await fetch(url, fetchOptions);
+```
+
+Here, the `sync-logs-to-stackdriver` app is using [`node-fetch`]() to perform a HTTP GET request to the external service provider in order to check if there are any new logs to synchronize. If we removed this line, the memory leak was no longer reproducible. First, we thought that `node-fetch` might be the culprit here. So, we replaced it with `superagent`, however, the leak was still present.
+
+The only thing that reproducibly stopped the leak was not performing the GET request at all.
+
+During the whole process, we were searching for bugs/leaks in Node.js and our dependencies all the time. At some point we found a [memory leak in Node.js (<= v7.8)](https://github.com/nodejs/node/pull/12089) that occurs when validating certificates.
+
+For three reasons, we considered that Node.js bug a possible cause for our memory leak:
+
+1. We were using Node.js 7.8, which is affected by the bug.
+1. The HTTP GET request is performed via HTTPS; therefore, a memory leak in certificate validation might actually have an effect on our application.
+1. Our memory leak affected the non-heap memory, that is only used by Node.js (and native extensions) itself. A bug in native Node.js code might indeed affect this memory region.
+
+
+Finally, we could reproduce the leak with this sample code:
+
+```JavaScript
+'use strict';
+
+const fetch = require('node-fetch');
+const sleep = require('sleep-promise');
+
+async function main() {
+	while (true) {
+		const response = await fetch('https://httpbin.org/get', { method: 'GET' });
+		const body = await response.text();
+
+		console.log(response.status, response.headers);
+		console.log(process.memoryUsage());
+
+		await sleep(50);
+	}
+}
+
+main();
+```
+
+This made us even more confident that what we experienced is actually a memory leak of Node.js itself, and not caused by our application code.
+
+## The solution
+
+Having figured out the real problem, the solution was pretty simple: Node.js 7.10.0 has already been released, so we switched to using that for our application.
+
+After upgrading to the new Node.js version, we could no longer reproduce the memory leak. We were relieved 🎉🍻.
+
+Too be sure, we checked our NewRelic monitoring after some days. It clearly shows that we were able to fix the memory leak:
+
+![no more memory leaks](https://github.hc.ag/pages/checkin/img/2017-05-10-memory-leak/no-more-memory-leak.png)
