@@ -2,7 +2,8 @@
 layout: post
 title:  "Our journey discovering a Node.js memory leak"
 date:   2017-06-09 17:00:00 +0200
-categories: post
+categories: javascript node.js memoryleak bug
+author: Florian Störkle
 ---
 
 # Tracking down a Node.js memory leak
