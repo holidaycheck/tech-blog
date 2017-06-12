@@ -4,8 +4,8 @@ title:  "Async Function Kata at #jslang Meetup"
 date: 2017-06-02 08:03:00 +0200
 categories: meetup javascript kata
 author_name: Wolfram Kriesing
-author_url : /author/wolfram
-author_avatar: michelle
+author_url : /author/wolframkriesing
+author_avatar: wolframkriesing
 show_avatar : true
 read_time : 34
 feature_image: feature-wolf
