@@ -14,7 +14,7 @@ In this blog post we want to share our experience of tracking down and fixing a 
 
 Our team built a Node.js application that is responsible for synchronizing logs from an external service provider to our internal log pooling system (Google Stackdriver Logs). Let's call this application `sync-logs-to-stackdriver`.
 
-To make it simple, the job periodically checks if there are new logs available in the external system. If that’s the case it syncs them to Stackdriver. If not, it waits a short amount of time and then checks again for new logs.
+To make it simple, the job periodically checks if there are new logs available in the external system. If that is the case it syncs them to Stackdriver. If not, it waits a short amount of time and then checks again for new logs.
 
 In our internal container infrastructure, we have two instances of this service running:
 
@@ -24,7 +24,7 @@ In our internal container infrastructure, we have two instances of this service 
 
 ## Discovery
 
-One day, we were noticed by our infrastructure team that one of applications, `sync-logs-to-stackdriver`,  killed and restarted automatically several times a day. They said the likely cause would be a memory leak.
+One day, we were notified by our infrastructure team that one of applications, `sync-logs-to-stackdriver`, killed and restarted automatically several times a day. They said the likely cause would be a memory leak.
 
 As we are using NewRelic for monitoring our Node.js applications, we quickly checked the health of the application there. And indeed, we could confirm the suspicion: we really had a memory leak. This memory usage graph of the development instance of the application illustrates that:
 
@@ -34,7 +34,7 @@ As one can see, the memory usage increases without upper border, until the conta
 
 Interestingly, the leak was present in our production instance, but had far smaller impact – it only ran out of memory every other week.
 
-We noticed one thing that were quite suprised of that point in time: The memory leak was in the so-called "non-heap" memory of Node – that is the memory that is used by Node itself and binary extensions, but not by application code.
+We noticed one thing that were quite suprised of that point in time: The memory leak was in the so-called ["non-heap" memory](https://blog.newrelic.com/2017/03/30/nodejs-vm-metrics-view-apm/) of Node – that is the memory that is used by Node itself and binary extensions, but not by application code.
 
 
 ## First measures
@@ -75,7 +75,7 @@ Here, we were only looking at the `rss` ("[Resident Set Size](https://www.dynatr
 Then, we started `sync-logs-to-stackdriver` basically via running `node index.js` on the command line and watching the output. If we saw that the `rss` value increased for several minutes without any upper border, we declared the application to have a memory leak. If the `rss` value was stable for several minutes, we declared the application to have no memory leak.
 
 
-### OS X vs. Linux
+### macOS vs. Linux
 
 Unfortunately, in the beginning we could not reproduce the leak locally. But after some time, it deemed us, that the operating system might play a role here. The real container in our service infrastructure is of course not running on OS X (which we were using locally), but rather some Linux distribution. Consequently, we ran the application again in a Linux VM, and voilà – we were able to reproduce the memory leak repeatedly.
 
@@ -102,7 +102,7 @@ Another idea was to check if one of our dependencies might be causing the proble
 
 As mentioned before, the development instance of our application was affected far more than the production one. The main difference between the two instances are the amount of logs they synchronize. The production instance synchronizes logs almost continously and only waits rarely for new logs to appear. On the contrary, the development instance syncs only very few logs, leaving the job waiting and checking for new logs most of the time.
 
-This led us to the assumption, that the memory leak was actual caused by the constant polling for new logs, and not the actual synchronization. 
+This led us to the assumption that the memory leak was caused by the constant polling for new logs, and not the actual synchronization.
 
 We could confirm this assumption by removing and stubbing out all code related to synchronizing the logs. After that, with only the waiting logic left, the leak was still present.
 
@@ -141,7 +141,6 @@ async function main() {
 		const response = await fetch('https://httpbin.org/get', { method: 'GET' });
 		const body = await response.text();
 
-		console.log(response.status, response.headers);
 		console.log(process.memoryUsage());
 
 		await sleep(50);
@@ -155,7 +154,7 @@ This made us even more confident that what we experienced is actually a memory l
 
 ## The solution
 
-Having figured out the real problem, the solution was pretty simple: Node.js 7.10.0 has already been released, so we switched to using that for our application.
+Having figured out the real problem, the solution was pretty simple: Node.js 7.10.0 had already been released, so we switched to using that for our application.
 
 After upgrading to the new Node.js version, we could no longer reproduce the memory leak. We were relieved 🎉🍻.
 
