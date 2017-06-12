@@ -29,9 +29,8 @@ nav_list:
   Home_Alt : ['Home Alt', '/home-alt', 'fa-home']
   Home_Alt_2 : ['Home Alt 2', '/home-alt-2/', 'fa-home']
   About : ['About', '/about', 'fa-anchor']
-  Contact : ['Contact', '/contact', 'fa-plane']
 footer_links:
-    About: ['About', '/about']
+  About: ['About', '/about']
 
 # Build settings
 markdown: kramdown
