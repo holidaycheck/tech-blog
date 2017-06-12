@@ -3,7 +3,14 @@ layout: post
 title:  "Async Function Kata at #jslang Meetup"
 date: 2017-06-02 08:03:00 +0200
 categories: meetup javascript kata
-author: Wolfram Kriesing
+author_name: Wolfram Kriesing
+author_url : /author/wolframkriesing
+author_avatar: wolframkriesing
+show_avatar : true
+read_time : 6
+feature_image: feature-wolf
+show_related_posts: false
+square_related: recommend-wolf
 ---
 
 The callback-hell times are long over. We have better tools now. But which of the new kids on the block do you want to 
