@@ -2,5 +2,5 @@
 layout: home
 title: Home
 permalink: /
-feature_image: feature-laptop
+feature_image: home
 ---

@@ -36,7 +36,7 @@ var s,
             FastClick.attach(document.body);
 
             // Add Bg colour from JS so jPanel has time to initalize
-            $('body').css({"background-color":"#333337"});
+            $('body').css({"background-color":"#002852"});
         },
         homePostsCatSwitch: function(){
             // Toggles between showing the categories and posts on the homepage
