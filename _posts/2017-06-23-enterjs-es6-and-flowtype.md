@@ -26,7 +26,7 @@ We? I had the luck to do this workshop with [Marco Emrich][marco], who has some 
 that he knew how to do retrospectives well, it's just not my area of expertise.
 
 Our CodeRetreat style required us to set the stage first, which means
-we do pair programming, TDD, we [throw away the code][delete-code] at the end of every session and we do the [Game of Life][gol] all
+we do pair programming, TDD, we throw away the code at the end of every session and we do the [Game of Life][gol] all
 day long. We used the first session for getting this across. I had the feeling that many people had been surprised
 to get a strong dose of pair-programming and especially TDD surprised many. But in the end we got lots of positive feedback.
 We even heard stuff like "this ping pong is pretty cool". We did [pairing in ping pong style][ping-pong]
@@ -192,19 +192,18 @@ Maybe see you next year at EnterJS, or [maybe the Clean Code Days][enterjs-vs-cc
 [flow]: https://flow.org/
 
 
-[hcss17-trip-tweet]: 
-[marco]: 
-[coderetreat]: 
-[gol]: 
-[delete-code]: 
-[ping-pong]: 
-[no-primitives]: 
-[Promises]: 
-[async-spec]: 
-[kata-instructions]:
-[builder-js-file]:  
-[search-js-file]: 
-[generics]: 
-[add-null-check-commit]: the commit where I add the if (destination.passions) check
-[remove-null-check]: where i remove the same thing
-[enterjs-vs-ccd-tweet]: 
+[hcss17-trip-tweet]: https://twitter.com/wolframkriesing/status/878137941880713217
+[marco]: https://twitter.com/marcoemrich
+[coderetreat]: http://coderetreat.org/
+[gol]: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
+[ping-pong]: http://coderetreat.org/facilitating/activities/ping-pong
+[no-primitives]: http://wiki.c2.com/?PrimitiveObsession
+[Promises]: https://promisesaplus.com/
+[async-spec]: https://github.com/tc39/ecmascript-asyncawait
+[kata-instructions]: https://gitlab.com/wolframkriesing/talk-flow-type-enterjs-2017#getting-started-as-a-kata
+[builder-js-file]: https://gitlab.com/wolframkriesing/talk-flow-type-enterjs-2017/blob/master/src/builders.js
+[search-js-file]: https://gitlab.com/wolframkriesing/talk-flow-type-enterjs-2017/blob/master/src/search.js
+[generics]: https://flow.org/en/docs/types/generics/
+[add-null-check-commit]: https://gitlab.com/wolframkriesing/talk-flow-type-enterjs-2017/commit/5d730cbc56b0bc3df13d072b597a772699238fd7
+[remove-null-check]: https://gitlab.com/wolframkriesing/talk-flow-type-enterjs-2017/commit/4ee599f8ba3b4557c26d6629da3e2cd1c147c0ab
+[enterjs-vs-ccd-tweet]: https://twitter.com/wolframkriesing/status/877826511859990528
