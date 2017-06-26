@@ -183,7 +183,7 @@ Maybe see you next year at EnterJS, or [maybe the Clean Code Days][enterjs-vs-cc
 [talk-ad2]: https://twitter.com/wolframkriesing/status/877500929670606848
 [talk-ad3]: https://twitter.com/wolframkriesing/status/877529674607407107
 [exhaustiveness check]: http://www.adamsolove.com/js/flow/type/2016/04/15/flow-exhaustiveness.html
-[passion search]: http://holidaycheck.com/vorlieben
+[passion search]: http://holidaycheck.de/vorlieben
 [brian]: https://twitter.com/bterlson
 [typed-branch]: https://gitlab.com/wolframkriesing/talk-flow-type-enterjs-2017/tree/add-typing-incl-exhaustiveness-%233
 [exhaustiveness]: http://www.adamsolove.com/js/flow/type/2016/04/15/flow-exhaustiveness.html
