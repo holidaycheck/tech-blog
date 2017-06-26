@@ -12,7 +12,7 @@ layout: with-sidebar
     </div>
 </div>
 
-<h2 class="favorites">All Post by {{ page.author_name }}</h2>
+<h2 class="favorites">All Posts by {{ page.author_name }}</h2>
 
 <div class="posts-block animated fadeIn ">
 
@@ -22,7 +22,7 @@ layout: with-sidebar
             <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 
 
-            {{ post.excerpt }}
+            {{ post.excerpt | truncatewords: 50 }}
 
             <p class="meta">
                 <span>{{ post.author_name }}</span>
