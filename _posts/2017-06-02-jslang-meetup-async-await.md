@@ -10,7 +10,7 @@ show_avatar : true
 read_time : 6
 show_related_posts: false
 square_related: recommend-wolf
-feature_image: /img/posts/2017-06-jslang/post-header.jpg
+feature_image: posts/2017-06-jslang/post-header.jpg
 ---
 
 The callback-hell times are long over. We have better tools now. But which of the new kids on the block do you want to 

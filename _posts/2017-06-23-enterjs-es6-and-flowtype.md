@@ -10,7 +10,7 @@ show_avatar : true
 read_time : 6
 show_related_posts: false
 square_related: recommend-wolf
-feature_image: /img/posts/2017-06-enterjs/the-road.jpg
+feature_image: posts/2017-06-enterjs/the-road.jpg
 ---
 
 Back on the road. Three days of EnterJS are just over and 
