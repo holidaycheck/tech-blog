@@ -21,8 +21,7 @@ layout: with-sidebar
           <div class="post-preview">
             <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 
-
-            {{ post.excerpt | truncatewords: 50 }}
+            {% include excerpt.html %}
 
             <p class="meta">
                 <span>{{ post.author_name }}</span>
