@@ -10,9 +10,8 @@ show_avatar : true
 read_time : 6
 show_related_posts: false
 square_related: recommend-wolf
+feature_image: posts/2017-06-enterjs/the-road.jpg
 ---
-
-![the road](/img/posts/2017-06-enterjs/the-road.jpg)
 
 Back on the road. Three days of EnterJS are just over and 
 I am already on the [next trip][hcss17-trip-tweet], this time with HolidayCheck.
@@ -59,7 +58,7 @@ Now it was time to get all preparations done for my upcoming
 talk about [flowtype or flow][flow]. I had all the puzzle pieces done. I had slides and I had code. 
 I wanted to do quite some live coding, to give the audience the feeling of what it feels like to use flow.
 
-<img src="/img/posts/2017-06-enterjs/lets-make-holidays.jpg" alt="talk teaser" width="300" style="float: left; margin: 1rem;" />
+<img src="{{site.baseurl}}/img/posts/2017-06-enterjs/lets-make-holidays.jpg" alt="talk teaser" width="300" style="float: left; margin: 1rem;" />
 
 I hate to use artificial coding example. I was thinking a bit about what to do.
 I also always like to use examples that have to do with the domain I am working in currently.
@@ -94,7 +93,7 @@ So I wrote some code that implements a simplified search. The search can find th
 types of results and shows them all in the autosuggest box, just like it happens on the
 real HolidayCheck site.
 
-![autosuggest](/img/posts/2017-06-enterjs/autosuggest.jpg)
+![autosuggest]({{site.baseurl}}/img/posts/2017-06-enterjs/autosuggest.jpg)
 
 The search can search for a different set of attributes in every type. If one searches for "Valencia",
 as shown in the image above, the results yield a city, region and a hotel.
