@@ -27,7 +27,7 @@ github_username:  holidaycheck
 permalink: post/:year/:month/:day/:title
 nav_list:
   Home : ['Home', '/', 'fa-home']
-  About : ['About', '/about', 'fa-anchor']
+  About : ['About', '/about', 'fa-info-circle']
 
 # Build settings
 markdown: kramdown
