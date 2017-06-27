@@ -10,9 +10,8 @@ show_avatar : true
 read_time : 6
 show_related_posts: false
 square_related: recommend-wolf
+feature_image: /img/posts/2017-06-jslang/post-header.jpg
 ---
-
-![airplane]({{site.baseurl}}/img/posts/2017-06-jslang/post-header.jpg)
 
 The callback-hell times are long over. We have better tools now. But which of the new kids on the block do you want to 
 play with? In this meetup, last night we tried out [async functions][async-funcs], also known by the name "async/await". 
