@@ -24,6 +24,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://techblog.holidaycheck.com/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: holidaychecklab
 github_username:  holidaycheck
+permalink: post/:year/:month/:day/:title
 nav_list:
   Home : ['Home', '/', 'fa-home']
   About : ['About', '/about', 'fa-anchor']
