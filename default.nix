@@ -1,4 +1,4 @@
-with import <nixpkgs> { };
+with import (fetchTarball https://github.com/nixos/nixpkgs/tarball/c2dce6a7459f87e499e976dad2c741437cad8fd5) { };
 
 let jekyll_env = bundlerEnv rec {
     name = "jekyll_env";
