@@ -90,34 +90,34 @@
   github-pages = {
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "00zvjsrkp9rrbh6dxwsw9n1w9cxnxxj6hnmrpzbqdm0bgqhspncy";
+      sha256 = "0748km9d224gnmp4xq6lk08ywhh6f2kjsdcfajl5m0m3a5f1mfrf";
       type = "gem";
     };
-    version = "137";
+    version = "140";
   };
   github-pages-health-check = {
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "1c9nmmic2j1hqvrsf5nnsbs7vx9dfcxwvg42yca41j7wcs67a1mk";
+      sha256 = "1ffig4f59d3cid7zdpx2i4w0gbfm3lz1hwk7a1lmflfypwmxbxwf";
       type = "gem";
     };
-    version = "1.3.3";
+    version = "1.3.4";
   };
   html-pipeline = {
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "1rnzik1jyiklac5dq8bmdwxsr2gb5zryr90624s0dn2bbadk62n7";
+      sha256 = "1g8f5c5dzz2fdp67pq4whavjwrjbvzmswxmbpl4g7lrv89xvip5k";
       type = "gem";
     };
-    version = "2.5.0";
+    version = "2.6.0";
   };
   i18n = {
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "1s6971zmjxszdrp59vybns9gzxpdxzdklakc5lp8nl4fx5kpxkbp";
+      sha256 = "1j491wrfzham4nk8q4bifah3lx7nr8wp9ahfb7vd3hxn71v7kic7";
       type = "gem";
     };
-    version = "0.8.1";
+    version = "0.8.4";
   };
   jekyll = {
     source = {
@@ -234,10 +234,10 @@
   jekyll-seo-tag = {
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "0snkpfvd3fh1kxn0l10xbyzbskca8inmic7wrgyclvpvl4q5s59r";
+      sha256 = "028asrj5n2rxdcfzqfj9n03dqcd0hmn788n16zjf4wkqcc72j1c8";
       type = "gem";
     };
-    version = "2.2.2";
+    version = "2.2.3";
   };
   jekyll-sitemap = {
     source = {
@@ -330,10 +330,10 @@
   jekyll-theme-primer = {
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "1prll6r05ljfra959qpxa4fpqn9qgahncvljlqcx99rxrsv4z5f5";
+      sha256 = "1j4nbxw6s7ja3mn7531gyzgsqkj0lhva4mzdcdcb3km2cy111vm4";
       type = "gem";
     };
-    version = "0.1.8";
+    version = "0.2.1";
   };
   jekyll-theme-slate = {
     source = {
@@ -418,10 +418,10 @@
   mini_portile2 = {
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "1y25adxb1hgg1wb2rn20g3vl07qziq6fz364jc5694611zz863hb";
+      sha256 = "0g5bpgy08q0nc0anisg3yvwc1gc3inl854fcrg48wvg7glqd6dpm";
       type = "gem";
     };
-    version = "2.1.0";
+    version = "2.2.0";
   };
   minima = {
     source = {
@@ -458,10 +458,10 @@
   nokogiri = {
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "0jd8q3pr5rkrxx1vklvhcqcgl8kmfv5c8ny36ni3z5mirw6cm70c";
+      sha256 = "1nffsyx1xjg6v5n9rrbi8y1arrcx2i5f21cp6clgh9iwiqkr7rnn";
       type = "gem";
     };
-    version = "1.7.2";
+    version = "1.8.0";
   };
   octokit = {
     source = {
@@ -498,10 +498,10 @@
   rb-inotify = {
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "0bq14f3md5nm00kgxgf0r9lcbn0vgbwljgajif0slxcwv622fjg9";
+      sha256 = "0yfsgw5n7pkpyky6a9wkf1g9jafxb0ja7gz0qw0y14fd2jnzfh71";
       type = "gem";
     };
-    version = "0.9.8";
+    version = "0.9.10";
   };
   rouge = {
     source = {
@@ -522,10 +522,10 @@
   sass = {
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "0da4mn3n60cm1ss1pw1rrpa7fxagglxiwcgvz1asf1qgf4mvcwyr";
+      sha256 = "00mdak4hiaajnw4cbaklhfq4sr3rxy88kka9lq842qa8zs0607af";
       type = "gem";
     };
-    version = "3.4.23";
+    version = "3.4.24";
   };
   sawyer = {
     source = {
@@ -538,10 +538,10 @@
   terminal-table = {
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "19c5d0bl9bvhl83p7k4bym3y7f5q6nnz3kfj8pmxz5jmizw5y3gi";
+      sha256 = "1512cngw35hsmhvw4c05rscihc59mnj09m249sm9p3pik831ydqk";
       type = "gem";
     };
-    version = "1.7.3";
+    version = "1.8.0";
   };
   thread_safe = {
     source = {
@@ -570,9 +570,9 @@
   unicode-display_width = {
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "1r28mxyi0zwby24wyn1szj5hcnv67066wkv14wyzsc94bf04fqhx";
+      sha256 = "12pi0gwqdnbx1lv5136v3vyr0img9wr0kxcn4wn54ipq4y41zxq8";
       type = "gem";
     };
-    version = "1.1.3";
+    version = "1.3.0";
   };
 }
