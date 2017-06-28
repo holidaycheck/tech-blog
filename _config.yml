@@ -27,8 +27,8 @@ github_username:  holidaycheck
 permalink: post/:year/:month/:day/:title
 nav_list:
   Home : ['Home', '/', 'fa-home']
-  About : ['About', '/about', 'fa-anchor']
   Imprint : ['Imprint', 'https://www.holidaycheck.de/impressum', 'fa-envelope']
+  About : ['About', '/about', 'fa-info-circle']
   Twitter : ['Twitter', 'http://twitter.com/holidaychecklab', 'fa-twitter']
   Source : ['Source', 'http://github.com/holidaycheck/tech-blog', 'fa-github']
 

@@ -24,6 +24,10 @@
 
 @import "nojs"
 
++breakpoint(lg)
+    .container
+        width: 80%
+
 .left-container
     margin-left: 15px
     padding-left: 0
@@ -63,12 +67,12 @@ main
 
 
 a
-    color: #999999
+    color: $hc-blue
     text-decoration: none
 
     &:hover,
     &:active,
     &:focus
         text-decoration: none
-        color: #333
-        border-bottom: solid 1px #999
+        color: $text-color
+        border-bottom: solid 1px $hc-yellow
