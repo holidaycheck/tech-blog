@@ -20,8 +20,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Mostly it will be tech stuff, though you surely find surrounding topics too.
   If you like stuff you see here, make sure to get in touch with us, we are
   always looking for pationate new colleagues!
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://techblog.holidaycheck.com/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/tech-blog" # the subpath of your site, e.g. /blog
+url: "https://holidaycheck.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: holidaychecklab
 github_username:  holidaycheck
 permalink: post/:year/:month/:day/:title
