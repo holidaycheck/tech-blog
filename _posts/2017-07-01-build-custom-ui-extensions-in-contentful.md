@@ -11,19 +11,19 @@ square_related: recommend-wolf
 feature_image: posts/2017-07-contentful-extensions/hero.png
 ---
 
-[Contentful][contentful] is a powerful and developer-friendly CMS solution. In this article I will assume that the reader is already familiar with contentful itself. Let us also skip the part about managing the content and concentrate on content models and how this can be customized. It is an important concept in contentful that gives flexibility to declare data structures, its appearance and restrictions of different kinds.
+[Contentful][contentful] is a powerful and developer-friendly CMS solution. In this article I will assume that the reader is already familiar with Contentful itself. Let us also skip the part about managing the content and concentrate on content models and how this can be customized. It is an important concept in contentful that gives flexibility to declare data structures, its appearance and restrictions of different kinds.
 
 ## Built-in fields for content models
 
-Introduce a new field in content model is a multiple-step process that is nicely visualized and simplified to couple of choices that user has to make. Here are the available fields:
+Introducing a new field in content model is a multiple-step process that is nicely visualized and simplified to couple of choices that user has to make. Here are the available fields:
 
 <img src="{{site.baseurl}}/img/posts/2017-07-contentful-extensions/fields.png" alt="Add New Field to Content Model" />
 
-Appearance of each field is customizable and depends on its type. For instance Basic text-field can be seen as url-field, dropdown or normal input-text. For each field there are list of predefined appearance, for text-field it looks like this:
+The appearance of each field is customizable and depends on its type. For instance the basic text-field can be displayed as a url-field, dropdown or normal text input. For each field there is a list of predefined appearances, for text-field it looks like this:
 
 <img src="{{site.baseurl}}/img/posts/2017-07-contentful-extensions/appearance.png" alt="Setting Up an Appearance for a Field" />
 
-This list is not complete since not all appearances fit on the screen. You can read more about all possible [editing widgets][https://www.contentful.com/r/knowledgebase/editing-widgets/] in their guide on how to customize entry editor.
+This list is not complete since not all appearances fit on the screen. You can read more about all possible [editing widgets][editing_widgets] in their guide on how to customize entry editor.
 
 ## Custom UI Extensions
 
@@ -33,14 +33,14 @@ It’s all great until you stay in the borders of what they are offering, but it
 
 This is all possible with the concept of custom UI Extensions that Contentful offers us. Extensions are available per space, you can also re-use them in multiple spaces by sharing a code if needed.
 
-## Build Own Extension
+## Build Your Own Extension
 
 It is required to have a token with Management API Access in order to update and upload the extension. Here is a page with some sample implementations of such [extensions][all_samples]. There you’ll find extensions like Youtube-Field, Integrated Translator, Chess Board and many more. [This page][rating_dropdown_example] will guide you on how to  create, upload and use your first UI Extension.
-Although there are many samples already developed by someone, there is still a need to build something specific to your case. Based on our requirements, we built an extension that communicate with external API and make it possible to Download/Buy photos from Getty Images.
+Although there are many samples already developed by someone, there is still a need to build something specific to your case. Based on our requirements, we built an extension that communicates with an external API and makes it possible to Download/Buy photos from Getty Images.
 
 ## Conclusion and Some More Links
 
-Even though this topic is pretty good documented by Contentful, at the same time the information is quite difficult to find among many other described concepts and topics. To avoid repetitions and duplication of original docs (which might also change in the future), I will just link couple of pages that contain important information on this topic:
+Even though this topic is pretty well documented by Contentful, at the same time the information is quite difficult to find among many other described concepts and topics. To avoid repetitions and duplication of original docs (which might also change in the future), I will just link couple of pages that contain important information on this topic:
 
 [UI Extensions SDK][ui-extension-sdk]<br />
 [UI Extensions API Reference][extension_api_reference]<br />
@@ -49,11 +49,9 @@ Even though this topic is pretty good documented by Contentful, at the same time
 [CLI to manage UI Extensions on Contentful] [extension_cli]<br />
 [Samples of Custom Extensions][sample_extensions]
 
-[all_samples]: http://contentful.com
+[all_samples]: https://www.contentful.com/developers/docs/concepts/uiextensions/
 [rating_dropdown_example]: https://github.com/contentful/extensions/tree/master/samples/rating-dropdown
-[editing_wdgets]: http://contentful.com
-[contentful]: http://contentful.com
-[contentful]: http://contentful.com
+[editing_widgets]: https://www.contentful.com/r/knowledgebase/editing-widgets/
 [contentful]: http://contentful.com
 [ui-extension-sdk]: https://github.com/contentful/ui-extensions-sdk
 [extension_api_reference]: https://github.com/contentful/ui-extensions-sdk/blob/master/docs/ui-extensions-sdk-frontend.md
