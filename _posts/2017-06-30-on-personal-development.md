@@ -21,15 +21,15 @@ It took me some time to learn my skills as a software developer. I had some luck
 
 ## Getting unstuck
 
-In a game of World of Warcraft if your character is stuck, all you have to do is to use *unstuck* option. It teleports you magically in some place where you are not stuck anymore. Unfortunately in real life there is no option like that. Worse, it's already 2017 and teleportation didn't happen. So I had two options. Either I could continue on playing World of Warcraft making a progress in fantasy world or I could focus on the problem which was being stuck in a real life. I played another two weeks and then decided to solve the issue. I've already read couple of articles talking about career development and one of the advices was to find the mentor. "Sounds great, doesn't work." as some famous blonde said, but not in all the cases. I used to learn from other people but eventually lost contact with them. Also tried to find new ones by asking: "Hey! Can you teach me?". Maybe I was too direct, maybe it was something else. Failed anyway. Time passed, still no mentor around.
+In a game of World of Warcraft if your character is stuck, all you have to do is to use *unstuck* option. It teleports you magically in some place where you are not stuck anymore. Unfortunately in real life there is no option like that. Worse, it's already 2017 and [teleportation didn't happen][teleportation]. So I had two options. Either I could continue on playing World of Warcraft making a progress in fantasy world or I could focus on the problem which was being stuck in a real life. I played another two weeks and then decided to solve the issue. I've already read couple of articles talking about career development and one of the advices was to find the mentor. "Sounds great, doesn't work." as some famous blonde said, but not in all the cases. I used to learn from other people but eventually lost contact with them. Also tried to find new ones by asking: "Hey! Can you teach me?". Maybe I was too direct, maybe it was something else. Failed anyway. Time passed, still no mentor around.
 
 But who said that mentors have to be alive?
 
-There are few places where you can find dead people. The most productive way to find dead person who still can teach you something is to grab a book. If there is any other way, please, send me the message - I have few favourites to talk with. Psychologist Robert Greene has made terrific job with getting together writings about the lives of many great people. I believe that it's not arrogant to say that I want to be great too. So I've read the book called **Mastery**. It helped me to learn something about myself by reading about others. I could compare my life with lives of great inventors, politicians and artists. Detailed stories about the hard work they put into their careers provided me with some motivation, the problems they have had to solve solved mines. I was ready to learn more. Unstuck, awesome.
+There are few places where you can find dead people. The most productive way to find dead person who still can teach you something is to grab a book. If there is any other way, please, send me the message - I have few favourites to talk with. Psychologist Robert Greene has made terrific job with getting together writings about the lives of many great people. I believe that it's not arrogant to say that I want to be great too. So I've read the book called [*Mastery*][mastery]. It helped me to learn something about myself by reading about others. I could compare my life with lives of great inventors, politicians and artists. Detailed stories about the hard work they put into their careers provided me with some motivation, the problems they have had to solve solved mines. I was ready to learn more. Unstuck, awesome.
 
 ## Looking for opportunities
 
-So one book made such a difference. Why not to read another one? Finding *the list of the books that you have to read in your life* was a good start. Somehow I understood that in the long run firing the motivational shots won't get me as far as I wanted to be. But what if I could change a little bit the way I think about growth? I've skimmed over the listing and decided to go with first one. Carol Dweck - **Mindset**. Author explained me pretty well that my current mindset is the fixed one. Few years of successful career and people telling me that I suck got me into this place. I strongly wanted to prove them wrong even with telling myself that I am better than they are. So the fixed mindset is the bad one, what is the good one? Growth mindset!
+So one book made such a difference. Why not to read another one? Finding *the list of the books that you have to read in your life* was a good start. Somehow I understood that in the long run firing the motivational shots won't get me as far as I wanted to be. But what if I could change a little bit the way I think about growth? I've skimmed over the listing and decided to go with first one. Carol Dweck - [*Mindset*][mindset]. Author explained me pretty well that my current mindset is the fixed one. Few years of successful career and people telling me that I suck got me into this place. I strongly wanted to prove them wrong even with telling myself that I am better than they are. So the fixed mindset is the bad one, what is the good one? Growth mindset!
  
  Growth mindset is about valuing the progress over the achievement. Finding the pleasure in the struggle more than the solution. And the book is full of examples guidance how to achieve that. It was nice eye opener. I've realized that basically anything can be an opportunity: long meetings, conflicts I had with others, activities I considered boring. It was not about looking for new opportunities, but allowing to participate at those already around.
  
@@ -37,7 +37,7 @@ So one book made such a difference. Why not to read another one? Finding *the li
  
  Does the right direction even exists? It's purely contextual, though being a good person is always a right direction. If you don't know where to go, go for it.
  
- Some time ago I read an article about the value of the software developer on the market. The model was simple. Let's say that the value consists of three elements: soft skills, hard skills and social connections. If we could rate them from 1 to 10 and then multiply them one by one, the maximum value is 1000. Rating first as 2, second as 8 and third as 2 gives us a poor result 32/1000. It is however way easier to get better from 2 to 6 than 8 to 9. Improvement? 96/1000. After reading *Mindset* I decided to use the same analogy with my overall skillset. 
+ Some time ago I read an article about the value of the software developer on the market. The model was simple. Let's say that the value consists of three elements: soft skills, hard skills and social connections. If we could rate them from 1 to 10 and then multiply them one by one, the maximum value is 1000. Rating first as 2, second as 8 and third as 2 gives us a poor result 32/1000. It is however way easier to get better from 2 to 6 than 8 to 9. Improvement? 96/1000. After gathering some thoughts after *Mindset* I decided to use the same analogy with my overall skillset. 
  
  Working as a software developer requires me to do a lot of things:
  
@@ -53,6 +53,13 @@ So one book made such a difference. Why not to read another one? Finding *the li
   ## Learning funnel
   
   // write about the funnel - "Ego is the enemy"
+  
+  
+  
+  [teleportation]: https://phys.org/news/2013-08-teleportation-easierbut.html
+  [mindset]: https://www.goodreads.com/book/show/40745.Mindset
+  [mastery]: https://www.goodreads.com/book/show/13589182-mastery
+  [ego]: https://www.goodreads.com/book/show/27036528-ego-is-the-enemy
  
  
 
