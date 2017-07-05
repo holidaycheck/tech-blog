@@ -48,7 +48,7 @@ So if one book made such a difference, why not read more? Finding *a list of boo
   - validating/creating product ideas
   - and much more...
   
-  Multiplying all of those activities sums up to my overall productivity. Finding out the lowest rates provides me with the areas for quick wins. Even better when other team members are not into those areas, then increasing those skills can have even bigger impact. It won't probably make me a specialists in one field, but increases my overall usefulness in the workplace which feels nice. The need for belonging? Hello, Maslow!
+  Multiplying all of those activities sums up to my overall productivity. Finding out the lowest rates provides me with the areas for quick wins. Even better when other team members are not into those areas, then increasing those skills can have even bigger impact by filling the missing competency. It won't probably make me a specialists in one field, but increases my overall usefulness in the workplace which feels nice. The need for belonging? Hello, Maslow!
   
   ## Learning funnel
   
