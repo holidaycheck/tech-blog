@@ -21,7 +21,7 @@ It took me some time to learn my skills as a software developer. I had some luck
 
 ## Getting unstuck
 
-In World of Warcraft, if your character is stuck, all you have to do is to use the *unstuck* option. It magically teleports you into a place where you are not stuck anymore. Unfortunately in real life there is no option like that. Worse, it’s 2017 already and [teleportation didn’t happen][teleportation]. So I had two options. Either I could continue making fantasy progress playing World of Warcraft, or I could focus on the actual problem – being stuck in real life. I played for two more weeks and then decided to solve the issue. I'd already read a couple of articles talking about career development and one of the pieces of advice was to find a mentor. "Sounds great, doesn’t work." as a famous blonde said, but not in all cases. I used to learn from other people, but eventually lost contact with them. I allso tried to find new ones by asking, "Hey! Can you teach me?". Maybe I was too direct, maybe it was something else. I failed anyway. Time passed, still no mentor around.
+In World of Warcraft, if your character is stuck, all you have to do is to use the *unstuck* option. It magically teleports you into a place where you are not stuck anymore. Unfortunately in real life there is no option like that. Worse, it’s 2017 already and [teleportation didn’t happen][teleportation]. So I had two options. Either I could continue making fantasy progress playing World of Warcraft, or I could focus on the actual problem – being stuck in real life. I played for two more weeks and then decided to solve the issue. I'd already read a couple of articles talking about career development and one of the pieces of advice was to find a mentor. "Sounds great, doesn’t work." as a famous blonde said, but not in all cases. I used to learn from other people, but eventually lost contact with them. I also tried to find new ones by asking, "Hey! Can you teach me?". Maybe I was too direct, maybe it was something else. I failed anyway. Time passed, still no mentor around.
 
 But who said that mentors have to be alive?
 
@@ -37,7 +37,7 @@ So if one book made such a difference, why not read more? Finding *a list of boo
  
  Does the right direction even exists? It's purely contextual, though being a good person is always a right direction. If you don't know where to go, go for it.
  
- Some time ago I read an article about the value of the software developer on the market. The model was simple. Let's say that the value consists of three elements: soft skills, hard skills and social connections. If we could rate them from 1 to 10 and then multiply them one by one, the maximum value is 1000. Rating first as 2, second as 8 and third as 2 gives us a poor result 32/1000. It is however way easier to get better from 2 to 6 than 8 to 9. Improvement? 96/1000. After gathering some thoughts after *Mindset* I decided to use the same analogy with my overall skillset. 
+ Some time ago I read an article about the value of the software developer on the market. The model was simple. Let's say that the value consists of three elements: soft skills, hard skills and social connections. If we could rate them from 1 to 10 and then multiply them one by one, the maximum value is 1000. Rating first as 2, second as 8 and third as 2 gives us a poor result 32/1000. It is however way easier to get better from 2 to 6 than 8 to 9. Improvement? 96/1000. After gathering some thoughts from *Mindset* I decided to use the same analogy with my overall skillset. 
  
  Working as a software developer requires me to do a lot of things:
  
@@ -46,20 +46,35 @@ So if one book made such a difference, why not read more? Finding *a list of boo
   - participating in meetings
   - creating/giving presentations
   - validating/creating product ideas
-  - and much more...
+  - and/much/more
   
-  Multiplying all of those activities sums up to my overall productivity. Finding out the lowest rates provides me with the areas for quick wins. Even better when other team members are not into those areas, then increasing those skills can have even bigger impact by filling the missing competency. It won't probably make me a specialists in one field, but increases my overall usefulness in the workplace which feels nice. The need for belonging? Hello, Maslow!
+  Multiplying all of those activities sums up to my overall productivity. Finding out the lowest rates provides me with the areas for quick wins. Even better when other team members are not into those areas, then increasing those skills can have even bigger impact by filling the missing competency. It won't probably make me a specialists in one field, but increases my overall usefulness in the workplace without strict structures.
   
   ## Learning funnel
   
-  // write about the funnel - "Ego is the enemy"
+  The goal for me was always growth. After summing up my experiences and knowledge from books & articles I started to be more aware of the way I learn. Questioning the process was the constant basis of the process. It got me to the point when I've told myself that even with going into the right direction I'm still missing something. After months from reading *Mindset* I've lost some of the spirit I had. I was curious: why? And the answer came with another book, found in the facebook feed (where I also found my last 3 jobs). The book was titled [*Ego is the enemy*][ego] but reading the title was not enough to change my situation, so I got into pages.
   
+  Do you know what is the main difference between a book and an article? The first one requires you to spend way more time than the second. I've realized that in terms of getting the most out of text the time spent matters. Hours of reading created that valuable space for comparing stories from the book to my own past experiences. The book was about the ego. I knew I had some, but what I didn't know what size it was.
   
+  Huge.
+  
+  Chapter after chapter my mood was going down. There was excitement somewhere there, hidden behind sad, growing image of the egoist person I was back then. The reason why my progress was not that fast became obvious. I was not listening. If I could portrait my learning process as a funnel, every experience, article, book, relationship, opportunity would be have first be limited by my ego and then cognitive skills. The challenge there was not to change one little thing that would make me more productive. It was about changing the behaviour. Some people may not be aware of their bad sight until they get a pair of glasses. I got mine. But is it even possible to just drop the ego? Short answer: nope. Long answer: it depends.
+  
+  Learning about the impact of my attitude toward the world was only one thing, but crucial. Next thing for me was getting more attentive to my own words, actions and thoughts. I had to slow down a bit and ask myself a question. Is it the best way to do/say something? This is somehow terrible experience because you are aware of the person that you don't want to be anymore: egoist. It takes some time to fix the thing inside you that has been growing for some time and it's harder than cutting out the tumor. Carol Dweck in *Mindset* mentioned that like an alcoholic you can't stop addiction, but there are ways to silence it. The same goes with the ego. I slip from time to time because the challenge still exists. It's easy to go back, unleashing your ego and become almighty again, but it's not worth it.
+  
+  Ryan Holiday's book - *Ego is the enemy* should be the first one on my list. I'm sure that every item after would have even greater effect on me than before.
+  
+  ## Closing thoughts
+  
+  It's fascinating for me how complex is the topic of personal development. Being thankful to ego that took you so far and then saying goodbye so you can continue your journey looks like dropping empty boosters during [multi-stage][rocket] launch so the shuttle can fly way further. But self-improvement is not a rocket science. It can be practiced every day with pretty low costs. 
+  
+  I'm publishing my thoughts in hope that maybe they will find the way to the person being stuck somewhere in their career and inspire them to change something. I'm always happy to talk about the topic, so if you are interested, just contact me. I might learn something from you.
   
   [teleportation]: https://phys.org/news/2013-08-teleportation-easierbut.html
   [mindset]: https://www.goodreads.com/book/show/40745.Mindset
   [mastery]: https://www.goodreads.com/book/show/13589182-mastery
   [ego]: https://www.goodreads.com/book/show/27036528-ego-is-the-enemy
+  [rocket]: https://en.wikipedia.org/wiki/Multistage_rocket
  
  
 
