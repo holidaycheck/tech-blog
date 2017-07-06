@@ -33,24 +33,24 @@ So if one book made such a difference, why not read more? Finding *a list of boo
 
 I learned that the fixed mindset wasn't good. My question, therefore, was, "what's the good one?". Turns out it's 'growth'.
  
- A growth mindset is about valuing progress over achievement. It’s about finding pleasure in the struggle more than in the solution. And *Mindset* is full of examples on how to achieve that. It was a nice eye-opener. I'd realized that basically anything could be an opportunity: long meetings, conflicts with coworkers, activities I had previously considered boring. It was not about looking for new opportunities, but allowing to participate at those already around.
+ A growth mindset is about valuing progress over achievement. It’s about finding pleasure in the struggle more than in the solution. And *Mindset* is full of examples on how to achieve that. It was a nice eye-opener. I'd realized that basically anything could be an opportunity: long meetings, conflicts with coworkers, activities I had previously considered boring. It was not about looking for new opportunities, but rather about allowing myself to capitalize on the ones around me.
  
  ## Growing in the right direction
  
- Does the right direction even exists? It's purely contextual, though being a good person is always a right direction. If you don't know where to go, go for it.
+ Does the right direction even exist? It's purely contextual, though being a good person is always the right direction. If you don't know where to go, go for that.
  
- Some time ago I read an article about the value of the software developer on the market. The model was simple. Let's say that the value consists of three elements: soft skills, hard skills and social connections. If we could rate them from 1 to 10 and then multiply them one by one, the maximum value is 1000. Rating first as 2, second as 8 and third as 2 gives us a poor result 32/1000. It is however way easier to get better from 2 to 6 than 8 to 9. Improvement? 96/1000. After gathering some thoughts from *Mindset* I decided to use the same analogy with my overall skillset. 
+ Some time ago I read an article about the value of a software developer on the market. The model was simple. Let's say that the value consists of three elements: soft skills, hard skills and social connections. If we could rate them from 1 to 10 and then multiply them one by one, the maximum value is 1000. Rating first as 2, second as 8 and third as 2 gives us a poor result 32/1000. It is however way easier to get better from 2 to 6 than 8 to 9. Improvement? 96/1000. After gathering some thoughts from *Mindset* I decided to apply the same analogy to my overall skillset. 
  
  Working as a software developer requires me to do a lot of things:
  
-  - talking/informing/convincing people
+  - talking to/informing/convincing people
   - reading/writing/debugging code
   - participating in meetings
   - creating/giving presentations
   - validating/creating product ideas
   - and/much/more
   
-  Multiplying all of those activities sums up to my overall productivity. Finding out the lowest rates provides me with the areas for quick wins. Even better when other team members are not into those areas, then increasing those skills can have even bigger impact by filling the missing competency. It won't probably make me a specialists in one field, but increases my overall usefulness in the workplace without strict structures.
+  Multiplying all of those activities sums up my overall productivity. Finding out the lowest rates provides me with the areas for quick wins. Even better when other team members are not into those areas, then increasing those skills can have even bigger impact by filling the missing competency. It won't probably make me a specialists in one field, but increases my overall usefulness in the workplace without strict structures.
   
   ## Learning funnel
   
