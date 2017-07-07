@@ -14,7 +14,7 @@
                     <ul>
                         {% for category in page.categories %}
                         <li>
-                            <a href='{{ "/category/" | append: page.categories.first | prepend: site.baseurl }}'>{{ category | capitalize }}</a>
+                            <a href='{{ "/category/" | append: category | prepend: site.baseurl }}'>{{ category | capitalize }}</a>
                             {% if forloop.last %}{% else %},{% endif %}
                         </li>
                         {% endfor %}
