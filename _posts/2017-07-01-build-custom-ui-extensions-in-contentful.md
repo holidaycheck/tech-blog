@@ -2,6 +2,7 @@
 layout: post
 title:  "Build Custom UI Extensions for Contentful"
 date:   2017-07-01 02:00:00 +0200
+category: javascript
 author_name: Sergii Paryzhskyi
 author_url : /author/sergii_paryzhskyi
 author_avatar: sergii_paryzhskyi
