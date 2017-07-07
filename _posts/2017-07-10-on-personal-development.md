@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "On personal development"
-date: 2017-06-30 08:03:00 +0200
+date: 2017-07-10 08:03:00 +0200
 categories: motivation
 author_name: Artur Szott
 author_url : /author/arturszott
 author_avatar: arturszott
 show_avatar : true
 read_time : 9
-feature_image: posts/2017-06-on-personal-development/growth.jpg
+feature_image: posts/2017-07-on-personal-development/growth.jpg
 show_related_posts: false
 square_related: recommend-growth
 ---
@@ -25,7 +25,7 @@ The beautiful ride on the steepness of the learning curve slowed down. Even chan
 
 In World of Warcraft, if your character is stuck, all you have to do is to use the *unstuck* option. It magically teleports you into a place where you are not stuck anymore.
  
- <img src="{{site.baseurl}}/img/posts/2017-06-on-personal-development/stuckwow.png" alt="Unstuck option in World of Warcraft" class="centered" width="700" />
+ <img src="{{site.baseurl}}/img/posts/2017-07-on-personal-development/stuckwow.png" alt="Unstuck option in World of Warcraft" class="centered" width="700" />
 
 Unfortunately in real life there is no option like that. Worse, it’s 2017 already and [teleportation didn’t happen][teleportation]{:target="_blank"}. So I had two options. Either I could continue making fantasy progress playing World of Warcraft, or I could focus on the actual problem – being stuck in real life. I played for two more weeks and then decided to solve the issue. I’d already read a couple of articles talking about career development and one of the pieces of advice was to find a mentor.
 
@@ -76,11 +76,11 @@ I learned that the fixed mindset wasn’t good. My question, therefore, was, “
   
   Chapter after chapter my mood was going down. There was excitement, sure, but it was hidden beneath my realization of what an egotist I was. The reason I wasn’t progressing became obvious. I was not listening.
   
-   <img src="{{site.baseurl}}/img/posts/2017-06-on-personal-development/bigego2x.png" alt="Unstuck option in World of Warcraft" class="centered" width="700" />
+   <img src="{{site.baseurl}}/img/posts/2017-07-on-personal-development/bigego2x.png" alt="Unstuck option in World of Warcraft" class="centered" width="700" />
   
   If I could picture my learning process as a funnel, every experience, article, book, relationship, and opportunity would first be limited by my ego and then cognitive skills.
   
-   <img src="{{site.baseurl}}/img/posts/2017-06-on-personal-development/smallego2x.png" alt="Unstuck option in World of Warcraft" class="centered" width="700" />
+   <img src="{{site.baseurl}}/img/posts/2017-07-on-personal-development/smallego2x.png" alt="Unstuck option in World of Warcraft" class="centered" width="700" />
   
   The challenge there was not to change one little thing that would make me more productive. It was about changing the behaviour. Some people may not be aware of their bad sight until they get a pair of glasses. I got mine. But is it even possible to just drop the ego? Short answer: nope. Longer answer: it depends.
   
