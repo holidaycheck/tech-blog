@@ -43,7 +43,7 @@ I was ready to learn more. Unstuck, awesome.
 
 So if one book made such a difference, why not read more? Finding *a list of books you have to read in your life* was a good start. Somehow I understood that, in the long run, firing the motivational shots wouldn’t get me as far as I wanted to be. But what if I could change a little bit the way I think about growth? I’d skimmed through the list and decided to go with the first one: [*Mindset*][mindset]{:target="_blank"} by Carol Dweck.
 
-I quickly understood that my mindset was ’fixed’. I’d been successful for a few years. On the other hand, though, I’ve had [eople tell me that I sucked. I strongly wanted to prove them wrong, even going so far as to tell myself that I was better than they were.
+I quickly understood that my mindset was ’fixed’. I’d been successful for a few years. On the other hand, though, I’ve had people tell me that I sucked. I strongly wanted to prove them wrong, even going so far as to tell myself that I was better than they were.
 
 I learned that the fixed mindset wasn’t good. My question, therefore, was, “what’s the good one?”. Turns out it’s ‘growth’.
  
