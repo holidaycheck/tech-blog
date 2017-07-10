@@ -18,12 +18,11 @@ layout: with-sidebar
 
             <p class="meta">
                 <a href="{{ post.author_url | prepend: site.baseurl }}">{{ post.author_name }}</a>
-                <i class="link-spacer"></i>
-                {{ post.date | date: "%B %-d, %Y" }}
-                <i class="link-spacer"></i>
                 in <a href='{{ "/category/" | append: post.categories.first | prepend: site.baseurl }}'>{{ post.categories.first | capitalize }}</a>
                 <i class="link-spacer"></i>
-                <i class="fa fa-bookmark"></i> {{ post.read_time }} minutes
+                {{ post.read_time }} minutes read
+                <i class="link-spacer"></i>
+                {{ post.date | date: "%B %-d, %Y" }}
             </p>
         </div>
 
