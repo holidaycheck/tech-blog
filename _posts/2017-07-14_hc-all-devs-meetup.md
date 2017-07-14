@@ -27,7 +27,7 @@ We had over 40 sessions for both days from discussions to live coding and also c
 
 The days after the meetup you could hear fun stories and memories being shared almost everywhere. And the weeks after the teams and people earned the fruits of this investment our company made for us: people started travelling more often to other locations, distributed teams started working co-located for a period to get stuff done even better.. and now you simply knew whom to ask for what. One of my colleagues told me with a twinkle in his eye that the FPM rate (flames per minute) on a hot-topic Slack channel reduced to almost zero and the former flaming was replaced by constructive and valuable exchange.
 
-For me as a former software engineer who 'went Scrum Master' now it was amazing to see that successful gathering happen. I enjoyed connecting with many different people, learning what my colleagues are technically doing, hearing about painpoints as well as our treasures and simply having fun together.
+For me as a former software engineer who 'went Scrum master' now it was amazing to see that successful gathering happen. I enjoyed connecting with many different people, learning what my colleagues are technically doing, hearing about painpoints as well as our treasures and simply having fun together.
 
 
 [openspaceWikipedia]: https://en.wikipedia.org/wiki/Open_Space_Technology
