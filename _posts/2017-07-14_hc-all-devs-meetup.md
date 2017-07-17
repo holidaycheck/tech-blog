@@ -17,11 +17,15 @@ Early in May this year, all HolidayCheck IT engineers, Scrum masters and line ma
 ## A great unconference location...
 As I was just two months with HolidayCheck back then, I learned one major thing was new about the meetup this time: we all boarded planes with one sunny seaside location... a huge all-inclusive hotel in Turkey.
 
+<img src="{{site.baseurl}}/img/posts/2017-07-14_hc-all-devs-meetup/hcalldevs-venue.jpg" alt="the all developers meetup venue" width="200" style="float: left; margin: 1rem;" />
+
 Of course this location was not chosen just for fun but to feel closer to our customers, the Urlaubers. And it provided decent conditions for conducting two full days of an [Open Space][openspaceWikipedia] unconference mixed with plenty of opportunities to connect with people one just knew from Slack chat or the GitHub commit history.
 
 > Open Space creates a stable, methodic frame, where many people can work on their issues self-organized and self-responsible. The goal is to work on essential, innovative and solution focused subjects in a short time with a big number of people.
 
 ## ... and awesome outcomes for real work-life
+
+<img src="{{site.baseurl}}/img/posts/2017-07-14_hc-all-devs-meetup/oneOfTheSessions.jpg" alt="one of the sessions at a restaurant" width="200" style="float: right; margin: 1rem;" />
 
 We had over 40 sessions for both days from discussions to live coding and also creating & incubating new ideas and actions. For example a couple of Communities of Practise (CoP) e.g. on Scala or Testing were started or promoted by these intense days at the beach. Also this tech blog you are currently reading had been reanimated - or to be more precise: rebuilt - as a direct consequence of the gathering.
 
