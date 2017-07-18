@@ -27,7 +27,7 @@ Of course this location was not chosen just for fun but to feel closer to our cu
 
 <img src="{{site.baseurl}}/img/posts/2017-07-14_hc-all-devs-meetup/oneOfTheSessions.jpg" alt="one of the sessions at a restaurant" width="200" style="float: right; margin: 1rem;" />
 
-We had over 40 sessions for both days from discussions to live coding and also creating & incubating new ideas and actions. For example a couple of Communities of Practise (CoP) e.g. on Scala or Testing were started or promoted by these intense days at the beach. Also this tech blog you are currently reading had been reanimated - or to be more precise: rebuilt - as a direct consequence of the gathering.
+We had over 40 sessions for both days from discussions to live coding and also creating & incubating new ideas and actions. For example a couple of Communities of Practise (CoP) e.g. on Scala or Testing were started or promoted by these intense days at the beach. The reboot of this very blog was another project that was started during the meetup.
 
 The days after the meetup you could hear fun stories and memories being shared almost everywhere. And the weeks after the teams and people earned the fruits of this investment our company made for us: people started travelling more often to other locations, distributed teams started working co-located for a period to get stuff done even better.. and now you simply knew whom to ask for what. One of my colleagues told me with a twinkle in his eye that the FPM rate (flames per minute) on a hot-topic Slack channel reduced to almost zero and the former flaming was replaced by constructive and valuable exchange.
 
