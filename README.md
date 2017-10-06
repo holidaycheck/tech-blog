@@ -1,6 +1,6 @@
 # About
 
-HolidayCheckers blogging about things they care about.
+HolidayCheckers blogging about things they care about. Live version of this blog is [techblog.holidaycheck.com][blog-url]
 
 # Run the blog locally, via nix
 
@@ -14,3 +14,4 @@ how I set it up can be found on [this site][nixos-via-jekyll].
 
 [nix]: http://nixos.org/nix/
 [nixos-via-jekyll]: http://stesie.github.io/2016/08/nixos-github-pages-env
+[blog-url]: http://techblog.holidaycheck.com
