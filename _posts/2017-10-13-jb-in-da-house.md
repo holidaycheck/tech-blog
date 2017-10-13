@@ -28,7 +28,7 @@ It’s not even necessary mentioning that this event won’t be a pure TDD sessi
 
 ## Remove bottlenecks
 
-The topic “Move the bottleneck out of product development” makes it very clear that our goal is to lead the market. Once we have no bottlenecks in product development, once we deliver the best thing for our Urlauber, once we run at high speed, once we have no useless friction slowing us down we are able to lead the market, we will deliver the best value and we will have even more fun and be the best Urlauber company. And we will have to look for the bottlenecks in the market, not in our company anymore. We will be able to try new business models, we will try to innovate, build, measure and learn at high speed.
+The topic “Move the bottleneck out of product development” makes it very clear that our goal is to lead the market. Once we have no bottlenecks in product development. Once we deliver the best thing for our Urlauber. Once we run at high speed. Once we have no useless friction slowing us down, we will be able to lead the market. We will deliver the best value. And we will have even more fun and be the best Urlauber company. And we get where we want to be: we will have to look for the bottlenecks in the market, not in our company anymore. We will be able to try new business models, we will try to innovate, build, measure and learn at high speed.
 That is why we invited J.B. to learn where we can improve in those areas.
 
 ## How?
