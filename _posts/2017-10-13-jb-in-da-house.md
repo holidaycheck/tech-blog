@@ -38,7 +38,7 @@ On Tuesday we will do a full-time workshop, continue applying the learnings and 
 
 ## Would you like to do it as well?
 
-It is an awesome thing to take part in such an event, I am quite excited. And it is cool to learn those things on the job. And so you can, by being part of HolidayCheck. Want to [apply]?
+It is an awesome thing to take part in such an event, I am quite excited. And it is cool to learn those things on the job. And so can you, by being part of HolidayCheck. Want to [apply]?
 
 [apply]: http://careers.holidaycheck.com/
 
