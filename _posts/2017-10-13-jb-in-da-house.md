@@ -36,7 +36,7 @@ That is why we invited J.B. to learn from him where we can improve in those area
 On Monday we will start with a keynote, have a nice lunch and will then be able to pick the right first bottleneck per team and practice the tools to fix it. J.B. will be leading us and be available to help, teaching and practicing with us.
 On Tuesday we will do a full-time workshop, continue applying the learnings and get a deeper insight on “Value-Driven Product Development”.
 
-## You would also like to?
+## Would you like to do it as well?
 
 It is an awesome thing to take part in such an event, I am quite excited. And it is cool to learn those things on the job. And you can, by being part of HolidayCheck. Want to [apply]?
 
