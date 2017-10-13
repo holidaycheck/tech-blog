@@ -19,7 +19,7 @@ It started in May, that we thought about inviting [J.B. Rainsberger][jbrains] to
 
 ## 7:26min
 
-If you have never heard of “7 minutes 26 seconds”? Now you did! It is a short and inspiring [lightning talk][7-26-talk] by J.B. called “7 minutes, 26 seconds, and the Fundamental Theorem of Agile Software Development”. Here at HolidayCheck people refer to it as the “Accidental Complication“ talk. I think the talk itself inspired many people here to be as excited about having J.B. around. 
+You have never heard of “7 minutes 26 seconds”? Now you did! It is a short and inspiring [lightning talk][7-26-talk] by J.B. called “7 minutes, 26 seconds, and the Fundamental Theorem of Agile Software Development”. Here at HolidayCheck people refer to it as the “Accidental Complication“ talk. I think it inspired many people here to be as excited about having J.B. around. 
 
 It’s not even necessary mentioning that this event won’t be a pure TDD session, or a programmers-only workshop. Even though I had thought of it like that before. Melanie, who is one of our product owners, jumped in early to help to make [#jbhc17][jbhc17] happen. And it became clear right away that this event will not only be teaching us developers, but also the product people about the tools we need to deliver value as fast as possible to our Urlauber (how we call our users).
 
