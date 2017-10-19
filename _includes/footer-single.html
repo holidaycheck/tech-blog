@@ -6,7 +6,19 @@
         <div class="col-xs-12 col-sm-6">
             <div class="category-list">
                 <p>Published <span>{{ page.date | date: "%b %-d, %Y" }}</span></p>
-                <p><a href="{{ page.author_url  | prepend: site.baseurl }}">{{ page.author_name | capitalize }}</a> in <a href='{{ "/category/" | append: page.categories.first | prepend: site.baseurl }}'>{{ page.categories.first | capitalize }}</a></p>
+                <p>
+                    {% if page.author_name %}
+                        <a href="{{ page.author_url | prepend: site.baseurl }}">{{ page.author_name | capitalize }}</a>
+                    {% else %}
+                        {% if page.author_names %}
+                            {% for author in page.author_names %}
+                                <a href="mailto:{{ site.data.authors[author].email }}">{{  site.data.authors[author].name | capitalize }}</a>
+                                {% if forloop.last == false %}, {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    {% endif %}
+                    in <a href='{{ "/category/" | append: page.categories.first | prepend: site.baseurl }}'>{{ page.categories.first | capitalize }}</a>
+                </p>
 
                 <div class="other-catergories">
                     <h3>Also found in</h3>

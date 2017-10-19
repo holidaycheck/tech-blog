@@ -17,7 +17,18 @@ layout: with-sidebar
             {% include excerpt.html %}
 
             <p class="meta">
-                <a href="{{ post.author_url | prepend: site.baseurl }}">{{ post.author_name }}</a>
+
+                {% if post.author_name %}
+                    <a href="{{ post.author_url | prepend: site.baseurl }}">{{ post.author_name }}</a>
+                {% else %}
+                    {% if post.author_names %}
+                        {% for author in post.author_names %}
+                            <a href="mailto:{{ site.data.authors[author].email }}">{{  site.data.authors[author].name }}</a>
+                            {% if forloop.last == false %}, {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                {% endif %}
+
                 in <a href='{{ "/category/" | append: post.categories.first | prepend: site.baseurl }}'>{{ post.categories.first | capitalize }}</a>
                 <i class="link-spacer"></i>
                 {{ post.read_time }} minutes read
