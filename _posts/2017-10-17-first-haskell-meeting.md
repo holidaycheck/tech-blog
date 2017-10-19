@@ -9,20 +9,20 @@ show_avatar : true
 read_time : 15
 show_related_posts: false
 square_related: recommend-kamil
-feature_image: posts/2017-10-17-first-haskell-class-meeting/haskell-poster.jpg
+feature_image: posts/2017-10-17-first-haskell-meeting/haskell-poster.jpg
 ---
 
 In HolidayCheck we believe in the value of learning new things. So the last week we held a first meeting of our Haskell Learning Group. The point of this group is to learn ourselves the basics of Haskell language.
 
 We do not intend to rewrite all our production codebase to Haskell (yet?) nor any particular parts of it. We just want to add yet another tool to our toolbelt to choose from. And Haskell is a great tool! It’s well established statically and strongly typed pure functional language, with a ton of research under it’s belt.
 
-But when you have a class you also need a book, and it should be an approachable book so everyone on any level of knowledge could easily learn from it. There are a lot of books to learn Haskell from, but we decided to go with [Haskell Programming from first principle][haskellbook].
+But when you have a learning group you also need a book, and it should be an approachable book so everyone on any level of knowledge could easily learn from it. There are a lot of books to learn Haskell from, but we decided to go with [Haskell Programming from first principle][haskellbook].
 
 [haskellbook]: http://haskellbook.com/
 
 The book starts with the chapter on Lambda calculus, a mathematical concept that underlines functional programming. Although it’s not a requirement to know it to program in Haskell this is after all _from the first principle_ so lets dig in.
 
-Around 7 people were present at the class. One may suggest it was insignificant or  unimportant because of low attendance. It’s not true. As the matter of fact it was very fun and valuable!
+Around 7 people were present at the meeting. One may suggest it was insignificant or  unimportant because of low attendance. It’s not true. As the matter of fact it was very fun and valuable!
 
 We started from small talk about what we liked in chapter 1. Everyone had different thoughts about it. That allowed us to take other point of view on Lambda calculus then our own. Already a victory. True value, tough, came just after: resolving exercises.
 
