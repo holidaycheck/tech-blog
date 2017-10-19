@@ -38,7 +38,7 @@ What was left from exercises was even more fun! We took `beta reduction` on boar
 
 Almost each of us made at least one exercise. We had precedent where one of attendants didn’t actually read the whole chapter. It didn’t stop us from explaining to him step by step `beta reduction` on those exercises. What was even cooler that we all valued from it and we built firm foundation of Lambda knowledge. We explained what Lambda head is, that it starts from `𝜆` and ends on `.`. We established that:
 
-* reduction starts from far most left (if parentheses doesn’t apply otherwise),
+* reduction starts from far most left (if parentheses don’t apply otherwise),
 
 * after each reduction we removing one head,
 
