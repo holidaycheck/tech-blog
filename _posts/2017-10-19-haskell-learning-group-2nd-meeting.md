@@ -29,7 +29,7 @@ You can start REPL in your console by running `ghci`. You can begin to play ther
 ## Hello World
 
 It all starts with printing out the "Hello World!" and Haskell is not an exception. Here is how this simple programm can look like written with Haskell:
-```javascript
+```haskell
 sayHello :: String -> IO ()
 sayHello x = putStrLn ("Hello, " ++ x ++ "!")
 ```
@@ -44,8 +44,15 @@ So, the second line is definition of the function itself. We take x as a paramet
   - order of parameters (i.e. (+) 1 1 == 1 + 1)
 
 ## Strings
-  - strings
-  - exercises
+
+Chapter 4 was all about strings and operations that can be performed on strings. It is important to understand that strings in Haskell are Lists of characters. There is a REPL command `:type` which gives type information on given statement. Let's try it with string like this `:type "Hello"`. As type information we get "[Char]". This means that "Hello" could be also represented as ['H', 'e', 'l', 'l', 'o']. On the other hand, you still have `String` as a type alias, which can be used for instance when function take a string parameter as in example with sayHello: `sayHello :: String -> IO ()`.
+By knowing that String is a List, we can perform operations like `++` for joining two Lists (or Strings if you wish). We were also playing a lot with such functions as `take` and `drop`. One of the exercises from the book was to write a function that swap the order of the words in the sentence. So the sentence "Curry is awesome" should be reversed to "awesome is Curry". One constraint is that you are limited to use only functions drop and take to get the result. Of course it is not optimal for this case, but here is how the solution to that exercise looks like:
+
+```haskell
+rvrs :: String -> String
+rvrs x = ((drop 9 x) ++ (" " ++ (take 2 (drop 6 x)))) ++ (" " ++ (take 5 x))
+```
+
 
 
 ## Exercises
