@@ -40,8 +40,33 @@ First line of the code snippet is type definition for the function defined on li
 So, the second line is definition of the function itself. We take x as a parameter and concatenate it with other strings on the left and right by using `++` operator.
 
 ## Some Basic Expressions and Operations
-  - arithmetic operations
-  - order of parameters (i.e. (+) 1 1 == 1 + 1)
+
+Function is a type of expression in Haskell, lets define a simple function and have a closer look on what it consist of. The example from the book is function triple which multiply provided number on 3. Here is how it's declared:
+```haskell
+triple x = x * 3
+```
+
+`tripple` is the name of the function. The only parameter it takes has name `x` and it's called `head` of the function. Equal sign is for assignment values and functions. The last part which defines what function does is called `body`. The last line (in our case the only one) is what will be returned.
+You can call this function like this `triple 2`. In this case x is bound to 2 and we get 6 as the result.
+During the session we quickly went through arithmetical operations. You can use them as you would normally use them: `1 + 2`  but also written with infix style like this `(+) 1 2`. In this particular example you can see how + will be applied to two arguments 1 and 2. Let's have a closer look what infix is about. First of all, you have a useful command in ghci it calls `:info`, you can apply it to function you want to get information about. You can get information not only on functions but on operations like multiply or division like this `:info *`. Its useful to get type information and also to find out if its infix operator. For `*` it says `infixl 7 *`, what exactly does it mean? `infixl` means it's an infix operator, left associative. Then `7` is the precedence: higher is applied first, on a scale of 0-9. At the end is Infix function name - `*`. Precedence for `+` is lower, its `6`. That is why `2 + 2 * 2` equal `6` and not `8`.
+The lowest precedence has `$` its `0`. It is an infix operator and it can be convinient for reducing amount of parentheses in expression.
+Here are examples some simple example on how it might be used:
+```haskell
+Prelude> (2^) (2 + 2)
+16
+-- can replace those parentheses
+ Prelude> (2^) $ 2 + 2
+16
+-- without either parentheses or $
+ Prelude> (2^) 2 + 2
+ 6
+```
+
+Because of low precedence it evaluates things from right side first and can be used to delay function application. You can use as many `$` as you want in one expression:
+```haskell
+Prelude> (2^) $ (+2) $ 3*2
+256
+```
 
 ## Strings
 
