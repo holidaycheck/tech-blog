@@ -14,34 +14,27 @@ feature_image: posts/2017-10-22-jbhc17-from-my-perspective/poster.jpg
 ---
 
 When I first heard about [JB][jbrains] coming to HolidayCheck to work with us I was excited.
-I haven't heard much about him then, so I began googling him. I did remember the [7-26-talk]
-(which is awesome, you need to check it out), but I didn't know much more.
-Once I got to learn about him, I already knew - I can't miss this opportunity. And I didn't.
-
-## The trip
-
-As I am from Poland, I (actually me and my colleagues), had to hop on plane and get to Munich. Once there, we
-went to the hotel, went out for a burger and a beer, got back, went to sleep. Morning came.
-We arrived to meeting place around 9. JB was already there, preparing.
-I approached him, shook his hand, exchanged few words. Seems like a nice guy - I thought.
+I hadn't heard much about him then, so I began googling him.
+I did know the fantastic [7min 26sec talk][7-26-talk] but not really anything beyond that.
+The more I was reading about him, the more I was looking forward to meet him in person.
 
 ## First day
 
-I sat down in 2nd row, so that I would not miss a thing. Keynote began. I'll be frank. From the moment he started,
-till the very end I listened to everything he had to say. Imagine his 7-26-talk, but for few hours (with breaks of course ;)).
-It was all very interesting. JB has this skill to attract peoples attention and talk in a very interesting way.
-Imagine a lesson you liked in school, because anything you heard there was valuable and attracted your attention.
-It was the same.
+We arrived to meeting place around 9. JB was already there, preparing.
+I approached him, shook his hand, exchanged few words. Seems like a nice guy - I thought.
 
-The main reason I chose to go to [#jbhc17][jbhc17] was TDD and craftsmanship concerning our daily job.
-But the majority of talks during the first day were not about that. I have to say, it got me worried a bit.
-It was interesting, but still. Little did I know that JB had a plan.
+As the first day kicked off with a keynote, I sat down in the second row to make sure that I wouldn't miss anything.
+The experience was as engaging and exciting as his 7-26 talk - just several hours long :)
+JB really has this skill to attract people attention.
+
+The topics that I was most interested in hearing about at [#JBHC17][jbhc17] were TDD and Craftsmanship.
+When these hardly came up during the first day I started to get a bit worried.
+It was all really interesting yet not what I was looking for. Little did I know, that JB had a plan.
+
 He introduced a way of working in order to solve one problem: bottlenecks.
 And he did a great job. We learned how to find what slows us down and how to tackle this.
 He showed us how to work efficiently and what eventually matters - our clients, time to bringing features to them
 is the most important thing. The shorter the better, as that is all that matters.
-
-How?
 
 He started off with [Winston W. Royce's waterfall][waterfall] model, then, step by step,
 changed it into test first approach.
@@ -70,8 +63,8 @@ It was a very nice experience. Step by step, when I was adding features, I saw h
 if code I produced was left in a good shape. It involved removal of duplication, introducing abstraction, providing
 better naming, etc. It felt great doing this.
 
-After the exercise, JB continued talking about the cost of introducing TDD: it is an investment, but such
-that pays of in long term (not that long!). As day went by JB told us also about few other, very interesting
+After the exercise, JB continued talking about the cost of introducing TDD: it is an investment, but one
+that pays of in long term (not that long!). As the day went by, JB told us also about few other, very interesting
 facts and figures backing up test first approach.
 
 This day ended with a really big surprise. **JBHC17 will happen again!** It will take place on 11-12 December.
