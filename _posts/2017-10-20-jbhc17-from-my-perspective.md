@@ -44,7 +44,7 @@ JB described how value stream mapping works, which is the technique used to disc
 You think you have a high efficiency in your team? 30-50%? Think again :)
 We did the exercise and it was ~6%. Not kidding.
 
-First day introduced a lot of very useful knowledge, and went by fast.
+The first day introduced a lot of very useful knowledge, and went by fast.
 It ended with a very nice dinner at a pizza restaurant. We had a chance to talk about anything with JB.
 You really need to meet this guy in person.
 
