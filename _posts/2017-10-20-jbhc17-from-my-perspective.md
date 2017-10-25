@@ -20,7 +20,7 @@ The more I was reading about him, the more I was looking forward to meet him in 
 
 ## First day
 
-We arrived at the venue around 9am. JB was already there, preparing.
+We arrived at the venue at around 9am. JB was already there, preparing.
 I approached him, shook his hand, exchanged few words. Seems like a nice guy - I thought.
 
 As the first day kicked off with a keynote, I sat down in the second row to make sure that I wouldn't miss anything.
