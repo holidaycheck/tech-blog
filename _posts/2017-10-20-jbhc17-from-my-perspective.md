@@ -42,7 +42,7 @@ From queueing theory, test first programming to TDD and BDD. He spoke a lot abou
 from raw material to final product. How it flows through the system, where the constraints lie.
 JB described how value stream mapping works, which is the technique used to discovering bottlenecks.
 You think you have a high efficiency in your team? 30-50%? Think again :)
-We did the exercise and it was ~6%. Not kidding.
+We did the exercise and it was ~6%. No kidding.
 
 The first day introduced a lot of very useful knowledge, and went by fast.
 It ended with a very nice dinner at a pizza restaurant. We had a chance to talk about anything with JB.
