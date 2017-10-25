@@ -21,7 +21,7 @@ The more I was reading about him, the more I was looking forward to meet him in 
 ## First day
 
 We arrived at the venue at around 9am. JB was already there, preparing.
-I approached him, shook his hand, exchanged few words. Seems like a nice guy - I thought.
+I approached him, shook his hand, exchanged few words. He made a very friendly first impression.
 
 As the first day kicked off with a keynote, I sat down in the second row to make sure that I wouldn't miss anything.
 The experience was as engaging and exciting as his 7-26 talk - just several hours long :)
