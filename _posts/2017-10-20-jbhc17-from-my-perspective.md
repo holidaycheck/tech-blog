@@ -50,7 +50,7 @@ You really need to meet this guy in person.
 
 ## Second day
 
-At that day we split into two groups: programmers and product people.
+On that day we split into two groups: programmers and product people.
 First group had two exercises to choose from. I picked the one where we were supposed to build a cash
 register. From very simple tasks (scan one product, show price) to advanced features.
 The reason for this was to practice TDD approach (don't mistake it with TFP).
