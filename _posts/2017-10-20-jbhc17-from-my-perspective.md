@@ -73,11 +73,8 @@ I already know I will go. It's one of those things you can't miss.
 ## Final words
 
 JB is a very nice person, he's very smart and he's a real professional.
-During those two days I learned more about him, his personal life,
-how passionate he is in what he is doing. One can say - but he's being paid for what he does.
-Sure, we all are. But are we all giving everything we can to work as best as we can? He sure is.
-And those two days have proven that. If I were to recommend a speaker to come and visit your company,
-that sure as hell would be JB.
+During those two days I learned more about him, his personal life, how passionate he is in what he is doing.
+If I were to recommend a speaker to come and visit your company, that sure as hell would be JB.
 
 Thank you JB, for coming and see you next time.
 Thank you, all of the organizers and HolidayCheck, for making it happen.
