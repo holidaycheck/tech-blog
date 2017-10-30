@@ -13,10 +13,11 @@ square_related: recommend-wolf
 feature_image: posts/2017-10-02-8thlight-1/8thlight.jpg
 ---
 
-It all started at [BusConf], this August. Tobias Pflug (a colleague from HolidayCheck) asked Daniel Irvine (from [8th Light London]) if we could come over to London to learn from 8th Light about their apprenticeship program.
+It all started at [BusConf], this August. Tobias Pflug (a colleague from HolidayCheck) asked [Daniel Irvine] (from [8th Light London]) if we could come over to London to learn from 8th Light about their apprenticeship program.
 Why? Because we want to be attractive to talent to stay competitive. And therefore we know we need to improve our skills continuously and keep producing high quality.
 Very simple :).
 
+[Daniel Irvine]: https://twitter.com/d_ir
 [BusConf]: http://www.bus-conf.org
 [8th Light London]: https://8thlight.com/locations/london/
 
