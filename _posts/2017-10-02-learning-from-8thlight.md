@@ -10,6 +10,7 @@ show_avatar : true
 read_time : 10
 show_related_posts: false
 square_related: recommend-wolf
+feature_image: posts/2017-10-02-8thlight-1/8thlight.jpg
 ---
 
 It all started at [BusConf], this August. Tobias Pflug (a colleague from HolidayCheck) asked Daniel Irvine (from [8th Light London]) if we could come over to London to learn from 8th Light about their apprenticeship program.
