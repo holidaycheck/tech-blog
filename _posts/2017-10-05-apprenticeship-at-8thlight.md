@@ -10,7 +10,7 @@ show_avatar : true
 read_time : 20
 show_related_posts: false
 square_related: recommend-wolf
-feature_image: posts/2017-10-05-8thlight-2/8thlight.jpg
+feature_image: posts/2017-10-05-8thlight-2/structured-design.jpg
 ---
 
 Officially it was 2006 that 8th Light says they had started the [apprenticeship program]. From reading a bit around and searching for related articles online, it seems that there had been ocurrences of it before. Jake Scruggs [writes][jake-writes]  in 2009 about his apprenticeship that he had started 5 years before in 2004 at Object Mentor, kind of the predecessor of 8th Light. But that’s lot to cover, something for another history post :).
