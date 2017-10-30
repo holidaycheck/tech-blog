@@ -2,7 +2,7 @@
 layout: post
 title:  "62 Engineers, 1 All-inclusive hotel"
 date: 2017-07-14 14:56:00 +0200
-categories: conference learn
+categories: conference how-we-learn
 author_name: Cosima Laube
 author_url : /author/cosimalaube
 author_avatar: cosimalaube

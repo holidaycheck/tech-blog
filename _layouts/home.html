@@ -29,7 +29,7 @@ layout: with-sidebar
                     {% endif %}
                 {% endif %}
 
-                in <a href='{{ "/category/" | append: post.categories.first | prepend: site.baseurl }}'>{{ post.categories.first | capitalize }}</a>
+                in <a href='{{ "/category/" | append: post.categories.first | prepend: site.baseurl }}'>{{ post.categories.first | capitalize | replace: "-", " " }}</a>
                 <i class="link-spacer"></i>
                 {{ post.read_time }} minutes read
                 <i class="link-spacer"></i>
@@ -54,7 +54,7 @@ layout: with-sidebar
             {% for category in site.categories %}
 
                 <div class="category-preview col-xs-6 col-sm-4 ">
-                    <h2>{{ category | first | capitalize }}</h2>
+                    <h2>{{ category | first | capitalize | replace: "-", " " }}</h2>
                     <a href='{{ "/category/" | append: category.first | prepend: site.baseurl }}'><img src='{{ "/img/" | append: category.first | prepend: site.baseurl }}-thumbnail.jpg' alt="category-image"></a>
                 </div>
             {% endfor %}
