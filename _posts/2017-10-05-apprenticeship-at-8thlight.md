@@ -31,15 +31,18 @@ The craftsmanship or workmanship “is a human attribute relating to knowledge a
 [sw-craftsmanship]: https://en.wikipedia.org/wiki/Software_craftsmanship
 [workmanship]: https://en.wikipedia.org/wiki/Workmanship#Workmanship_and_craftsmanship 
 
-I think [this post][jakes 1st post] shows very well that *anyone* can do such an apprenticeship. The people guiding the apprentices just have to be good in guiding. He writes: “Most people, when I told them I intended to become a programmer without going to college, thought I was nuts but were nice enough to nod and smile”. Jake (the apprentice) was sure about doing an apprenticeship. So the skill to find the people who really want is what matters. And 8th Light has proven too that this works, we have seen it. I would say the majority of 8th Lighters don’t have a background in computers, and even less in computer science. And the company grows by doing consultant work, running IT projects, including lots of programming, for various companies.
+[Jake's post][jakes 1st post] shows very well that *anyone* can do such an apprenticeship. The people guiding the apprentices just have to be good in guiding. He writes: “Most people, when I told them I intended to become a programmer without going to college, thought I was nuts but were nice enough to nod and smile”. Jake (the apprentice) was sure about doing an apprenticeship. So the skill to find the people who really want is what matters. And 8th Light has proven too that this works, we have seen it. I would say the majority of 8th Lighters don’t have a background in computers, and even less in computer science. And the company grows by doing consultant work, running IT projects, including lots of programming, for various companies.
 
 [jakes 1st post]: http://jakescruggs.blogspot.de/2004/05/my-apprenticeship-may-2004.html
 
 ## The application, part 1, online
 
 The first contact between an employer and a prospective employee is mostly the employer reads a CV, meets someone at an event, gets a referral or other opportunity that the two get to know about each other. How the process of pre-selecting applicants for setting up a first online session works at 8th Light, I don’t know. What I understood very well is that those people who find 8th Light deliberately and think this can be the right company for me are those that know about craftsmanship, an apprenticeship program and surrounding topics.
+
 One word on wording: lately “craftsmanship” has received quite some critiques for it’s non-inclusive name. Therefore I will try to be careful in wording, but am open to add improvements. There is no intention of offending anyone here.
+
 The other groups of applicants are those that don’t even start the process. Why? As [Jake had already done][jakes-tictactoe] in 2004, the first task you get assigned is writing Tic Tac Toe. This task is assigned to you before you meet face to face. You work on it and get back to 8th Light with a result that you think is good enough. That is the step where some people loose interest. My guess would be they either don’t know what the apprenticeship will look like or they are looking for jobs (or application processes) that are not so “demanding”.
+
 Reading about the first steps in the application process in [here][crafter-application] sums it all up, and it sumarizes quite well who is the audience:
 > We enjoy working with people who are empathetic, who are passionate about teaching and learning, and who value the work they do. If this approach to software development resonates with you, we'd love to talk.
 
@@ -83,8 +86,10 @@ The resident apprentice is a full-time employee, with a reduced salary. The dura
 
 8th Light doesn’t get tired of stating that they are convinced that investing in people is the right strategy. Their CEO Paul states in a [blog post][promote-apprenticeship]:
 > We will continue to promote and refine our apprenticeship program, which is a paid learning opportunity open to people without traditional experience but who aspire to be software professionals.
+
 You get paid and you learn full-time. Their [careers site] underlines that this is an essential part of the 8th Light community.
 > While they aren't a billable member of a client project, they're still part of the 8th Light team and we believe they should be paid in that role.
+
 This is not only an investment and encouragement for the people they hire but also a long-term investment in the company. The people that are treated like this are more likely to be loyal to the company, even though they are not billable yet.
 
 [promote-apprenticeship]: https://8thlight.com/blog/paul-pagel/2017/08/14/diversity-inclusion-8th-light.html
@@ -103,7 +108,7 @@ I think that also the hardware setup on all desks is supporting this. Because ev
 
 I think no further explaining is needed that a safe environment is a basic thing (to have in every office). Additionally we saw that 8th Light is doing a great job in being more inclusive. The first day we had been in the office Tobias and me had been the only men in the room. When we walk on the street we expect to be surrounded by all kinds of people. In a tech company this is not the case yet, and it was feeling good to work with woman and see that is reality in this office, just as much as on the street. Jim told us that 8th Light has about 40% of women employed. Good job! I guess if 8th Lighters look into other IT companies they must feel quite strange when they realise the absence of woman and see just less diverse groups of people work there.
 
-I think that the student apprenticeship is a core thing. And is  one factor for the successful inclusivity as 8th Light practises it. The student apprenticeship allows and also encourages anyone (not only men) to try out and learn if becoming a developer can be a fit as their future profession. At some point in the discussions the impostor syndrome came up a couple of times. I believe that either of the apprenticeship programs, but especially the student apprenticeship do a great job of preventing the [impostor syndrome] to kick in. This means that the openness of the apprenticeship simply makes everybody welcome. No matter of their prior knowledge, experience and skill level. It lowers if not even removes the barrier to apply at a company that looks that inclusive. 
+I think that the student apprenticeship is a core thing. And is  one factor for the successful inclusivity as 8th Light practises it. The student apprenticeship allows and also encourages anyone (not only men) to try out and learn if becoming a developer can be a fit as their future profession. At some point in the discussions the [impostor syndrome] came up a couple of times. I believe that either of the apprenticeship programs, but especially the student apprenticeship do a great job of preventing the impostor syndrome to kick in. This means that the openness of the apprenticeship simply makes everybody welcome. No matter of their prior knowledge, experience and skill level. It lowers if not even removes the barrier to apply at a company that looks that inclusive. 
 
 [impostor syndrome]: https://en.wikipedia.org/wiki/Impostor_syndrome
 
