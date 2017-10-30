@@ -3,7 +3,11 @@ layout: default
 ---
 
 {% if page.feature_image %}
-    <header class="hero-image" style="background-image: url({{ site.baseurl }}/img/{{page.feature_image}});">
+    <header class="menu hero-image" style="background-image: url({{ site.baseurl }}/img/{{page.feature_image}});">
+        <a href="/" class="menu-home-button">
+          <img src='{{"/img/hc-labs-only-logo" | prepend: site.baseurl }}.svg' alt="HC labs" class='site-logo animated fadeInDown'>
+        </a>
+        <br /><br />
         <span class="menu-trigger animated fadeInDown">
             <span class="bar"></span>
             <span class="bar"></span>
