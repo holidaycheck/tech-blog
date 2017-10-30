@@ -25,7 +25,9 @@ This post is describing the apprenticeship program of 8th Light as seen from the
 ## Apprenticeship - What is all this about?
 
 Their website states that: “apprenticeships are the path to employment at 8th Light”. This is not about the recruiting process and how to find talent, the “apprenticeship program is designed to prepare all software crafters for the challenges they will face in their day-to-day work”. In other words it might be called a trainee program or an on-boarding program. But those terms are taken and actually also not fitting so well.
+
 The word “apprenticeship” and the program as such has its root in the craftsmanship movement. As per [wikipedia][sw-craftsmanship] in 1992 Jack W. Reeves wrote “software development is more a craft than an engineering discipline”. The book “Pragmatic Programmer” is know to first relate software development to stages like in medieval guild traditions of Europe. And the first of those stages is the apprenticeship followed by journeyman and mastery.
+
 The craftsmanship or workmanship “is a human attribute relating to knowledge and skill at performing a task” (see [wikipedia][workmanship]).
 
 [sw-craftsmanship]: https://en.wikipedia.org/wiki/Software_craftsmanship
@@ -98,8 +100,11 @@ This is not only an investment and encouragement for the people they hire but al
 ## Safe environment
 
 One fundamental thing for making this an encouraging, collaborative and positive experience for everyone is to provide a safe environment. There is much more than the things written here that make a safe environment, but I would like to pick out some things. 
+
 Makis, a crafter wrote on [his blog][makis-teach] that the London office started something called Zagaku, where “every morning a crafter or an apprentice will teach a topic for 20-30 minutes to the apprentices”. And this is not a one-sided learning but “learning happens on both ends (crafter & apprentices)” and by doing that internally a safe environment is created. People know each other, have a good level of communication skills and respect each other. This encourages everyone, not only the apprentices to speak up, to ask questions, to learn and to teach. 
+
 I witnessed this being the case. The office was a very collaborative environment. People were patient and calm. Many had been collaborating, for example by pairing.
+
 I think that also the hardware setup on all desks is supporting this. Because every desk was equipped with a big monitor and two keyboards that were ready to use. That means every desk was inviting the people to pair with each other. And there had been many apprentice+crafter pairs in the office. This makes pairing very easy and look like the normal thing.
 
 [makis-teach]: http://makisotman.com/to-teach-is-to-learn/
@@ -120,6 +125,7 @@ as their [career site] states. Once graduated a crafter has obtained the skills 
 [career site]: https://8thlight.com/job-opportunities/london-crafter/
 
 The **apprenticeship is run like a real project**, like any other client project at 8th Light. That is the first learning: discipline. By running the apprenticeship like a project an apprentice lives and breathes all parts of a project iteration from the beginning and won’t be surprised when working with customers later.
+
 At the beginning the mentor creates a curriculum. (At some point I remember the ThoughtWorks learning path was mentioned too.) The curriculum might be a simple spread sheet that mentor and apprentice have access too. Mentor - that is the person that guides the apprentice through their apprenticeship, more about that later. The curriculum is the high-level plan for the apprenticeship and every week (that’s how long iteration take) more detailed tasks that are derived from the curriculum are put into a Kanban-like board. Theses tasks get estimated by the apprentice and depending on the acceptable load the next iteration’s “to-do” column is being filled. The board that we saw being used at 8th Light was a simple three column board with the columns backlog, to-do and done.
 
 At the beginning of an apprenticeship, at the end and also while it is running the apprentices are asked to do a self-assessment on all the topics that the apprenticeship will cover.
@@ -127,10 +133,14 @@ At the beginning of an apprenticeship, at the end and also while it is running t
 ## The Curriculum
 
 As described above the curriculum contains all things about “programming, client services, collaboration, leadership, and communication skills”. The curriculum itself is way more detailed than this and contains the topics in detail, (chapters of) books to read, blog posts, tasks to solve and so on.
-One thing I saw that everyone at 8th Light has as part of their apprenticeship is to learn the editor vi and the terminal manager tmux. Other tools are allowed to use too, but as one part of the curriculum those two tools are required to learn. Another topic that appears in the curriculum is Test Driven Development. I remember Mollie saying that the “disciplined TDD” was one of the most important things she had learned in her apprenticeship. On [her blog][tests-that-test-you] Katerina writes about about testing on the third day of her apprenticeship. This makes obvious that testing is not added into the game at some later stage to validate something that was implemented. It is an essential part, a building block of an apprenticeship. I heard very often that the book “TDD by Example” was mentioned and is part of an apprenticeship. 
+
+One thing I saw that everyone at 8th Light has as part of their apprenticeship is to learn the editor vi and the terminal manager tmux. Other tools are allowed to use too, but as one part of the curriculum those two tools are required to learn. Another topic that appears in the curriculum is Test Driven Development. I remember Mollie saying that the “disciplined TDD” was one of the most important things she had learned in her apprenticeship. On [her blog][tests-that-test-you] Katerina writes about about testing on the third day of her apprenticeship. This makes obvious that testing is not added into the game at some later stage to validate something that was implemented. It is an essential part, a building block of an apprenticeship. I heard very often that the book [TDD by Example] was mentioned and is part of an apprenticeship.
+
 Another part of the curriculum is to learn the SOLID principles, open-close principle, the four rules of simple design, refactoring, coupling and cohesion (using the two chapters of the book “Structured Design”) and doing lots of Katas. The most famous kata everyone in 8th Light does is Tic Tac Toe. But besides that I saw the bowling kata, roman numerals and gilded rose. So there is a lot of practicing going on.
+
 We also talked to mentors that said they are using other projects like a contacts app, song list or building an HTTP server from scratch as projects for the apprentices. Also internal tools are often built by apprentices. 8th Light has a slack bot for collecting all food orders from all colleagues, the kanban board app and others have been built by apprentices.
 
+[TDD by Example]: https://www.goodreads.com/book/show/387190.Test_Driven_Development
 [tests-that-test-you]: https://medium.com/@katerinaldg/tests-that-test-you-1106db1cad62
 
 Part of the curriculum is also to learn three programming languages with each a different approach. The one functional: Clojure, a statically typed one: Java and a dynamic language: Ruby. In each language the apprentices normally write Tic Tac Toe first. Though this seems not to be executed that strictly anymore.
