@@ -2,7 +2,7 @@
 layout: post
 title:  "Haskell Learning Group: Beyond Maths (2nd Session)"
 date: 2017-10-25 00:03:30 +0200
-categories: haskell learn
+categories: haskell how-we-learn
 author_name: Sergii Paryzhskyi
 author_url : /author/sergii_paryzhskyi
 author_avatar: sergii_paryzhskyi
