@@ -9,8 +9,23 @@ let jekyll_env = bundlerEnv rec {
   };
 in
   stdenv.mkDerivation rec {
+    src = lib.cleanSource ./.;
     name = "jekyll_env";
+
     buildInputs = [ jekyll_env ];
+
+    doCheck = true;
+
+    checkPhase = ''
+      ./test.sh
+    '';
+
+    buildPhase = "true";
+
+    installPhase = ''
+      mkdir $out
+      jekyll build --destination $out
+    '';
 
     shellHook = ''
       jekyll serve --watch
