@@ -14,7 +14,7 @@ feature_image: posts/2017-10-02-8thlight-1/8thlight.jpg
 ---
 
 It all started at [BusConf], this August. Tobias Pflug (a colleague from HolidayCheck) asked [Daniel Irvine] (from [8th Light London]) if we could come over to London to learn from 8th Light about their apprenticeship program.
-Why? Because we want to be attractive to talent to stay competitive. And therefore we know we need to improve our skills continuously and keep producing high quality.
+Why? Because we want to be attractive to talent to stay competitive. Therefore we want to attract talent and stay competitive.
 Very simple :).
 
 [Daniel Irvine]: https://twitter.com/d_ir
@@ -23,22 +23,20 @@ Very simple :).
 
 ## Boarding the 8th Light plane
 
-So Tobias and me we boarded to London last Tuesday, to spend at least three full days with the 8th Lighters.
-On Wednesday we met at 8:30 in front of the hotel, had a typical english breakfast and went to the 8th Light office. Since it was a nice 20 minutes walk from the hotel to the office, we got to smell some London flair. I always liked London.
+So Tobias and I boarded to London last Tuesday, to spend at least three full days with the 8th Lighters.
+On Wednesday we met at 8:30 in front of the hotel, had a typical english breakfast and went to the 8th Light office. Since it was a nice 20 minutes walk from the hotel to the office, we got to "smell" some London flair. I always liked London.
 
-Arriving at the office. It was a bit hidden in a side road. We had been very warmly welcomed by Katerina, Gabi, Matt, Mollie, Jim, Daniel, Sarah, Enrique and Rabea. We shook everyone’s hand introduced ourselves, had been shown around and were told to grab any seat we like. In the 8th Light office you find your desk via hot desking, which means you choose to sit any of the available desks. Most of them have a monitor and two keyboards, more about that later.
-Everyone who came later went around and either shook everyone’s hand or fist-bumped with each other in the office. Later Amelia came with Noa, and there the office began lightning up even more when the 9 months old crawled around the office. So cute.
+Arriving at the office. It was a bit hidden in a side road. Katerina, Gabi, Matt, Mollie, Jim, Daniel, Sarah, Enrique and Rabea warmly welcomed us. We shook everyone’s hand introduced ourselves, had been shown around and were told to grab any seat we like. In the 8th Light office you find your desk via hot desking, which means you choose to sit any of the available desks. Most of them have a monitor and two keyboards, more about that later.
+Everyone who came later went around and either shook everyone’s hand or fist-bumped with each other in the office. Later Amelia came with Noa, and the office began lightning up even more when the 9 months old crawled around the office. So cute.
 
-We had been in the office around 9:30, because we heard that at 9:45 8th Light has an office-wide standup. So we got together and everyone shortly said what was the plan for the day. We thanked 8th Light for giving us the opportunity to join them for a couple of days and learn for our upcoming apprenticeship program. We offered ourselves as pairing partners and had been welcomed again.
+We got to the office around 9:30, because we heard that at 9:45 8th Light has an office-wide standup. So we got together and everyone shortly said what was the plan for the day. We thanked 8th Light for giving us the opportunity to join them for a couple of days and learn for our upcoming apprenticeship program. We offered ourselves as pairing partners and had been welcomed again.
 
 Katerina mentioned in the standup she wanted to fix her vimrc. Katerina is in her resident apprenticeship, once she graduates to become a crafter she will work with 8th Light clients.
-I am a spontaneous vi user, so I had no clue about vimrc. But Tobias did and sat beside her and they both fixed the vim setup. Katerina had had written down lots of keyboard shortcuts for vi in her notebook and she seemed to be quite familiar with vim already. As we learned later vim and the window manager tmux are the essentials [everyone learns][chris-learns-vim] early on in 8th Light. I like that, it will challenge me too.
-
-[chris-learns-vim]: http://c-j-j.github.io/2015/01/07/transitioning-from-intellij-to-vimtmux.html
-
+I am an occasional vi user, so I had no clue about vimrc. But Tobias did and sat beside her and they both fixed the vim setup. Katerina had had written down lots of keyboard shortcuts for vi in her notebook and she seemed to be quite familiar with vim already. As we learned later vim and the terminal multiplexer tmux are the essentials [everyone learns][chris-learns-vim] early on in 8th Light. I like that, it will challenge me too.  
 She had also mentioned in the standup, she was about to dive into MySQL and is looking forward to create her first table. Since I like relational databases I was curious to sit down with her. She opened the MySQL shell and started typing her `CREATE TABLE` statement. It didn’t take long until she had created and adjusted the table. Every once in a while she spoke a short sentence of joy like “what a joy” or “exciting”. It was really energising to watch her succeed step by step.
 Later I asked her why she is learning MySQL. And it turned out that she is working off some exercises from the book [Exercises for programmers][exercises-for-programmers]. Her current task is building a song collection application. It started out to be a collection of songs in an array, later the songs got written into a file and now she was about to read and write them in a database. This way she starts with a simple core and extends the application, the technologies to learn, the APIs and also the ways to test the application.
 
+[chris-learns-vim]: http://c-j-j.github.io/2015/01/07/transitioning-from-intellij-to-vimtmux.html
 [exercises-for-programmers]: https://pragprog.com/book/bhwb/exercises-for-programmers
 
 Throughout many discussions we discovered this is a common pattern and it makes a lot of sense, I think. Apprentices in 8th Light learn to solve the core of a problem as simple and as fast as possible. Might it be Tic Tac Toe, a song collection or the famous HTTP server, that everyone in 8th Light builds as part of the apprenticeship. The next step is to add other technologies into the game, like different storages or frontends, or alikes. And by this the core problem stays the same but the supporting technologies become more complex. There might be a server-client scenario, a command line tool or a web frontend that needs to be written. Each of the combinations adds a different level of complexity and its` own challenges, just like in real life. Continuous Deployment is also added into the game early on.
