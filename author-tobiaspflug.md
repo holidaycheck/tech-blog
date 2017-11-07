@@ -14,11 +14,11 @@ I wrote my first lines of Basic code on an Amstrad CPC in the 80s. Later I learn
 
 Several years later I sat in an office, about to solve yet another problem with yet another for loop. I had had enough of it. I ordered a Common Lisp book from amazon and started discovering Functional Programming. Fast forward to today and I'm still in love with Functional Programming. 
 
-- I love Haskell and other strong statically typed PLs. 
+- I love Haskell and other strong statically typed PLs
 
-- I am fascinated by Category Theory even though i still don't know that much about it
+- I am fascinated by Category Theory even though I still don't know that much about it
 
-- I love Nix/NixOS because i've suffered enough from the problems Nix eliminates
+- I love Nix/NixOS because I've suffered enough from the problems Nix eliminates
 
 - I love Jazz and especially John Coltrane
 
@@ -26,5 +26,5 @@ Several years later I sat in an office, about to solve yet another problem with 
 
 - I am on [github](https://github.com/gilligan) and [twitter](https://twitter.com/tpflug)
 
-- I organize BusConf, a FP themed open space conference: [BusConf](http://www.bus-conf.org)
+- I organize [BusConf](http://www.bus-conf.org), an FP themed open space conference
 
