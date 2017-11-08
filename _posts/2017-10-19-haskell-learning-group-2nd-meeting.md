@@ -7,7 +7,6 @@ author_name: Sergii Paryzhskyi
 author_url : /author/sergii_paryzhskyi
 author_avatar: sergii_paryzhskyi
 show_avatar : true
-read_time : 10
 show_related_posts: false
 square_related: recommend-wolf
 feature_image: posts/2017-10-17-first-haskell-meeting/haskell-poster.jpg

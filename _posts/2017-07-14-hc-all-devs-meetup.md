@@ -7,7 +7,6 @@ author_name: Cosima Laube
 author_url : /author/cosimalaube
 author_avatar: cosimalaube
 show_avatar : true
-read_time : 6
 show_related_posts: false
 feature_image: posts/2017-07-14_hc-all-devs-meetup/feature-image.jpg
 ---

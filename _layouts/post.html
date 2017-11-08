@@ -33,8 +33,6 @@ layout: default
                     {% endif %}
                     in <a href='{{ "/category/" | append: page.categories.first | prepend: site.baseurl }}'>{{ page.categories[0] | capitalize }}</a>
                     <i class="link-spacer"></i>
-                    {{ page.read_time }} minutes read
-                    <i class="link-spacer"></i>
                     {{ page.date | date: "%B %-d, %Y" }}
                 </p>
             </header>

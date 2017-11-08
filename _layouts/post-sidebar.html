@@ -26,15 +26,9 @@ layout: default
 
             <img src='{{ "/img/" | append: page.author_avatar | prepend: site.baseurl }}.jpg' class="user-icon " alt="user-image">
             <div class="meta">
-
                 <div class="sidebar-info">
                     <a href="{{ page.author_url | prepend: site.baseurl }}">{{ page.author_name | capitalize }}</a> in <a href='{{ "/category/" | append: page.categories.first | prepend: site.baseurl }}'>{{ page.categories.first | capitalize }}</a>
                 </div>
-
-                <div class="sidebar-readtime">
-                    <i class="fa fa-bookmark"></i> {{ page.read_time }} minute read
-                </div>
-
             </div>
 
             <h2 class="favorites">Similar Posts</h2>

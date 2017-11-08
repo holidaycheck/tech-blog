@@ -6,7 +6,6 @@ categories: how-we-learn product haskell
 author_names: [ kamil, dawid ]
 author_avatar: kamildawid
 show_avatar : true
-read_time : 15
 show_related_posts: false
 square_related: recommend-kamil
 feature_image: posts/2017-10-17-first-haskell-meeting/haskell-poster.jpg

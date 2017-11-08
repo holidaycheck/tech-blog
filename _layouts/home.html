@@ -31,8 +31,6 @@ layout: with-sidebar
 
                 in <a href='{{ "/category/" | append: post.categories.first | prepend: site.baseurl }}'>{{ post.categories.first | capitalize | replace: "-", " " }}</a>
                 <i class="link-spacer"></i>
-                {{ post.read_time }} minutes read
-                <i class="link-spacer"></i>
                 {{ post.date | date: "%B %-d, %Y" }}
             </p>
         </div>

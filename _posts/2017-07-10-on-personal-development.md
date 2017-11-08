@@ -7,7 +7,6 @@ author_name: Artur Szott
 author_url : /author/arturszott
 author_avatar: arturszott
 show_avatar : true
-read_time : 9
 feature_image: posts/2017-07-on-personal-development/growth.jpg
 show_related_posts: false
 square_related: recommend-growth

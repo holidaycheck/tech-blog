@@ -7,7 +7,6 @@ author_name: Łukasz Przybył
 author_url : /author/luprzybyl
 author_avatar: luprzybyl
 show_avatar : true
-read_time : 9
 feature_image: posts/2017-07-adapting-devops-culture-with-calms/sparks.jpg
 show_related_posts: false
 square_related: 

@@ -7,7 +7,6 @@ author_name: Jacek Smolak
 author_url : /author/jaceksmolak
 author_avatar: jaceksmolak
 show_avatar : true
-read_time : 4
 show_related_posts: false
 square_related:
 feature_image: posts/2017-10-22-jbhc17-from-my-perspective/poster.jpg
