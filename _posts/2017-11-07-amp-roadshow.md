@@ -13,7 +13,7 @@ square_related: recommend-wolf
 feature_image: posts/2017-11-amp-roadshow/road.jpg
 ---
 
-Google invited lots of developers to the [AMP Roadshow][amp-roadshow], that they are currently doing worldwide.
+Google invited [lots of developers][devs-tweet] to the [AMP Roadshow][amp-roadshow], that they are currently doing worldwide.
 We joined the Munich edition in their offices. 
 Google does that to promote their technology [AMP][amp]. Now it was on us to figure out
 what value could AMP add for HolidayCheck.
@@ -21,6 +21,7 @@ I personally only knew the 10.000 feet view of AMP, which basically is what the 
 stands for: "Accelerated Mobile Pages". But I learned quickly that it was not just about mobile.
 It was about fast web sites that are also responsive, serving any device's dimension.
 
+[devs-tweet]: https://twitter.com/wolframkriesing/status/927820303270662144
 [amp-roadshow]: https://www.ampproject.org/amp-roadshow/
 [amp]: https://www.ampproject.org/
 
@@ -67,6 +68,26 @@ For the A/B testing `<amp-experiment>` can be used. As far as I have understood 
 
 [rudy]: https://twitter.com/rudygalfi/
 
+## AMP and Ads
+
+As you can see in the [first commit][amp-first-commit] of the AMP project, ads was in there since the beginning. Which is of course not surprising for a company that makes most it's revenue with ads. In current websites ads are often one big slow down factor. It makes sense to tackle this problem. As with the analytics mentioned above AMP also provides strategies to deal with ads.
+
+There are two ad strategies with AMP: 1) ads on AMP pages and 2) ads written in AMP. 
+The first one is the "simple" strategy, where you know the ad's size upfront and embed the ad using `<amp-ad>`. Doing this allows the page size to be determined upfront and won't make the site jump once the ad is loaded.
+
+<div style="float: left; padding: 1rem;">
+<img src="{{site.baseurl}}/img/posts/2017-11-amp-roadshow/4-ads-on-amp-pages.jpg" alt="" width="100" class="sizeup-onhover-image scale3 origin-left-top" />
+<br/><em>loadStudent function flow</em>
+</div>
+
+<div style="float: right; padding: 1rem;">
+<img src="{{site.baseurl}}/img/posts/2017-11-amp-roadshow/5-ads-in-amp.jpg" alt="" width="100" class="sizeup-onhover-image scale3 origin-right-top" />
+<br/><em>loadStudent function flow</em>
+</div>
+
+[amp-first-commit]: https://github.com/ampproject/amphtml/commit/5f414868caf5f431ebe64f840d6b1de6464085c4
+[ben]: https://twitter.com/benmorss
+
 ## How to AMP?
 
 I see three potential strategies forward when you want or need to decide if you want to do AMP.
@@ -89,7 +110,6 @@ That brings one to the point where to ask: Do I need (to care about) AMP at all?
 I will put that into my words. I understand that Google wants to tackle the big fight of speeding up
 websites, which people like 
 
-[first-commit]: https://github.com/ampproject/amphtml/commit/5f414868caf5f431ebe64f840d6b1de6464085c4
 
 AMP is a set of HTML tags that 
 
@@ -111,12 +131,3 @@ https://developers.google.com/amp/cache/overview
 [who-uses-amp]: https://www.ampproject.org/learn/who-uses-amp/
 
 
-<div style="float: right; padding: 1rem;">
-<img src="{{site.baseurl}}/img/posts/2017-11-amp-roadshow/4-ads-on-amp-pages.jpg" alt="" width="100" class="sizeup-onhover-image scale3 origin-left-top" />
-<br/><em>loadStudent function flow</em>
-</div>
-
-<div style="float: left; padding: 1rem;">
-<img src="{{site.baseurl}}/img/posts/2017-11-amp-roadshow/5-ads-in-amp.jpg" alt="" width="100" class="sizeup-onhover-image scale3 origin-left-top" />
-<br/><em>loadStudent function flow</em>
-</div>
