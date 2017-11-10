@@ -7,7 +7,7 @@ author_name: Wolfram Kriesing
 author_url : /author/wolframkriesing
 author_avatar: wolframkriesing
 show_avatar : true
-read_time : 3
+read_time : 7
 show_related_posts: false
 square_related: recommend-wolf
 feature_image: posts/2017-11-amp-roadshow/road.jpg
