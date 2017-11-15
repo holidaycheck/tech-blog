@@ -179,14 +179,15 @@ As mentioned above there are regular meetings between apprentice, mentor and co-
 All the mentors meet once a month for the MMM, the monthly mentor meeting. In this meeting the mentors exchange ideas on the mentoring and also on the apprentices.
 Especially when in doubt about an apprentice’s progress this meeting serves to support each other.
 
-The review board is another meeting where a selected group of people comes together for reviewing a certain apprentice. This board meets at the end of the apprenticeship to evaluate the apprentice. If there is a veto option by this board or not, I don’t know. The important thing I think is that this board comes together to evaluate a certain apprentice. If this takes place more often I don’t remember.
+The review board is another meeting where a selected group of people comes together for reviewing a certain apprentice. This board meets at the end of the apprenticeship to evaluate the apprentice. If there is a veto option by this board or not, I don’t know. The important thing I think is that this board comes together to evaluate a certain apprentice. If this takes place more often I don’t remember.  
+Most apprentices will have at least one mini review board during their apprenticeship where the board will provide feedback on a larger problem that the apprentice has solved.
 
 Because the apprentices have an alike experiences they meet for an apprentice learning group. This group is apprentices only, to learn from each other, exchange ideas and just chat. Apprentices see the things different than their mentors and other crafters, they need the room for their own exchange.
 
 ## Graduation
 
-Before graduating to become a crafter every apprentice has to go for a challenge. This is a project of its own, that the apprentice has to do from start to finish, ideally in those two weeks.
-And the apprentice will join some other crafter of the company to follow them around and [shadow][shadowing] them for a week.
+Before graduating to become a crafter every apprentice has to go for a set of challenges for two weeks. The review board assesses the challenges as well as the entirety of the apprenticeship to give the recommendation to hire or not.
+The apprentice also joins some other crafter(s) to follow them around and do a [pairing tour][shadowing] with them. The intent is for the apprentice to pair for at least one day with each of the 8 members of their review board.
 Even though this is before the graduation, normally the mentors and the review board will have figured out until this time if the apprentice will be able to graduate. These last challenges are just to kind of formally finish the apprenticeship and prove all skills in a more compact task.
 
 [shadowing]: https://en.wikipedia.org/wiki/Job_shadow
@@ -201,17 +202,20 @@ Every apprentice learns to remove their ego from the process, this might also be
 
 > Software crafters at 8th Light all start out in an apprenticeship at the firm, which its leaders say creates a consistent culture of learning. Will it work for other companies?
 
-https://www.talenteconomy.io/2017/08/09/technology-firm-trains-coders-apprentices-others-follow/
+[talenteconomy.io](https://www.talenteconomy.io/2017/08/09/technology-firm-trains-coders-apprentices-others-follow/) wrote.
 
 
 > I spent a little over three months at 8th Light this summer for a student apprenticeship, and man did I love it. I spent most of the summer learning Ruby & Rpsec under the guidance of my mentor, an 8th Light Craftsman.
 
-http://www.getlaura.com/takeways-from-my-8th-light-apprenticeship/
+[Laura writes](http://www.getlaura.com/takeways-from-my-8th-light-apprenticeship/), 
+who went through the apprenticeship in 2014.
 
 ## Closing Words
+
+I best end this long article with [quotes from Laura](http://www.getlaura.com/takeways-from-my-8th-light-apprenticeship/), 
+the former apprentice.
 
 > Why can’t we have social media apprentices, sales apprentices, data science apprentices, and finance apprentices? It really only takes two people… a mentor and an apprentice.
 
 > you know people like where they work when they’re wearing the company logo on their chest.
 
-http://www.getlaura.com/takeways-from-my-8th-light-apprenticeship/
