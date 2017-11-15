@@ -20,7 +20,9 @@ Officially it was 2006 that 8th Light says they had started the [apprenticeship 
 
 ## Disclaimer
 
-This post is describing the apprenticeship program of 8th Light as seen from the outside. I had not been in it. My colleague Tobias Pflug and me we had visited 8th Light in London last week to learn from them. So this post is just a summary of how I understand that 8th Light runs their apprenticeship program, it might contain errors. If you find any, please point them out to us.
+This post is describing the apprenticeship program of 8th Light as seen from the outside. I have not been in it. My colleague [Tobias Pflug][tpflug] and me we visited 8th Light in London last week to learn from them. So this post is just a summary of how I understand that 8th Light runs their apprenticeship program, it might contain errors. If you find any, please point them out to us.
+
+[tpflug]: https://twitter.com/tpflug
 
 ## Apprenticeship - What is all this about?
 
@@ -52,6 +54,7 @@ Reading about the first steps in the application process in [here][crafter-appli
 [jakes-tictactoe]: http://jakescruggs.blogspot.de/2004/05/my-apprenticeship-may-2004.html
 
 The actual online process is a two-step process. First the applicant gets to know someone from 8th Light and gets a task to solve. Normally its Tic Tac Toe. The programming language is not fix. Later the applicant sends in the code and waits for feedback. There will be a code review process going on internally. I assume, if the code is not devastating a second call will be set up where the code is being discussed. The important thing here is to find out how well an applicant takes feedback. 8th Light wants to find out the ability to learn and to incorporate feedback into the applicant’s work. This will trigger a second round of programming for the applicant, where they apply the learnings and sends back the code again.
+Jim says "We always provide feedback, we figure if you're going to spend some number of hours solving a problem, we need to reciprocate and provide feedback, even if the process stops at that point (it usually doesn't)".
 If all went well the online part is done and the following step is going to be a face to face invitation. 
 There are some hurdles and many options for both sides to drop out of the process. I assume the people who arrive in the office for the face to face sessions will have invested a considerable amount of time and know why they are doing it all.
 
@@ -65,8 +68,8 @@ As far as I understood that is the entire application process. After this all th
 
 ## Overview
 
-There are actually only two “positions” for which 8th Light hires: 1) student apprentices or 2) resident apprentices.
-Once graduated from the apprenticeship the title is “crafter”. It used to be craftsman or craftswoman, this got simplified to “crafter” to be more [inclusive].
+There are two types of apprenticeships at 8th Light 1) student apprentices or 2) resident apprentices.
+Once graduated from the resident apprenticeship the title is “crafter”. It used to be craftsman or craftswoman, this got simplified to “crafter” to be more [inclusive].
 Crafters don’t get hired as such, they graduate to become crafters. No matter how much experience one has. Everyone starts out as an apprentice.
 
 [inclusive]: https://8thlight.com/blog/paul-pagel/2017/08/14/diversity-inclusion-8th-light.html
@@ -75,7 +78,7 @@ Crafters don’t get hired as such, they graduate to become crafters. No matter 
 
 Above I mentioned two types of apprentices. These aim for different skill levels. My impression of those two programs is that they exist to broaden the chances to become a developer to even more people, basically anyone interested. No matter how much experience one has. Might it be someone who has never programmed, has just run through some kind of (programming) bootcamp or an experienced developer. 8th Light is open to everyone and will invest in people to become professional developers.
 
-The **student apprenticeship** is aimed at those who have never programmed, have little experience or those who are not sure if becoming a developer is the right thing for them. That’s why the student apprenticeship is run less strict. The people don’t get employed (also not payed) and they invest the time they think they want to dedicate to it. The 8th Lighters are still open to spend their time to guide, mentor and teach the students.
+The **student apprenticeship** is aimed at those who have never programmed, have little experience or those who are not sure if becoming a developer is the right thing for them. That’s why the student apprenticeship is run less strict. The people don’t get employed (also not payed) and they invest the time they think they want to dedicate to it. The 8th Lighters are still open to spend their time to guide, mentor and teach the students. The student apprenticeships are not necessarily a path to employment. More of an internship, or a free code school.
 It has happened that student apprentices drop out more often. But I heard the people in the office in London talk about at least a handful that have become resident apprentices.
 Every student apprentices is asked to write a blog post of at least a hundred words, daily. This requires discipline. It also trains the ability to explain something, which one does most confidently when one understands the topic. And I think it also makes a student apprentice ask oneself two things 1) “Do I want to continuously learn?” and 2) “Can I pick up new topics and reach a good level of understanding, on my own?”.
 I think in order to go to the “next level”, the resident apprenticeship, every student apprentice must answer the former two questions with a strong “yes”.
@@ -111,11 +114,12 @@ I think that also the hardware setup on all desks is supporting this. Because ev
 
 ## Inclusiveness
 
-I think no further explaining is needed that a safe environment is a basic thing (to have in every office). Additionally we saw that 8th Light is doing a great job in being more inclusive. The first day we had been in the office Tobias and me had been the only men in the room. When we walk on the street we expect to be surrounded by all kinds of people. In a tech company this is not the case yet, and it was feeling good to work with woman and see that is reality in this office, just as much as on the street. Jim told us that 8th Light has about 40% of women employed. Good job! I guess if 8th Lighters look into other IT companies they must feel quite strange when they realise the absence of woman and see just less diverse groups of people work there.
+I think no further explaining is needed that a safe environment is a basic thing (to have in every office). Additionally we saw that 8th Light is doing a great job in being more inclusive. The first day we had been in the office Tobias and me had been the only men in the room. When we walk on the street we expect to be surrounded by all kinds of people. In a tech company this is not the case yet, and it was feeling good to work with woman and see that is reality in this office, just as much as on the street. 8th Light has way more women employed than any average tech company, see their [team page]. Good job! I guess if 8th Lighters look into other IT companies they must feel quite strange when they realise the absence of woman and see just less diverse groups of people work there.
 
 I think that the student apprenticeship is a core thing. And is  one factor for the successful inclusivity as 8th Light practises it. The student apprenticeship allows and also encourages anyone (not only men) to try out and learn if becoming a developer can be a fit as their future profession. At some point in the discussions the [impostor syndrome] came up a couple of times. I believe that either of the apprenticeship programs, but especially the student apprenticeship do a great job of preventing the impostor syndrome to kick in. This means that the openness of the apprenticeship simply makes everybody welcome. No matter of their prior knowledge, experience and skill level. It lowers if not even removes the barrier to apply at a company that looks that inclusive. 
 
 [impostor syndrome]: https://en.wikipedia.org/wiki/Impostor_syndrome
+[team page]: https://8thlight.com/team/
 
 ## The Apprenticeship
 
@@ -126,7 +130,7 @@ as their [career site] states. Once graduated a crafter has obtained the skills 
 
 The **apprenticeship is run like a real project**, like any other client project at 8th Light. That is the first learning: discipline. By running the apprenticeship like a project an apprentice lives and breathes all parts of a project iteration from the beginning and won’t be surprised when working with customers later.
 
-At the beginning the mentor creates a curriculum. (At some point I remember the ThoughtWorks learning path was mentioned too.) The curriculum might be a simple spread sheet that mentor and apprentice have access too. Mentor - that is the person that guides the apprentice through their apprenticeship, more about that later. The curriculum is the high-level plan for the apprenticeship and every week (that’s how long iteration take) more detailed tasks that are derived from the curriculum are put into a Kanban-like board. Theses tasks get estimated by the apprentice and depending on the acceptable load the next iteration’s “to-do” column is being filled. The board that we saw being used at 8th Light was a simple three column board with the columns backlog, to-do and done.
+At the beginning the mentor creates a curriculum. (At some point I remember the ThoughtWorks learning path was mentioned too.) The curriculum might be a simple spread sheet that mentor and apprentice have access too. Mentor - that is the person that guides the apprentice through their apprenticeship, more about that later. The curriculum is the high-level plan for the apprenticeship and every week (that’s how long iteration take) more detailed tasks that are derived from the curriculum are put into a Kanban-like board. Theses tasks get estimated by the apprentice and depending on the acceptable load the next iteration’s “to-do” column is being filled. The board that we saw being used at 8th Light was a simple four column board with the (hidden) backlog column, ready, working, and completed.
 
 At the beginning of an apprenticeship, at the end and also while it is running the apprentices are asked to do a self-assessment on all the topics that the apprenticeship will cover.
 
@@ -134,7 +138,7 @@ At the beginning of an apprenticeship, at the end and also while it is running t
 
 As described above the curriculum contains all things about “programming, client services, collaboration, leadership, and communication skills”. The curriculum itself is way more detailed than this and contains the topics in detail, (chapters of) books to read, blog posts, tasks to solve and so on.
 
-One thing I saw that everyone at 8th Light has as part of their apprenticeship is to learn the editor vi and the terminal manager tmux. Other tools are allowed to use too, but as one part of the curriculum those two tools are required to learn. Another topic that appears in the curriculum is Test Driven Development. I remember Mollie saying that the “disciplined TDD” was one of the most important things she had learned in her apprenticeship. On [her blog][tests-that-test-you] Katerina writes about about testing on the third day of her apprenticeship. This makes obvious that testing is not added into the game at some later stage to validate something that was implemented. It is an essential part, a building block of an apprenticeship. I heard very often that the book [TDD by Example] was mentioned and is part of an apprenticeship.
+One thing I saw that many at 8th Light have as part of their apprenticeship is to learn the editor vi and the terminal manager tmux. We saw also mamny other tools being used. Another topic that appears in the curriculum is Test Driven Development. I remember Mollie saying that the “disciplined TDD” was one of the most important things she had learned in her apprenticeship. On [her blog][tests-that-test-you] Katerina writes about about testing on the third day of her apprenticeship. This makes obvious that testing is not added into the game at some later stage to validate something that was implemented. It is an essential part, a building block of an apprenticeship. I heard very often that the book [TDD by Example] was mentioned and is part of an apprenticeship.
 
 Another part of the curriculum is to learn the SOLID principles, open-close principle, the four rules of simple design, refactoring, coupling and cohesion (using the two chapters of the book “Structured Design”) and doing lots of Katas. The most famous kata everyone in 8th Light does is Tic Tac Toe. But besides that I saw the bowling kata, roman numerals and gilded rose. So there is a lot of practicing going on.
 
@@ -143,7 +147,7 @@ We also talked to mentors that said they are using other projects like a contact
 [TDD by Example]: https://www.goodreads.com/book/show/387190.Test_Driven_Development
 [tests-that-test-you]: https://medium.com/@katerinaldg/tests-that-test-you-1106db1cad62
 
-Part of the curriculum is also to learn three programming languages with each a different approach. The one functional: Clojure, a statically typed one: Java and a dynamic language: Ruby. In each language the apprentices normally write Tic Tac Toe first. Though this seems not to be executed that strictly anymore.
+Part of the curriculum is also to learn three programming languages with each a different approach. The one functional: Clojure (lately also Elixir), a statically typed one: Java (or C#) and a dynamic language: Ruby. In each language the apprentices normally write Tic Tac Toe first. Though this seems not to be executed that strictly anymore. The languages might differ and are chosen also depending on the apprentice's experience.
 
 Giving presentations, running retrospectives and things like non-violent communication are also part of 8th Light’s curriculum. 
 Normally on Fridays there is time to give presentations and for those who need practicing this is a safe place to keep practicing and collect feedback and try again.
