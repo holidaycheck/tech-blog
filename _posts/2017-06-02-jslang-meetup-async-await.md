@@ -2,7 +2,7 @@
 layout: post
 title:  "Async Function Kata at #jslang Meetup"
 date: 2017-06-02 08:03:00 +0200
-categories: meetup javascript kata learn
+categories: meetup javascript kata how-we-learn
 author_name: Wolfram Kriesing
 author_url : /author/wolframkriesing
 author_avatar: wolframkriesing

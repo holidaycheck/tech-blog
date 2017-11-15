@@ -3,24 +3,12 @@ layout: default
 ---
 
 {% if page.feature_image %}
-    <header class="hero-image" style="background-image: url({{ site.baseurl }}/img/{{page.feature_image}});">
-        <span class="menu-trigger animated fadeInDown">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </span>
-
-        {% include nav.html %}
+    <header class="menu hero-image" style="background-image: url({{ site.baseurl }}/img/{{page.feature_image}});">
+        {% include nav-without-sidebar.html %}
     </header>
 {% else %}
-    <header>
-            <span class="menu-trigger animated fadeInDown">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </span>
-
-        {% include nav.html %}
+    <header class="menu">
+      {% include nav-without-sidebar.html %}
     </header>
 {% endif %}
 
