@@ -16,7 +16,7 @@ feature_image: posts/2017-11-amp-roadshow/road.jpg
 Google invited [lots of developers][devs-tweet] to the [AMP Roadshow][amp-roadshow] that they are currently doing worldwide.
 We joined the Munich edition in their offices. 
 Google does that to promote their technology [AMP][amp]. Now it was on us to figure out
-what value could AMP add for HolidayCheck.
+if AMP could add value for HolidayCheck.
 I personally only knew the 10.000 feet view of AMP, which basically is what the abbreviation 
 stands for: "Accelerated Mobile Pages". But I learned quickly that it was not just about mobile.
 It was about fast web sites that are also responsive, serving any device's dimension.
@@ -35,7 +35,7 @@ When I arrived at 9:00 and saw already about twenty people waiting and I thought
 </div>
 
 The official part was opened by a short five minutes "hello" and sales intro.
-Later [Paul Bakaus][paul], developer evangelist for the AMP team, started the day by setting the stage for AMP, showing some numbers and aligning everyone on the problem that AMP tries to solve: fast websites. It was said that there are already about 4 billion AMP pages out there and 90 new ones pop up every second, that was impressive to hear. Supporting the AMP story and state the well-known facts that decreasing a page load times improve conversion rates made everyone want to know more. What caught my attention was the statement that AMP is just a library. Now you got my ear, I am a developer and a library sounds usable to me.
+Later [Paul Bakaus][paul], developer evangelist for the AMP team, started the day by setting the stage for AMP, showing some numbers and aligning everyone on the problem that AMP tries to solve: fast websites. He mentioned that there are already about 4 billion AMP pages out there and 90 new ones pop up every second. That was impressive to hear. Supporting the AMP story and stating the well-known facts that decreasing a page load times improve conversion rates made everyone want to know more. What caught my attention was the statement that AMP is just a library. Now you got my ear, I am a developer and a library sounds usable to me.
 
 [paul]: https://twitter.com/pbakaus/
 
@@ -46,11 +46,12 @@ Later [Paul Bakaus][paul], developer evangelist for the AMP team, started the da
 <br/><em>Overview</em>
 </div>
 
-Next, Raghu told us about some of the technology inside AMP. When he said that AMP is a [web components] library I was [all ear][tweet-1], since that is the thing I am currently learning and evaluating. The later discussion with Paul also made me understand that AMP's approach to web components has a focus on fully controlling the web site's beahvior and not on providing (UI) components in the first place. That [took me a little][tweet-2] to understand. But in the AMP context it makes sense.
+Next, Raghu told us about some of the technology inside AMP. When he said that AMP is a [web components] library I was [all ear][tweet-1], since that is the thing I am currently learning and evaluating. The later discussion with Paul also made me understand that AMP's approach to web components has a focus on fully controlling the web site's loading and rendering behavior (as far as possible) and not on providing (UI) components in the first place. That [took me a little][tweet-2] to understand. But in the AMP context it makes sense.
 
-AMP re-implements many DOM elements we know from HTML, that interact with "slow" external dependencies, such as loading images (and rendering them). AMP focuses on optimizing the user experience, which is rendering speed to name the most important one. For example in AMP you use `<amp-img>` instead of `<img>`. The custom elements `<amp-youtube>`, `<amp-video>` and `<amp-twitter>` make it very obvious what AMP wants to control: the loading pipeline of anything that might make the rendering slow. There are various extensions though, so there might be many even more customized elements that can be used with AMP.
+AMP re-implements many DOM elements we know from HTML, that interact with "slow" external dependencies, such as images (and rendering them). AMP focuses on optimizing the user experience, which is rendering speed to name the most important one. For example in AMP you use `<amp-img>` instead of `<img>`. The custom elements `<amp-youtube>`, `<amp-video>` and `<amp-twitter>` make it very obvious what AMP wants to control: the loading pipeline of anything that might make the rendering slow. There are various extensions though, so there might be many even more customized elements that can be used with AMP.
 
-While the reasoning behind it and the techniques used make a lot of sense, AMP also limits down the possibility of what one can use. Because if you want your site to be a valid AMP site you need to run it against the [AMP validator][amp-validator], which checks the site to fulfill certain criteria, for example that all CSS must be inlined and must not be exceed 50kB.
+While the reasoning behind it and the techniques used make a lot of sense, AMP also limits the web site features one can use. Because if you want your site to be a valid AMP site you need to run it against the [AMP validator][amp-validator], which checks the site to fulfill certain criteria, for example that all CSS must be inlined and must not be exceed 50kB.
+
 
 [web components]: https://www.webcomponents.org/
 [tweet-1]: https://twitter.com/wolframkriesing/status/927825238766882818
