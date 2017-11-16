@@ -2,7 +2,7 @@
 layout: post
 title:  "J.B. Rainsberger in da house"
 date: 2017-10-13 14:03:00 +0200
-categories: how-we-learn product 
+categories: how-we-learn product event
 author_name: Wolfram Kriesing
 author_url : /author/wolframkriesing
 author_avatar: wolframkriesing

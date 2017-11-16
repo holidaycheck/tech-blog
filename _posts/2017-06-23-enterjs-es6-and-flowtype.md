@@ -2,7 +2,7 @@
 layout: post
 title:  "EnterJS, ES6, ES8 and Typing with Flow"
 date: 2017-06-23 08:03:00 +0200
-categories: conference
+categories: event
 author_name: Wolfram Kriesing
 author_url : /author/wolframkriesing
 author_avatar: wolframkriesing
