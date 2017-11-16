@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Nix in Practice: Providing Dependencies"
-date: 2017-11-16 14:03:00 +0200
+date: 2017-11-14 14:03:00 +0200
 categories: nix
 author_name: Stefan Lau
 author_url : /author/stefanlau
