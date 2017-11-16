@@ -2,7 +2,7 @@
 layout: post
 title:  "AMP Roadshow in Munich"
 date: 2017-11-07 23:03:00 +0200
-categories:  
+categories: event
 author_name: Wolfram Kriesing
 author_url : /author/wolframkriesing
 author_avatar: wolframkriesing
