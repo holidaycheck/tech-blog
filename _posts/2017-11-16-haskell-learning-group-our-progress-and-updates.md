@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Haskell Learning Group: Our Progress and Updates"
-date: 2017-11-07 00:03:30 +0200
+date: 2017-11-16 00:12:00 +0200
 categories: haskell how-we-learn
 author_name: Sergii Paryzhskyi
 author_url : /author/sergii_paryzhskyi
