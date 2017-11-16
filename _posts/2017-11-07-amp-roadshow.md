@@ -25,6 +25,9 @@ It was about fast web sites that are also responsive, serving any device's dimen
 [amp-roadshow]: https://www.ampproject.org/amp-roadshow/
 [amp]: https://www.ampproject.org/
 
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">Just kicked off the <a href="https://twitter.com/hashtag/amproadshow?src=hash&amp;ref_src=twsrc%5Etfw">#amproadshow</a> Munich, and the room is packed! Great to see so many of you here. <a href="https://t.co/Y5pwzssvyz">pic.twitter.com/Y5pwzssvyz</a></p>&mdash; Paul Bakaus (@pbakaus) <a href="https://twitter.com/pbakaus/status/927828722572562433?ref_src=twsrc%5Etfw">November 7, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Intro
 
 When I arrived at 9:00 and saw already about twenty people waiting and I thought I was late. But actually the event didn't start until 9:45 with about 120 people. Many people from the huge Munich community showed up. Maybe the Google food was attracting the people :). Ah no, AMP was the topic. So it was rather topics like SEO, ads, fast websites and the expected profit for ones business that made the people come. I guess.
@@ -52,6 +55,8 @@ AMP re-implements many DOM elements we know from HTML, that interact with "slow"
 
 While the reasoning behind it and the techniques used make a lot of sense, AMP also limits the web site features one can use. Because if you want your site to be a valid AMP site you need to run it against the [AMP validator][amp-validator], which checks the site to fulfill certain criteria, for example that all CSS must be inlined and must not be exceed 50kB.
 
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">I’d rephrase: <a href="https://twitter.com/AMPhtml?ref_src=twsrc%5Etfw">@AMPhtml</a> leverages Web Components to enable everyone to declaratively markup complex(-ish) fast HTML widgets.</p>&mdash; Thomas Steiner 🦖🎗 (@tomayac) <a href="https://twitter.com/tomayac/status/929657825286029312?ref_src=twsrc%5Etfw">November 12, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 [web components]: https://www.webcomponents.org/
 [tweet-1]: https://twitter.com/wolframkriesing/status/927825238766882818
