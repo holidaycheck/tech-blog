@@ -70,14 +70,14 @@ While the reasoning behind it and the techniques used make a lot of sense, AMP a
 <br/><em>AMP in production</em>
 </div>
 
-After the basics, the "why" and "how" of AMP, [Rudy][rudy] (???????? was it Rudy?????????) went to show us about how to get AMP live. Three basic steps he talked about 1) Validate 2) Distribute and 3) Measure. After an AMP page ran through the validator one wants to take it live. When this comes up the measuring part is an important one. Some sites need only simple page view tracking, others even want A/B tests. AMP tries to serve them all. There is a `<amp-analytics>` custom element that unifies the analytics work under one hood. It basically serves as a proxy on the client, I assume it has a fixed set of tracking data that it collects and does then spread it to the configured backends (analytics provider). This allows AMP to do the tracking and not every tracker to bring its own code, polute your site and potentially crash it.
+After the basics, the "why" and "how" of AMP, [Rudy][rudy] went to show us about how to get AMP live. Three basic steps he talked about 1) Validate 2) Distribute and 3) Measure. After an AMP page ran through the validator it can be put into production. Afterwards the measuring part is an important one. Some sites need only simple page view tracking, others even want A/B tests. AMP tries to serve them all. There is a `<amp-analytics>` custom element that unifies the analytics work under one hood. It basically serves as a proxy on the client, I assume it has a fixed set of tracking data that it collects and does then spread it to the configured backends (analytics provider). This allows AMP to do the tracking and not every tracker to bring its own code, polute your site and potentially crash it.
 For the A/B testing `<amp-experiment>` can be used. As far as I have understood it's still limited and there might be complex scenarios that it doesn't serve yet.
 
 [rudy]: https://twitter.com/rudygalfi/
 
 ## AMP and Ads
 
-As you can see in the [first commit][amp-first-commit] of the AMP project, ads was in there since the beginning. Which is of course not surprising for a company that makes most it's revenue with ads. In current websites ads are often one big slow down factor. It makes sense to tackle this problem. As with the analytics mentioned above AMP also provides strategies to deal with ads.
+As you can see in the [first commit][amp-first-commit] of the AMP project, ads were in there since the beginning. Which is of course not surprising for a company that makes most of it's revenue with ads. In current websites ads are often a big slow down factor. It makes sense to tackle this problem. As with the analytics mentioned above AMP also provides strategies to deal with ads.
 
 <div style="float: left; padding: 1rem;">
 <img src="{{site.baseurl}}/img/posts/2017-11-amp-roadshow/4-ads-on-amp-pages.jpg" alt="Ads on AMP pages" width="100" class="sizeup-onhover-image scale3 origin-left-top" />
@@ -93,8 +93,7 @@ The first one is the "simple" strategy, where you know the ad's size upfront and
 </div>
 
 The other ad strategy is to build ads using AMP. Which means building your ads yourself by just using AMP elements.
-Which then will ensure the speed that AMP tries to ensure. The embeddability is another factor, which is another of the 
-unique selling points of AMP.
+Which will ensure the ad to be built with the speed that AMP tries to ensure. The embeddability is another factor, which is another of the unique selling points of AMP.
 
 [amp-first-commit]: https://github.com/ampproject/amphtml/commit/5f414868caf5f431ebe64f840d6b1de6464085c4
 [ben]: https://twitter.com/benmorss
