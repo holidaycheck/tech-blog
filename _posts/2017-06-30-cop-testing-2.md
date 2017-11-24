@@ -2,7 +2,7 @@
 layout: post
 title:  "CoP Testing #2 - Structuring Tests"
 date: 2017-06-30 22:40:00 +0200
-categories: meetup testing cop how-we-learn
+categories: event testing cop how-we-learn
 author_name: Wolfram Kriesing
 author_url : /author/wolframkriesing
 author_avatar: wolframkriesing

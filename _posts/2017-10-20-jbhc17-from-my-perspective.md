@@ -2,7 +2,7 @@
 layout: post
 title:  "#jbhc17 from my perspective"
 date: 2017-10-20 14:03:00 +0200
-categories: meetup how-we-learn
+categories: event how-we-learn
 author_name: Jacek Smolak
 author_url : /author/jaceksmolak
 author_avatar: jaceksmolak
