@@ -4,7 +4,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{{ site.title }} | {% if page.title %}{{ page.title }}{% endif %}</title>
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 155 }}{% else %}{{ site.description }}{% endif %}">
+
+    {% if page.layout == "post" %}
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@HolidayCheckLab">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% endif %}">
+    <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:creator" content="@HolidayCheckLab">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image:src" content="{{ "/img/" | append: page.feature_image | prepend: site.baseurl | prepend: site.url }}">
+    {% endif %}
+
 
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
