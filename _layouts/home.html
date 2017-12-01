@@ -7,10 +7,10 @@ layout: with-sidebar
     <a href="#" class="select-categories">Categories</a>
 </div>
 
-<div class="home-page-posts animated fadeIn ">
+<div class="home-page-posts animated fadeIn" itemscope itemtype="http://schema.org/ItemList">
     {% for post in site.posts %}
 
-    <article class="post">
+    <article class="post" itemprop="itemListElement">
         <div class="post-preview col-xs-10  no-gutter">
             <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 
