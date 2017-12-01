@@ -1,3 +1,16 @@
 - name: JSCodeRetreat ##12
-  datetime: 2001-12-14 19:00
+  start_datetime: 2001-12-14 19:00
   url: https://jscoderetreat.com
+- name: Haskell Meetup
+  start_datetime: 2001-12-14 19:00
+  url: https://jscoderetreat.com
+- name: 53. Management 3.0 Stammtisch München (mit Jeff Sutherland)
+  start_datetime: 2001-12-04 18:30
+  url: https://www.eventbrite.de/e/53-management-30-stammtisch-munchen-mit-jeff-sutherland-tickets-40076692466
+- name: JSConfEU 2018
+  start_datetime: 2018-06-02 10:00
+  end_datetime: 2018-06-03 18:00
+  url: https://2018.jsconf.eu
+- name: JSConfEU - Call of Papers
+  start_datetime: 2018-01-01 00:00
+  url: https://2018.jsconf.eu/call-for-speakers/
