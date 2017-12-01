@@ -21,7 +21,7 @@ description: > # this means to ignore newlines until "baseurl:"
   If you like stuff you see here, make sure to get in touch with us, we are
   always looking for pationate new colleagues!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://techblog.holidaycheck.com/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://techblog.holidaycheck.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: holidaychecklab
 github_username:  holidaycheck
 permalink: post/:year/:month/:day/:title
