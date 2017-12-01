@@ -7,10 +7,18 @@ layout: with-sidebar
 </div>
 
 <div class="home-page-posts animated fadeIn ">
-  {% for event in site.data.events %}
-    <p>
-      {{ event.datetime | date_to_string }} -
-      <a href="{{ event.url }}">{{ event.name }}</a>
-    </p>
+  {% assign events = site.data.events | sort: "start_datetime" %}
+  {% for event in events reversed %}
+    {% if event.end_datetime %}
+      <p>
+        {{ event.start_datetime | date_to_string }} - {{ event.end_datetime | date_to_string }}<br/>
+        <a href="{{ event.url }}">{{ event.name }}</a>
+      </p>
+    {% else %}
+      <p>
+        {{ event.start_datetime | date_to_string }} {{ event.start_datetime | date: "%H:%M" }}<br/>
+        <a href="{{ event.url }}">{{ event.name }}</a>
+      </p>
+    {% endif %}
   {% endfor %}
 </div>
