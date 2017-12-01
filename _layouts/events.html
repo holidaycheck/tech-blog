@@ -15,6 +15,11 @@ layout: with-sidebar
       {% else %}
         {{ event.start_datetime | date_to_string }} {{ event.start_datetime | date: "%H:%M" }}
       {% endif %}
+
+      {% if event.location == "HolidayCheck" %}
+        <img src='{{"/img/hc-labs-only-logo" | prepend: site.baseurl }}.svg' height="20" alt="HC labs">
+      {% endif %}
+
       {% assign tags = event.tags | split: "," %}
       {% for tag in tags %}
         <mark>{{tag}}</mark> &nbsp;

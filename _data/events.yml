@@ -2,26 +2,32 @@
   start_datetime: 2001-11-09 19:00
   url: https://www.meetup.com/JavaScript-The-Language/events/243955512/
   tags: meetup, JavaScript
+  location: HolidayCheck
 - name: JavaScript the Language - SharedArrayBuffer
   start_datetime: 2001-10-05 19:00
   url: https://www.meetup.com/JavaScript-The-Language/events/243182533/
   tags: meetup, JavaScript
+  location: HolidayCheck
 - name: JavaScript the Language - (function(){Function, function, () => {}, ...})()
   start_datetime: 2001-09-07 19:00
   url: https://www.meetup.com/JavaScript-The-Language/events/242446661/
   tags: meetup, JavaScript
+  location: HolidayCheck
 - name: JavaScript the Language - Generators
   start_datetime: 2001-08-10 19:00
   url: https://www.meetup.com/JavaScript-The-Language/events/242197330/
   tags: meetup, JavaScript
+  location: HolidayCheck
 - name: JavaScript the Language - Classes, Prototypes a look under the hood
   start_datetime: 2001-07-06 19:00
   url: https://www.meetup.com/JavaScript-The-Language/events/240986441/
   tags: meetup, JavaScript
+  location: HolidayCheck
 - name: JavaScript the Language - async and await
   start_datetime: 2001-06-06 19:00
   url: https://www.meetup.com/JavaScript-The-Language/events/240120367/
   tags: meetup, JavaScript
+  location: HolidayCheck
 
 - name: JSCodeRetreat 12
   start_datetime: 2001-12-14 19:00
@@ -31,6 +37,7 @@
   start_datetime: 2001-11-25 18:30
   url: https://jscoderetreat.com
   tags: Haskell
+  location: HolidayCheck
 - name: 53. Management 3.0 Stammtisch München (mit Jeff Sutherland)
   start_datetime: 2017-12-04 18:30
   url: https://www.eventbrite.de/e/53-management-30-stammtisch-munchen-mit-jeff-sutherland-tickets-40076692466
