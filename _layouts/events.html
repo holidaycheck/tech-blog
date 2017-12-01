@@ -9,16 +9,20 @@ layout: with-sidebar
 <div class="home-page-posts animated fadeIn ">
   {% assign events = site.data.events | sort: "start_datetime" %}
   {% for event in events reversed %}
-    {% if event.end_datetime %}
-      <p>
-        {{ event.start_datetime | date_to_string }} - {{ event.end_datetime | date_to_string }}<br/>
-        <a href="{{ event.url }}">{{ event.name }}</a>
-      </p>
-    {% else %}
-      <p>
-        {{ event.start_datetime | date_to_string }} {{ event.start_datetime | date: "%H:%M" }}<br/>
-        <a href="{{ event.url }}">{{ event.name }}</a>
-      </p>
-    {% endif %}
+    <p>
+      {% if event.end_datetime %}
+        {{ event.start_datetime | date_to_string }} - {{ event.end_datetime | date_to_string }}
+      {% else %}
+        {{ event.start_datetime | date_to_string }} {{ event.start_datetime | date: "%H:%M" }}
+      {% endif %}
+      {% assign tags = event.tags | split: "," %}
+      {% for tag in tags %}
+        <mark>{{tag}}</mark> &nbsp;
+      {% endfor %}
+      <br/>
+
+      <a href="{{ event.url }}">{{ event.name }}</a><br />
+
+    </p>
   {% endfor %}
 </div>
