@@ -12,7 +12,7 @@ layout: with-sidebar
 
     <article class="post" itemprop="itemListElement" itemscope itemtype="http://schema.org/Article">
         <div class="post-preview col-xs-10  no-gutter">
-            <h2><a href="{{ post.url | prepend: site.baseurl }}"><span itemprop="name">{{ post.title }}</span></a></h2>
+            <h2><a itemprop="url" href="{{ post.url | prepend: site.baseurl }}"><span itemprop="name">{{ post.title }}</span></a></h2>
 
             {% include excerpt.html %}
 
