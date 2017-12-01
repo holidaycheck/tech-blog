@@ -27,7 +27,6 @@ github_username:  holidaycheck
 permalink: post/:year/:month/:day/:title
 nav_list:
   Home : ['Home', '/', 'fa-home']
-  Events : ['Events', '/events', 'fa-calendar']
   Jobs : ['Jobs', 'http://github.com/holidaycheck/jobs', 'fa-heart']
   Imprint : ['Imprint', 'https://www.holidaycheck.de/impressum', 'fa-envelope']
   About : ['About', '/about', 'fa-info-circle']
