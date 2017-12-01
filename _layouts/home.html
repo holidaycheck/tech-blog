@@ -17,6 +17,7 @@ layout: with-sidebar
             {% include excerpt.html %}
 
             <p class="meta">
+                <span itemprop="position" content="{{ forloop.index }}"></span>
                 <span itemprop="headline" content="{{ post.excerpt | strip_html | strip_newlines | truncate: 110 }}"></span>
                 {% if post.author_name %}
                     <span itemprop="author" itemscope itemtype="http://schema.org/Person">
