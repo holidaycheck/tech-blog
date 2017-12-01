@@ -10,7 +10,7 @@ layout: with-sidebar
 <div class="home-page-posts animated fadeIn" itemscope itemtype="http://schema.org/ItemList">
     {% for post in site.posts %}
 
-    <article class="post" itemprop="itemListElement">
+    <article class="post" itemprop="itemListElement" itemscope itemtype="http://schema.org/Article">
         <div class="post-preview col-xs-10  no-gutter">
             <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 
