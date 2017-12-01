@@ -7,6 +7,10 @@ layout: with-sidebar
 </div>
 
 <div class="home-page-posts animated fadeIn ">
-    {% for post in site.posts %}
-    {% endfor %}
+  {% for event in site.data.events %}
+    <p>
+      {{ event.datetime | date_to_string }} -
+      <a href="{{ event.url }}">{{ event.name }}</a>
+    </p>
+  {% endfor %}
 </div>
