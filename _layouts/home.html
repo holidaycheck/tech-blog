@@ -36,7 +36,7 @@ layout: with-sidebar
                 <i class="link-spacer"></i>
                 {{ post.read_time }} minutes read
                 <i class="link-spacer"></i>
-                {{ post.date | date: "%B %-d, %Y" }}
+                <time dateTime='{{ post.date | date: "%d-%m-%Y" }}' itemprop="datePublished">{{ post.date | date: "%B %-d, %Y" }}</time>
             </p>
         </div>
 
