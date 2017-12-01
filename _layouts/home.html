@@ -17,7 +17,7 @@ layout: with-sidebar
             {% include excerpt.html %}
 
             <p class="meta">
-
+                <span itemprop="headline" content="{{ post.excerpt | strip_html | strip_newlines | truncate: 110 }}"></span>
                 {% if post.author_name %}
                     <a href="{{ post.author_url | prepend: site.baseurl }}">{{ post.author_name }}</a>
                 {% else %}
