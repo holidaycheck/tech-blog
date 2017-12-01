@@ -20,8 +20,7 @@ layout: with-sidebar
                 <span itemprop="headline" content="{{ post.excerpt | strip_html | strip_newlines | truncate: 110 }}"></span>
                 {% if post.author_name %}
                     <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                        <a href="{{ post.author_url | prepend: site.baseurl }}"><span itemprop="name">{{ post.author_name }}</span></a>
-                        <span itemprop="url" content="{{ post.author_url | prepend: site.baseurl }}"></span>
+                        <a itemprop="url" href="{{ post.author_url | prepend: site.baseurl }}"><span itemprop="name">{{ post.author_name }}</span></a>
                     </span>
                 {% else %}
                     {% if post.author_names %}
