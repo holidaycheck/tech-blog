@@ -10,13 +10,18 @@ layout: with-sidebar
 <div class="home-page-posts animated fadeIn" itemscope itemtype="http://schema.org/ItemList">
     {% for post in site.posts %}
 
-    <article class="post" itemprop="itemListElement" itemscope itemtype="http://schema.org/Blog">
+    <article class="post" itemprop="itemListElement" itemscope itemtype="http://schema.org/BlogPosting">
         <div class="post-preview col-xs-10  no-gutter">
             <h2><a itemprop="url" href="{{ post.url | prepend: site.baseurl }}"><span itemprop="name">{{ post.title }}</span></a></h2>
 
             {% include excerpt.html %}
 
             <p class="meta">
+                <span itemprop="image" content='{{"/img/" | append: post.feature_image | prepend: site.baseurl | prepend: site.url }}'></span>
+                <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                    <span itemprop="name" content="HoidayCheck Labs"></span>
+                    <span itemprop="logo" content="{{ '/img/hc-labs-only-logo.svg' | prepend: site.baseurl | prepend: site.url }}"></span>
+                </span>
                 <span itemprop="position" content="{{ forloop.index }}"></span>
                 <span itemprop="headline" content="{{ post.excerpt | strip_html | strip_newlines | truncate: 110 }}"></span>
                 {% if post.author_name %}
@@ -28,6 +33,9 @@ layout: with-sidebar
                     {% if post.author_names %}
                         {% for author in post.author_names %}
                             <a href="mailto:{{ site.data.authors[author].email }}">{{  site.data.authors[author].name }}</a>
+                            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                <span itemprop="name" content="{{ site.data.authors[author].name }}"></span>
+                            </span>
                             {% if forloop.last == false %}, {% endif %}
                         {% endfor %}
                     {% endif %}
