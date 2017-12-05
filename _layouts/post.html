@@ -16,13 +16,19 @@ layout: default
 
 <main class="container">
     <div class="row">
-        <div class="col-xs-12 single-content">
+        <div class="col-xs-12 single-content" itemprop="itemListElement" itemscope itemtype="http://schema.org/Blog">
             <header class="post-header">
-                <h1>{{ page.title }}</h1>
+                <h1 itemprop="name">{{ page.title }}</h1>
 
                 <p class="meta">
+                    <span itemprop="url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></span>
+                    <span itemprop="image" content='{{"/img/" | append: page.feature_image | prepend: site.baseurl | prepend: site.url }}.jpg'></span>
+                    <span itemprop="headline" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 110 }}"></span>
                     {% if page.author_name %}
-                        <a href="{{ page.author_url | prepend: site.baseurl }}">{{ page.author_name }}</a>
+                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                            <span itemprop="image" content='{{ "/img/" | append: page.author_avatar | prepend: site.baseurl | prepend: site.url }}.jpg'></span>
+                            <a itemprop="url" href="{{ page.author_url | prepend: site.baseurl }}"><span itemprop="name">{{ page.author_name }}</span></a>
+                        </span>
                     {% else %}
                         {% if page.author_names %}
                             {% for author in page.author_names %}
@@ -35,12 +41,13 @@ layout: default
                     <i class="link-spacer"></i>
                     {{ page.read_time }} minutes read
                     <i class="link-spacer"></i>
-                    {{ page.date | date: "%B %-d, %Y" }}
+                    <time dateTime='{{ page.date | date: "%d-%m-%Y" }}' itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
                 </p>
             </header>
 
-            {{ content }}
-
+            <div itemprop="text">
+                {{ content }}
+            </div>
         </div><!-- main-content/col -->
     </div> <!--/row -->
 
