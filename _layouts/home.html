@@ -21,6 +21,7 @@ layout: with-sidebar
                 <span itemprop="headline" content="{{ post.excerpt | strip_html | strip_newlines | truncate: 110 }}"></span>
                 {% if post.author_name %}
                     <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        <span itemprop="image" content='{{ "/img/" | append: post.author_avatar | prepend: site.baseurl | prepend: site.url }}.jpg'></span>
                         <a itemprop="url" href="{{ post.author_url | prepend: site.baseurl }}"><span itemprop="name">{{ post.author_name }}</span></a>
                     </span>
                 {% else %}
