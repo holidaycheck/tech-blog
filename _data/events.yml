@@ -35,10 +35,16 @@
 #
 # Others
 #
-- name: JSCodeRetreat 12
-  start_datetime: 2001-12-14 19:00
+- name: JSCodeRetreat 11
+  start_datetime: 2001-08-12 09:30
   url: https://jscoderetreat.com
   tags: CodeRetreat, JavaScript
+  location: CodeCentric
+- name: JSCodeRetreat 12
+  start_datetime: 2001-12-14 09:30
+  url: https://jscoderetreat.com
+  tags: CodeRetreat, JavaScript
+  location: futurice
 - name: Haskell Meetup
   start_datetime: 2001-11-25 18:30
   url: https://jscoderetreat.com
