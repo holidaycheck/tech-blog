@@ -1,3 +1,6 @@
+#
+# JavaScript the Language Meetups
+#
 - name: JavaScript the Language - ES6 - Proxies
   start_datetime: 2001-11-09 19:00
   url: https://www.meetup.com/JavaScript-The-Language/events/243955512/
@@ -29,6 +32,9 @@
   tags: meetup, JavaScript
   location: HolidayCheck
 
+#
+# Others
+#
 - name: JSCodeRetreat 12
   start_datetime: 2001-12-14 19:00
   url: https://jscoderetreat.com
@@ -50,6 +56,10 @@
   end_datetime: 2018-06-03 18:00
   url: https://2018.jsconf.eu
   tags: conference, JavaScript
+
+#
+# CfPs
+#
 - name: JSConfEU - Call for Papers
   start_datetime: 2018-01-01 00:00
   url: https://2018.jsconf.eu/call-for-speakers/
