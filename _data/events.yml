@@ -67,6 +67,7 @@
   end_datetime: 2017-10-17 18:00
   tags: workshop
   location: HolidayCheck internal event
+  comment: "Topic: Move the bottleneck out of product development"
   posts:
     - http://techblog.holidaycheck.com/post/2017/10/20/jbhc17-from-my-perspective
     - http://techblog.holidaycheck.com/post/2017/10/13/jb-in-da-house
