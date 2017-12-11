@@ -16,8 +16,11 @@ layout: with-sidebar
         {{ event.start_datetime | date_to_string }} {{ event.start_datetime | date: "%H:%M" }}
       {% endif %}
 
-      {% if event.location == "HolidayCheck" %}
-        <img src='{{"/img/hc-labs-only-logo" | prepend: site.baseurl }}.svg' height="20" alt="HC labs">
+      {% assign location_lowercase = event.location | downcase %}
+      {% if location_lowercase contains "holidaycheck" %}
+        <img src='{{"/img/hc-labs-only-logo" | prepend: site.baseurl }}.svg' height="20" alt="HC labs"
+             title="took place in a HolidayCheck location"
+        >
       {% endif %}
 
       {% assign tags = event.tags | split: "," %}
