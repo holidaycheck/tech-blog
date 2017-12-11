@@ -42,6 +42,10 @@ layout: with-sidebar
       {% endif %}
       <br />
 
+      {% if event.comment %}
+        <span style="font-size: small;">{{ event.comment }}</span>
+        <br/>
+      {% endif %}
     </p>
   {% endfor %}
 </div>
