@@ -29,7 +29,18 @@ layout: with-sidebar
       {% endfor %}
       <br/>
 
-      <a href="{{ event.url }}">{{ event.name }}</a><br />
+      {% if event.url %}
+        <a href="{{ event.url }}">{{ event.name }}</a>
+      {% else %}
+        {{ event.name }}
+      {% endif %}
+      {% if event.posts %}
+        - read about it:
+        {% for post in event.posts %}
+          <a href={{post}}>[{{forloop.index}}]</a>
+        {% endfor %}
+      {% endif %}
+      <br />
 
     </p>
   {% endfor %}
