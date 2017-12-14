@@ -2,19 +2,22 @@
 layout: with-sidebar
 ---
 
-<div class="sub-nav">
-    <a href="#" class="select-posts active">Events</a>
+<div class="sub-nav events">
+    <a href="#" class="select-2017 active">Events in 2017</a>
+    <a href="#" class="select-2018">in 2018</a>
 </div>
 
-<div class="home-page-posts animated fadeIn ">
-  {% assign all_events = site.data.events.2017 %}
+{% assign years = "2017 2018" | split: " " %}
+{% for cur_year in years %}
+<div class="events-{{cur_year}} animated fadeIn {% if forloop.first == false %}hide{% endif %}" id="{{cur_year}}">
+  {% assign all_events = site.data.events[cur_year] %}
   {% assign events = all_events | sort: "start_datetime" %}
   {% for event in events reversed %}
     <p>
       {% if event.end_datetime %}
-        {{ event.start_datetime | date_to_string }} - {{ event.end_datetime | date_to_string }}
+        {{ event.start_datetime | date: "%d %B" }} - {{ event.end_datetime | date: "%d %B" }}
       {% else %}
-        {{ event.start_datetime | date_to_string }} {{ event.start_datetime | date: "%H:%M" }}
+        {{ event.start_datetime | date: "%d %B" }}, {{ event.start_datetime | date: "%H:%M" }}
       {% endif %}
 
       {% assign location_lowercase = event.location | downcase %}
@@ -50,3 +53,4 @@ layout: with-sidebar
     </p>
   {% endfor %}
 </div>
+{% endfor %}
