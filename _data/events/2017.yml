@@ -2,32 +2,32 @@
 # JavaScript the Language Meetups
 #
 - name: JavaScript the Language - ES6 - Proxies
-  start_datetime: 2001-11-09 19:00
+  start_datetime: 2017-11-09 19:00
   url: https://www.meetup.com/JavaScript-The-Language/events/243955512/
   tags: meetup, JavaScript
   location: HolidayCheck
 - name: JavaScript the Language - SharedArrayBuffer
-  start_datetime: 2001-10-05 19:00
+  start_datetime: 2017-10-05 19:00
   url: https://www.meetup.com/JavaScript-The-Language/events/243182533/
   tags: meetup, JavaScript
   location: HolidayCheck
 - name: JavaScript the Language - (function(){Function, function, () => {}, ...})()
-  start_datetime: 2001-09-07 19:00
+  start_datetime: 2017-09-07 19:00
   url: https://www.meetup.com/JavaScript-The-Language/events/242446661/
   tags: meetup, JavaScript
   location: HolidayCheck
 - name: JavaScript the Language - Generators
-  start_datetime: 2001-08-10 19:00
+  start_datetime: 2017-08-10 19:00
   url: https://www.meetup.com/JavaScript-The-Language/events/242197330/
   tags: meetup, JavaScript
   location: HolidayCheck
 - name: JavaScript the Language - Classes, Prototypes a look under the hood
-  start_datetime: 2001-07-06 19:00
+  start_datetime: 2017-07-06 19:00
   url: https://www.meetup.com/JavaScript-The-Language/events/240986441/
   tags: meetup, JavaScript
   location: HolidayCheck
 - name: JavaScript the Language - async and await
-  start_datetime: 2001-06-06 19:00
+  start_datetime: 2017-06-06 19:00
   url: https://www.meetup.com/JavaScript-The-Language/events/240120367/
   tags: meetup, JavaScript
   location: HolidayCheck
@@ -36,17 +36,17 @@
 # Others
 #
 - name: JSCodeRetreat 11
-  start_datetime: 2001-08-12 09:30
+  start_datetime: 2017-08-12 09:30
   url: https://jscoderetreat.com
   tags: CodeRetreat, JavaScript
   location: CodeCentric
 - name: JSCodeRetreat 12
-  start_datetime: 2001-12-14 09:30
+  start_datetime: 2017-12-14 09:30
   url: https://jscoderetreat.com
   tags: CodeRetreat, JavaScript
   location: futurice
 - name: Haskell Meetup
-  start_datetime: 2001-11-25 18:30
+  start_datetime: 2017-11-25 18:30
   url: https://jscoderetreat.com
   tags: Haskell
   location: HolidayCheck
