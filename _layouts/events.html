@@ -7,7 +7,8 @@ layout: with-sidebar
 </div>
 
 <div class="home-page-posts animated fadeIn ">
-  {% assign events = site.data.events | sort: "start_datetime" %}
+  {% assign all_events = site.data.events.2017 %}
+  {% assign events = all_events | sort: "start_datetime" %}
   {% for event in events reversed %}
     <p>
       {% if event.end_datetime %}

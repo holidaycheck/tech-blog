@@ -57,11 +57,6 @@
   start_datetime: 2017-12-08 09:30
   end_datetime: 2017-12-09 18:00
   url: https://frontconf.com/
-- name: JSConfEU 2018
-  start_datetime: 2018-06-02 10:00
-  end_datetime: 2018-06-03 18:00
-  url: https://2018.jsconf.eu
-  tags: conference, JavaScript
 - name: "#jbhc17 part 1 (J.B. Rainsberger)"
   start_datetime: 2017-10-16 10:00
   end_datetime: 2017-10-17 18:00
@@ -86,7 +81,3 @@
 #
 # CfPs
 #
-- name: JSConfEU - Call for Papers
-  start_datetime: 2018-01-01 00:00
-  url: https://2018.jsconf.eu/call-for-speakers/
-  tags: CfP
