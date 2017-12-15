@@ -40,7 +40,7 @@ value stream. And indeed, this is basically how you get started with
 development.
 
 However, software development lacks a critical feature of industrial processes,
-it is not a repeating process. Developers continuously build **new** features,
+it is not a repeating process. Developers continuously build *new* features,
 they *invent* new solutions, their work is *creative* in nature. This
 strongly questions the applicability of *Theory of Constraints* for software
 development and suggests that it is not a *Complicated Domain* process.
