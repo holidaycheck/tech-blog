@@ -5,7 +5,7 @@ date: 2017-10-20 14:03:00 +0200
 categories: event
 author_name: Nikolay Sturm
 author_url : /author/nikolaysturm
-author_avatar: nistude
+author_avatar: nikolaysturm
 show_avatar : true
 read_time : 4
 show_related_posts: false

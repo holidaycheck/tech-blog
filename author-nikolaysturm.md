@@ -3,7 +3,7 @@ layout: author
 title: Author
 permalink: author/nikolaysturm/
 feature_image: feature-sea
-author_avatar: nistude
+author_avatar: nikolaysturm
 author_name: Nikolay Sturm
 title: Nikolay Sturm
 ---
