@@ -81,14 +81,14 @@ these explicitly with well understood, *Complicated Domain* features and even
 some *Obvious Domain* quick wins.
 
 So, my final take on *Theory of Constraints* and *Value Stream Mapping* is
-this: it focusses on the wrong thing.
+this: they may have their value optimizing processes in the
+*Complicated Domain*, but big picture they focus on the wrong thing.
 
 > Think effectiveness with people and efficiency with things.
 > Stephen Covey
 
 In software development, we shouldn't concern ourselves too much with
-*efficiency*. The interesting question is rather that of *effectiveness*. How
-do we best approach this specific feature?
+*efficiency*. The interesting question is rather that of *effectiveness*.
 
 If I could spark your interest in the Cynefin framework and you want to learn
 more, in particular how to apply it to software development, I suggest you
