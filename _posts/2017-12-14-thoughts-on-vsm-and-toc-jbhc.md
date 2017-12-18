@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Thoughts on Value Stream Mapping and Theory of Constraints"
-date: 2017-10-20 14:03:00 +0200
+date: 2017-12-14 14:03:00 +0200
 categories: event
 author_name: Nikolay Sturm
 author_url : /author/nikolaysturm
