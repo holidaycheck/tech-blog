@@ -24,6 +24,8 @@ In this post, I will comment on that approach from a perspective shaped by
 and the
 [Cynefin framework](https://en.wikipedia.org/wiki/Cynefin_framework).
 
+## Value Stream Mapping and Theory of Constraints
+
 *Theory of Constraints* has its roots in industrial process optimization, where
 individual process steps are usually pretty well understood and repeatable. In
 Cynefin terms, this sounds very much like the *Complicated Domain*. Cynefin's
@@ -38,6 +40,8 @@ There, we also have pretty clearly identifiable steps that could be mapped by a
 value stream. And indeed, this is basically how you get started with
 [Kanban](https://en.wikipedia.org/wiki/Kanban_%28development%29) in software
 development.
+
+## Complex Adaptive Systems and the Cynefin Framework
 
 However, software development lacks a critical feature of industrial processes,
 it is not a repeating process. Developers continuously build *new* features,
@@ -80,15 +84,20 @@ overwhelming the team with uncertain, *Complex Domain* features but can balance
 these explicitly with well understood, *Complicated Domain* features and even
 some *Obvious Domain* quick wins.
 
-So, my final take on *Theory of Constraints* and *Value Stream Mapping* is
-this: they may have their value optimizing processes in the
-*Complicated Domain*, but big picture they focus on the wrong thing.
+## Conclusion
 
-> Think effectiveness with people and efficiency with things.
-> Stephen Covey
+With the introduction of the *Cynefin Framework*, we opened our eyes to
+different levels of complexity in software development. Features in different
+domains of the *Cynefin Framework* require different approaches.
 
-In software development, we shouldn't concern ourselves too much with
-*efficiency*. The interesting question is rather that of *effectiveness*.
+When implementing *Complex Domain* features, the future is uncertain and our
+processes should reflect that. It just doesn't make sense to optimize
+efficiency in these cases.
+
+When we are implementing features from the *Complicated Domain*, however,
+life is very different. There we know pretty well what is going on and we
+can indeed optimize throughput. Value Stream Mapping and Theory of Constraints
+are viable approaches there.
 
 If I could spark your interest in the Cynefin framework and you want to learn
 more, in particular how to apply it to software development, I suggest you
