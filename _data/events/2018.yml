@@ -12,6 +12,12 @@
   url: http://europeantestingconference.eu/2018/
   location: Amsterdam Arena, Amsterdam, Netherlands
   tags: conference, testing
+- name: WeAreDevelopers 2018
+  start_datetime: 2018-05-16 10:00
+  end_datetime: 2018-05-18 18:00
+  location: Vienna, Austria, The Austria Center Vienna
+  url: https://www.wearedevelopers.com/
+  tags: conference, developers
 
 #
 # CfPs
@@ -19,4 +25,8 @@
 - name: JSConfEU - Call for Papers
   start_datetime: 2018-01-01 00:00
   url: https://2018.jsconf.eu/call-for-speakers/
+  tags: CfP
+- name: WeAreDevelopers 2018 - Call for Papers
+  start_datetime: 2018-01-16 23:59
+  url: https://sessionize.com/wearedevelopers
   tags: CfP
