@@ -21,6 +21,10 @@ var s,
                 self.homePostsCatSwitch();
             });
 
+            $('.sub-nav.events').on('click', function () {
+                self.eventsSubNaviToggle();
+            });
+
             $('.social-icon').on('click', function(){
                 self.socialIconClick( $(this) );
             });
@@ -37,6 +41,14 @@ var s,
 
             // Add Bg colour from JS so jPanel has time to initalize
             $('body').css({"background-color":"#002852"});
+        },
+        eventsSubNaviToggle: function(){
+            // Toggles between showing the categories and posts on the homepage
+            $('.select-2017').toggleClass("active");
+            $('.select-2018').toggleClass("active");
+
+            $('.events-2017').toggleClass("hide");
+            $('.events-2018').toggleClass("hide");
         },
         homePostsCatSwitch: function(){
             // Toggles between showing the categories and posts on the homepage
