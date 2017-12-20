@@ -16,16 +16,16 @@ layout: default
 
 <main class="container">
     <div class="row">
-        <article class="col-xs-12 single-content" itemprop="itemListElement" itemscope itemtype="http://schema.org/BlogPosting">
+        <article class="col-xs-12 single-content" itemscope itemtype="http://schema.org/BlogPosting">
             <header class="post-header">
                 <h1 itemprop="name">{{ page.title }}</h1>
 
                 <p class="meta">
                     <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                        <span itemprop="name" content="HoidayCheck Labs"></span>
+                        <span itemprop="name" content="@HolidayCheckLab"></span>
                         <span itemprop="logo" content="{{ '/img/hc-labs-only-logo.svg' | prepend: site.baseurl | prepend: site.url }}"></span>
                     </span>
-                    <span itemprop="url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></span>
+                    <span itemprop="mainEntityOfPage url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></span>
                     <span itemprop="image" content='{{"/img/" | append: page.feature_image | prepend: site.baseurl | prepend: site.url }}.jpg'></span>
                     <span itemprop="headline" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 110 }}"></span>
                     {% if page.author_name %}
@@ -45,7 +45,7 @@ layout: default
                     <i class="link-spacer"></i>
                     {{ page.read_time }} minutes read
                     <i class="link-spacer"></i>
-                    <time dateTime='{{ page.date | date: "%d-%m-%Y" }}' itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
+                    <time dateTime='{{ page.date | date: "%d-%m-%Y" }}' itemprop="datePublished dateModified">{{ page.date | date: "%B %-d, %Y" }}</time>
                 </p>
             </header>
 

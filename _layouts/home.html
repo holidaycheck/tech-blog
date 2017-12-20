@@ -7,22 +7,21 @@ layout: with-sidebar
     <a href="#" class="select-categories">Categories</a>
 </div>
 
-<div class="home-page-posts animated fadeIn" itemscope itemtype="http://schema.org/ItemList">
+<div class="home-page-posts animated fadeIn" itemprop="blogPosts">
     {% for post in site.posts %}
 
-    <article class="post" itemprop="itemListElement" itemscope itemtype="http://schema.org/BlogPosting">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
         <div class="post-preview col-xs-10  no-gutter">
-            <h2><a itemprop="url" href="{{ post.url | prepend: site.baseurl }}"><span itemprop="name">{{ post.title }}</span></a></h2>
+            <h2><a itemprop="mainEntityOfPage url" href="{{ post.url | prepend: site.baseurl }}"><span itemprop="name">{{ post.title }}</span></a></h2>
 
             {% include excerpt.html %}
 
             <p class="meta">
                 <span itemprop="image" content='{{"/img/" | append: post.feature_image | prepend: site.baseurl | prepend: site.url }}'></span>
                 <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                    <span itemprop="name" content="HoidayCheck Labs"></span>
+                    <span itemprop="name" content="@HolidayCheckLab"></span>
                     <span itemprop="logo" content="{{ '/img/hc-labs-only-logo.svg' | prepend: site.baseurl | prepend: site.url }}"></span>
                 </span>
-                <span itemprop="position" content="{{ forloop.index }}"></span>
                 <span itemprop="headline" content="{{ post.excerpt | strip_html | strip_newlines | truncate: 110 }}"></span>
                 {% if post.author_name %}
                     <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -45,7 +44,7 @@ layout: with-sidebar
                 <i class="link-spacer"></i>
                 {{ post.read_time }} minutes read
                 <i class="link-spacer"></i>
-                <time dateTime='{{ post.date | date: "%d-%m-%Y" }}' itemprop="datePublished">{{ post.date | date: "%B %-d, %Y" }}</time>
+                <time dateTime='{{ post.date | date: "%d-%m-%Y" }}' itemprop="datePublished dateModified">{{ post.date | date: "%B %-d, %Y" }}</time>
             </p>
         </div>
 
