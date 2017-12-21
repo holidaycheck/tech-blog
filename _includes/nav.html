@@ -1,7 +1,7 @@
-<div id="menu-target">
+<div id="menu-target" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
     <ul>
         {% for page in site.nav_list %}
-            <li><i class="fa {{ page[1][2] }}"></i><a href="{{ page[1][1] }}">{{ page[1][0] }}</a></li>
+            <li><i class="fa {{ page[1][2] }}"></i><a itemprop="url" href="{{ page[1][1] }}">{{ page[1][0] }}</a></li>
         {% endfor %}
     </ul>
 </div>

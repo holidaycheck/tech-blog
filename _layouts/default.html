@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" {% if page.layout == "post" %}itemscope itemtype="http://schema.org/Article"{% endif %}>
+<html class="no-js">
 
   {% include head.html %}
 
@@ -15,7 +15,26 @@
     <script type='application/javascript' src='{{ "/js/vendor/retina.min.js" | prepend: site.baseurl }}'></script>
     {% endif %}
     <script src=' {{ "/js/main.js" | prepend: site.baseurl }}'></script>
-
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "@HolidayCheckLab",
+        "url": "{{ site.url }}",
+        "logo": "{{ '/img/hc-labs-only-logo256x256.png' | prepend: site.baseurl | prepend: site.url }}",
+        "sameAs": [
+            "https://www.twitter.com/HolidayCheckLab"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "Blog",
+		"url": "{{ site.url }}",
+		"name": "@HolidayCheckLab"
+	}
+    </script>
     <!-- Google Analytics -->
     {% if jekyll.environment != 'local' %}
     {% include analytics.html %}

@@ -16,13 +16,25 @@ layout: default
 
 <main class="container">
     <div class="row">
-        <div class="col-xs-12 single-content">
+        <article class="col-xs-12 single-content" itemscope itemtype="http://schema.org/BlogPosting">
             <header class="post-header">
-                <h1>{{ page.title }}</h1>
+                <h1 itemprop="name">{{ page.title }}</h1>
 
                 <p class="meta">
+                    <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                        <span itemprop="name" content="@HolidayCheckLab"></span>
+                        <span itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+                            <span itemprop="url" content="{{ '/img/hc-labs-only-logo256x256.png' | prepend: site.baseurl | prepend: site.url }}"></span>
+                        </span>
+                    </span>
+                    <span itemprop="mainEntityOfPage url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></span>
+                    <span itemprop="image" content='{{"/img/" | append: page.feature_image | prepend: site.baseurl | prepend: site.url }}'></span>
+                    <span itemprop="headline" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 110 }}"></span>
                     {% if page.author_name %}
-                        <a href="{{ page.author_url | prepend: site.baseurl }}">{{ page.author_name }}</a>
+                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                            <span itemprop="image" content='{{ "/img/" | append: page.author_avatar | prepend: site.baseurl | prepend: site.url }}.jpg'></span>
+                            <a itemprop="url" href="{{ page.author_url | prepend: site.baseurl }}"><span itemprop="name">{{ page.author_name }}</span></a>
+                        </span>
                     {% else %}
                         {% if page.author_names %}
                             {% for author in page.author_names %}
@@ -35,13 +47,14 @@ layout: default
                     <i class="link-spacer"></i>
                     {{ page.read_time }} minutes read
                     <i class="link-spacer"></i>
-                    {{ page.date | date: "%B %-d, %Y" }}
+                    <time dateTime='{{ page.date | date: "%d-%m-%Y" }}' itemprop="datePublished dateModified">{{ page.date | date: "%B %-d, %Y" }}</time>
                 </p>
             </header>
 
-            {{ content }}
-
-        </div><!-- main-content/col -->
+            <div itemprop="articleBody">
+                {{ content }}
+            </div>
+        </article><!-- main-content/col -->
     </div> <!--/row -->
 
 </main> <!-- /container -->

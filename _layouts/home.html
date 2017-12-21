@@ -7,23 +7,36 @@ layout: with-sidebar
     <a href="#" class="select-categories">Categories</a>
 </div>
 
-<div class="home-page-posts animated fadeIn ">
+<div class="home-page-posts animated fadeIn" itemprop="blogPosts">
     {% for post in site.posts %}
 
-    <article class="post">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
         <div class="post-preview col-xs-10  no-gutter">
-            <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+            <h2><a itemprop="mainEntityOfPage url" href="{{ post.url | prepend: site.baseurl }}"><span itemprop="name">{{ post.title }}</span></a></h2>
 
             {% include excerpt.html %}
 
             <p class="meta">
-
+                <span itemprop="image" content='{{"/img/" | append: post.feature_image | prepend: site.baseurl | prepend: site.url }}'></span>
+                <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                    <span itemprop="name" content="@HolidayCheckLab"></span>
+                    <span itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+                        <span itemprop="url" content="{{ '/img/hc-labs-only-logo256x256.png' | prepend: site.baseurl | prepend: site.url }}"></span>
+                    </span>
+                </span>
+                <span itemprop="headline" content="{{ post.excerpt | strip_html | strip_newlines | truncate: 110 }}"></span>
                 {% if post.author_name %}
-                    <a href="{{ post.author_url | prepend: site.baseurl }}">{{ post.author_name }}</a>
+                    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        <span itemprop="image" content='{{ "/img/" | append: post.author_avatar | prepend: site.baseurl | prepend: site.url }}.jpg'></span>
+                        <a itemprop="url" href="{{ post.author_url | prepend: site.baseurl }}"><span itemprop="name">{{ post.author_name }}</span></a>
+                    </span>
                 {% else %}
                     {% if post.author_names %}
                         {% for author in post.author_names %}
                             <a href="mailto:{{ site.data.authors[author].email }}">{{  site.data.authors[author].name }}</a>
+                            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                <span itemprop="name" content="{{ site.data.authors[author].name }}"></span>
+                            </span>
                             {% if forloop.last == false %}, {% endif %}
                         {% endfor %}
                     {% endif %}
@@ -33,7 +46,7 @@ layout: with-sidebar
                 <i class="link-spacer"></i>
                 {{ post.read_time }} minutes read
                 <i class="link-spacer"></i>
-                {{ post.date | date: "%B %-d, %Y" }}
+                <time dateTime='{{ post.date | date: "%d-%m-%Y" }}' itemprop="datePublished dateModified">{{ post.date | date: "%B %-d, %Y" }}</time>
             </p>
         </div>
 
