@@ -28,7 +28,7 @@ layout: default
                         </span>
                     </span>
                     <span itemprop="mainEntityOfPage url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></span>
-                    <span itemprop="image" content='{{"/img/" | append: page.feature_image | prepend: site.baseurl | prepend: site.url }}.jpg'></span>
+                    <span itemprop="image" content='{{"/img/" | append: page.feature_image | prepend: site.baseurl | prepend: site.url }}'></span>
                     <span itemprop="headline" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 110 }}"></span>
                     {% if page.author_name %}
                         <span itemprop="author" itemscope itemtype="http://schema.org/Person">
