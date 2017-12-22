@@ -77,18 +77,18 @@
   location: CDTM, Marsstraße 20, München
   comment: "12 months later - how we introduced OKRs: Mathias Gorf and Karl Pitrich, HolidayCheck"
   url: https://www.meetup.com/OKR-Meetup-Munich/events/245089203/
-- name: Search Meetup Munich: March Edition
+- name: "Search Meetup Munich: March Edition"
   start_datetime: 2017-03-22 18:30
   tags: meetup
   location: headissue GmbH, Albanistr. 10b, München
   comment: "Creating a Voice User Interface for Search: Andreas Neumann"
   url: https://www.meetup.com/de-DE/Search-Meetup-Munich/events/237845412/
-- name: Search Technology Meetup IX: Voice and Search
+- name: "Search Technology Meetup IX: Voice and Search"
   start_datetime: 2017-07-10 18:30
   tags: meetup
   location: Finanzcheck.de, Winterstraße 2, Hamburg
   comment: "Creating a Voice User Interface for Search: Andreas Neumann"
-url: https://www.meetup.com/de-DE/Search-Technology-Meetup-Hamburg/events/240794059/
+  url: https://www.meetup.com/de-DE/Search-Technology-Meetup-Hamburg/events/240794059/
 #
 # CfPs
 #
