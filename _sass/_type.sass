@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700|Droid+Serif:400,400italic,700|Playfair+Display)
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700|Droid+Serif:300,400,400italic,700|Playfair+Display)
 
 $sans : 'Fira Sans', Helvetica, Arial, sans-serif
 $title : 'Playfair Display', serif
@@ -14,7 +14,7 @@ $hc-lightblue: #6bc5ec
 $base-color : $light-blue
 
 body
-    line-height: 1.45
+    line-height: 1.6
 
 body,
 button,
@@ -34,23 +34,19 @@ textarea
 
 .title
     font-family: $title
-    font-weight: 400
+    font-weight: 600
 
 p
     margin-bottom: 30px
-    font-weight: 300
-
-    +font-size(18)
+    font-weight: 400
 
     +breakpoint(sm)
-        +font-size(20)
+        +font-size(16)
 
     +breakpoint(md)
-        +font-size(21)
+        +font-size(18)
 a
     text-decoration: none
-    color: #fff
-    border-bottom: solid 1px #fAfafa
 
     &:hover,
     &:active
@@ -59,11 +55,6 @@ a
 
 em
     font-weight: 400
-
-h1,
-h2
-    font-weight: 700
-    font-family: $serif
 
 h1
     +font-size(38)
@@ -88,13 +79,12 @@ ul,
 ol
     margin-bottom: 20px
     padding-left: 20px
-    +font-size(18)
 
     +breakpoint(sm)
-        +font-size(20)
+        +font-size(16)
 
     +breakpoint(md)
-        +font-size(21)
+        +font-size(18)
 
     li
         margin: 5px 0
