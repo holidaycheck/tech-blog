@@ -338,10 +338,10 @@ By creating current state with a value explicitly shown this test becomes:
 
 Here's a list of good practices you should follow when creating and testing reducers:
 1. never export `initialState` from reducer; instead make a copy of it in test suite and assert it's structure there
-1. reuse `initialState` in each test (created state and expected state) and alter **only** property
+1. reuse `initialState` in each test (created and expected state) and alter **only** property
    that is due to change upon given action to explicitly show what and how things change
 
-Here's an example of a reducer (with it's test) that follows those practices:
+Here's an example of a reducer (with its test) that follows those practices:
 
 ```javascript
 const initialState = {
