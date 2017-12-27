@@ -334,6 +334,65 @@ By creating current state with a value explicitly shown this test becomes:
    is tested elsewhere, so no need to worry about that
  - more descriptive; one sees what happens to which state's property
 
+## Wrapping up
+
+Here's a list of good practices you should follow when creating and testing reducers:
+1. never export `initialState` from reducer; instead make a copy of it in test suite and assert it's structure there
+1. reuse `initialState` in each test (created state and expected state) and alter **only** property
+   that is due to change upon given action to explicitly show what and how things change
+
+Here's an example of a reducer (with it's test) that follows those practices:
+
+```javascript
+const initialState = {
+    language: 'en',
+    // ... some other properties
+};
+
+export default (state = initialState, action) => {
+    switch (action.type) {
+        case CHANGE_LANGUAGE:
+            return { ...state, action.language };
+        ...
+        default:
+            return state;
+    }
+};
+```
+
+and
+
+```javascript
+describe('Some reducer', () => {
+    const initialState = {
+        language: 'en',
+        // ... some other properties
+    };
+
+    it('should return initial state', () => {
+        expect(reducer(undefined, {})).to.deep.equal(initialState);
+    });
+
+    it('should handle CHANGE_LANGUAGE action type', () => {
+        const state = {
+            ...initialState,
+            language: 'en' // yes, make it explicit even if initial value is the same
+        };
+        const action = {
+            type: CHANGE_LANGUAGE,
+            language: 'pl'
+        };
+        const expectedState = {
+            ...initialState,
+            language: 'pl'
+        };
+
+        expect(reducer(state, action)).to.deep.equal(expectedState);
+    });
+});
+```
+
+## ...
 
 We still struggle when seeing the code like in example above if we should remove the boilerplate.
 Our good recommendation of reading on the topic there is [post of Sandi Metz, Wrong abstraction][wrong_abstraction]{:target="_blank"}. Personally I really like the simplicity of syntax behind reducers.
