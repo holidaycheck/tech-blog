@@ -7,7 +7,7 @@ author_name: Martin Kreidenweis
 author_url : /author/martinkreidenweis
 author_avatar: martinkreidenweis
 show_avatar : true
-read_time : 4
+read_time : 7
 show_related_posts: false
 square_related:
 feature_image: posts/2017-12-22-responsive-images-srcset-and-sizes/patricia-serna-colores-a-medida-415257.jpg
