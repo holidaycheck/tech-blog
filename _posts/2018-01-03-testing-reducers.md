@@ -16,7 +16,7 @@ It's been over a year since we started using redux in one of our applications. C
 
 ## Testing reducers
 
-The goal of testing reducers is to verify if for given input (action) they will return correct output (state). Holding code coverage bar at 100% unfortunately won't prevent us from making all the mistakes.
+The goal of testing reducers is to verify if for given input (action) they return correct output (state). Holding code coverage bar at 100% unfortunately won't prevent us from making all the mistakes.
 
 What kind of mistakes? Let's see:
 
@@ -25,7 +25,12 @@ What kind of mistakes? Let's see:
 // one case from our application reducer
 ...
 case ADD_APPLICATION_ERROR:
-    return { ...state, error: { statusCode: action.error.statusCode } };
+    return {
+    ...state,
+    error: {
+        statusCode: action.error.statusCode
+    }
+};
 default:
     return state;
 ```
@@ -41,7 +46,6 @@ it('should handle ADD_APPLICATION_ERROR', () => {
             statusCode: 403
         }
     };
-
     const expectedState = {
         error: {
             statusCode: 403
@@ -130,9 +134,11 @@ Enlisting property that will be overwritten when reducer handles the action help
 what we are actually changing. It helps a lot in case of reducers that contain some more logic
 behind setting variables since there is no need to read more code beside the test itself.
 
+## Exporting initialState
+
 Another careless thing we did was exporting initial (default) state from reducer.
 It has been exported for test purposes, see code example below.
-I will also add a test for `CHANGE_LANGUAGE` action type as it is influenced as well.
+Let's add a test for `CHANGE_LANGUAGE` action type as it is influenced as well.
 
 ```javascript
 /**
@@ -208,8 +214,8 @@ it('should return initial state', () => {
 
 Two things have changed:
 1. `initialState` is not exported from reducer. Frankly, why would it be? Will it be used anywhere
-   in the application? No. It was for tests only.
-1. Right now, if `initialState` will change in reducer, a test will fail. Yes!
+   in the application? No. It has been for tests only.
+1. Right now, if `initialState` will be changed in reducer, a test will fail. Yes!
 
 OK, let's check the other test, for `CHANGE_LANGUAGE` action type, with initialState still being exported from the reducer:
 
@@ -234,7 +240,6 @@ it('should handle CHANGE_LANGUAGE', () => {
         type: CHANGE_LANGUAGE,
         language: 'pl'
     };
-
     const expectedState = {
         ...initialState,
         language: 'pl'
@@ -277,21 +282,19 @@ it('should handle CHANGE_LANGUAGE', () => {
         language: 'pl'
     };
 
-    // (3) because initialState is used here
+    // (3) because imported initialState is used here
     expect(reducer(initialState, action)).to.deep.equal(expectedState);
 });
 ```
 
-It will be even hard to spot, because initial state is being imported from reducer.
-Just by looking at a test you won't be able to tell what the default language is.
-Not importing initialState, but having it in test (like with initial state's test previously)
+It will be even hard to spot. Just by looking at a test you won't be able to tell what the default language is.
+Furthermore, **not** importing initialState, but having it created in test (like with initial state's test previously)
 would help, but test itself would still remain meaningless.
 
 Therefore above test should be deleted because:
  - it tests literally nothing: you could read it as `initial value should stay the same as value passed`,
    so why this action is there at all when it does nothing? Why this test
-   is there at all? (test's description is to be blamed as well, but I will get
-   to it later)
+   is there at all? (test's description is to be blamed as well)
  - a bad test is worse than no test
 
 So, how can this be fixed? Here's how:
@@ -329,7 +332,7 @@ By creating current state with a value explicitly shown this test becomes:
  - valid and future-change-proof; if you change default language to any value, this test
    will still test if `CHANGE_LANGUAGE` action alters that value; remember that initialState
    is tested elsewhere, so no need to worry about that
- - more descriptive; one sees what happens to which state property
+ - more descriptive; one sees what happens to which state's property
 
 
 We still struggle when seeing the code like in example above if we should remove the boilerplate.
