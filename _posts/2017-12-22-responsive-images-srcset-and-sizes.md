@@ -18,9 +18,9 @@ I've been told it's too long though. Let me summarize.
 
 ## The Problem
 
-We're building a "responsive" web site here, meaning we deliver the same HTML and CSS to mobile and desktop browsers. Using CSS media queries the content is then formatted appropriately to fit the Urlauber's screen size. So the same image will be displayed in different sizes, depending on the viewport size.
+We're building a "responsive" web site at HolidayCheck, meaning we deliver the same HTML and CSS to mobile and desktop browsers. Using CSS media queries the content is then formatted appropriately to fit the our customer's screen size. So the same image will be displayed in different sizes, depending on the viewport size.
 <br/>
-And since Apple's introduced its "Retina" displays, we have another dimension to look at: pixel density of the physical screen.
+And ever since Apple introduced its "Retina" displays, we have another dimension to look at: pixel density of the physical screen.
 
 ### Background: CSS Units
 
@@ -66,7 +66,7 @@ Fortunately, with HTML5 we can simply give the browser the missing information.
 
 ## Simple Solution: The `<img>` Tag
 
-HTML 5 introduced the `<picture>` tag. However, for most responsive use cases this is actually not necessary. <br/>
+HTML 5 introduced the `<picture>` tag. However, for most responsive use cases this is actually not necessary.
 We can instead just use two new attributes that have been added to the good old `<img>` tag: `srcset` and `sizes`.
 
 By providing the two missing variables &ndash; image file dimensions and relative display sizes &ndash; the browser can then decide best what to use, depending on the physical resolution of the device, zoom level, and even network quality.
@@ -127,7 +127,7 @@ An easy hack to do it anyway is using `data:` URLs, and `<picture>` tags. This i
 ```
 
 This doesn't load anything (no additional HTTP request) for screens less than 750 pixels width; instead an empty GIF image is shown, which can be hidden using CSS. 
-And it let's the browser choose an appropriate file for displaying the image at 62 or 80 pixels width on larger screens.
+And it lets the browser choose an appropriate file for displaying the image at 62 or 80 pixels width on larger screens.
 
 
 ## Summary &ndash; tldr
