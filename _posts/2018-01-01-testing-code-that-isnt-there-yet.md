@@ -30,7 +30,7 @@ comfortable with TF (test first) approach as well.
 
 The example I am going to work with here is not going to be trivial like some simple function
 that conditionally returns some string, you can google plenty of those.
-What I would like to show is a part of a backend micro-service I was working on
+What I would like to show is a part of a backend micro-service I was working on,
 that included connecting to MongoDB and fetching some data. A more real-life example one would say.
 It's not 1:1 copy, but does almost all what my production code does.
 
@@ -108,7 +108,7 @@ describe('fetchHotelPhotos', () => {
     };
     const collectionName = 'hotels';
 
-    it('should connect to hotels collection', () => {
+    it('should fetch hotels collection from DB', () => {
         fetchHotelPhotos(connectedClientDouble, collectionName);
 
         expect(connectedClientDouble.collection)
@@ -152,7 +152,7 @@ I will often comment the code with (1), (2) and so on, when there will be things
 1. This might look awkward at this moment, but we will get to the point where getting the collection
    and returning an array with file names are connected.
 
-It works, but something doesn't seem right. If we are to get photos of a particular hotel,
+Tests pass, but something doesn't seem right. If we are to get photos of a particular hotel,
 we should only pass hotel's ID (or other unique identifier) as a single argument for that
 function.
 
@@ -214,8 +214,8 @@ For route and HTTP request / response handling, I'll be using [Koa](http://koajs
 but you can use whatever you like, e.g. [Express](http://expressjs.com/).
 </blockquote>
 
-Koa expects, for each route, a function to be passed (we already have it), and that function
-is passed `ctx`  and  `next` arguments. We are interested in `ctx` only, as it holds:
+Koa expects, for each route, a function to be passed (we already have it, thought it's empty),
+and that function is passed `ctx`  and  `next` arguments. We are interested in `ctx` only, as it holds:
  - request params
  - response object reference
 
@@ -256,7 +256,7 @@ describe('createHotelPhotosRouteHandler', () => {
     });
 
     describe('route handler', () => {
-        it('should connect to hotels collection', () => {
+        it('should fetch hotels collection from DB', () => {
             const routeHandler = createHotelPhotosRouteHandler(connectedClientDouble, collectionName);
 
             routeHandler(ctxDouble);
@@ -297,7 +297,7 @@ export default function createHotelPhotosRouteHandler(dbClient, collectionName) 
 
 <blockquote>
 For the sake of readability, I will add only a single test here and there to not overwhelme
-anyone with the whole codebase. If needed, I will show everything, but not always.
+anyone with the whole codebase.
 </blockquote>
 
 In order for Koa to return a response with given status code and a body,
@@ -305,7 +305,7 @@ we need to set `status` and `body` properties of `response` property of `ctx` (I
 This is, again, a thing worth discovering before doing any coding.<br>
 
 ### "Learn how to use your tool, before using it."
-
+<br>
 So, if we want to set `200` and a body with that collection of photos, we need to do something like:
 
 ```javascript
