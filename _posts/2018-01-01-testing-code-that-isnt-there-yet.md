@@ -10,7 +10,7 @@ show_avatar : true
 read_time : 8
 show_related_posts: false
 square_related:
-feature_image: posts/2017-10-22-jbhc17-from-my-perspective/poster.jpg
+feature_image: posts/2017-12-28-testing-code-that-isnt-there-yet/poster.jpg
 ---
 
 It's relatively easy to test a piece of code that is already there.
@@ -667,3 +667,6 @@ Just to wrap things up, this is what I found helping me most:
 I believe that having done this first step will encourage you to do TF (TDD) more often, without
 the fear of falling into *I don't know what my code will look like so I need to write it first*
 trap. And don't worry if it will take a long time to do it on daily basis. It took my 'only' 6 months :)
+
+*Photo by [Hal Ozart](https://unsplash.com/photos/MyRBq7GoVK0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).*
