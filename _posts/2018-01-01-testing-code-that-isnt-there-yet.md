@@ -365,17 +365,17 @@ export default function createHotelPhotosRouteHandler(dbClient, collectionName) 
 
 ## Back to Mongo
 
-Now, let's take care of actually fetching this data from Mongo.
+Now, let's take care of actually fetching this data from DB.
 We've ended up requesting a collection. Next, we need to find an entry for given hotel.
 If you take a look into docs, [findOne()](http://mongodb.github.io/node-mongodb-native/3.0/api/Collection.html#findOne)
-is what we will use.
+is what can help us. Let's use it:
 
 ```javascript
 const ctxDouble = {
     params: { // (1)
         hotelId
     },
-    response: { // (1)
+    response: {
         status: 0,
         body: ''
     }
@@ -440,7 +440,7 @@ const connectedClientDouble = {
 
 beforeEach(() => {
     connectedClientDouble.collection.resetHistory();
-    findOneStub.resetHistory(); // (2)
+    findOneStub.resetHistory();
 
     ctxDouble.response.status = 0;
     ctxDouble.response.body = '';
@@ -449,7 +449,7 @@ beforeEach(() => {
 it('should return hotel photos collection', () => {
     const routeHandler = createHotelPhotosRouteHandler(connectedClientDouble, collectionName);
 
-    return routeHandler(ctxDouble) // (3)
+    return routeHandler(ctxDouble) // (2)
         .then(() => {
             expect(ctxDouble.response.status).to.equal(200);
             expect(ctxDouble.response.body).to.deep.equal([
@@ -475,8 +475,6 @@ export default function createHotelPhotosRouteHandler(dbClient, collectionName) 
 
 1. As `findOne` returns a Promise, this is what we must stub. This is finally the place
    where we can return our photos.
-
-1. Reseting history changes (for stubs).
 
 1. As we are dealing with Promise, the way of executing this part of the test code
    needed to change as well.
@@ -523,7 +521,7 @@ function createHotelPhotosRouteHandler(dbClient, collectionName) {
     };
 }
 ```
-1. We need different behaviour of `findOne`, but because changing this deeply
+1. We need different behaviour of `findOne`, and because changing this deeply
    nested property would be cumbersome, I decided to create a completely new
    client double, as it is not so big and complex. In other case, I would
    probably create a function that builds this double for me and prepare it
@@ -574,7 +572,7 @@ describe('createHotelPhotosRouteHandler', () => {
     });
 
     describe('route handler', () => {
-        it('should connect to hotels collection', () => {
+        it('should fetch hotels collection from DB', () => {
             const routeHandler = createHotelPhotosRouteHandler(connectedClientDouble, collectionName);
 
             routeHandler(ctxDouble);
@@ -657,8 +655,9 @@ Just to wrap things up, this is what I found helping me most:
    then build your app from the very top to that point. This way you will end up with an application
    that has the minimum code required, as you will want to get to that `return` step ASAP
    (this and writing a minimum code that passes the tests and does nothing more).
+
  - **learn how to use your tool before you start using it** - discover how APIs of given modules / classes
-   you will use look like. Not knowing this also slows you down and make you lean towards writing code, and
+   you will use look like. Not knowing this will slow you down and make you lean towards writing code, and
    not test, first.<br>
    OK, to be fair. If you really would like to try it out, do it, write a code, make sure it works,
    but then delete it and start by writing tests. You might end up with less code (most of the time),
