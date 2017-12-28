@@ -16,6 +16,9 @@ the meaning of software craftsmanship.
 My main field of interest is TDD and clean code solutions.
 After all, we are all engineers talking to each other through code - let it be clear and understandable.
 
+You can find me on [Twitter](https://twitter.com/jacek_smolak)
+or email me [jacek.smolak@gmail.com](https://twitter.com/jacek_smolak).
+
 In my free time I work on my open source project called [stash-it].
 
 [stash-it]: https://www.npmjs.com/package/stash-it
