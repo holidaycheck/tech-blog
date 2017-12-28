@@ -1,0 +1,7 @@
+#
+# Override the properties that need to be modified of the _config.yml.
+# Changing the `url` to "" removes the "techblog.holidaycheck.com" from the "baseurl"
+# meta tag which would make every link and image point to the online version
+# and local development would be hard, since all links and image are broken.
+#
+url: ""
