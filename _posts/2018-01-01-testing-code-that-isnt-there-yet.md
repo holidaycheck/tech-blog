@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Testing code that isn't there yet"
-date: 2018-01-01 10:10:10 +0200
+date: 2017-12-28 10:10:10 +0200
 categories: testing
 author_name: Jacek Smolak
 author_url : /author/jaceksmolak
