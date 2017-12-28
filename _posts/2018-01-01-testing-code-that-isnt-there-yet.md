@@ -32,7 +32,7 @@ The example I am going to work with here is not going to be trivial like some si
 that conditionally returns some string, you can google plenty of those.
 What I would like to show is a part of a backend micro-service I was working on
 that included connecting to MongoDB and fetching some data. A more real-life example one would say.
-It's not 1:1 copy, but does almost all what my production code does as well.
+It's not 1:1 copy, but does almost all what my production code does.
 
 The code produced here will have 100% code coverage, but might not be the prettiest one.
 Why? It's not a purpose of this post to show you how to refactor, but how to test code that isn't there,
@@ -83,7 +83,7 @@ look like the final one. I find it very easy to start with and then building the
 like adding layers of more responsibility as the code evolves. At the very end I will exchange returning
 this array of file names with some kind of DB handler's `find` method that I will stub.
 
-## Get to know your tools before you use them
+## Provide dependencies
 
 <blockquote>
 I assume that at bootstrap level MongoDB driver is configured and what is being passed here
@@ -128,7 +128,7 @@ describe('fetchHotelPhotos', () => {
 
 ```javascript
 export default function fetchHotelPhotos(dbClient, collectionName) {
-    dbClient.collection(collectionName);
+    dbClient.collection(collectionName); // (3)
 
     return [ 'photo-1.jpg', 'photo-2.jpg', 'photo-3.jpg' ];
 }
@@ -149,6 +149,9 @@ I will often comment the code with (1), (2) and so on, when there will be things
 1. This test has failed, because `fetchHotelPhotos` calls for collection, and thus client
    and collection name need to be passed here as well.
 
+1. This might look awkward at this moment, but we will get to the point where getting the collection
+   and returning an array with file names are connected.
+
 It works, but something doesn't seem right. If we are to get photos of a particular hotel,
 we should only pass hotel's ID (or other unique identifier) as a single argument for that
 function.
@@ -159,7 +162,7 @@ Perhaps:
 fetchHotelPhotos(hotelId, dbClient, collectionName);
 ```
 
-No, rather not. Ideally it would look like this:
+No, rather not. Ideally this is what we would like to have:
 
 ```javascript
 fetchHotelPhotos(hotelId);
@@ -167,6 +170,8 @@ fetchHotelPhotos(hotelId);
 
 How can we pass `dbClient` and `collectionName` then?<br>
 Let's take a step back.
+
+## Routing
 
 Because this is a micro-service, then at some point there has to be some kind of route handling.
 There, instead of calling directly `fetchHotelPhotos`, we can call a function that prepares / creates
@@ -190,7 +195,7 @@ describe('createHotelPhotosRouteHandler', () => {
     it('should return a function', () => {
         const routeHandler = createHotelPhotosRouteHandler(connectedClientDouble, collectionName);
 
-        expect(routeHandler).to.be.a('function');
+        expect(routeHandler).to.be.a('function'); // (1)
     });
 });
 ```
@@ -201,8 +206,8 @@ export default function createHotelPhotosRouteHandler(dbClient, collectionName) 
 }
 ```
 
-There is no use for that function right now. But we will get to it right now.
-We will also reuse previously created `fetchHotelPhotos` function very soon.
+1. Why a function? You will soon find out. Keep on reading. There is no use for it right now,
+   but we will get to it. We will also reuse previously created `fetchHotelPhotos` function very soon.
 
 <blockquote>
 For route and HTTP request / response handling, I'll be using [Koa](http://koajs.com/),
@@ -224,7 +229,7 @@ router.get('/from/path/for/:someId', (ctx) => {
 });
 ```
 
-OK, I believe we have all requirements discussed. Now, let's combine all of this.
+OK, I believe we have all requirements discussed. Let's combine them:
 
 ```javascript
 describe('createHotelPhotosRouteHandler', () => {
@@ -285,6 +290,7 @@ export default function createHotelPhotosRouteHandler(dbClient, collectionName) 
    if we check in tests if they were called given amount of times. Remember that you should
    be able to call all unit tests independently, at any given moment, in any order. That being
    said, one spy call should not affect the other call in other test. Same goes for stubs.
+
 1. At this point, we still want to have photos returned. But since this is a route handler,
    I guess it should not return a plain array, but a response with status code and a body
    holding that array.
@@ -298,7 +304,7 @@ In order for Koa to return a response with given status code and a body,
 we need to set `status` and `body` properties of `response` property of `ctx` (I will explain it shortly).
 This is, again, a thing worth discovering before doing any coding.<br>
 
-### Learn how to use your tool, before using it.
+### "Learn how to use your tool, before using it."
 
 So, if we want to set `200` and a body with that collection of photos, we need to do something like:
 
@@ -311,9 +317,6 @@ Let's write a test for that:
 
 ```javascript
 const ctxDouble = {
-    params: {
-        hotelId
-    },
     response: { // (1)
         status: 0,
         body: ''
@@ -351,11 +354,16 @@ export default function createHotelPhotosRouteHandler(dbClient, collectionName) 
 ```
 1. We're adding `response` property which is an object holding `status` and `body` properties,
    which will be set and checked.
+
 1. They need to be reseted before each test.
+
 1. It is still returning this collection (as a response), that is why this test's description
    didn't change. From user's perspective, this is what will be happening: returning a collection
    of photos means a body with an array of file names and a status code of 200.
+
 1. No `photosCollection` anymore, as response is set in `ctx`.
+
+## Back to Mongo
 
 Now, let's take care of actually fetching this data from Mongo.
 We've ended up requesting a collection. Next, we need to find an entry for given hotel.
@@ -363,15 +371,24 @@ If you take a look into docs, [findOne()](http://mongodb.github.io/node-mongodb-
 is what we will use.
 
 ```javascript
+const ctxDouble = {
+    params: { // (1)
+        hotelId
+    },
+    response: { // (1)
+        status: 0,
+        body: ''
+    }
+};
 const findOneSpy = sinon.spy();
 const connectedClientDouble = {
-    collection: sinon.stub().returns({ // (1)
+    collection: sinon.stub().returns({ // (2)
         findOne: findOneSpy
     })
 };
 
 beforeEach(() => {
-    connectedClientDouble.collection.resetHistory(); // (2)
+    connectedClientDouble.collection.resetHistory(); // (3)
     findOneSpy.reset();
 
     ctxDouble.response.status = 0;
@@ -384,7 +401,7 @@ it('should find hotel entry by hotel id passed in params', () => {
     routeHandler(ctxDouble);
 
     expect(findOneSpy)
-        .to.have.been.calledWithExactly({ hotelId })
+        .to.have.been.calledWithExactly({ hotelId: 'hotelId' })
         .to.have.been.calledOnce;
 });
 ```
@@ -392,7 +409,7 @@ it('should find hotel entry by hotel id passed in params', () => {
 ```javascript
 return default function createHotelPhotosRouteHandler(dbClient, collectionName) {
     return (ctx) => {
-        dbClient // (3)
+        dbClient // (4)
             .collection(collectionName)
             .findOne({ hotelId: ctx.params.hotelId });
 
@@ -401,9 +418,12 @@ return default function createHotelPhotosRouteHandler(dbClient, collectionName) 
     };
 }
 ```
+1. We need `hotelId` in params.
 
 1. `collection` now becomes a stub, so we had to take care of that...
+
 1. ... as well as changing how call count reset is handled.
+
 1. Now, as we need `hotelId` from params, connection must be called within returned function.
 
 After finding the entity for given hotel, we need to return `photos` property from it and we will be almost done.
@@ -453,9 +473,11 @@ export default function createHotelPhotosRouteHandler(dbClient, collectionName) 
 }
 ```
 
-1. As `findOne` returns a promise, this is what we must stub. This is finally the place
+1. As `findOne` returns a Promise, this is what we must stub. This is finally the place
    where we can return our photos.
+
 1. Reseting history changes (for stubs).
+
 1. As we are dealing with Promise, the way of executing this part of the test code
    needed to change as well.
 
@@ -506,12 +528,13 @@ function createHotelPhotosRouteHandler(dbClient, collectionName) {
    client double, as it is not so big and complex. In other case, I would
    probably create a function that builds this double for me and prepare it
    for different scenarios.
+
 1. Here's a simple response when no entity is to be found.
 
 If there should be any other cases handled, it's going to be pretty straightforward
 from now on.
 
-Here's the final code:
+## Final code:
 
 ```javascript
 describe('createHotelPhotosRouteHandler', () => {
@@ -635,11 +658,12 @@ Just to wrap things up, this is what I found helping me most:
    that has the minimum code required, as you will want to get to that `return` step ASAP
    (this and writing a minimum code that passes the tests and does nothing more).
  - **learn how to use your tool before you start using it** - discover how APIs of given modules / classes
-   you will use look like. Not knowing this also slows you down as you tend to try out things rather than using them.
-   OK, to be fair. If you really would like to try, do it, write a code, make sure it works, but then delete it
-   and start by writing tests. You might end up with less code (most of the time), because it will only do
-   whatever your tests will require it to do.
+   you will use look like. Not knowing this also slows you down and make you lean towards writing code, and
+   not test, first.<br>
+   OK, to be fair. If you really would like to try it out, do it, write a code, make sure it works,
+   but then delete it and start by writing tests. You might end up with less code (most of the time),
+   because it will only do whatever your tests will require it to do. And you will practice TF programming.
 
 I believe that having done this first step will encourage you to do TF (TDD) more often, without
 the fear of falling into *I don't know what my code will look like so I need to write it first*
-trap.
+trap. And don't worry if it will take a long time to do it on daily basis. It took my 'only' 6 months :)
