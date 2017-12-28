@@ -158,13 +158,13 @@ Perhaps:
 fetchHotelPhotos(hotelId, dbClient, collectionName);
 ```
 
-No, rather not. Ideally it would look like:
+No, rather not. Ideally it would look like this:
 
 ```javascript
 fetchHotelPhotos(hotelId);
 ```
 
-How can we then pass `dbClient` and `collectionName`?<br>
+How can we pass `dbClient` and `collectionName` then?<br>
 Let's take a step back.
 
 Because this is a micro-service, then at some point there has to be some kind of route handling.
@@ -209,9 +209,9 @@ but you can use whatever you like, e.g. [Express](http://expressjs.com/).
 </blockquote>
 
 Koa expects, for each route, a function to be passed (we already have it), and that function
-is passed `ctx`  and  `next`. We are interested in `ctx` only, as it holds:
+is passed `ctx`  and  `next` arguments. We are interested in `ctx` only, as it holds:
  - request params
- - request and response objects references
+ - response object reference
 
 So, some raw route would look like this:
 
@@ -294,7 +294,8 @@ anyone with the whole codebase. If needed, I will show everything, but not alway
 In order for Koa to return a response with given status code and a body,
 we need to set `status` and `body` properties of `response` property of `ctx` (I will explain it shortly).
 This is, again, a thing worth discovering before doing any coding.<br>
-**Learn how to use your tool, before using it**.
+
+#### Learn how to use your tool, before using it.
 
 So, if we want to set `200` and a body with that collection of photos, we need to do something like:
 
