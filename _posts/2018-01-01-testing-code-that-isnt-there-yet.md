@@ -295,7 +295,7 @@ In order for Koa to return a response with given status code and a body,
 we need to set `status` and `body` properties of `response` property of `ctx` (I will explain it shortly).
 This is, again, a thing worth discovering before doing any coding.<br>
 
-#### Learn how to use your tool, before using it.
+### Learn how to use your tool, before using it.
 
 So, if we want to set `200` and a body with that collection of photos, we need to do something like:
 
@@ -354,16 +354,71 @@ export default function createHotelPhotosRouteHandler(dbClient, collectionName) 
    of photos means a body with an array of file names and a status code of 200.
 1. No `photosCollection` anymore, as response is set in `ctx`.
 
+Now, let's take care of actually fetching this data from Mongo.
+We've ended up requesting a collection. Next, we need to find an entry for given hotel.
+If you take a look into docs, [findOne()](http://mongodb.github.io/node-mongodb-native/3.0/api/Collection.html#findOne)
+is what we will use.
 
+```javascript
+const findOneSpy = sinon.spy();
+const connectedClientDouble = {
+    collection: sinon.stub().returns({ // (1)
+        findOne: findOneSpy
+    })
+};
+
+beforeEach(() => {
+    connectedClientDouble.collection.resetHistory(); // (2)
+    findOneSpy.reset();
+
+    ctxDouble.response.status = 0;
+    ctxDouble.response.body = '';
+});
+
+it('should find hotel entry by hotel id passed in params', () => {
+    const routeHandler = createHotelPhotosRouteHandler(connectedClientDouble, collectionName);
+
+    routeHandler(ctxDouble);
+
+    expect(findOneSpy)
+        .to.have.been.calledWithExactly({ hotelId })
+        .to.have.been.calledOnce;
+});
+```
+
+```javascript
+return default function createHotelPhotosRouteHandler(dbClient, collectionName) {
+    return (ctx) => {
+        dbClient // (3)
+            .collection(collectionName)
+            .findOne({ hotelId: ctx.params.hotelId });
+
+        ctx.response.status = 200;
+        ctx.response.body = [ 'photo-1.jpg', 'photo-2.jpg', 'photo-3.jpg' ];
+    };
+}
+```
+
+1.
 
 ...
 
 ## Final words
 
-I wrote it once, I will write it again: **know what you want in `return`**.
-Then build your app from the very top to that point. This way you will end up with an application
-that has the minimum code required, as you will want to get to that `return` step ASAP
-(well, this and writing a code that passes the tests and does nothing more).
+For me, personally, doing the first step was always the hardest one. I had no idea how to start.
+How could I test something that wasn't there. I believe it is the same for some of us.
+And that is why I wanted to share how I managed to overcome this obstacle.
+
+Just to wrap things up, this is what I found helping me most:
+ - **know what you want in `return`** -
+   then build your app from the very top to that point. This way you will end up with an application
+   that has the minimum code required, as you will want to get to that `return` step ASAP
+   (this and writing a minimum code that passes the tests and does nothing more).
+ - **learn how to use your tool before you start using it** - discover how APIs of given modules / classes
+   you will use look like. Not knowing this also slows you down as you tend to try out things rather than using them.
+   OK, to be fair. If you really would like to try, do it, write a code, make sure it works, but then delete it
+   and start by writing tests. You might end up with less code (most of the time), because it will only do
+   whatever your tests will require it to do.
 
 I believe that having done this first step will encourage you to do TF (TDD) more often, without
 the fear of falling into *I don't know what my code will look like so I need to write it first*
