@@ -32,10 +32,11 @@ The example I am going to work with here is not going to be trivial like some si
 that conditionally returns some string, you can google plenty of those.
 What I would like to show is a part of a backend micro-service I was working on
 that included connecting to MongoDB and fetching some data. A more real-life example one would say.
+It's not 1:1 copy, but does almost all what my production code does as well.
 
-Also, the code produced here will have 100% code coverage, but might not be the prettiest one.
+The code produced here will have 100% code coverage, but might not be the prettiest one.
 Why? It's not a purpose of this post to show you how to refactor, but how to test code that isn't there,
-to get you started with TF programming with more complex code.
+to get you started with TF programming with more complex cases.
 
 ## Know what you want in `return`
 
@@ -82,7 +83,7 @@ look like the final one. I find it very easy to start with and then building the
 like adding layers of more responsibility as the code evolves. At the very end I will exchange returning
 this array of file names with some kind of DB handler's `find` method that I will stub.
 
-## Prepare dependencies
+## Get to know your tools before you use them
 
 <blockquote>
 I assume that at bootstrap level MongoDB driver is configured and what is being passed here
@@ -281,7 +282,9 @@ export default function createHotelPhotosRouteHandler(dbClient, collectionName) 
 ```
 
 1. It is a very good practice (most of the time a requirement) to reset calls count for spies
-   if we check in tests if they were called given amount of times.
+   if we check in tests if they were called given amount of times. Remember that you should
+   be able to call all unit tests independently, at any given moment, in any order. That being
+   said, one spy call should not affect the other call in other test. Same goes for stubs.
 1. At this point, we still want to have photos returned. But since this is a route handler,
    I guess it should not return a plain array, but a response with status code and a body
    holding that array.
@@ -399,9 +402,226 @@ return default function createHotelPhotosRouteHandler(dbClient, collectionName) 
 }
 ```
 
-1.
+1. `collection` now becomes a stub, so we had to take care of that...
+1. ... as well as changing how call count reset is handled.
+1. Now, as we need `hotelId` from params, connection must be called within returned function.
 
-...
+After finding the entity for given hotel, we need to return `photos` property from it and we will be almost done.
+
+```javascript
+const findOneStub = sinon.stub().resolves({ // (1)
+    photos: [ 'photo-1.jpg', 'photo-2.jpg', 'photo-3.jpg' ]
+});
+const connectedClientDouble = {
+    collection: sinon.stub().returns({
+        findOne: findOneStub
+    })
+};
+
+beforeEach(() => {
+    connectedClientDouble.collection.resetHistory();
+    findOneStub.resetHistory(); // (2)
+
+    ctxDouble.response.status = 0;
+    ctxDouble.response.body = '';
+});
+
+it('should return hotel photos collection', () => {
+    const routeHandler = createHotelPhotosRouteHandler(connectedClientDouble, collectionName);
+
+    return routeHandler(ctxDouble) // (3)
+        .then(() => {
+            expect(ctxDouble.response.status).to.equal(200);
+            expect(ctxDouble.response.body).to.deep.equal([
+                'photo-1.jpg', 'photo-2.jpg', 'photo-3.jpg'
+            ]);
+        });
+});
+```
+
+```javascript
+export default function createHotelPhotosRouteHandler(dbClient, collectionName) {
+    return (ctx) => {
+        return dbClient
+            .collection(collectionName)
+            .findOne({ hotelId: ctx.params.hotelId })
+            .then((hotelEntity) => {
+                ctx.response.status = 200;
+                ctx.response.body = hotelEntity.photos;
+            });
+    };
+}
+```
+
+1. As `findOne` returns a promise, this is what we must stub. This is finally the place
+   where we can return our photos.
+1. Reseting history changes (for stubs).
+1. As we are dealing with Promise, the way of executing this part of the test code
+   needed to change as well.
+
+## Handling negative cases
+
+What if the collection doesn't have hotel entity in it? Well, let's take care of this:
+
+```javascript
+context('if hotel entity is not found', () => {
+    it('should return 404 status', () => {
+        const connectedClientDoubleWithNoHotelEntity = { // (1)
+            collection: sinon.stub().returns({
+                findOne: sinon.stub().resolves(null)
+            })
+        };
+        const routeHandler = createHotelPhotosRouteHandler(
+            connectedClientDoubleWithNoHotelEntity,
+            collectionName
+        );
+
+        return routeHandler(ctxDouble)
+            .then(() => {
+                expect(ctxDouble.response.status).to.equal(404);
+            });
+    });
+});
+```
+
+```javascript
+function createHotelPhotosRouteHandler(dbClient, collectionName) {
+    return (ctx) => {
+        return dbClient
+            .collection(collectionName)
+            .findOne({ hotelId: ctx.params.hotelId })
+            .then((hotelEntity) => {
+                if (hotelEntity) {
+                    ctx.response.status = 200;
+                    ctx.response.body = hotelEntity.photos;
+                } else {
+                    ctx.response.status = 404; // (2)
+                }
+            });
+    };
+}
+```
+1. We need different behaviour of `findOne`, but because changing this deeply
+   nested property would be cumbersome, I decided to create a completely new
+   client double, as it is not so big and complex. In other case, I would
+   probably create a function that builds this double for me and prepare it
+   for different scenarios.
+1. Here's a simple response when no entity is to be found.
+
+If there should be any other cases handled, it's going to be pretty straightforward
+from now on.
+
+Here's the final code:
+
+```javascript
+describe('createHotelPhotosRouteHandler', () => {
+    const collectionName = 'hotels';
+    const hotelId = 'hotelId';
+
+    const findOneStub = sinon.stub().resolves({
+        photos: [ 'photo-1.jpg', 'photo-2.jpg', 'photo-3.jpg' ]
+    });
+    const connectedClientDouble = {
+        collection: sinon.stub().returns({
+            findOne: findOneStub
+        })
+    };
+    const ctxDouble = {
+        params: {
+            hotelId
+        },
+        response: {
+            status: 0,
+            body: ''
+        }
+    };
+
+    beforeEach(() => {
+        connectedClientDouble.collection.resetHistory();
+        findOneStub.resetHistory();
+
+        ctxDouble.response.status = 0;
+        ctxDouble.response.body = '';
+    });
+
+    it('should return a route handler', () => {
+        const routeHandler = createHotelPhotosRouteHandler(connectedClientDouble, collectionName);
+
+        expect(routeHandler).to.be.a('function');
+    });
+
+    describe('route handler', () => {
+        it('should connect to hotels collection', () => {
+            const routeHandler = createHotelPhotosRouteHandler(connectedClientDouble, collectionName);
+
+            routeHandler(ctxDouble);
+
+            expect(connectedClientDouble.collection)
+                .to.have.been.calledWithExactly('hotels')
+                .to.have.been.calledOnce;
+        });
+
+        it('should find hotel entry by hotel id passed in params', () => {
+            const routeHandler = createHotelPhotosRouteHandler(connectedClientDouble, collectionName);
+
+            routeHandler(ctxDouble);
+
+            expect(findOneStub)
+                .to.have.been.calledWithExactly({ hotelId })
+                .to.have.been.calledOnce;
+        });
+
+        context('if hotel entity is not found', () => {
+            it('should return 404 status', () => {
+                const connectedClientDoubleWithNoHotelEntity = {
+                    collection: sinon.stub().returns({
+                        findOne: sinon.stub().resolves(null)
+                    })
+                };
+                const routeHandler = createHotelPhotosRouteHandler(
+                    connectedClientDoubleWithNoHotelEntity,
+                    collectionName
+                );
+
+                return routeHandler(ctxDouble)
+                    .then(() => {
+                        expect(ctxDouble.response.status).to.equal(404);
+                    });
+            });
+        });
+
+        it('should return hotel photos collection', () => {
+            const routeHandler = createHotelPhotosRouteHandler(connectedClientDouble, collectionName);
+
+            return routeHandler(ctxDouble)
+                .then(() => {
+                    expect(ctxDouble.response.status).to.equal(200);
+                    expect(ctxDouble.response.body).to.deep.equal([
+                        'photo-1.jpg', 'photo-2.jpg', 'photo-3.jpg'
+                    ]);
+                });
+        });
+    });
+});
+```
+
+```javascript
+export default function createHotelPhotosRouteHandler(dbClient, collectionName) {
+    return (ctx) => {
+        return dbClient
+            .collection(collectionName)
+            .findOne({ hotelId: ctx.params.hotelId })
+            .then((hotelEntity) => {
+                if (hotelEntity) {
+                    ctx.response.status = 200;
+                    ctx.response.body = hotelEntity.photos;
+                } else {
+                    ctx.response.status = 404;
+                }
+            });
+    };
+}
+```
 
 ## Final words
 
