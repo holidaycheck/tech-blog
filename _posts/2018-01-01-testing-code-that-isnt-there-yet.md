@@ -47,7 +47,7 @@ My function will return a collection of photos for given hotel ID (yes, I work i
 I learned that photos are a part of hotel entity and are stored under `photos` property.
 This is worth investigating before any code is written.
 
-<em class="snippet-description">fetchHotelPhotosSpec.js</em>
+<em class="snippet-description">fetchHotelPhotosSpec.js (<a href="https://github.com/smolak/testing-code-that-isnt-there-yet/commit/72e5020720746c7fe8edbb688052694c113bf21e">commit</a>)</em>
 ```javascript
 import fetchHotelPhotos from '../fetchHotelPhotos';
 
@@ -65,7 +65,7 @@ describe('fetchHotelPhotos', () => {
 This is what I want to have returned if I call this function. An array of file names.
 Now, having this test I can create the very first code that passes it:
 
-<em class="snippet-description">fetchHotelPhotos.js</em>
+<em class="snippet-description">fetchHotelPhotos.js (<a href="https://github.com/smolak/testing-code-that-isnt-there-yet/commit/72e5020720746c7fe8edbb688052694c113bf21e">commit</a>)</em>
 ```javascript
 export default function fetchHotelPhotos() {
     return [ 'photo-1.jpg', 'photo-2.jpg', 'photo-3.jpg' ];
@@ -104,7 +104,7 @@ As our data lies in some collection, we need to fetch it using the
 [collection()](http://mongodb.github.io/node-mongodb-native/3.0/api/Db.html#collection) method.
 I will use [sinon](http://sinonjs.org/) for organizing spies and stubs.
 
-<em class="snippet-description">fetchHotelPhotosSpec.js</em>
+<em class="snippet-description">fetchHotelPhotosSpec.js (<a href="https://github.com/smolak/testing-code-that-isnt-there-yet/commit/03985f1d77bf34ed1b0bfd396cf3967fdd3fb6a2">commit</a>)</em>
 ```javascript
 describe('fetchHotelPhotos', () => {
     const connectedClientDouble = {
@@ -130,7 +130,7 @@ describe('fetchHotelPhotos', () => {
 });
 ```
 
-<em class="snippet-description">fetchHotelPhotos.js</em>
+<em class="snippet-description">fetchHotelPhotos.js (<a href="https://github.com/smolak/testing-code-that-isnt-there-yet/commit/03985f1d77bf34ed1b0bfd396cf3967fdd3fb6a2">commit</a>)</em>
 ```javascript
 export default function fetchHotelPhotos(dbClient, collectionName) {
     dbClient.collection(collectionName); // (3)
@@ -188,7 +188,7 @@ router.get('/hotel/:hotelId/photos', createHotelPhotosRouteHandler(dbClient, col
 
 OK, this seems better. Let's create this handler. First, a test:
 
-<em class="snippet-description">createHotelPhotosRouteHandlerSpec.js</em>
+<em class="snippet-description">createHotelPhotosRouteHandlerSpec.js (<a href="https://github.com/smolak/testing-code-that-isnt-there-yet/commit/b6963ef9f599c3ad084cd0a71532a6f6c3769c26">commit</a>)</em>
 ```javascript
 describe('createHotelPhotosRouteHandler', () => {
     const connectedClientDouble = {
@@ -204,7 +204,7 @@ describe('createHotelPhotosRouteHandler', () => {
 });
 ```
 
-<em class="snippet-description">createHotelPhotosRouteHandler.js</em>
+<em class="snippet-description">createHotelPhotosRouteHandler.js (<a href="https://github.com/smolak/testing-code-that-isnt-there-yet/commit/b6963ef9f599c3ad084cd0a71532a6f6c3769c26">commit</a>)</em>
 ```javascript
 export default function createHotelPhotosRouteHandler() {
     return () => {};
@@ -235,7 +235,7 @@ router.get('/from/path/for/:someId', (ctx) => {
 
 Now that have all requirements discussed, let's combine them:
 
-<em class="snippet-description">createHotelPhotosRouteHandlerSpec.js</em>
+<em class="snippet-description">createHotelPhotosRouteHandlerSpec.js (<a href="https://github.com/smolak/testing-code-that-isnt-there-yet/commit/a2726ce109fa700071390e8cd06603e99db2c951">commit</a>)</em>
 ```javascript
 describe('createHotelPhotosRouteHandler', () => {
     const collectionName = 'hotels';
@@ -277,7 +277,7 @@ describe('createHotelPhotosRouteHandler', () => {
 });
 ```
 
-<em class="snippet-description">createHotelPhotosRouteHandler.js</em>
+<em class="snippet-description">createHotelPhotosRouteHandler.js (<a href="https://github.com/smolak/testing-code-that-isnt-there-yet/commit/a2726ce109fa700071390e8cd06603e99db2c951">commit</a>)</em>
 ```javascript
 export default function createHotelPhotosRouteHandler(dbClient, collectionName) {
     dbClient.collection(collectionName);
@@ -315,7 +315,7 @@ ctx.response.body = [ 'photo-1.jpg', 'photo-2.jpg', 'photo-3.jpg' ];
 
 Let's write a test for that:
 
-<em class="snippet-description">createHotelPhotosRouteHandlerSpec.js</em>
+<em class="snippet-description">createHotelPhotosRouteHandlerSpec.js (<a href="https://github.com/smolak/testing-code-that-isnt-there-yet/commit/f00f6388e1f0f4f4c9c98f1260af20c4d80b403a">commit</a>)</em>
 ```javascript
 const ctxDouble = {
     response: { // (1)
@@ -343,7 +343,7 @@ it('should return hotel photos collection', () => { // (3)
 });
 ```
 
-<em class="snippet-description">createHotelPhotosRouteHandler.js</em>
+<em class="snippet-description">createHotelPhotosRouteHandler.js (<a href="https://github.com/smolak/testing-code-that-isnt-there-yet/commit/f00f6388e1f0f4f4c9c98f1260af20c4d80b403a">commit</a>)</em>
 ```javascript
 export default function createHotelPhotosRouteHandler(dbClient, collectionName) {
     dbClient.collection(collectionName);
@@ -372,7 +372,7 @@ We've ended up requesting a collection. Next, we need to find an entry for given
 If you take a look into docs, [findOne()](http://mongodb.github.io/node-mongodb-native/3.0/api/Collection.html#findOne)
 is what can help us. Let's use it:
 
-<em class="snippet-description">createHotelPhotosRouteHandlerSpec.js</em>
+<em class="snippet-description">createHotelPhotosRouteHandlerSpec.js (<a href="https://github.com/smolak/testing-code-that-isnt-there-yet/commit/7d0688ae97b1a747c648ccf45d1f5c1af0bf4c85">commit</a>)</em>
 ```javascript
 const hotelId = 'hotelId';
 
@@ -411,7 +411,7 @@ it('should find hotel entry by hotel id passed in params', () => {
 });
 ```
 
-<em class="snippet-description">createHotelPhotosRouteHandler.js</em>
+<em class="snippet-description">createHotelPhotosRouteHandler.js (<a href="https://github.com/smolak/testing-code-that-isnt-there-yet/commit/7d0688ae97b1a747c648ccf45d1f5c1af0bf4c85">commit</a>)</em>
 ```javascript
 export default function createHotelPhotosRouteHandler(dbClient, collectionName) {
     return (ctx) => {
@@ -434,7 +434,7 @@ export default function createHotelPhotosRouteHandler(dbClient, collectionName) 
 
 After finding the entity for given hotel, we need to return `photos` property from it and we will be almost done.
 
-<em class="snippet-description">createHotelPhotosRouteHandlerSpec.js</em>
+<em class="snippet-description">createHotelPhotosRouteHandlerSpec.js (<a href="https://github.com/smolak/testing-code-that-isnt-there-yet/commit/d1845d72151dd87ed87b2d2532ab4fff8d4001c2">commit</a>)</em>
 ```javascript
 const findOneStub = sinon.stub().resolves({ // (1)
     photos: [ 'photo-1.jpg', 'photo-2.jpg', 'photo-3.jpg' ]
@@ -466,7 +466,7 @@ it('should return hotel photos collection', () => {
 });
 ```
 
-<em class="snippet-description">createHotelPhotosRouteHandler.js</em>
+<em class="snippet-description">createHotelPhotosRouteHandler.js (<a href="https://github.com/smolak/testing-code-that-isnt-there-yet/commit/d1845d72151dd87ed87b2d2532ab4fff8d4001c2">commit</a>)</em>
 ```javascript
 export default function createHotelPhotosRouteHandler(dbClient, collectionName) {
     return (ctx) => {
@@ -491,7 +491,7 @@ export default function createHotelPhotosRouteHandler(dbClient, collectionName) 
 
 What if the collection doesn't have hotel entity in it? Well, let's take care of this:
 
-<em class="snippet-description">createHotelPhotosRouteHandlerSpec.js</em>
+<em class="snippet-description">createHotelPhotosRouteHandlerSpec.js (<a href="https://github.com/smolak/testing-code-that-isnt-there-yet/commit/962aad608e0063b4adb0e96551443385c7ada7f0">commit</a>)</em>
 ```javascript
 context('if hotel entity is not found', () => {
     it('should return 404 status', () => {
@@ -513,7 +513,7 @@ context('if hotel entity is not found', () => {
 });
 ```
 
-<em class="snippet-description">createHotelPhotosRouteHandler.js</em>
+<em class="snippet-description">createHotelPhotosRouteHandler.js (<a href="https://github.com/smolak/testing-code-that-isnt-there-yet/commit/962aad608e0063b4adb0e96551443385c7ada7f0">commit</a>)</em>
 ```javascript
 export default function createHotelPhotosRouteHandler(dbClient, collectionName) {
     return (ctx) => {
@@ -544,7 +544,7 @@ from now on.
 
 ## Final code:
 
-<em class="snippet-description">createHotelPhotosRouteHandlerSpec.js</em>
+<em class="snippet-description"><a href="https://github.com/smolak/testing-code-that-isnt-there-yet/blob/master/test/unit/src/createHotelPhotosRouteHandlerSpec.js">createHotelPhotosRouteHandlerSpec.js</a></em>
 ```javascript
 describe('createHotelPhotosRouteHandler', () => {
     const collectionName = 'hotels';
@@ -638,7 +638,7 @@ describe('createHotelPhotosRouteHandler', () => {
 });
 ```
 
-<em class="snippet-description">createHotelPhotosRouteHandler.js</em>
+<em class="snippet-description"><a href="https://github.com/smolak/testing-code-that-isnt-there-yet/blob/master/src/createHotelPhotosRouteHandler.js">createHotelPhotosRouteHandler.js</a></em>
 ```javascript
 export default function createHotelPhotosRouteHandler(dbClient, collectionName) {
     return (ctx) => {
