@@ -550,14 +550,6 @@ describe('createHotelPhotosRouteHandler', () => {
     const collectionName = 'hotels';
     const hotelId = 'hotelId';
 
-    const findOneStub = sinon.stub().resolves({
-        photos: [ 'photo-1.jpg', 'photo-2.jpg', 'photo-3.jpg' ]
-    });
-    const connectedClientDouble = {
-        collection: sinon.stub().returns({
-            findOne: findOneStub
-        })
-    };
     const ctxDouble = {
         params: {
             hotelId
@@ -566,6 +558,15 @@ describe('createHotelPhotosRouteHandler', () => {
             status: 0,
             body: ''
         }
+    };
+
+    const findOneStub = sinon.stub().resolves({
+        photos: [ 'photo-1.jpg', 'photo-2.jpg', 'photo-3.jpg' ]
+    });
+    const connectedClientDouble = {
+        collection: sinon.stub().returns({
+            findOne: findOneStub
+        })
     };
 
     beforeEach(() => {
@@ -599,7 +600,7 @@ describe('createHotelPhotosRouteHandler', () => {
             routeHandler(ctxDouble);
 
             expect(findOneStub)
-                .to.have.been.calledWithExactly({ hotelId })
+                .to.have.been.calledWithExactly({ hotelId: 'hotelId' })
                 .to.have.been.calledOnce;
         });
 
