@@ -176,13 +176,13 @@ Let's take a step back.
 
 ## Routing
 
-Because this is a micro-service, then at some point there has to be some kind of route handling.
-There, instead of calling directly `fetchHotelPhotos`, we can call a function that prepares / creates
-handler for particular route (e.g. `/hotel/:hotelId/photos`).
+I have some routing in the micro-service I built. Therefore instead of using `fetchHotelPhotos`
+directly, I need to have some function that prepares / creates handler for particular route
+(e.g. `/hotel/:hotelId/photos`).
 
 Let's say it looks like this:
 
-<em class="snippet-description">our route for fetching hotel photos</em>
+<em class="snippet-description">route for fetching hotel photos</em>
 ```javascript
 router.get('/hotel/:hotelId/photos', createHotelPhotosRouteHandler(dbClient, collectionName))
 ```
