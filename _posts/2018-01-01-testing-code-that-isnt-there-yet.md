@@ -214,7 +214,7 @@ For route and HTTP request / response handling, I'll be using [Koa](http://koajs
 but you can use whatever you like, e.g. [Express](http://expressjs.com/).
 </blockquote>
 
-Koa expects, for each route, a function to be passed (we already have it, thought it's empty),
+Koa expects, for each route, a function to be passed (we already have it, though it's empty),
 and that function is passed `ctx`  and  `next` arguments. We are interested in `ctx` only, as it holds:
  - request params
  - response object reference
@@ -286,7 +286,7 @@ export default function createHotelPhotosRouteHandler(dbClient, collectionName) 
 }
 ```
 
-1. It is a very good practice (most of the time a requirement) to reset calls count for spies
+1. It is a very good practice (most of the time a requirement) to reset the calls count for spies
    if we check in tests if they were called given amount of times. Remember that you should
    be able to call all unit tests independently, at any given moment, in any order. That being
    said, one spy call should not affect the other call in other test. Same goes for stubs.
@@ -296,7 +296,7 @@ export default function createHotelPhotosRouteHandler(dbClient, collectionName) 
    holding that array.
 
 <blockquote>
-For the sake of readability, I will add only a single test here and there to not overwhelme
+For the sake of readability, I will add only a single test here and there to not overwhelm
 anyone with the whole codebase.
 </blockquote>
 
@@ -355,7 +355,7 @@ export default function createHotelPhotosRouteHandler(dbClient, collectionName) 
 1. We're adding `response` property which is an object holding `status` and `body` properties,
    which will be set and checked.
 
-1. They need to be reseted before each test.
+1. They need to be reset before each test.
 
 1. It is still returning this collection (as a response), that is why this test's description
    didn't change. From user's perspective, this is what will be happening: returning a collection
@@ -665,7 +665,7 @@ Just to wrap things up, this is what I found helping me most:
 
 I believe that having done this first step will encourage you to do TF (TDD) more often, without
 the fear of falling into *I don't know what my code will look like so I need to write it first*
-trap. And don't worry if it will take a long time to do it on daily basis. It took my 'only' 6 months :)
+trap. And don't worry if it will take a long time to do it on daily basis. It took me 'only' 6 months :)
 
 *Photo by [Hal Ozart](https://unsplash.com/photos/MyRBq7GoVK0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).*
