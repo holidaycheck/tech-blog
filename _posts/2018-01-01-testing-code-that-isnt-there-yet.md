@@ -96,7 +96,7 @@ I assume that at bootstrap level MongoDB driver is configured and what is being 
 is ready to use instance, that is already connected to DB.
 
 So result of calling
-[`mongodb.MongoClient.client.connect()`](http://mongodb.github.io/node-mongodb-native/3.0/api/MongoClient.html#.connect)
+<a href="http://mongodb.github.io/node-mongodb-native/3.0/api/MongoClient.html#.connect">`mongodb.MongoClient.client.connect()`</a>
 is what we will use.
 </blockquote>
 
@@ -217,8 +217,8 @@ export default function createHotelPhotosRouteHandler(dbClient, collectionName) 
    but we will get to it. We will also reuse previously created `fetchHotelPhotos` function very soon.
 
 <blockquote>
-For route and HTTP request / response handling, I'll be using [Koa](http://koajs.com/),
-but you can use whatever you like, e.g. [Express](http://expressjs.com/).
+For route and HTTP request / response handling, I'll be using <a href="http://koajs.com/">Koa</a>,
+but you can use whatever you like, e.g. <a href="http://expressjs.com/">Express</a>.
 </blockquote>
 
 Koa expects, for each route, a function to be passed (we already have it, though it's empty),
