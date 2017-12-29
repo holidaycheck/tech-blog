@@ -515,7 +515,7 @@ context('if hotel entity is not found', () => {
 
 <em class="snippet-description">createHotelPhotosRouteHandler.js</em>
 ```javascript
-function createHotelPhotosRouteHandler(dbClient, collectionName) {
+export default function createHotelPhotosRouteHandler(dbClient, collectionName) {
     return (ctx) => {
         return dbClient
             .collection(collectionName)
