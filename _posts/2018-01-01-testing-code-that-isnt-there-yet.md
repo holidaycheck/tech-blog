@@ -413,7 +413,7 @@ it('should find hotel entry by hotel id passed in params', () => {
 
 <em class="snippet-description">createHotelPhotosRouteHandler.js</em>
 ```javascript
-return default function createHotelPhotosRouteHandler(dbClient, collectionName) {
+export default function createHotelPhotosRouteHandler(dbClient, collectionName) {
     return (ctx) => {
         dbClient // (4)
             .collection(collectionName)
