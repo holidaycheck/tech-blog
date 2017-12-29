@@ -76,12 +76,18 @@ export default function fetchHotelPhotos() {
 ```
 
 As I mentioned, there will be things related with connecting to Mongo, finding some data,
-also some error handling. But, if everything goes well, this is what you want to have returned.
+also some error handling. If you will look at it as some steps needed to be taken, this is how
+it will look like:
 
-If you will look at it as some steps needed to be taken, this (returning that array), will
-look like the final one. I find it very easy to start with and then building the rest on top of that,
-like adding layers of more responsibility as the code evolves. At the very end I will exchange returning
-this array of file names with some kind of DB handler's `find` method that I will stub.
+1. Connect to Mongo
+
+1. Find entity holding our data
+
+1. Return that data
+
+I find it very easy to start from the last step and then continue working from top to bottom.
+At the very end I will replace returning this array of file names with some kind of DB handler's
+`find` method that I will stub.
 
 ## Provide dependencies
 
@@ -101,6 +107,7 @@ Let's inject it. Also let's have a very first use of it.
 As our data lies in some collection, we need to fetch it using `collection` method.
 I will use [sinon](http://sinonjs.org/) for organizing spies and stubs.
 
+<em>test</em>
 ```javascript
 describe('fetchHotelPhotos', () => {
     const connectedClientDouble = {
