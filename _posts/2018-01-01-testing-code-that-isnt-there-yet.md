@@ -206,7 +206,7 @@ describe('createHotelPhotosRouteHandler', () => {
 
 <em class="snippet-description">createHotelPhotosRouteHandler.js</em>
 ```javascript
-export default function createHotelPhotosRouteHandler(dbClient, collectionName) {
+export default function createHotelPhotosRouteHandler() {
     return () => {};
 }
 ```
