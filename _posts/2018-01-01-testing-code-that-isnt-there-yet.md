@@ -141,21 +141,20 @@ export default function fetchHotelPhotos(dbClient, collectionName) {
 
 1. You might ask why did I hardcode collection name instead of reusing the variable?
    That is because tests are applications as well. If I change something in one place,
-   I would also like to know that it has an impact in other place(s) as well. In this example
-   if I would change collection to something else, I would like to know that one of my tests
-   have failed. Here, in this example, it's not so very important, but there can be cases where
-   passed string will have important meaning and just reusing a declared variable at the top
-   might be not safe enough. This is just how I go about writing my tests.
+   I would also like to know that it has an impact in other place(s) as well. In this
+   example if I was to change the collection name to something else I would like to see
+   a failing test. In this example, it's not so very important,
+   but there can be cases where a passed string will have an important meaning and just
+   reusing a declared variable at the top might be not safe enough.
 
-1. This test has failed, because `fetchHotelPhotos` calls for collection, and thus client
+1. This test would fail, because `fetchHotelPhotos` calls for collection, and thus client
    and collection name need to be passed here as well.
 
-1. This might look awkward at this moment, but we will get to the point where getting the collection
-   and returning an array with file names are connected.
+1. This might look awkward at this moment, but we will get to the point where getting
+   the collection and returning an array with file names are connected.
 
-Tests pass, but something doesn't seem right. If we are to get photos of a particular hotel,
-we should only pass hotel's ID (or other unique identifier) as a single argument for that
-function.
+You've probably noticed that something odd right now. If we are to get photos of a particular
+hotel, we should only pass hotel's ID as a single argument for that function.
 
 Perhaps:
 
@@ -225,8 +224,7 @@ and that function is passed `ctx`  and  `next` arguments. We are interested in `
  - request params
  - response object reference
 
-So, some raw route would look like this:
-
+<em class="snippet-description">route example</em>
 ```javascript
 router.get('/from/path/for/:someId', (ctx) => {
     // here we handle this route
@@ -235,7 +233,7 @@ router.get('/from/path/for/:someId', (ctx) => {
 });
 ```
 
-OK, I believe we have all requirements discussed. Let's combine them:
+Now that have all requirements discussed, let's combine them:
 
 <em class="snippet-description">createHotelPhotosRouteHandlerSpec.js</em>
 ```javascript
@@ -294,10 +292,10 @@ export default function createHotelPhotosRouteHandler(dbClient, collectionName) 
 }
 ```
 
-1. It is a very good practice (most of the time a requirement) to reset the calls count for spies
-   if we check in tests if they were called given amount of times. Remember that you should
+1. It is a very good practice to reset the calls count for spies
+   if we check if they were called given amount of times. Remember that you should
    be able to call all unit tests independently, at any given moment, in any order. That being
-   said, one spy call should not affect the other call in other test. Same goes for stubs.
+   said, one spy call should not affect the other call in other test.
 
 1. At this point, we still want to have photos returned. But since this is a route handler,
    I guess it should not return a plain array, but a response with status code and a body
@@ -305,7 +303,7 @@ export default function createHotelPhotosRouteHandler(dbClient, collectionName) 
 
 <blockquote>
 For the sake of readability, I will add only a single test here and there to not overwhelm
-anyone with the whole codebase.
+you with the whole codebase.
 </blockquote>
 
 In order for Koa to return a response with given status code and a body,
@@ -436,7 +434,7 @@ return default function createHotelPhotosRouteHandler(dbClient, collectionName) 
 
 1. ... as well as changing how call count reset is handled.
 
-1. Now, as we need `hotelId` from params, connection must be called within returned function.
+1. As we need `hotelId` from params, collection must be called within returned function.
 
 After finding the entity for given hotel, we need to return `photos` property from it and we will be almost done.
 
@@ -537,13 +535,13 @@ function createHotelPhotosRouteHandler(dbClient, collectionName) {
     };
 }
 ```
-1. We need different behaviour of `findOne`, and because changing this deeply
+1. We need different behaviour of `findOne`. Because changing this deeply
    nested property would be cumbersome, I decided to create a completely new
    client double, as it is not so big and complex. In other case, I would
    probably create a function that builds this double for me and prepare it
    for different scenarios.
 
-1. Here's a simple response when no entity is to be found.
+1. A simple response when entity was not found.
 
 If there should be any other cases handled, it's going to be pretty straightforward
 from now on.
@@ -665,20 +663,20 @@ export default function createHotelPhotosRouteHandler(dbClient, collectionName) 
 ## Final words
 
 For me, personally, doing the first step was always the hardest one. I had no idea how to start.
-How could I test something that wasn't there. I believe it is the same for some of us.
+How could I test something that wasn't there? I believe it is the same for some of you.
 And that is why I wanted to share how I managed to overcome this obstacle.
 
 Just to wrap things up, this is what I found helping me most:
  - **know what you want in `return`** -
    then build your app from the very top to that point. This way you will end up with an application
-   that has the minimum code required, as you will want to get to that `return` step ASAP
-   (this and writing a minimum code that passes the tests and does nothing more).
+   that has the minimum code required, as you will want to get to that `return` step ASAP.
+   Writing minimum code that passes the tests helps a lot as well.
 
  - **learn how to use your tool before you start using it** - discover how APIs of given modules / classes
-   you will use look like. Not knowing this will slow you down and make you lean towards writing code, and
+   you will use work. Not knowing this will slow you down and make you lean towards writing code, and
    not test, first.<br>
-   OK, to be fair. If you really would like to try it out, do it, write a code, make sure it works,
-   but then delete it and start by writing tests. You might end up with less code (most of the time),
+   OK, to be fair. If you really would like to try it out, do it, write some code and make sure it works.
+   Then delete it and start by writing tests. You might end up with less code (most of the time),
    because it will only do whatever your tests will require it to do. And you will practice TF programming.
 
 I believe that having done this first step will encourage you to do TF (TDD) more often, without
