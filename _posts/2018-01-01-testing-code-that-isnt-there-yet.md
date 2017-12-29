@@ -139,10 +139,6 @@ export default function fetchHotelPhotos(dbClient, collectionName) {
 }
 ```
 
-<blockquote>
-I will often comment the code with (1), (2) and so on, when there will be things worth noticing.
-</blockquote>
-
 1. You might ask why did I hardcode collection name instead of reusing the variable?
    That is because tests are applications as well. If I change something in one place,
    I would also like to know that it has an impact in other place(s) as well. In this example
