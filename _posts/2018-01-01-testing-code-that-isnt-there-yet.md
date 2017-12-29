@@ -374,6 +374,8 @@ is what can help us. Let's use it:
 
 <em class="snippet-description">createHotelPhotosRouteHandlerSpec.js</em>
 ```javascript
+const hotelId = 'hotelId';
+
 const ctxDouble = {
     params: { // (1)
         hotelId
