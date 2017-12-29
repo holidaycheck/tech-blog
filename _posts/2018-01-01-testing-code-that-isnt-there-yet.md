@@ -96,12 +96,12 @@ So result of calling
 <a href="http://mongodb.github.io/node-mongodb-native/3.0/api/MongoClient.html#.connect">mongodb.MongoClient.client.connect()</a>
 is what we will use.
 </blockquote>
-
-First thing you want to avoid is to have global imports in your file
+The first thing you want to avoid is to have global imports in your file
 (e.g. [Mongo driver](https://www.npmjs.com/package/mongodb)), as it will be very hard to test.
 Let's inject it. Also let's have a very first use of it.
 
-As our data lies in some collection, we need to fetch it using `collection` method.
+As our data lies in some collection, we need to fetch it using the
+[collection()](http://mongodb.github.io/node-mongodb-native/3.0/api/Db.html#collection) method.
 I will use [sinon](http://sinonjs.org/) for organizing spies and stubs.
 
 <em class="snippet-description">fetchHotelPhotosSpec.js</em>
