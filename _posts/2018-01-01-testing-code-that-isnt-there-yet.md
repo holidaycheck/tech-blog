@@ -96,7 +96,7 @@ I assume that at bootstrap level MongoDB driver is configured and what is being 
 is ready to use instance, that is already connected to DB.
 
 So result of calling
-<a href="http://mongodb.github.io/node-mongodb-native/3.0/api/MongoClient.html#.connect">`mongodb.MongoClient.client.connect()`</a>
+<a href="http://mongodb.github.io/node-mongodb-native/3.0/api/MongoClient.html#.connect">mongodb.MongoClient.client.connect()</a>
 is what we will use.
 </blockquote>
 
@@ -107,7 +107,7 @@ Let's inject it. Also let's have a very first use of it.
 As our data lies in some collection, we need to fetch it using `collection` method.
 I will use [sinon](http://sinonjs.org/) for organizing spies and stubs.
 
-<em>test</em>
+<em class="snippet-description">filename.js</em>
 ```javascript
 describe('fetchHotelPhotos', () => {
     const connectedClientDouble = {
@@ -133,6 +133,7 @@ describe('fetchHotelPhotos', () => {
 });
 ```
 
+<em class="snippet-description">filenameSpec.js</em>
 ```javascript
 export default function fetchHotelPhotos(dbClient, collectionName) {
     dbClient.collection(collectionName); // (3)
