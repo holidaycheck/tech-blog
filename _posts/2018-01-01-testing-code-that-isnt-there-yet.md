@@ -239,15 +239,9 @@ Now that have all requirements discussed, let's combine them:
 ```javascript
 describe('createHotelPhotosRouteHandler', () => {
     const collectionName = 'hotels';
-    const hotelId = 'hotelId';
 
     const connectedClientDouble = {
         collection: sinon.spy()
-    };
-    const ctxDouble = {
-        params: {
-            hotelId
-        }
     };
 
     beforeEach(() => {
@@ -264,7 +258,7 @@ describe('createHotelPhotosRouteHandler', () => {
         it('should fetch hotels collection from DB', () => {
             const routeHandler = createHotelPhotosRouteHandler(connectedClientDouble, collectionName);
 
-            routeHandler(ctxDouble);
+            routeHandler();
 
             expect(connectedClientDouble.collection)
                 .to.have.been.calledWithExactly('hotels')
@@ -273,7 +267,7 @@ describe('createHotelPhotosRouteHandler', () => {
 
         it('should return hotel photos collection', () => {
             const routeHandler = createHotelPhotosRouteHandler(connectedClientDouble, collectionName);
-            const photosCollection = routeHandler(ctxDouble); // (2)
+            const photosCollection = routeHandler(); // (2)
 
             expect(photosCollection).to.deep.equal([
                 'photo-1.jpg', 'photo-2.jpg', 'photo-3.jpg'
