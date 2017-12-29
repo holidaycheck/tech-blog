@@ -47,11 +47,7 @@ My function will return a collection of photos for given hotel ID (yes, I work i
 I learned that photos are a part of hotel entity and are stored under `photos` property.
 This is worth investigating before any code is written.
 
-<blockquote>
-If there will be two pieces of code one after the other, I will always write test code first and code that
-passes it second.
-</blockquote>
-
+<em class="snippet-description">fetchHotelPhotosSpec.js</em>
 ```javascript
 import fetchHotelPhotos from '../fetchHotelPhotos';
 
@@ -69,6 +65,7 @@ describe('fetchHotelPhotos', () => {
 This is what I want to have returned if I call this function. An array of file names.
 Now, having this test I can create the very first code that passes it:
 
+<em class="snippet-description">fetchHotelPhotos.js</em>
 ```javascript
 export default function fetchHotelPhotos() {
     return [ 'photo-1.jpg', 'photo-2.jpg', 'photo-3.jpg' ];
@@ -107,7 +104,7 @@ Let's inject it. Also let's have a very first use of it.
 As our data lies in some collection, we need to fetch it using `collection` method.
 I will use [sinon](http://sinonjs.org/) for organizing spies and stubs.
 
-<em class="snippet-description">filename.js</em>
+<em class="snippet-description">fetchHotelPhotosSpec.js</em>
 ```javascript
 describe('fetchHotelPhotos', () => {
     const connectedClientDouble = {
@@ -133,7 +130,7 @@ describe('fetchHotelPhotos', () => {
 });
 ```
 
-<em class="snippet-description">filenameSpec.js</em>
+<em class="snippet-description">fetchHotelPhotos.js</em>
 ```javascript
 export default function fetchHotelPhotos(dbClient, collectionName) {
     dbClient.collection(collectionName); // (3)
@@ -166,12 +163,14 @@ function.
 
 Perhaps:
 
+<em class="snippet-description">not so good</em>
 ```javascript
 fetchHotelPhotos(hotelId, dbClient, collectionName);
 ```
 
 No, rather not. Ideally this is what we would like to have:
 
+<em class="snippet-description">much better</em>
 ```javascript
 fetchHotelPhotos(hotelId);
 ```
@@ -187,12 +186,14 @@ handler for particular route (e.g. `/hotel/:hotelId/photos`).
 
 Let's say it looks like this:
 
+<em class="snippet-description">our route for fetching hotel photos</em>
 ```javascript
 router.get('/hotel/:hotelId/photos', createHotelPhotosRouteHandler(dbClient, collectionName))
 ```
 
 OK, this seems better. Let's create this handler. First, a test:
 
+<em class="snippet-description">createHotelPhotosRouteHandlerSpec.js</em>
 ```javascript
 describe('createHotelPhotosRouteHandler', () => {
     const connectedClientDouble = {
@@ -208,6 +209,7 @@ describe('createHotelPhotosRouteHandler', () => {
 });
 ```
 
+<em class="snippet-description">createHotelPhotosRouteHandler.js</em>
 ```javascript
 export default function createHotelPhotosRouteHandler(dbClient, collectionName) {
     return () => {};
@@ -239,6 +241,7 @@ router.get('/from/path/for/:someId', (ctx) => {
 
 OK, I believe we have all requirements discussed. Let's combine them:
 
+<em class="snippet-description">createHotelPhotosRouteHandlerSpec.js</em>
 ```javascript
 describe('createHotelPhotosRouteHandler', () => {
     const collectionName = 'hotels';
@@ -286,6 +289,7 @@ describe('createHotelPhotosRouteHandler', () => {
 });
 ```
 
+<em class="snippet-description">createHotelPhotosRouteHandler.js</em>
 ```javascript
 export default function createHotelPhotosRouteHandler(dbClient, collectionName) {
     dbClient.collection(collectionName);
@@ -323,6 +327,7 @@ ctx.response.body = [ 'photo-1.jpg', 'photo-2.jpg', 'photo-3.jpg' ];
 
 Let's write a test for that:
 
+<em class="snippet-description">createHotelPhotosRouteHandlerSpec.js</em>
 ```javascript
 const ctxDouble = {
     response: { // (1)
@@ -350,6 +355,7 @@ it('should return hotel photos collection', () => { // (3)
 });
 ```
 
+<em class="snippet-description">createHotelPhotosRouteHandler.js</em>
 ```javascript
 export default function createHotelPhotosRouteHandler(dbClient, collectionName) {
     dbClient.collection(collectionName);
@@ -378,6 +384,7 @@ We've ended up requesting a collection. Next, we need to find an entry for given
 If you take a look into docs, [findOne()](http://mongodb.github.io/node-mongodb-native/3.0/api/Collection.html#findOne)
 is what can help us. Let's use it:
 
+<em class="snippet-description">createHotelPhotosRouteHandlerSpec.js</em>
 ```javascript
 const ctxDouble = {
     params: { // (1)
@@ -414,6 +421,7 @@ it('should find hotel entry by hotel id passed in params', () => {
 });
 ```
 
+<em class="snippet-description">createHotelPhotosRouteHandler.js</em>
 ```javascript
 return default function createHotelPhotosRouteHandler(dbClient, collectionName) {
     return (ctx) => {
@@ -436,6 +444,7 @@ return default function createHotelPhotosRouteHandler(dbClient, collectionName) 
 
 After finding the entity for given hotel, we need to return `photos` property from it and we will be almost done.
 
+<em class="snippet-description">createHotelPhotosRouteHandlerSpec.js</em>
 ```javascript
 const findOneStub = sinon.stub().resolves({ // (1)
     photos: [ 'photo-1.jpg', 'photo-2.jpg', 'photo-3.jpg' ]
@@ -467,6 +476,7 @@ it('should return hotel photos collection', () => {
 });
 ```
 
+<em class="snippet-description">createHotelPhotosRouteHandler.js</em>
 ```javascript
 export default function createHotelPhotosRouteHandler(dbClient, collectionName) {
     return (ctx) => {
@@ -491,6 +501,7 @@ export default function createHotelPhotosRouteHandler(dbClient, collectionName) 
 
 What if the collection doesn't have hotel entity in it? Well, let's take care of this:
 
+<em class="snippet-description">createHotelPhotosRouteHandlerSpec.js</em>
 ```javascript
 context('if hotel entity is not found', () => {
     it('should return 404 status', () => {
@@ -512,6 +523,7 @@ context('if hotel entity is not found', () => {
 });
 ```
 
+<em class="snippet-description">createHotelPhotosRouteHandler.js</em>
 ```javascript
 function createHotelPhotosRouteHandler(dbClient, collectionName) {
     return (ctx) => {
@@ -542,6 +554,7 @@ from now on.
 
 ## Final code:
 
+<em class="snippet-description">createHotelPhotosRouteHandlerSpec.js</em>
 ```javascript
 describe('createHotelPhotosRouteHandler', () => {
     const collectionName = 'hotels';
@@ -634,6 +647,7 @@ describe('createHotelPhotosRouteHandler', () => {
 });
 ```
 
+<em class="snippet-description">createHotelPhotosRouteHandler.js</em>
 ```javascript
 export default function createHotelPhotosRouteHandler(dbClient, collectionName) {
     return (ctx) => {
