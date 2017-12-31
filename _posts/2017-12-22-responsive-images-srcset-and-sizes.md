@@ -18,7 +18,7 @@ I've been told it's too long though. Let me summarize.
 
 ## The Problem
 
-We're building a "responsive" web site at HolidayCheck, meaning we deliver the same HTML and CSS to mobile and desktop browsers. Using CSS media queries the content is then formatted appropriately to fit the our customer's screen size. So the same image will be displayed in different sizes, depending on the viewport size.
+We're building a "responsive" web site at HolidayCheck, meaning we deliver the same HTML and CSS to mobile and desktop browsers. Using CSS media queries the content is then formatted appropriately to fit our customer's screen size. So the same image will be displayed in different sizes, depending on the viewport size.
 <br/>
 And ever since Apple introduced its "Retina" displays, we have another dimension to look at: pixel density of the physical screen.
 
