@@ -38,6 +38,9 @@ The code produced here will have 100% code coverage, but might not be the pretti
 Why? It's not a purpose of this post to show you how to refactor, but how to test code that isn't there,
 to get you started with TF programming with more complex cases.
 
+You can find the final code here: [https://github.com/smolak/testing-code-that-isnt-there-yet](https://github.com/smolak/testing-code-that-isnt-there-yet).
+Commits reflect all of the code examples from this post in the order they are introduced.
+
 ## Know what you want in `return`
 
 One of the things that helps me start off with writing a test is to know what my function
