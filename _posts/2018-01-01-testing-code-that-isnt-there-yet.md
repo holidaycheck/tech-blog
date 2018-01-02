@@ -156,7 +156,7 @@ export default function fetchHotelPhotos(dbClient, collectionName) {
 1. This might look awkward at this moment, but we will get to the point where getting
    the collection and returning an array with file names are connected.
 
-You've probably noticed that something odd right now. If we are to get photos of a particular
+You've probably noticed that something is odd right now. If we are to get photos of a particular
 hotel, we should only pass hotel's ID as a single argument for that function.
 
 Perhaps:
