@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Testing code that isn't there yet"
-date: 2017-12-28 10:10:10 +0200
+date: 2018-01-02 14:55:10 +0200
 categories: testing
 author_name: Jacek Smolak
 author_url : /author/jaceksmolak
@@ -10,7 +10,7 @@ show_avatar : true
 read_time : 8
 show_related_posts: false
 square_related:
-feature_image: posts/2017-12-28-testing-code-that-isnt-there-yet/poster.jpg
+feature_image: posts/2018-01-02-testing-code-that-isnt-there-yet/poster.jpg
 ---
 
 It's relatively easy to test a piece of code that is already there.
