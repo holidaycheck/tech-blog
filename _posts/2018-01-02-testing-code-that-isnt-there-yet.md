@@ -7,7 +7,7 @@ author_name: Jacek Smolak
 author_url : /author/jaceksmolak
 author_avatar: jaceksmolak
 show_avatar : true
-read_time : 8
+read_time : 15
 show_related_posts: false
 square_related:
 feature_image: posts/2018-01-02-testing-code-that-isnt-there-yet/poster.jpg
