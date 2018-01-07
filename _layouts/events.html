@@ -3,11 +3,11 @@ layout: with-sidebar
 ---
 
 <div class="sub-nav events">
-    <a href="#" class="select-2017 active">Events in 2017</a>
-    <a href="#" class="select-2018">in 2018</a>
+    <a href="#" class="select-2018 active">Events in 2018</a>
+    <a href="#" class="select-2017">in 2017</a>
 </div>
 
-{% assign years = "2017 2018" | split: " " %}
+{% assign years = "2018 2017" | split: " " %}
 {% for cur_year in years %}
 <div class="events-{{cur_year}} animated fadeIn {% if forloop.first == false %}hide{% endif %}" id="{{cur_year}}">
   {% assign all_events = site.data.events[cur_year] %}
