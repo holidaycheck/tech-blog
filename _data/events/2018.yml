@@ -1,4 +1,14 @@
 #
+# In house, at HolidayCheck
+#
+- name: Search Meetup Munich
+  start_datetime: 2018-01-18 18:30
+  url: https://www.meetup.com/Search-Meetup-Munich/events/246604008/?eventId=246604008
+  tags: meetup, search
+  location: HolidayCheck AG, Neumarkter Str. 61, Munich
+  comment: Andreas Neumann from Holidaycheck will talk about Test Driven Relevance Engineering
+
+#
 # Others
 #
 - name: JSConfEU 2018
@@ -6,18 +16,46 @@
   end_datetime: 2018-06-03 18:00
   url: https://2018.jsconf.eu
   tags: conference, JavaScript
+  location: Berlin, Germany
+  twitter: jsconfeu
+- name: JSConf Iceland 2018
+  start_datetime: 2018-03-01 10:00
+  end_datetime: 2018-06-02 18:00
+  url: https://2018.jsconf.is/
+  tags: conference, JavaScript
+  location: Reykjavik, Iceland
+  twitter: jsconfis
 - name: European Testing Conference 2018
   start_datetime: 2018-02-19 10:00
   end_datetime: 2018-02-20 18:00
   url: http://europeantestingconference.eu/2018/
   location: Amsterdam Arena, Amsterdam, Netherlands
   tags: conference, testing
+  twitter: EuroTestingConf
 - name: WeAreDevelopers 2018
   start_datetime: 2018-05-16 10:00
   end_datetime: 2018-05-18 18:00
   location: Vienna, Austria, The Austria Center Vienna
   url: https://www.wearedevelopers.com/
   tags: conference, developers
+  twitter: wearedevs
+- name: Nordic.js 2018
+  start_datetime: 2018-09-06 10:00
+  end_datetime: 2018-09-07 18:00
+  location: Stockholm, Sweden
+  url: http://nordicjs.com/
+  tags: conference, JavaScript
+  twitter: nordicjs
+
+#
+# Unconfs
+#
+- name: CodeFreeze 2018
+  start_datetime: 2018-01-15 10:00
+  end_datetime: 2018-01-17 18:00
+  location: Kiilopää, Inari, Finland
+  url: http://www.codefreeze.fi/
+  tags: unconference
 
 #
 # CfPs
@@ -29,4 +67,12 @@
 - name: WeAreDevelopers 2018 - Call for Papers
   start_datetime: 2018-01-16 23:59
   url: https://sessionize.com/wearedevelopers
+  tags: CfP
+- name: enterJS 2018 - Call for Papers
+  start_datetime: 2018-01-14 23:59
+  url: https://www.enterjs.de/call-for-proposals-de
+  tags: CfP
+- name: Nordic.js 2018 - Call for Papers
+  start_datetime: 2018-09-06 00:00
+  url: http://cfp.nordicjs.com/
   tags: CfP
