@@ -1,4 +1,14 @@
 #
+# In house, at HolidayCheck
+#
+- name: Search Meetup Munich
+  start_datetime: 2018-01-18 18:30
+  url: https://www.meetup.com/Search-Meetup-Munich/events/246604008/?eventId=246604008
+  tags: meetup, search
+  location: HolidayCheck AG, Neumarkter Str. 61, Munich
+  comment: Andreas Neumann from Holidaycheck will talk about Test Driven Relevance Engineering
+
+#
 # Others
 #
 - name: JSConfEU 2018
