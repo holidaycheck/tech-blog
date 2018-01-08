@@ -56,6 +56,13 @@
   location: Kiilopää, Inari, Finland
   url: http://www.codefreeze.fi/
   tags: unconference
+- name: JSUnconf 2018
+  start_datetime: 2018-04-21 10:00
+  end_datetime: 2018-04-22 18:00
+  location: Hamburg, Germany
+  url: http://2018.jsunconf.eu/
+  tags: unconference, JavaScript
+  twitter: jsunconf
 
 #
 # CfPs
