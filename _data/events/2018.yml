@@ -124,6 +124,18 @@
   url: https://ngeurope.org/
   tags: conference, angular, JavaScript
   twitter: NgEurope
+- name: CRAFT
+  start_datetime: 2018-05-10 10:00
+  end_datetime: 2018-05-11 18:00
+  location: Budapest, Hungary
+  url: https://craft-conf.com/
+  tags: conference, software craftsmanship, tools, methods, practices, modern developer and company, new technologies, trends
+- name: WebCraftConf
+  start_datetime: 2018-06-20 10:00
+  end_datetime: 2018-06-22 18:00
+  location: Jamaica
+  url: https://www.webcraft.com.jm/
+  tags: conference, mobile, web, IoT, Software Craftsmanship, DevOps, Continuous Development, UX, Design
 
 #
 # Unconfs
@@ -148,6 +160,13 @@
   url: https://itakeunconf.com/
   tags: unconference, DevOps, Architecture, Hardcore programming, Microservices, Software Design, Mobile development, Web Security, Code Quality, Functional Programming, Quality Practices, Business Analysis, Technical & People Leadership
   twitter: itakeunconf
+- name: SoCraTes Switzerland 2018
+  start_datetime: 2018-05-15 10:00
+  end_datetime: 2018-05-18 18:00
+  location: Hochalpines Institut Ftan, 7551 Ftan, Switzerland
+  url: https://www.socrates-ch.org/
+  tags: unconference
+  twitter: SoCraTes_CH
 
 #
 # CfPs
