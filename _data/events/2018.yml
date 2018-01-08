@@ -25,6 +25,13 @@
   location: Vienna, Austria, The Austria Center Vienna
   url: https://www.wearedevelopers.com/
   tags: conference, developers
+- name: Nordic.js 2018
+  start_datetime: 2018-09-06 10:00
+  end_datetime: 2018-09-07 18:00
+  location: Stockholm, Sweden
+  url: http://nordicjs.com/
+  tags: conference, JavaScript
+  twitter: nordicjs
 
 #
 # Unconfs
@@ -50,4 +57,8 @@
 - name: enterJS 2018 - Call for Papers
   start_datetime: 2018-01-14 23:59
   url: https://www.enterjs.de/call-for-proposals-de
+  tags: CfP
+- name: Nordic.js 2018 - Call for Papers
+  start_datetime: 2018-09-06 00:00
+  url: http://cfp.nordicjs.com/
   tags: CfP
