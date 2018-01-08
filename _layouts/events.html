@@ -38,6 +38,11 @@ layout: with-sidebar
       {% else %}
         {{ event.name }}
       {% endif %}
+
+      {% if event.twitter %}
+        <a href="https://twitter.com/{{ event.twitter }}" class="fa fa-twitter"></a>
+      {% endif %}
+
       {% if event.posts %}
         - read about it:
         {% for post in event.posts %}
