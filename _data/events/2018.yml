@@ -7,24 +7,28 @@
   url: https://2018.jsconf.eu
   tags: conference, JavaScript
   location: Berlin, Germany
+  twitter: jsconfeu
 - name: JSConf Iceland 2018
   start_datetime: 2018-03-01 10:00
   end_datetime: 2018-06-02 18:00
   url: https://2018.jsconf.is/
   tags: conference, JavaScript
   location: Reykjavik, Iceland
+  twitter: jsconfis
 - name: European Testing Conference 2018
   start_datetime: 2018-02-19 10:00
   end_datetime: 2018-02-20 18:00
   url: http://europeantestingconference.eu/2018/
   location: Amsterdam Arena, Amsterdam, Netherlands
   tags: conference, testing
+  twitter: EuroTestingConf
 - name: WeAreDevelopers 2018
   start_datetime: 2018-05-16 10:00
   end_datetime: 2018-05-18 18:00
   location: Vienna, Austria, The Austria Center Vienna
   url: https://www.wearedevelopers.com/
   tags: conference, developers
+  twitter: wearedevs
 - name: Nordic.js 2018
   start_datetime: 2018-09-06 10:00
   end_datetime: 2018-09-07 18:00
