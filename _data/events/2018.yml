@@ -46,6 +46,52 @@
   url: http://nordicjs.com/
   tags: conference, JavaScript
   twitter: nordicjs
+- name: Script 18
+  start_datetime: 2018-01-19 12:00
+  location: Linz, Austria
+  url: https://scriptconf.org/
+  tags: conference, JavaScript
+  twitter: scriptconf
+- name: ReactEurope
+  start_datetime: 2018-05-17 10:00
+  end_datetime: 2018-05-18 18:00
+  location: Paris, France
+  url: https://www.react-europe.org/
+  tags: conference, JavaScript, reactjs
+  twitter: ReactEurope
+- name: Front-Trends
+  start_datetime: 2018-05-24 10:00
+  end_datetime: 2018-05-25 18:00
+  location: Warsaw, Poland
+  url: https://2018.front-trends.com/
+  tags: conference, frontend
+  twitter: fronttrends
+- name: Frontend United
+  start_datetime: 2018-05-31 10:00
+  end_datetime: 2018-06-02 18:00
+  location: Utrecht, Netherlands
+  url: https://www.frontendunited.org/
+  tags: conference, frontend
+  twitter: frontendunited
+- name: CSSconf EU
+  start_datetime: 2018-06-01 10:00
+  location: Berlin, Germany
+  url: https://2018.cssconf.eu/
+  tags: conference, CSS
+  twitter: cssconfeu
+- name: BOB 2018
+  start_datetime: 2018-02-23 10:00
+  location: Berlin, Germany
+  url: http://bobkonf.de/2018/en/
+  tags: conference, developers, architects, builders, explore and discover
+  twitter: BOBKonf
+- name: The Web Conference
+  start_datetime: 2018-04-23 10:00
+  end_datetime: 2018-04-27 18:00
+  location: Lyon, France
+  url: https://www2018.thewebconf.org/
+  tags: conference, developers, www, standards, society, culture
+  twitter: TheWebConf
 
 #
 # Unconfs
@@ -82,4 +128,16 @@
 - name: Nordic.js 2018 - Call for Papers
   start_datetime: 2018-09-06 00:00
   url: http://cfp.nordicjs.com/
+  tags: CfP
+- name: Front-Trends - Call for Papers
+  start_datetime: 2018-03-31 00:00
+  url: https://2018.front-trends.com/speaking-at-front-trends/
+  tags: CfP
+- name: Frontend United - Call for Papers
+  start_datetime: 2018-05-31 10:00
+  url: https://www.frontendunited.org/call-for-papers
+  tags: CfP
+- name: The Web Conference - Call for Papers
+  start_datetime: 2018-01-10 00:00
+  url: https://www2018.thewebconf.org/call-for-papers/developers-track-cfp/
   tags: CfP
