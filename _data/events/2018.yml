@@ -92,6 +92,38 @@
   url: https://www2018.thewebconf.org/
   tags: conference, developers, www, standards, society, culture
   twitter: TheWebConf
+- name: Frontend NE
+  start_datetime: 2018-04-05 10:00
+  location: The Turbine Hall at CastleGate, Newcastle, England
+  url: https://2018.frontendne.co.uk/
+  tags: conference, frontend
+  twitter: frontendne
+- name: .concat()
+  start_datetime: 2018-03-03 10:00
+  location: The University of Applied Sciences, Salzburg, Austria
+  url: https://2018.conc.at/
+  tags: conference, web development, UX
+  twitter: conc_at
+- name: vue.js Amsterdam
+  start_datetime: 2018-02-16 10:00
+  location: Theater Amsterdam, Amsterdam, Netherlands
+  url: https://www.vuejs.amsterdam/
+  tags: conference, vuejs, frontend
+  twitter: vuejsamsterdam
+- name: Smashing Conference
+  start_datetime: 2018-02-07 10:00
+  end_datetime: 2018-02-08 18:00
+  location: London, England
+  url: https://smashingconf.com/
+  tags: conference, web performance, ads, third-party scripts, A/B testing, HTTP/2, debugging, JAM stack, PWA, web fonts loading, memory/CPU perf, service workers
+  twitter: smashingconf
+- name: ng-europe
+  start_datetime: 2018-02-01 10:00
+  end_datetime: 2018-02-02 18:00
+  location: Paris, France
+  url: https://ngeurope.org/
+  tags: conference, angular, JavaScript
+  twitter: NgEurope
 
 #
 # Unconfs
@@ -109,6 +141,13 @@
   url: http://2018.jsunconf.eu/
   tags: unconference, JavaScript
   twitter: jsunconf
+- name: I T.A.K.E. Unconference 2018
+  start_datetime: 2018-06-07 10:00
+  end_datetime: 2018-06-08 18:00
+  location: Radisson Blu, Bucharest, Romania
+  url: https://itakeunconf.com/
+  tags: unconference, DevOps, Architecture, Hardcore programming, Microservices, Software Design, Mobile development, Web Security, Code Quality, Functional Programming, Quality Practices, Business Analysis, Technical & People Leadership
+  twitter: itakeunconf
 
 #
 # CfPs
