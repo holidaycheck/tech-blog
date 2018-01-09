@@ -52,6 +52,96 @@
   url: http://nordicjs.com/
   tags: conference, JavaScript
   twitter: nordicjs
+- name: Script 18
+  start_datetime: 2018-01-19 12:00
+  location: Linz, Austria
+  url: https://scriptconf.org/
+  tags: conference, JavaScript
+  twitter: scriptconf
+- name: ReactEurope
+  start_datetime: 2018-05-17 10:00
+  end_datetime: 2018-05-18 18:00
+  location: Paris, France
+  url: https://www.react-europe.org/
+  tags: conference, JavaScript, reactjs
+  twitter: ReactEurope
+- name: Front-Trends
+  start_datetime: 2018-05-24 10:00
+  end_datetime: 2018-05-25 18:00
+  location: Warsaw, Poland
+  url: https://2018.front-trends.com/
+  tags: conference, frontend
+  twitter: fronttrends
+- name: Frontend United
+  start_datetime: 2018-05-31 10:00
+  end_datetime: 2018-06-02 18:00
+  location: Utrecht, Netherlands
+  url: https://www.frontendunited.org/
+  tags: conference, frontend
+  twitter: frontendunited
+- name: CSSconf EU
+  start_datetime: 2018-06-01 10:00
+  location: Berlin, Germany
+  url: https://2018.cssconf.eu/
+  tags: conference, CSS
+  twitter: cssconfeu
+- name: BOB 2018
+  start_datetime: 2018-02-23 10:00
+  location: Berlin, Germany
+  url: http://bobkonf.de/2018/en/
+  tags: conference, developers, architects, builders, explore and discover
+  twitter: BOBKonf
+- name: The Web Conference
+  start_datetime: 2018-04-23 10:00
+  end_datetime: 2018-04-27 18:00
+  location: Lyon, France
+  url: https://www2018.thewebconf.org/
+  tags: conference, developers, www, standards, society, culture
+  twitter: TheWebConf
+- name: Frontend NE
+  start_datetime: 2018-04-05 10:00
+  location: The Turbine Hall at CastleGate, Newcastle, England
+  url: https://2018.frontendne.co.uk/
+  tags: conference, frontend
+  twitter: frontendne
+- name: .concat()
+  start_datetime: 2018-03-03 10:00
+  location: The University of Applied Sciences, Salzburg, Austria
+  url: https://2018.conc.at/
+  tags: conference, web development, UX
+  twitter: conc_at
+- name: vue.js Amsterdam
+  start_datetime: 2018-02-16 10:00
+  location: Theater Amsterdam, Amsterdam, Netherlands
+  url: https://www.vuejs.amsterdam/
+  tags: conference, vuejs, frontend
+  twitter: vuejsamsterdam
+- name: Smashing Conference
+  start_datetime: 2018-02-07 10:00
+  end_datetime: 2018-02-08 18:00
+  location: London, England
+  url: https://smashingconf.com/
+  tags: conference, web performance, ads, third-party scripts, A/B testing, HTTP/2, debugging, JAM stack, PWA, web fonts loading, memory/CPU perf, service workers
+  twitter: smashingconf
+- name: ng-europe
+  start_datetime: 2018-02-01 10:00
+  end_datetime: 2018-02-02 18:00
+  location: Paris, France
+  url: https://ngeurope.org/
+  tags: conference, angular, JavaScript
+  twitter: NgEurope
+- name: CRAFT
+  start_datetime: 2018-05-10 10:00
+  end_datetime: 2018-05-11 18:00
+  location: Budapest, Hungary
+  url: https://craft-conf.com/
+  tags: conference, software craftsmanship, tools, methods, practices, modern developer and company, new technologies, trends
+- name: WebCraftConf
+  start_datetime: 2018-06-20 10:00
+  end_datetime: 2018-06-22 18:00
+  location: Jamaica
+  url: https://www.webcraft.com.jm/
+  tags: conference, mobile, web, IoT, Software Craftsmanship, DevOps, Continuous Development, UX, Design
 
 #
 # Unconfs
@@ -62,6 +152,27 @@
   location: Kiilopää, Inari, Finland
   url: http://www.codefreeze.fi/
   tags: unconference
+- name: JSUnconf 2018
+  start_datetime: 2018-04-21 10:00
+  end_datetime: 2018-04-22 18:00
+  location: Hamburg, Germany
+  url: http://2018.jsunconf.eu/
+  tags: unconference, JavaScript
+  twitter: jsunconf
+- name: I T.A.K.E. Unconference 2018
+  start_datetime: 2018-06-07 10:00
+  end_datetime: 2018-06-08 18:00
+  location: Radisson Blu, Bucharest, Romania
+  url: https://itakeunconf.com/
+  tags: unconference, DevOps, Architecture, Hardcore programming, Microservices, Software Design, Mobile development, Web Security, Code Quality, Functional Programming, Quality Practices, Business Analysis, Technical & People Leadership
+  twitter: itakeunconf
+- name: SoCraTes Switzerland 2018
+  start_datetime: 2018-05-15 10:00
+  end_datetime: 2018-05-18 18:00
+  location: Hochalpines Institut Ftan, 7551 Ftan, Switzerland
+  url: https://www.socrates-ch.org/
+  tags: unconference
+  twitter: SoCraTes_CH
 
 #
 # CfPs
@@ -81,4 +192,16 @@
 - name: Nordic.js 2018 - Call for Papers
   start_datetime: 2018-09-06 00:00
   url: http://cfp.nordicjs.com/
+  tags: CfP
+- name: Front-Trends - Call for Papers
+  start_datetime: 2018-03-31 00:00
+  url: https://2018.front-trends.com/speaking-at-front-trends/
+  tags: CfP
+- name: Frontend United - Call for Papers
+  start_datetime: 2018-05-31 10:00
+  url: https://www.frontendunited.org/call-for-papers
+  tags: CfP
+- name: The Web Conference - Call for Papers
+  start_datetime: 2018-01-10 00:00
+  url: https://www2018.thewebconf.org/call-for-papers/developers-track-cfp/
   tags: CfP

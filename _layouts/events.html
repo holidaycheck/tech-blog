@@ -28,9 +28,19 @@ layout: with-sidebar
       {% endif %}
 
       {% assign tags = event.tags | split: "," %}
-      {% for tag in tags %}
+      {% assign first_tags = tags | slice: 0, 3 %}
+      {% for tag in first_tags %}
         <mark>{{tag}}</mark> &nbsp;
       {% endfor %}
+      {% assign num_tags = tags | size %}
+      {% assign num_first_tags = first_tags | size %}
+      {% if num_tags > num_first_tags %}
+        <a style="white-space: nowrap;" onclick="$(this).hide(); $(this).siblings('mark').show()">{{ num_tags | minus: num_first_tags }} more tags ...</a>
+        {% assign rest_tags = tags | slice: 3, 100 %}
+        {% for tag in rest_tags %}
+          <mark style="display: none;">{{tag}}</mark> &nbsp;
+        {% endfor %}
+      {% endif %}
       <br/>
 
       {% if event.url %}
