@@ -10,7 +10,7 @@ show_avatar : true
 read_time : 3
 feature_image: posts/2018-01-agility-potion-plus-one/header.jpeg
 show_related_posts: false
-square_related: recommend-growth
+square_related:
 ---
 
 It does not surprise me anymore how people usually react to unexpected obstacles. Exasperation or disappointment are typical feelings. You really wanted to make it happen but now you can’t and it’s all just because that little thing stopped you. The harded you wanted it, the more intense this feeling was. I had moments like that too—a lot of them. Over the years, though, I learned that they don’t matter If I deal with the feeling fast and start thinking about moving forward. **It’s all that matters**.
