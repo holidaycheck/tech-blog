@@ -7,6 +7,12 @@
   tags: meetup, search
   location: HolidayCheck AG, Neumarkter Str. 61, Munich
   comment: Andreas Neumann from Holidaycheck will talk about Test Driven Relevance Engineering
+- name: Monthly Elm Meeting
+  start_datetime: 2018-01-24 19:00
+  url: https://www.meetup.com/meetup-group-gSqnaIheh/events/244818606/
+  tags: meetup, elm
+  location: HolidayCheck AG, Neumarkter Str. 61, Munich
+  comment: Elm hacking session
 
 #
 # Others
