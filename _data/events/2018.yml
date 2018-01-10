@@ -171,6 +171,12 @@
   url: https://www.webcraft.com.jm/
   tags: conference, mobile, web, IoT, Software Craftsmanship, DevOps, Continuous Development, UX, Design
 
+- name: AmsterdamJS
+  start_datetime: 2018-06-01 10:00
+  location: Zuiderkerk, Amsterdam, Netherlands
+  url: https://amsterdamjs.com/
+  tags: conference, JavaScript
+
 #
 # Unconfs
 #
@@ -250,4 +256,9 @@
 - name: The Web Conference - Call for Papers
   start_datetime: 2018-01-10 00:00
   url: https://www2018.thewebconf.org/call-for-papers/developers-track-cfp/
+  tags: CfP
+
+- name: AmsterdamJS - Call for Papers
+  start_datetime: 2018-02-01 00:00
+  url: https://docs.google.com/forms/d/19HUzF0niKkdAjV335OVTWrG_i8PnTpW6IYNxHCCYPx8/viewform?edit_requested=true
   tags: CfP
