@@ -23,8 +23,8 @@ Always.
 
 **What should happen next? I see two options:**
 
-- An obstacle is something that prevents me from moving forward and results in me parking the task until the issue is solved
-- I can focus on the parts of the task that might be done around the obstacle, moving forward as much as it is possible
+- I am simply blocked. I pause my work until obstacle will be resolved
+- I am blocked only on some part of the task, but there are other parts that I can work on
 
 The problem with the first option is that it means creating an artificial delay. Until the obstacle is removed, I can’t pick up where I left off. To visualise, If the work until finding the obstacle took me 4 weeks, waiting takes another 3 weeks, and then I need another 5 weeks to finish what I’ve started. This means 12 weeks until something can be accomplished. Just because I perceived the task in a binary way: **blocked** or **unblocked**. It might be true, but I’ve seen that in most of my cases it’s just an illusion.
 
