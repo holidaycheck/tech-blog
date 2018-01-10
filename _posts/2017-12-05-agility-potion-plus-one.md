@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Agility Potion +1"
+title:  "Agility Potion +1: <br>  Working with obstacles"
 date: 2018-01-09 10:36:00 +0200
 categories: coding
 author_name: Artur Szott
@@ -12,8 +12,7 @@ feature_image: posts/2018-01-agility-potion-plus-one/header.jpeg
 show_related_posts: false
 square_related:
 ---
-
-It does not surprise me anymore how people usually react to unexpected obstacles. Exasperation or disappointment are typical feelings. You really wanted to make it happen but now you can’t and it’s all just because that little thing stopped you. The harded you wanted it, the more intense this feeling was. I had moments like that too—a lot of them. Over the years, though, I learned that they don’t matter If I deal with the feeling fast and start thinking about moving forward. **It’s all that matters**.
+Exasperation or disappointment are typical feelings. It does not surprise me anymore how people usually react to unexpected roadblocks. You really wanted to make it happen but now you can’t and it’s all just because that little thing stopped you. The harded you wanted it, the more intense this feeling was. I had moments like that too—a lot of them. Over the years, though, I learned that they don’t matter If I deal with the feeling fast and start thinking about moving forward. **It’s all that matters**.
 
 I know I can work on my way of approaching this kind of situations. Though I’ve found more productive ways to restore my focus—objectively look around to see what the situation really is. Are my feelings right? Sure, I’m fully entitled to them.
 
