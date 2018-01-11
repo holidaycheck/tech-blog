@@ -176,6 +176,17 @@
   location: Zuiderkerk, Amsterdam, Netherlands
   url: https://amsterdamjs.com/
   tags: conference, JavaScript
+  
+#
+# Design
+#
+
+- name: Design Systems Virtual Summit 2018
+  start_datetime: 2018-02-13 10:00
+  end_datetime: 2018-02-16 18:00
+  location: online
+  url: https://www.uxpin.com/design-systems-virtual-summit-2018
+  tags: conference, online, design, webinars, UX, product
 
 #
 # Unconfs
