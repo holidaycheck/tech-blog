@@ -14,6 +14,12 @@
   tags: meetup, elm
   location: HolidayCheck AG, Neumarkter Str. 61, Munich
   comment: Elm hacking session
+  
+- name: JavaScript the Language - ES6 - Template literals
+  start_datetime: 2018-02-15 19:00
+  url: https://www.meetup.com/JavaScript-The-Language/events/246709098/
+  tags: meetup, JavaScript
+  location: HolidayCheck, Neumarkter Str. 61, München
 
 #
 # Others
