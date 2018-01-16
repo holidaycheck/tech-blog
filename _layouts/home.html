@@ -29,8 +29,7 @@ layout: with-sidebar
                     {% include author.html avatar=post.author_avatar name=post.author_name url=post.author_url %}
                 {% else %}
                     {% if post.author_names %}
-                        {% for author in post.author_names %}
-                            {% assign author_name = site.data.authors[author].name %}
+                        {% for author_name in post.author_names %}
                             {% include author.html name=author_name %}
                             {% if forloop.last == false %}, {% endif %}
                         {% endfor %}
