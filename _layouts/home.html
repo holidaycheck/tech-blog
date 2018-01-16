@@ -30,10 +30,8 @@ layout: with-sidebar
                 {% else %}
                     {% if post.author_names %}
                         {% for author in post.author_names %}
-                            <a href="mailto:{{ site.data.authors[author].email }}">{{  site.data.authors[author].name }}</a>
-                            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                                <span itemprop="name" content="{{ site.data.authors[author].name }}"></span>
-                            </span>
+                            {% assign author_name = site.data.authors[author].name %}
+                            {% include author.html name=author_name %}
                             {% if forloop.last == false %}, {% endif %}
                         {% endfor %}
                     {% endif %}
