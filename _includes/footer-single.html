@@ -8,11 +8,11 @@
                 <p>Published <span>{{ page.date | date: "%b %-d, %Y" }}</span></p>
                 <p>
                     {% if page.author_name %}
-                        <a href="{{ page.author_url | prepend: site.baseurl }}">{{ page.author_name | capitalize }}</a>
+                        {% include author.html avatar=page.author_avatar name=page.author_name url=page.author_url %}
                     {% else %}
                         {% if page.author_names %}
-                            {% for author in page.author_names %}
-                                <a href="mailto:{{ site.data.authors[author].email }}">{{  site.data.authors[author].name | capitalize }}</a>
+                            {% for author_name in page.author_names %}
+                                {% include author.html name=author_name %}
                                 {% if forloop.last == false %}, {% endif %}
                             {% endfor %}
                         {% endif %}
