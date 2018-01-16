@@ -6,7 +6,6 @@ categories: event
 author_name: Nikolay Sturm
 author_url : /author/nikolaysturm
 author_avatar: nikolaysturm
-show_avatar : true
 read_time : 4
 show_related_posts: false
 square_related:

@@ -6,7 +6,6 @@ categories: nix
 author_name: Stefan Lau
 author_url : /author/stefanlau
 author_avatar: stefanlau
-show_avatar : true
 read_time : 20
 show_related_posts: false
 square_related:

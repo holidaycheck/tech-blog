@@ -6,7 +6,6 @@ categories: css
 author_name: Martin Kreidenweis
 author_url : /author/martinkreidenweis
 author_avatar: martinkreidenweis
-show_avatar : true
 read_time : 7
 show_related_posts: false
 square_related:
