@@ -30,16 +30,8 @@ layout: default
                     <span itemprop="mainEntityOfPage url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></span>
                     <span itemprop="image" content='{{"/img/" | append: page.feature_image | prepend: site.baseurl | prepend: site.url }}'></span>
                     <span itemprop="headline" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 110 }}"></span>
-                    {% if page.author_name %}
-                        {% include author.html avatar=page.author_avatar name=page.author_name url=page.author_url %}
-                    {% else %}
-                        {% if page.author_names %}
-                            {% for author_name in page.author_names %}
-                                {% include author.html name=author_name %}
-                                {% if forloop.last == false %}, {% endif %}
-                            {% endfor %}
-                        {% endif %}
-                    {% endif %}
+                    {% include authors.html post=page %}
+
                     in <a href='{{ "/category/" | append: page.categories.first | prepend: site.baseurl }}'>{{ page.categories[0] | capitalize | replace: "-", " " }}</a>
                     <i class="link-spacer"></i>
                     {{ page.read_time }} minutes read

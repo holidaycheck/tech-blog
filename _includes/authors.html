@@ -1,0 +1,10 @@
+{% if include.post.author_name %}
+    {% include author.html avatar=include.post.author_avatar name=include.post.author_name url=include.post.author_url %}
+{% else %}
+    {% if include.post.author_names %}
+        {% for author_name in include.post.author_names %}
+            {% include author.html name=author_name %}
+            {% if forloop.last == false %}, {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endif %}

@@ -9,16 +9,7 @@
             <div class="category-list">
                 <p>Published <span>{{ page.date | date: "%b %-d, %Y" }}</span></p>
                 <p>
-                    {% if page.author_name %}
-                        {% include author.html avatar=page.author_avatar name=page.author_name url=page.author_url %}
-                    {% else %}
-                        {% if page.author_names %}
-                            {% for author_name in page.author_names %}
-                                {% include author.html name=author_name %}
-                                {% if forloop.last == false %}, {% endif %}
-                            {% endfor %}
-                        {% endif %}
-                    {% endif %}
+                    {% include authors.html post=page %}
                     in <a href='{{ "/category/" | append: page.categories.first | prepend: site.baseurl }}'>{{ page.categories.first | capitalize | replace: "-", " " }}</a>
                 </p>
 

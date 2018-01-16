@@ -25,16 +25,7 @@ layout: with-sidebar
                     </span>
                 </span>
                 <span itemprop="headline" content="{{ post.excerpt | strip_html | strip_newlines | truncate: 110 }}"></span>
-                {% if post.author_name %}
-                    {% include author.html avatar=post.author_avatar name=post.author_name url=post.author_url %}
-                {% else %}
-                    {% if post.author_names %}
-                        {% for author_name in post.author_names %}
-                            {% include author.html name=author_name %}
-                            {% if forloop.last == false %}, {% endif %}
-                        {% endfor %}
-                    {% endif %}
-                {% endif %}
+                {% include authors.html post=post %}
 
                 in <a href='{{ "/category/" | append: post.categories.first | prepend: site.baseurl }}'>{{ post.categories.first | capitalize | replace: "-", " " }}</a>
                 <i class="link-spacer"></i>
