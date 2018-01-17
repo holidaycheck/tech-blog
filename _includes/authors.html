@@ -1,3 +1,11 @@
+{% comment %}
+  This template takes one parameter, `post` which mostly is either `page`, when it's the blog post itself
+  or `post` when iterating over many posts. It looks for `author_name` or `author_names` and renders
+  any number of authors. Where `author_names` must be an array.
+  TODO: For multiple authors we currently only support the author's name, no image or URL to the authors
+  homepage.
+{% endcomment %}
+
 {% if include.post.author_name %}
     {% include author.html avatar=include.post.author_avatar name=include.post.author_name url=include.post.author_url %}
 {% else %}
