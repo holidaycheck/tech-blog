@@ -28,6 +28,6 @@ in
     '';
 
     shellHook = ''
-      JEKYLL_ENV=local jekyll serve --config _config.yml,_config_local.yml --watch
+      JEKYLL_ENV=local jekyll serve --config _config.yml,_config_local.yml --watch --future
     '';
   }
