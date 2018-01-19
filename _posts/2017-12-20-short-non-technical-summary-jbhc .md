@@ -3,10 +3,7 @@ layout: post
 title:  "Non-technical summary of JBHC workshop"
 date: 2017-12-20 13:43:00 +0200
 categories: event
-author_name: Julian Schmiß and Frank Fortunat
-author_url : /author/julianschmiss
-author_avatar: julianschmiss
-show_avatar : true
+author_names: ["Julian Schmiß", "Frank Fortunat"]
 read_time : 5
 show_related_posts: false
 
