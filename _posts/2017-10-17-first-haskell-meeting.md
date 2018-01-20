@@ -3,9 +3,7 @@ layout: post
 title:  "Haskell Learning Group - first meeting"
 date: 2017-10-17 15:45:00 +0200
 categories: how-we-learn product haskell
-author_names: [ kamil, dawid ]
-author_avatar: kamildawid
-show_avatar : true
+author_names: [ "Kamil Wiśniewski", "Dawid Jankowiak" ]
 read_time : 15
 show_related_posts: false
 square_related: recommend-kamil

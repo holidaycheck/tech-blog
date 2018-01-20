@@ -1,22 +1,15 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12 col-sm-2">
-            <img src="{{ site.baseurl }}/img/{{ page.author_avatar }}.jpg" class="user-icon " alt="user-image">
+            {% if page.author_avatar %}
+                <img src="{{ site.baseurl }}/img/{{ page.author_avatar }}.jpg" class="user-icon " alt="user-image">
+            {% endif %}
         </div>
         <div class="col-xs-12 col-sm-6">
             <div class="category-list">
                 <p>Published <span>{{ page.date | date: "%b %-d, %Y" }}</span></p>
                 <p>
-                    {% if page.author_name %}
-                        <a href="{{ page.author_url | prepend: site.baseurl }}">{{ page.author_name | capitalize }}</a>
-                    {% else %}
-                        {% if page.author_names %}
-                            {% for author in page.author_names %}
-                                <a href="mailto:{{ site.data.authors[author].email }}">{{  site.data.authors[author].name | capitalize }}</a>
-                                {% if forloop.last == false %}, {% endif %}
-                            {% endfor %}
-                        {% endif %}
-                    {% endif %}
+                    {% include authors.html post=page %}
                     in <a href='{{ "/category/" | append: page.categories.first | prepend: site.baseurl }}'>{{ page.categories.first | capitalize | replace: "-", " " }}</a>
                 </p>
 

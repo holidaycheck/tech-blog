@@ -6,7 +6,6 @@ categories: javascript testing
 author_name: Stefan Lau
 author_url : /author/stefanlau
 author_avatar: stefanlau
-show_avatar : true
 read_time : 10
 show_related_posts: false
 ---

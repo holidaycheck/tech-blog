@@ -6,7 +6,6 @@ categories: testing
 author_name: Jacek Smolak
 author_url : /author/jaceksmolak
 author_avatar: jaceksmolak
-show_avatar : true
 read_time : 15
 show_related_posts: false
 square_related:

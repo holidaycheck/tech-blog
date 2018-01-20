@@ -25,22 +25,7 @@ layout: with-sidebar
                     </span>
                 </span>
                 <span itemprop="headline" content="{{ post.excerpt | strip_html | strip_newlines | truncate: 110 }}"></span>
-                {% if post.author_name %}
-                    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                        <span itemprop="image" content='{{ "/img/" | append: post.author_avatar | prepend: site.baseurl | prepend: site.url }}.jpg'></span>
-                        <a itemprop="url" href="{{ post.author_url | prepend: site.baseurl }}"><span itemprop="name">{{ post.author_name }}</span></a>
-                    </span>
-                {% else %}
-                    {% if post.author_names %}
-                        {% for author in post.author_names %}
-                            <a href="mailto:{{ site.data.authors[author].email }}">{{  site.data.authors[author].name }}</a>
-                            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                                <span itemprop="name" content="{{ site.data.authors[author].name }}"></span>
-                            </span>
-                            {% if forloop.last == false %}, {% endif %}
-                        {% endfor %}
-                    {% endif %}
-                {% endif %}
+                {% include authors.html post=post %}
 
                 in <a href='{{ "/category/" | append: post.categories.first | prepend: site.baseurl }}'>{{ post.categories.first | capitalize | replace: "-", " " }}</a>
                 <i class="link-spacer"></i>
@@ -51,7 +36,7 @@ layout: with-sidebar
         </div>
 
 
-        {% if post.show_avatar == true %}
+        {% if post.author_avatar %}
         <div class=" col-xs-2  no-gutter">
             <img src="{{ site.baseurl}}/img/{{ post.author_avatar }}.jpg" class="user-icon user-1" alt="user-image">
         </div>

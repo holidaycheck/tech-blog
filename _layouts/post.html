@@ -30,19 +30,8 @@ layout: default
                     <span itemprop="mainEntityOfPage url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></span>
                     <span itemprop="image" content='{{"/img/" | append: page.feature_image | prepend: site.baseurl | prepend: site.url }}'></span>
                     <span itemprop="headline" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 110 }}"></span>
-                    {% if page.author_name %}
-                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                            <span itemprop="image" content='{{ "/img/" | append: page.author_avatar | prepend: site.baseurl | prepend: site.url }}.jpg'></span>
-                            <a itemprop="url" href="{{ page.author_url | prepend: site.baseurl }}"><span itemprop="name">{{ page.author_name }}</span></a>
-                        </span>
-                    {% else %}
-                        {% if page.author_names %}
-                            {% for author in page.author_names %}
-                                <a href="mailto:{{ site.data.authors[author].email }}">{{  site.data.authors[author].name }}</a>
-                                {% if forloop.last == false %}, {% endif %}
-                            {% endfor %}
-                        {% endif %}
-                    {% endif %}
+                    {% include authors.html post=page %}
+
                     in <a href='{{ "/category/" | append: page.categories.first | prepend: site.baseurl }}'>{{ page.categories[0] | capitalize | replace: "-", " " }}</a>
                     <i class="link-spacer"></i>
                     {{ page.read_time }} minutes read

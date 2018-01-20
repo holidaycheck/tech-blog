@@ -6,7 +6,6 @@ categories: coding
 author_name: Artur Szott
 author_url : /author/arturszott
 author_avatar: arturszott
-show_avatar : true
 read_time : 3
 feature_image: posts/2018-01-agility-potion-plus-one/header.jpeg
 show_related_posts: false

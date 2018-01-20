@@ -1,0 +1,11 @@
+<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+    {% if include.avatar %}
+        <span itemprop="image" content='{{ "/img/" | append: include.avatar | prepend: site.baseurl | prepend: site.url }}.jpg'></span>
+    {% endif %}
+
+    {% if include.url %}
+        <a itemprop="url" href="{{ include.url | prepend: site.baseurl }}"><span itemprop="name">{{ include.name }}</span></a>
+    {% else %}
+        <span itemprop="name">{{ include.name }}</span>
+    {% endif %}
+</span>

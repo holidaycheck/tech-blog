@@ -6,7 +6,6 @@ categories: event
 author_name: Wolfram Kriesing
 author_url : /author/wolframkriesing
 author_avatar: wolframkriesing
-show_avatar : true
 read_time : 13
 show_related_posts: false
 square_related: recommend-wolf

@@ -6,7 +6,6 @@ category: javascript
 author_name: Sergii Paryzhskyi
 author_url : /author/sergii_paryzhskyi
 author_avatar: sergii_paryzhskyi
-show_avatar : true
 read_time : 7
 square_related: recommend-wolf
 feature_image: posts/2017-07-contentful-extensions/hero.png
