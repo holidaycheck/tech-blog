@@ -6,6 +6,6 @@
     {% if include.url %}
         <a itemprop="url" href="{{ include.url | prepend: site.baseurl }}"><span itemprop="name">{{ include.name }}</span></a>
     {% else %}
-        <span itemprop="name">{{ include.name }}</span>
+        <span itemprop="name">{{ include.name }}</span>{% if include.is_last == false %},{% endif %}
     {% endif %}
 </span>

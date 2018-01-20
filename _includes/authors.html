@@ -11,8 +11,7 @@
 {% else %}
     {% if include.post.author_names %}
         {% for author_name in include.post.author_names %}
-            {% include author.html name=author_name %}
-            {% if forloop.last == false %}, {% endif %}
+            {% include author.html name=author_name is_last=forloop.last %}
         {% endfor %}
     {% endif %}
 {% endif %}
