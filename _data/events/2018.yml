@@ -182,6 +182,13 @@
   location: Zuiderkerk, Amsterdam, Netherlands
   url: https://amsterdamjs.com/
   tags: conference, JavaScript
+
+- name: Software Craftsmanship London
+  start_datetime: 2018-10-04 10:00
+  end_datetime: 2018-10-05 18:00
+  location: CodeNode, 10 South Pl, London EC2M 7EB, UK
+  url: http://sc-london.com/
+  tags: conference, Software Craft
   
 #
 # Design
@@ -235,6 +242,14 @@
   url: https://www.socrates-ch.org/
   tags: unconference
   twitter: SoCraTes_CH
+
+- name: SoCraTes Canaries 2018
+  start_datetime: 2018-04-12 10:00
+  end_datetime: 2018-04-15 18:00
+  location: NH Imperial Playa, Calle Ferreras, 1, 35008 Las Palmas de Gran Canaria, Las Palmas, Spain
+  url: http://socracan.com/
+  tags: unconference
+  twitter: socracan
 
 #
 # CfPs
