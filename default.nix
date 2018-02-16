@@ -1,8 +1,10 @@
-with import (fetchTarball https://github.com/nixos/nixpkgs/tarball/c2dce6a7459f87e499e976dad2c741437cad8fd5) { };
+{ pkgs ? import (fetchTarball https://github.com/nixos/nixpkgs-channels/tarball/dafdaa98a5c35e08a9deeabfb7c5d08c10271c3c) { } }:
 
-let jekyll_env = bundlerEnv rec {
+let 
+  inherit (pkgs) stdenv bundlerEnv lib;
+  jekyll_env = bundlerEnv rec {
     name = "jekyll_env";
-    ruby = ruby_2_2;
+    ruby = pkgs.ruby;
     gemfile = ./Gemfile;
     lockfile = ./Gemfile.lock;
     gemset = ./gemset.nix;
