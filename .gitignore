@@ -3,3 +3,4 @@ _site
 .jekyll-metadata
 .idea
 result
+.DS_Store
