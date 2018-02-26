@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Priority Metrics"
+title:  "Backlog Prioritzing (Bot)"
 date: 2018-02-23 12:45:00 +0200
 categories: product
 author_names: [ "Sergii Paryzhskyi", "Wolfram Kriesing" ]
