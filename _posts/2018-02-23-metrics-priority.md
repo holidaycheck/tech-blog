@@ -55,9 +55,20 @@ the most impact soonest and lets start with it. We could come up with a million
 reasons why after the third action we will not continue on the next seven actions, so
 let's make sure the first the actions are sorted to move this topic as far as possible.
 
-* Solutions
-  - others
-  - our (abstract)
+## How to sort the Actions
+
+Above we explained that we have the following facts:
+- **the potential** (here 10%) by which we can improve our metrics
+- ten **actions** that might improve our metric.
+- **many metrics** with a potential to improve
+
+Our one metric TTFB is only part of what contributes to our overall goal, the website speed.
+
+Next:
+- figure out potential per actions (might be an experiment)
+- figure out effort
+- determin weight
+- fianlly calculate the priority
 
 * Details of Solution
   - bot automation (abstract)
