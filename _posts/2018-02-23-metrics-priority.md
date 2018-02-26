@@ -3,7 +3,7 @@ layout: post
 title:  "Priority Metrics"
 date: 2018-02-23 12:45:00 +0200
 categories: product
-author_names: [ "Wolfram Kriesing", "Sergii Paryzhskyi" ]
+author_names: [ "Sergii Paryzhskyi", "Wolfram Kriesing" ]
 read_time : 10
 show_related_posts: false
 square_related:
