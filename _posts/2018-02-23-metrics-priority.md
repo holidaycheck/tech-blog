@@ -73,10 +73,20 @@ Next:
 * Details of Solution
   - bot automation (abstract)
 
+
+## Automating things
+
 * Details of Bot automation
   - idea
   - tech stuff
   - https://github.com/apps/issue-prioritizer
   - open to everyone
 
-* Conclusions
+
+## Next Steps
+
+There were some other ideas on how to extend bot's functionality. Some of them were born just by looking at all those events you can listen on Github and all actions you can perform with their App Engine or API.  
+One of the things that is on a very top of our to-do list is automated sorting of issues based on priority label. This can be implemented by listening on all label-events and changing of issues order. So, as soon as something change there - it is a sign issue has to be sorted based on number in Priority label.  
+Everyone is welcome to contribute and make [feature requests][feature-requests].
+
+[feature-requests]: https://github.com/holidaycheck/issue-prioritizer/issues 
