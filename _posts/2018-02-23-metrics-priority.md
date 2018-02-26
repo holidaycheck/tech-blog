@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Backlog Prioritzing (Bot)"
+title:  "Backlog Priority Automation"
 date: 2018-02-23 12:45:00 +0200
 categories: product
 author_names: [ "Sergii Paryzhskyi", "Wolfram Kriesing" ]
@@ -76,8 +76,7 @@ Next:
 * Details of Bot automation
   - idea
   - tech stuff
-  - link to app + promotion
-  - gif demo
+  - https://github.com/apps/issue-prioritizer
   - open to everyone
 
 * Conclusions
