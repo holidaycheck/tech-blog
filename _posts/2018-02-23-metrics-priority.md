@@ -76,6 +76,13 @@ Next:
 
 ## Automating things
 
+There is a pretty new concept on Github which helps to create bots or better to say develop GitHub Apps. It calls [Probot][probot] and its aimed to extend standard GitHub functionality and build on top of it. It also provides a much simplier way of being aware what happens in terms of events and provides interface for taking actions based on these events.  
+We've published our app and you can install it for any repo you have access to.
+
+[probot]: https://probot.github.io/
+[app]: https://github.com/apps/issue-prioritizer
+[repo]: https://github.com/apps/issue-prioritizer
+
 * Details of Bot automation
   - idea
   - tech stuff
@@ -90,3 +97,4 @@ One of the things that is on a very top of our to-do list is automated sorting o
 Everyone is welcome to contribute and make [feature requests][feature-requests].
 
 [feature-requests]: https://github.com/holidaycheck/issue-prioritizer/issues 
+
