@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Go: The Beginning"
-date: 2018-02-24 14:55:10 +0200
+date: 2018-02-28 10:00:01 +0200
 categories: how-we-learn
 author_name: Sergii Paryzhskyi
 author_url : /author/sergii
@@ -10,7 +10,7 @@ author_avatar: sergii_paryzhskyi
 read_time : 10
 show_related_posts: false
 square_related:
-feature_image: posts/2018-02-24-cop-golang/poster.png
+feature_image: posts/2018-02-28-cop-golang/poster.png
 ---
 
 We've been already using Go at HolidayCheck for quite some time. There are some services written with Go and also the primary user of it is our infrastructure team. Apart from that there is a broad list of tooling in use such as Kubernetes or Traefik.  
@@ -41,14 +41,14 @@ func main() {
 ```
 
 As it was mentioned during presentation, it's not the shortest way of writing this program, but it's straightforward way.
-<img src="{{site.baseurl}}/img/posts/2018-02-24-cop-golang/break.jpg" alt="Language basics" align="right" width="275" />
+<img src="{{site.baseurl}}/img/posts/2018-02-28-cop-golang/break.jpg" alt="Language basics" align="right" width="275" />
 With this example we already can notice many things, like how to define functions, import packages and that we have main as an entry point in our program.  
 We quickly went through basics of the language, briefly discussing typical attributes of nearly every programming language. So I guess everyone were just translating for themselves "how to do things in Go, that I'm already doing in my language X". And so it went as we've looked at functions, conditionals, iterators with different ways of how and what you can iterate through.  
 
 ## Goroutines & Channels
 
 That's the area where Go seems to shine and we've spent quite some time understanding how it works and of course experiment with it in repl. Pretty neat that Go has native support for concurrency without using extra packages.  
-<img src="{{site.baseurl}}/img/posts/2018-02-24-cop-golang/goroutines-and-channels.jpg" alt="Goroutines and Channels" title="Goroutines and Channels" align="left" width="300" />
+<img src="{{site.baseurl}}/img/posts/2018-02-28-cop-golang/goroutines-and-channels.jpg" alt="Goroutines and Channels" title="Goroutines and Channels" align="left" width="300" />
 By writing `go` before any function call, will create a goroutine to run concurrently. It's not the same as threads but rather functions that run concurrently with other functions and this is much lighter and cheaper in terms of cpu or memory usage. That is also a complexity that hidden from developer and solved at runtime by Go.
 
 ## What's Next?
