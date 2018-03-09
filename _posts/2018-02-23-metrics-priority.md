@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Backlog Priority Automation"
-date: 2018-02-23 12:45:00 +0200
+date: 2018-03-09 12:45:00 +0200
 categories: product
 author_names: [ "Sergii Paryzhskyi", "Wolfram Kriesing" ]
 read_time : 10
@@ -75,9 +75,11 @@ Our next step towards automation was to create a bot that would constantly liste
 There is a pretty new concept on Github which helps to create bots or better to say develop GitHub Apps. It calls [Probot][probot] and its aimed to extend standard GitHub functionality and build on top of it. It also provides a much simplier way of being aware what happens in terms of events and provides interface for taking actions based on these events.  
 We've published our app and you can install it for any repo you have access to. This app does pretty much what described above. Here is a little demo to visualise this process:
 
-[img demo.gif]
+<img src="{{site.baseurl}}/img/posts/2018-02-23-metrics-priority/demo-labels.gif" alt="Demo" />
 
 You can find this app in Github Marketplace and install it from [this Github Page][app]. This project was [open sourced][repo], you might want to adopt or extend it for your needs.
+
+<img src="{{site.baseurl}}/img/posts/2018-02-23-metrics-priority/install-app.png" alt="Install the App" />
 
 [probot]: https://probot.github.io/
 [app]: https://github.com/apps/issue-prioritizer
