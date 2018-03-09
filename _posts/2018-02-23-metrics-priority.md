@@ -41,7 +41,7 @@ We look at the actions that we can take in order to speed up this metric. There 
 
 Why? Because the plan and the reality always diverge and we won't get all ten actions done. So let's try to plan for being most effective as soon as possible. Let's not plan the ten actions
 and just work on them in alphabetical order. Let's instead figure out which one has
-the most impact soonest and lets start with it. We could come up with a million
+the most impact soonest and let's start with it. We could come up with a million
 reasons why after the third action we will not continue on the next seven actions, so
 let's make sure the first the actions are sorted to move this topic as far as possible.
 
@@ -72,7 +72,7 @@ Our next step towards automation was to create a bot that would constantly liste
 
 ## Automating things
 
-There is a pretty new concept on Github which helps to create bots or better to say develop GitHub Apps. It calls [Probot][probot] and its aimed to extend standard GitHub functionality and build on top of it. It also provides a much simplier way of being aware what happens in terms of events and provides interface for taking actions based on these events.  
+There is a pretty new concept on Github which helps to create bots or better to say develop GitHub Apps. It calls [Probot][probot] and its aimed to extend standard GitHub functionality and build on top of it. It also provides a much simpler way of being aware what happens in terms of events and provides interface for taking actions based on these events.  
 We've published our app and you can install it for any repo you have access to. This app does pretty much what described above. Here is a little demo to visualise this process:
 
 <img src="{{site.baseurl}}/img/posts/2018-02-23-metrics-priority/demo-labels.gif" alt="Demo" />
