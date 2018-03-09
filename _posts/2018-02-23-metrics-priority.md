@@ -60,22 +60,28 @@ Next:
 - determin weight
 - finally calculate the priority
 
+Determine metrics such as potential, effort and weight of every issue is not something we can automate. Those values should be discussed and defined for every issue manually, ideally in a group. It increases probability that different opinions and concerns will be raised and those values will be defined more precise. For this reasons we created issue labels on github with names such as "Effort: 0.1", "Effort: 0.2" ... "Effort: 1.0" and so on for other two metrics "Potential" and "Weight". 
+As soon as we have all metrics set, we can calculate a priority of the issue. That's the part that can be automated and here is a formula we came up with to determine in which order to work on pool of issues in backlog:
+```
+2 * potential + 1 - effort + weight
+```
+
+Knowing that all metrics are in range from 0.1 to 1.0, we can tell that our range of possible priorities is between 0.3 and 3.9.  
+Our next step towards automation was to create a bot that would constantly listen to the changes in issue labels and react to those changes accordingly. Let's say, as soon as manual work done and all metrics for an issue are set, this bot would calculate priority based on these values and set proper priority-label to this issue.  
+
 
 ## Automating things
 
 There is a pretty new concept on Github which helps to create bots or better to say develop GitHub Apps. It calls [Probot][probot] and its aimed to extend standard GitHub functionality and build on top of it. It also provides a much simplier way of being aware what happens in terms of events and provides interface for taking actions based on these events.  
-We've published our app and you can install it for any repo you have access to.
+We've published our app and you can install it for any repo you have access to. This app does pretty much what described above. Here is a little demo to visualise this process:
+
+[img demo.gif]
+
+You can find this app in Github Marketplace and install it from [this Github Page][app]. This project was [open sourced][repo], you might want to adopt or extend it for your needs.
 
 [probot]: https://probot.github.io/
 [app]: https://github.com/apps/issue-prioritizer
-[repo]: https://github.com/apps/issue-prioritizer
-
-* Details of Bot automation
-  - idea
-  - tech stuff
-  - https://github.com/apps/issue-prioritizer
-  - open to everyone
-
+[repo]: https://github.com/holidaycheck/issue-prioritizer
 
 ## Next Steps
 
