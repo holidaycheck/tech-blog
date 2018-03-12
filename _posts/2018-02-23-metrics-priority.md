@@ -19,17 +19,11 @@ In this post we will describe one way of how we started to prioritize our tasks.
 ## What's the problem?
 
 Our exact case was the page speed. We are working on speeding up our website, which might have
-a great impact, [as][impact-1] [many][impact-2] [numbers][impact-3] [show][impact-4].
-The reason why to work on website speed is not questionable.
+a great impact.
 
 Next we need numbers, so we setup tools that help us steadily figure out our numbers, such
 as TTFB (time to first byte) and TTI (time to interactive). We also measured the file sizes of the  downloads (JavaScript files, CSS, images, ...) needed to render our website.
 We setup a continuous measuring for it, which reports numbers and shows our progress.
-
-[impact-1]: ??? 
-[impact-2]: ???
-[impact-3]: ???
-[impact-4]: ???
 
 ## We have Metrics, What now?
 
