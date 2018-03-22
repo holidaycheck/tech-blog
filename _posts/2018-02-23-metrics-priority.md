@@ -29,24 +29,23 @@ We setup a continuous measuring for it, which reports numbers and shows our prog
 
 We know our current numbers. Next we needed to find a way to figure out the potentials we have
 in certain areas. For example, TTFB of 1.5s might be a great number, but we don't know. So
-we figured out what to compare this number to (there are many ways to do that). Let's say in this case we saw there is about 10% by which we can improve this number (to 1.35 seconds).
+we figured out what to compare this number to (there are many ways to do that). Let's say in this case we saw there is **a 10% potential** by which we can improve this number (to 1.35 seconds).
 
-We look at the actions that we can take in order to speed up this metric. There are many ways to figure out what to do. Once we derived ten actions we still had no clue which one to do first. So we need some numbers that we can use to decide what we shall work on.
+We look at the actions that we can take in order to speed up this metric. Once we derived **ten actions** we still had no clue which one to do first. So we need some numbers that we can use to decide what we shall work on.
 
-Why? Because the plan and the reality always diverge and we won't get all ten actions done. So let's try to plan for being most effective as soon as possible. Let's not plan the ten actions
-and just work on them in alphabetical order. Let's instead figure out which one has
-the most impact soonest and let's start with it. We could come up with a million
-reasons why after the third action we will not continue on the next seven actions, so
-let's make sure the first the actions are sorted to move this topic as far as possible.
+Why? Because the plan and the reality always diverge and we won't get all ten actions done. So let's try to plan for being most effective as soon as possible. Let's not just work on them in alphabetical order. Let's instead figure out which one has
+**the most impact soonest** and let's start with it. We could come up with a million
+reasons why we won't finish all actions,
+so let's make sure the actions are sorted to push this topic as far as possible.
 
 ## How to sort the Actions
 
 Above we explained that we have the following facts:
 - **the potential** (here 10%) by which we can improve our metrics
-- ten **actions** that might improve our metric.
-- **many metrics** with a potential to improve
+- ten **actions** that might improve our metric
+- **many metrics**, with actions and potential that we need to prioritize
 
-Our one metric TTFB is only part of what contributes to our overall goal, the website speed.
+Our one metric TTFB is only part of what contributes to our overall goal.
 
 Next:
 - figure out potential per actions (might be an experiment)
