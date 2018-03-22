@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Backlog Priority Automation"
+title:  "Backlog Priority Automation using Github Apps"
 date: 2018-03-09 12:45:00 +0200
 categories: product
 author_names: [ "Sergii Paryzhskyi", "Wolfram Kriesing" ]
