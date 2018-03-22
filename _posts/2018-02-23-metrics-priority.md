@@ -45,15 +45,11 @@ Above we explained that we have the following facts:
 - ten **actions** that might improve our metric
 - **many metrics**, with actions and potential that we need to prioritize
 
-Our one metric TTFB is only part of what contributes to our overall goal.
+Our one metric TTFB is only part of what contributes to our overall goal. So we have to make sure to set all actions into relation to one another and find the right order for them. **The potential** is one part of the formula. **The effort** that is required to implement a feature is another one and the third one, we defined is **the weight**. 
 
-Next:
-- figure out potential per actions (might be an experiment)
-- figure out effort
-- determin weight
-- finally calculate the priority
+Effort does not need much explaination, since we need to know if a task is a simple change or feels impossbile. The weight is the most volatile and dangerous factor here, since it can't be determined very explicitly. But it takes into account many things that still need to go into a prioritization, such as the legacy factor, the danger, the risk, user experience, and so on. This factor should be chosen by the same people applying the same standards to make it a useful and consistent value.
 
-Determine metrics such as potential, effort and weight of every issue is not something we can automate. Those values should be discussed and defined for every issue manually, ideally in a group. It increases probability that different opinions and concerns will be raised and those values will be defined more precise. For this reasons we created issue labels on github with names such as "Effort: 0.1", "Effort: 0.2" ... "Effort: 1.0" and so on for other two metrics "Potential" and "Weight". 
+Determine the metrics, potential, effort and weight of every issue is not something we can automate. Those values should be discussed and defined for every issue manually, ideally in a group. It increases probability that different opinions and concerns will be raised and those values will be defined more precise. For this reasons we created issue labels on github with names such as "Effort: 0.1", "Effort: 0.2" ... "Effort: 1.0" and so on for other two metrics "Potential" and "Weight". 
 As soon as we have all metrics set, we can calculate a priority of the issue. That's the part that can be automated and here is a formula we came up with to determine in which order to work on pool of issues in backlog:
 ```
 2 * potential + 1 - effort + weight
