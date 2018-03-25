@@ -20,6 +20,18 @@
   url: https://www.meetup.com/JavaScript-The-Language/events/246709098/
   tags: meetup, JavaScript
   location: HolidayCheck, Neumarkter Str. 61, München
+  
+- name: JavaScript the Language - function (again!!!!) - we need to learn more
+  start_datetime: 2018-03-22 19:00
+  url: https://www.meetup.com/JavaScript-The-Language/events/247846985/
+  tags: meetup, JavaScript
+  location: HolidayCheck, Neumarkter Str. 61, München
+  
+- name: JavaScript the Language - Map, Set, WeakMap
+  start_datetime: 2018-04-19 19:00
+  url: https://www.meetup.com/JavaScript-The-Language/events/249034286/
+  tags: meetup, JavaScript
+  location: HolidayCheck, Neumarkter Str. 61, München
 
 #
 # Others
