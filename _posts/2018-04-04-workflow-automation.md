@@ -9,6 +9,7 @@ author_avatar: radekbenkel
 read_time : 10
 show_related_posts: false
 square_related:
+feature_image: posts/2018-04-04-workflow-automation/poster.jpg
 ---
 
 As engineers, we like to script and automate whatever’s possible. It doesn’t matter if we’re talking about creating three-character-long aliases for a ten-character-long command, adding labels to newly created issues, or ordering a donut delivery to the office at the touch of a button (currently in development ;) - it has a lot of advantages.
