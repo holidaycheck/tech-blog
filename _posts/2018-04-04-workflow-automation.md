@@ -4,8 +4,8 @@ title: Workflow automation
 date: 2018-04-04 12:00:01 +0200
 categories: culture
 author_name: Radek Benkel
-author_url : /author/radek_benkel
-author_avatar: radek_benkel
+author_url : /author/radekbenkel
+author_avatar: radekbenkel
 read_time : 10
 show_related_posts: false
 square_related:
