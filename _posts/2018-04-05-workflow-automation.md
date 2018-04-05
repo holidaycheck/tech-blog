@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Workflow automation
-date: 2018-04-04 12:00:01 +0200
+date: 2018-04-05 17:00:00 +0200
 categories: culture
 author_name: Radek Benkel
 author_url : /author/radekbenkel
@@ -9,7 +9,7 @@ author_avatar: radekbenkel
 read_time : 10
 show_related_posts: false
 square_related:
-feature_image: posts/2018-04-04-workflow-automation/poster.jpg
+feature_image: posts/2018-04-05-workflow-automation/poster.jpg
 ---
 
 As engineers, we like to script and automate whatever’s possible. It doesn’t matter if we’re talking about creating three-character-long aliases for a ten-character-long command, adding labels to newly created issues, or ordering a donut delivery to the office at the touch of a button (currently in development ;) - it has a lot of advantages.
@@ -61,7 +61,7 @@ Some time ago we started using [greenkeeper](https://greenkeeper.io/#enterprise)
 
 Remember what I said about being a lazy engineer? Well, we thought we could automate that part, too. And so we did.
 
-![auto-merge-greenkeeper](img/posts/2018-04-04-workflow-automation/auto-merge-greenkeeper.png)
+![auto-merge-greenkeeper](img/posts/2018-04-05-workflow-automation/auto-merge-greenkeeper.png)
 
 Notes for the screenshot above:
 
@@ -149,7 +149,7 @@ We released some general use tasks as part of [liam-tasks](https://www.npmjs.com
 
 - reminding people to check whether their Slack’s `Working Remotely` status is still relevant (eg. someone forgot to change status next day) - we have a rather open home-office policy
 
-  ![home-office-guard](img/posts/2018-04-04-workflow-automation/home-office-guard.png)
+  ![home-office-guard](img/posts/2018-04-05-workflow-automation/home-office-guard.png)
 
 You can have one `liam` instance per company, per project, per multiple projects, you can create `liam` instances per specific tasks – it’s up to you. For us, one `liam` per project turned out to be the sweet spot, but that doesn’t mean the same will work for you.
 Probot
@@ -157,7 +157,7 @@ Probot
 
 Some time ago GitHub released [probot](https://probot.github.io/) – a framework for building GitHub Apps to automate and improve workflow. We’re experimenting with this too. For example, [Sergii](author/sergii_paryzhskyi) created [issue-prioritizer](https://github.com/holidaycheck/issue-prioritizer), which automatically calculates issue priority based on *Effort*, *Potential*, and *Weight* labels:
 
-![issue-prioritizer](img/posts/2018-04-04-workflow-automation/issue-prioritizer.png)
+![issue-prioritizer](img/posts/2018-04-05-workflow-automation/issue-prioritizer.png)
 
 
 Visible differences in `probot` :
