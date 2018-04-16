@@ -48,7 +48,7 @@ We explained above that we had the following facts:
 
 One of our metrics, TTFB, was the only part of what contributed to our overall goal. So we had to make sure to set all of the actions into relation to one another and find the right order for them. **The potential** is one part of the formula. **The effort** that is required to implement a feature is another one and the third one, we defined, was **the weight**. 
 
-Effort didn't need much explaination, since we needed to know if a task was just a simple change or felt like it was impossbile to do. The weight was the most volatile and dangerous factor here, since it couldn't be determined very explicitly. In order to prioritize correclty we needed also to take into account: the legacy factor, the danger, the risk, user experience, and so on. That factor should have been chosen by the same people applying the same standards. This made it a useful and consistent value.
+**Effort** didn't need much explaination, since we needed to know if a task was just a simple change or felt like it was impossible to do. **The weight** was the most volatile and dangerous factor here, since it couldn't be determined very explicitly. In order to prioritize correctly we needed also to take into account: the legacy factor, the danger, the risk, user experience, and so on. That factor should have been chosen by the same people applying the same standards. This made it a useful and consistent value.
 
 Determine the metrics, potential, effort and weight of every issue is not something we can automate. Those values should be discussed and defined for every issue manually, ideally in a group. It increases probability that different opinions and concerns will be raised and those values will be defined more precise. For this reasons we created issue labels on github with names such as "Effort: 0.1", "Effort: 0.2" ... "Effort: 1.0" and so on for other two metrics "Potential" and "Weight". 
 As soon as we have all metrics set, we can calculate a priority of the issue. That's the part that can be automated and here is a formula we came up with to determine in which order to work on pool of issues in backlog:
@@ -62,7 +62,7 @@ Our next step towards automation was to create a bot that would constantly liste
 
 ## Automating things
 
-There is a pretty new concept on Github which helps to create bots or better to say develop GitHub Apps. It calls [Probot][probot] and its aimed to extend standard GitHub functionality and build on top of it. It also provides a much simpler way of being aware what happens in terms of events and provides interface for taking actions based on these events.  
+There is a pretty new concept on Github which helps to create bots or better to say develop GitHub Apps. It is called [Probot][probot] and it's aimed to extend standard GitHub functionality and build on top of it. It also provides a much simpler way of being aware what happens in terms of events and provides interface for taking actions based on these events.  
 We've published our app and you can install it for any repo you have access to. This app does pretty much what described above. Here is a little demo to visualise this process:
 
 <img onClick="this.src='{{site.baseurl}}/img/posts/2018-02-23-metrics-priority/demo-labels.gif'" src="{{site.baseurl}}/img/posts/2018-02-23-metrics-priority/demo-labels-play.png" alt="Demo" />
@@ -77,8 +77,8 @@ You can find this app in Github Marketplace and install it from [this Github Pag
 
 ## Next Steps
 
-There were some other ideas on how to extend bot's functionality. Some of them were born just by looking at all those events you can listen on Github and all actions you can perform with their App Engine or API.  
-One of the things that is on a very top of our to-do list is automated sorting of issues based on priority label. This can be implemented by listening on all label-events and changing of issues order. So, as soon as something change there - it is a sign issue has to be sorted based on number in Priority label.  
+There were some other ideas on how to extend the bot's functionality. Some of them were born just by looking at all those events you can listen on Github and all actions you can perform with their App Engine or API.  
+One of the things that is on a very top of our to-do list is automated sorting of issues based on priority label. This can be implemented by listening on all label-events and changing of issues order. So, as soon as something changes there - it is a sign issue has to be sorted based on number in Priority label.  
 Everyone is welcome to contribute and make [feature requests][feature-requests].
 
 [feature-requests]: https://github.com/holidaycheck/issue-prioritizer/issues 
