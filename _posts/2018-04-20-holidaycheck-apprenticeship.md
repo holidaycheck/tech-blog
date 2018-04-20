@@ -10,7 +10,7 @@ read_time : 5
 feature_image: posts/2018-04-20-holidaycheck-apprenticeship/apprenticeship.png
 ---
 
-Yesterday marked the public launch of the HolidayCheck Apprenticeship Program. If you want to apply, you can do so right now at [https://apprenticeship.holidaycheck.de](https://apprenticeship.holidaycheck.de) - But for now, please keep on reading for more details about the program.
+Yesterday marked the public launch of the HolidayCheck Apprenticeship Program. If you want to apply, you can do so right now at [https://apprenticeship.holidaycheck.com](https://apprenticeship.holidaycheck.com) - But for now, please keep on reading for more details about the program.
 
 ## Senior Engineers Don't Grow On Trees
 
@@ -31,7 +31,7 @@ For six months apprentices will focus on learning and improving for the sake of 
 - Learning
 - Tools
 
-Please refer to [https://apprenticeship.holidaycheck.de](https://apprenticeship.holidaycheck.de) for more details.
+Please refer to [https://apprenticeship.holidaycheck.de](https://apprenticeship.holidaycheck.com) for more details.
 
 In the course of the apprenticeship apprentices will also get to know different teams and learn about our product and our infrastructure. Additionally there are some challenges that have to be tackled such as 
 
