@@ -1,16 +1,16 @@
 ---
 layout: post
 title:  "The HolidayCheck Apprenticeship"
-date: 2018-04-01 00:0:00 +0200
+date: 2018-04-20 12:0:00 +0200
 categories: culture how-we-learn
 author_name: Tobias Pflug
 author_url : /author/tobiaspflug
 author_avatar: tobiaspflug
 read_time : 5
-feature_image: posts/2018-04-01-holidaycheck-apprenticeship/apprenticeship.png
+feature_image: posts/2018-04-20-holidaycheck-apprenticeship/apprenticeship.png
 ---
 
-Today we are proud to announce the official public launch of the HolidayCheck Apprenticeship Program. Starting today you can apply for an apprenticeship at [https://apprenticeship.holidaycheck.de](https://apprenticeship.holidaycheck.de) - Read on for more details on the program.
+Yesterday marked the public launch of the HolidayCheck Apprenticeship Program. If you want to apply, you can do so right now at [https://apprenticeship.holidaycheck.de](https://apprenticeship.holidaycheck.de) - But for now, please keep on reading for more details about the program.
 
 ## Senior Engineers Don't Grow On Trees
 
@@ -20,7 +20,7 @@ At HolidayCheck we want to consciously and explicitly invest in people. We belie
 
 ## Our Apprenticeship Program
 
-The apprenticeship program targets people with less professional experience but lots of potential. We want to harvest that potential and turn it into growth. Personal growth, professional growth and, last but not least, growth for HolidayCheck because apprentices are fully compensated employees who will hopefully stay with us for a good while.
+The apprenticeship program targets people with less professional experience but lots of potential. We want to harvest that potential and turn it into growth. Personal growth, professional growth and, last but not least, growth for HolidayCheck since apprentices are fully compensated employees who will hopefully stay with us for a good while.
 
 For six months apprentices will focus on learning and improving for the sake of becoming better at their profession. Guided by our mentors these six months are going to be challenging, exciting, fun, and also highly effective. The curriculum will be individually adjusted for each apprentice but will evolve around six categories:
 
@@ -31,17 +31,24 @@ For six months apprentices will focus on learning and improving for the sake of 
 - Learning
 - Tools
 
-Please refer to [https://apprenticeship.holidaycheck.de](https://apprenticeship.holidaycheck.de) for more details. In the course of the apprenticeship apprentices will also get to know different teams and learn about our product and our infrastructure. Additionally there are some challenges that have to be tackled such as learning a new programming language and blogging daily, or visiting all of our offices.
+Please refer to [https://apprenticeship.holidaycheck.de](https://apprenticeship.holidaycheck.de) for more details.
 
-## Why would you do that?
+In the course of the apprenticeship apprentices will also get to know different teams and learn about our product and our infrastructure. Additionally there are some challenges that have to be tackled such as 
+
+- learning a new programming language
+- blogging daily
+- visiting our IT departments Munich (_de_), Poznan (_pl_) and Bottighofen (_ch_).
+- visiting two conferences about software craft
+
+## Why would you offer that?
 
 There are plenty of reasons why more companies should follow the lead of [8th Light](https://8thlight.com/) and [Codurance](https://codurance.com/) and now HolidayCheck in providing their own apprenticeship program. Here are ours:
 
-- The most experienced Developers are the most sought-after on the market but we aren't the most sought-after IT employer on the market - not yet anyway ;)
+- The most experienced Developers are the most sought-after on the market but we, HolidayCheck, aren't the most sought-after IT employer on the market - not yet anyway ;)
 - Even the most experienced folks need a considerable ramp-up time in order to get to know people and processes. The time of the apprenticeship is time well spent.
 - In the course of the apprenticeship the apprentices will develop a bond with their mentors as well as the company as a whole which is beneficial to everyone.
 - We genuinely believe that our return of investment with the apprenticeship is huge. We aren't only talking about giving individuals the room to learn and grow. With each apprentice HolidayCheck as a whole will improve a bit with the questions asked and challenges posed for and by each apprentice.
 
 ### A Personal Note
 
-As a mentor and together with Wolfram Kriesing initiator of this program I am really exicted, and also proud to finally launch this program publicly. A lot of time and energy has been invested to shape this program and yet we are only getting started - nothing is set in stone. With each new apprentice we will keep on iterating, adjusting and improving the program. If all of this sounds appealing to you, please don't hesitate to apply. I look forward to hearing from you ❤.
+As a mentor, and together with Wolfram Kriesing, initiator of this program, I am really exicted and proud that we have finally launched this program publicly. A lot of time and energy has been invested into shaping this program and yet we are only getting started. With each new apprentice we will keep on iterating, adjusting and improving the program. If all of this sounds appealing to you, please don't hesitate to apply. I look forward to hearing from you ❤.
