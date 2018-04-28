@@ -182,6 +182,13 @@
   url: https://craft-conf.com/
   tags: conference, software craftsmanship, tools, methods, practices, modern developer and company, new technologies, trends
 
+- name: JSCodeRetreat
+  start_datetime: 2018-05-12 09:30
+  end_datetime: 2018-05-12 17:00
+  location: Munich, Germany
+  url: http://jscoderetreat.com
+  tags: JavaScript, CodeRetreat, Practice, Learn, TDD, Pair programming
+
 - name: WebCraftConf
   start_datetime: 2018-06-20 10:00
   end_datetime: 2018-06-22 18:00
