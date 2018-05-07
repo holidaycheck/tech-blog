@@ -209,6 +209,13 @@
   location: CodeNode, 10 South Pl, London EC2M 7EB, UK
   url: http://sc-london.com/
   tags: conference, Software Craft
+
+- name: NewCrafts.io
+  start_datetime: 2018-05-17 09:30
+  end_datetime: 2018-05-18 19:00
+  location: NEW CAP Event Center — 3, Quai de Grenelle, Paris
+  url: http://ncrafts.io/
+  tags: conference, Software Craft, quality code
   
 #
 # Design
