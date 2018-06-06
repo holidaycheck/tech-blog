@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Self Organization"
-date: 2018-05-17 12:0:00 +0200
+date: 2018-06-06 12:0:00 +0200
 categories: motivation how-we-learn
 author_name: Ugurcan Sengit
 author_url : /author/ugurcansengit
