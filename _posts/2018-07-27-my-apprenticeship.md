@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My Apprenticeship"
-date: 2018-07-27 12:0:00 +0200
+date: 2018-07-30 12:0:00 +0200
 categories: culture how-we-learn
 author_name: Ugurcan Sengit
 author_url : /author/ugurcansengit
