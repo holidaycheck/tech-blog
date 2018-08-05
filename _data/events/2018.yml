@@ -37,6 +37,14 @@
 # Others
 #
 
+- name: JSCamp 2018
+  start_datetime: 2018-07-18 10:00
+  end_datetime: 2018-07-20 18:00
+  url: https://jscamp.tech/
+  tags: conference, JavaScript
+  location: Barcelona, Spain
+  twitter: jscamptech
+
 - name: JSConfEU 2018
   start_datetime: 2018-06-02 10:00
   end_datetime: 2018-06-03 18:00
@@ -238,6 +246,14 @@
   url: http://www.bus-conf.org/
   twitter: _BusConf_
   tags: unconference, FP
+
+- name: JSCraftCamp 2018
+  start_datetime: 2018-08-10 10:00
+  end_datetime: 2018-08-11 18:00
+  location: Munich, Germany
+  url: http://www.jscraftacmp.org/
+  twitter: jscraftcamp
+  tags: unconference, JavaScript
 
 - name: CodeFreeze 2018
   start_datetime: 2018-01-15 10:00
