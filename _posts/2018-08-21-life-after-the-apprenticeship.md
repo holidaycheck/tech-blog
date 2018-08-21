@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Life after the Apprenticeship"
-date: 2018-07-30 12:0:00 +0200
+date: 2018-08-20 12:0:00 +0200
 categories: culture how-we-learn
 author_name: Daniel Bolivar
 author_url: /author/danielbolivar
