@@ -57,6 +57,17 @@
   start_datetime: 2017-12-08 09:30
   end_datetime: 2017-12-09 18:00
   url: https://frontconf.com/
+- name: Fronteers 2017
+  start_datetime: 2017-10-05 09:30
+  end_datetime: 2017-10-06 18:00
+  tags: conference, workshop
+  url: https://fronteers.nl/congres
+  attendees: Álvaro Nistal / Haris Grizovic
+  location: Amsterdam
+  comment: "Topics from web/app technologies to general work process and methodologies."
+  posts:
+    - https://slides.com/anistal/fronteers-animation
+    - https://vimeo.com/channels/fronteers17
 - name: "#jbhc17 part 1 (J.B. Rainsberger)"
   start_datetime: 2017-10-16 10:00
   end_datetime: 2017-10-17 18:00
