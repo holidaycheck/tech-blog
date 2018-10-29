@@ -6,7 +6,7 @@ categories: testing
 author_name: Jacek Smolak
 author_url : /author/jaceksmolak
 author_avatar: jaceksmolak
-read_time : 12
+read_time : 10
 show_related_posts: false
 square_related:
 feature_image: posts/2018-10-25-migrating-from-galen-to-backstop/migration.jpg
