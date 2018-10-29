@@ -30,7 +30,7 @@ Enough was enough.
 
 The first thing we did, was removing some of the tests, the ones that were not important for the business to run. We managed to go down from 20 to 16 minutes. But that was not enough. And we did not remove anything regarding random failures. What we gained, though, was a list of tests that really mattered. And those were the ones we decided to migrate.
 
-The search for a replacement for Galen was rather short. We googled for some solutions, but we also checked our own backyard and found out that other team was using [Backstop](https://garris.github.io/BackstopJS/) for their own project. Decision was easy: let's not use yet another tool, creating yet another knowledge silo. Let's use something that is known and, more or less, proved to be working.
+The search for a replacement for Galen was rather short. We googled for some solutions, but we also checked our own backyard and found out that other team was using [BackstopJS](https://garris.github.io/BackstopJS/) for their own project. Decision was easy: let's not use yet another tool, creating yet another knowledge silo. Let's use something that is known and, more or less, proved to be working.
 
 ## Migration plan
 
