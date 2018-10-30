@@ -237,6 +237,10 @@ Therefore we decided to keep the files on the pipeline server, where the whole e
 
 Occasionally we had, and still have, some tests failing from time to time (lazy loaded images, very rarely), but we are satisfied now. The most important thing is that we can ship more often. **We went down from ~20min to ~4 with our visual regression tests!**
 
+<em class="snippet-description">Visual regression tests duration (average in seconds)</em>
+
+<img src="/img/posts/2018-10-30-migrating-from-galen-to-backstop/visual-regression-tests-duration.png" alt="Visual regression tests duration (average in seconds)">
+
 As we have previously tested our application against various devices, we came to the conclusion that perhaps we don’t need to be so precise. Maybe it is OK to have it tested against the most popular browser out there (where most of the modern browsers behave almost identically) and on one device. If something is moved 3 pixels to the right in another browser/device - then so be it. The most important thing is that it is there, and that is what those tests are all about.
 
 The most important thing is that the time (20 minutes down to 4) and the money saved (from the time to release and dropping of virtual machines from external partner) can now be used elsewhere, e.g. to provide more features to our customers.
