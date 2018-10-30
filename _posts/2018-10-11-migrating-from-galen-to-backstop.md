@@ -1,15 +1,15 @@
 ---
 layout: post
 title:  "Migrating from Galen to Backstop"
-date: 2018-10-22 14:55:10 +0200
+date: 2018-10-30 16:55:10 +0200
 categories: testing
 author_name: Jacek Smolak
 author_url : /author/jaceksmolak
 author_avatar: jaceksmolak
-read_time : 10
+read_time : 11
 show_related_posts: false
 square_related:
-feature_image: posts/2018-10-25-migrating-from-galen-to-backstop/migration.jpg
+feature_image: posts/2018-10-30-migrating-from-galen-to-backstop/migration.jpg
 ---
 
 > Visual regression testing has recently started gaining popularity- and for good reason. At its most basic, it’s a series of tests that run through your site, take screenshots of various components, compare those screenshots against a baseline, and alert you when things change.
