@@ -241,7 +241,7 @@ Occasionally we had, and still have, some tests failing from time to time (lazy 
 
 <img src="/img/posts/2018-10-30-migrating-from-galen-to-backstop/visual-regression-tests-duration.png" alt="Visual regression tests duration (average in seconds)">
 
-As we have previously tested our application against various devices, we came to the conclusion that perhaps we don’t need to be so precise. Maybe it is OK to have it tested against the most popular browser out there (where most of the modern browsers behave almost identically) and on one device. If something is moved 3 pixels to the right in another browser/device - then so be it. The most important thing is that it is there, and that is what those tests are all about.
+As we have previously tested our application against various devices, we came to the conclusion that perhaps we don’t need to be so precise. Maybe it is OK to have it tested against the most popular browser out there (where most of the modern browsers behave almost identically) and on one device. If something is moved 3 pixels to the right in another browser/device - then so be it. The most important thing is that it is there, and that is what those tests are all about. Eventually we will add other headless browsers, in the end they do work differently under the hood.
 
 The most important thing is that the time (20 minutes down to 4) and the money saved (from the time to release and dropping of virtual machines from external partner) can now be used elsewhere, e.g. to provide more features to our customers.
 
