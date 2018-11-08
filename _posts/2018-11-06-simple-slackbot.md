@@ -32,7 +32,7 @@ slackClient.chat.postMessage({
 ```
 
 The very same interface is used for sending direct messages, so without changing anything you can specify your own slack-name instead of channel. In this case you will be getting the messages from the bot directly. Its quite handy for testing purposes as well.
-////////////// Post one per day - not randomly
+Other thing that needed to be done is that we don't want to pick a random quote from json every time we post, but rather to relate those quotes to specific days. In other words, every day has its own quote and doesn't matter how often we run script during the day, this quote will be the only one for this day. That was easy to achieve by picking a quote based on day of the year modulo the amount of quotes in picked json file, so we want pick something that is outside of the scope.
 
 
 ## Scheduling
