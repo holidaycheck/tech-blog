@@ -13,7 +13,7 @@ feature_image: posts/2017-06-jslang/post-header.jpg
 ---
 
 In our offices we have a monthly meetup, which is all about JavaScript language features,
-we call it "JavaScript The Language" ( see twitter [#jslang][jslang-twitter]). 
+we call it "JavaScript The Language" (see twitter [#jslang][jslang-twitter]). 
 We pick one language feature and by writing tests for each piece of the feature we step by step
 explore the feature in depth.
 
@@ -73,7 +73,7 @@ our code during the meetup, this is the list we came up with:
 * async errors
 * SharedArrayBuffers and Atomics
 
-As you can see here the [next meetup][next-meetup] will we about Proxies.
+As you can see here the [next meetup][next-meetup] will be about Proxies.
 
 [mdn-error]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error
 [tests]: https://gitlab.com/wolframkriesing/jslang-meetups/tree/master/errors-2018-10-18/error.spec.js
