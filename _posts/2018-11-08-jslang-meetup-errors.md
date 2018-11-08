@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "JavaScript The Language Meetup, November 2018 - Errors"
-date: 2018-11-08 23:03:00 +0200
+title:  "#jslang Meetup - Errors"
+date: 2018-11-08 20:03:00 +0200
 categories: event
 author_name: Wolfram Kriesing
 author_url : /author/wolframkriesing
@@ -12,9 +12,7 @@ square_related: recommend-wolf
 feature_image: posts/2017-06-jslang/post-header.jpg
 ---
 
-# JavaScript The Language Meetup, November 2018 - Errors
-
-In our offices we have a monthly meetup, which is all about JavaScript language features, 
+In our offices we have a monthly meetup, which is all about JavaScript language features,
 we call it "JavaScript The Language" ( see twitter [#jslang][jslang-twitter]). 
 We pick one language feature and by writing tests for each piece of the feature we step by step
 explore the feature in depth.
@@ -78,7 +76,7 @@ our code during the meetup, this is the list we came up with:
 As you can see here the [next meetup][next-meetup] will we about Proxies.
 
 [mdn-error]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error
-[tests]: ./error.spec.js
+[tests]: https://gitlab.com/wolframkriesing/jslang-meetups/tree/master/errors-2018-10-18/error.spec.js
 [meetup]: https://www.meetup.com/JavaScript-The-Language/events/254796389/
 [next-meetup]: https://www.meetup.com/JavaScript-The-Language/events/255646068/
 [spec]: https://tc39.github.io/ecma262/#sec-error-objects
