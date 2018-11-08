@@ -38,7 +38,8 @@ The very same interface is used for sending direct messages, so without changing
 ## Scheduling
 
 In our case we run this on Kubernetes, so scheduling is just a part of deployment configuration. For instance to post slack messages every day at 9:15 from Monday to Friday is just a cron instruction that look like this `15 9 * * 1-5`.
-You will probably use something your infrastructure provides you for this manner. Other option would be to use one of the many js-scheduler packages, which providing this functionality. One example of popular and well documented package called [cron-scheduler][cron-scheduler]
+You will probably use something your infrastructure provides you for this manner. Other option would be to use one of the many js-scheduler packages, which providing this functionality. One example of popular and well documented package called [cron-scheduler][cron-scheduler].
+If setting schedule with cron-syntax looks not very friendly, you can use this nice [web interface][cron-generator] to define time period and make it generate it for you.
 
 
 ## Try it
@@ -51,3 +52,4 @@ As I've mentioned before, this project is open sourced, so you can actually try 
 [slack-npm]: https://www.npmjs.com/package/slack
 [cron-scheduler]: https://www.npmjs.com/package/cron-scheduler
 [github-quote-bot]: https://github.com/HeeL/quote-bot
+[cron-generator]: https://crontab-generator.org/
