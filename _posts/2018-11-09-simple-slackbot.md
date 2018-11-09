@@ -33,6 +33,7 @@ slackClient.chat.postMessage({
 ```
 
 The very same interface is used for sending direct messages, so without changing anything you can specify your own Slack-name instead of channel. In this case you will be getting the messages from the bot directly. Its quite handy for testing purposes as well.
+
 Let's have a look on how we are going to pick the quotes that should be posted. The simpliest source would be a json file, that can look like this:
 
 <em class="snippet-description">JSON file with quotes</em>
