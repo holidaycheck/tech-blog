@@ -34,7 +34,7 @@ slackClient.chat.postMessage({
 
 The very same interface is used for sending direct messages, so without changing anything you can specify your own Slack-name instead of channel. In this case you will be getting the messages from the bot directly. It can be quite handy when you want to test it manually.
 
-Let's have a look on how we are going to pick the quotes that should be posted. The simpliest source would be a json file, that can look like this:
+Let's have a look on how we are going to pick the quotes that should be posted. The simpliest source would be a JSON file, that can look like this:
 
 <em class="snippet-description">JSON file with quotes</em>
 ```js
@@ -56,7 +56,7 @@ If setting schedule with cron-syntax looks not very friendly, you can use this n
 
 ## Try it
 
-As I've mentioned before, this project is open sourced, so you can actually try it out and run for your Slack as well. You can find the source code [here][github-quote-bot]. What needs to be specified is a name of the json file which serves as a source for information that has to be posted, and a name of a Slack channel where it should be posted. This customization allows you to use the same bot for very different purposes. For instance, with other sources of data it could serve you as a bot that post a word of the day in a channel of German learners. You can probably come up with many other scenarios when it can be used. Feel free to open pull requests and make suggestions on how to improve it as well.
+As I've mentioned before, this project is open sourced, so you can actually try it out and run for your Slack as well. You can find the source code [here][github-quote-bot]. What needs to be specified is the name of the JSON file which serves as a source for information that has to be posted, and a name of a Slack channel where it should be posted. This customization allows you to use the same bot for very different purposes. For instance, with other sources of data it could serve you as a bot that posts a word of the day in a channel for German learners. You can probably come up with many other scenarios when it can be used. Feel free to open pull requests and make suggestions on how to improve it as well.
 
 
 [jacek]: http://techblog.holidaycheck.com/author/jaceksmolak/
