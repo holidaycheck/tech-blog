@@ -17,7 +17,7 @@ Recently I've built a small slackbot that is posting with certain regularity in 
 
 ## The Idea
 
-The idea to build such a bot came from one colleague of mine - [Jacek Smolak][jacek]. At that point he was reading the book ["97 Things Every Programmer Should Know"][book-link]. In order to share those programmer tips with others and also remind them to himself, he came up with idea of posting each of them one by one on a daily basis in appropriate slack channel. For us this slack channel is #craft, you probably have something similar amoung your channels in slack.
+The idea to build such a bot came from one colleague of mine - [Jacek Smolak][jacek]. At that point he was reading the book ["97 Things Every Programmer Should Know"][book-link]. In order to share those programmer tips with others and also remind them to himself, he came up with idea of posting each of them one by one on a daily basis in appropriate Slack channel. For us this Slack channel is #craft, you probably have something similar amoung your channels in Slack.
 
 
 ## Implementation
@@ -31,7 +31,7 @@ slackClient.chat.postMessage({
 });
 ```
 
-The very same interface is used for sending direct messages, so without changing anything you can specify your own slack-name instead of channel. In this case you will be getting the messages from the bot directly. Its quite handy for testing purposes as well.
+The very same interface is used for sending direct messages, so without changing anything you can specify your own Slack-name instead of channel. In this case you will be getting the messages from the bot directly. Its quite handy for testing purposes as well.
 Let's have a look on how we are going to pick the quotes that should be posted. The simpliest source would be a json file, that can look like this:
 
 ```js
