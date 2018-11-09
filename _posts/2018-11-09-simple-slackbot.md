@@ -50,7 +50,7 @@ We have to pick one quote at a time to post it, but in this case we don't want t
 ## Scheduling
 
 In our case we run this on [Kubernetes][kubernetes], so scheduling is just a part of deployment configuration. For instance to post Slack messages everyday at 9:15 from Monday to Friday is just a cron instruction that look like this `15 9 * * 1-5`. You will probably use something your infrastructure provides you for this manner.
-Other option would be to use one of the many js-scheduler packages, which providing this functionality, for example  [cron-scheduler][cron-scheduler].
+Other option would be to use one of the many js-scheduler packages, which provide this functionality, for example  [cron-scheduler][cron-scheduler].
 If setting schedule with cron-syntax looks not very friendly, you can use this nice [web interface][cron-generator] to define time period and make it generate it for you.
 
 
