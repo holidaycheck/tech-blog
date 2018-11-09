@@ -17,7 +17,7 @@ Recently I've built a small slackbot that is posting with certain regularity in 
 
 ## The Idea
 
-The idea to build such a bot came from one colleague of mine - [Jacek Smolak][jacek]. At that point he was reading the book ["97 Things Every Programmer Should Know"][book-link]. In order to share those programmer tips with others and also remind them to himself, he came up with idea of posting each of them one by one on a daily basis in appropriate Slack channel. For us this Slack channel is #craft, you probably have something similar amoung your channels in Slack.
+The idea to build such a bot came from one colleague of mine - [Jacek Smolak][jacek]. At that point he was reading the book ["97 Things Every Programmer Should Know"][book-link]. In order to share those programmer tips with others and also remind them to himself, he came up with idea of posting each of them one by one on a daily basis in appropriate Slack channel. For us this Slack channel is #craft, you probably have something similar amoung your channels as well.
 
 
 ## Implementation
