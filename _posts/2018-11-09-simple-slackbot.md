@@ -24,6 +24,7 @@ The idea to build such a bot came from one colleague of mine - [Jacek Smolak][ja
 
 It is dead simple. As it was written in JavaScript, the easiest way was to use the official [slack npm package][slack-npm]. Posting something in specific channel is just a one-liner that returns a Promise that we can handle depending if it is success or failure:
 
+<em class="snippet-description">Post message to Slack</em>
 ```js
 slackClient.chat.postMessage({
     channel: '#craft',
@@ -34,6 +35,7 @@ slackClient.chat.postMessage({
 The very same interface is used for sending direct messages, so without changing anything you can specify your own Slack-name instead of channel. In this case you will be getting the messages from the bot directly. Its quite handy for testing purposes as well.
 Let's have a look on how we are going to pick the quotes that should be posted. The simpliest source would be a json file, that can look like this:
 
+<em class="snippet-description">JSON file with quotes</em>
 ```js
     [
         "quote 1",
