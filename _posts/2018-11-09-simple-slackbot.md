@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Simple Slackbot"
-date: 2018-11-06 00:03:30 +0200
+date: 2018-11-09 00:03:30 +0200
 categories: javascript
 author_name: Sergii Paryzhskyi
 author_url : /author/sergii_paryzhskyi
@@ -9,7 +9,7 @@ author_avatar: sergii_paryzhskyi
 read_time : 7
 show_related_posts: false
 square_related: recommend-wolf
-feature_image: posts/2018-11-06-simple-slackbot/poster.jpg
+feature_image: posts/2018-11-09-simple-slackbot/poster.jpg
 ---
 
 Recently I've built a small slackbot that is posting with certain regularity in a specified Slack channel. I will tell you about the idea behind it and also share some technical details.
