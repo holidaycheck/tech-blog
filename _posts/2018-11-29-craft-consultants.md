@@ -12,9 +12,9 @@ square_related:
 feature_image: posts/2018-11-29-craft-consultants/lego-superheroes.jpg
 ---
 
-> As aspiring Software Craftsmen we are raising the bar of professional software development by practicing it and helping others learn the craft.
+> As aspiring Software Crafters we are raising the bar of professional software development by practicing it and helping others learn the craft.
 
-[Software Craftsmanship Manifesto](http://manifesto.softwarecraftsmanship.org/)
+[Software Craft Manifesto](http://manifesto.softwarecraftsmanship.org/)*
 
 ## Who are we?
 
@@ -71,5 +71,7 @@ We aim to have people:
 - get to know other people more — by working with them,
 - get out of comfort zones — by working on different setups (be it a team or a product),
 - becoming Crafters — by doing all of that.
+
+* _Quote redacted for inclusivity purposes._
 
 *[Photo](https://unsplash.com/photos/P90DzgKdNWo) by [Zhen Hu](https://unsplash.com/photos/P90DzgKdNWo) on [Unsplash](https://unsplash.com).*
