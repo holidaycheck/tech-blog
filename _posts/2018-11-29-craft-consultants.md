@@ -62,7 +62,7 @@ Then it is fine, then you can do whatever is that you need to do team-wise or pr
 
 ## Why do we think it is needed?
 
-We believe that sharing knowledge is at the root of Software Craftsmanship. Thanks to that not only do we share, but we also learn.
+We believe that sharing knowledge is at the root of Software Craft. Thanks to that not only do we share, but we also learn.
 
 We aim to have people:
 
@@ -70,6 +70,6 @@ We aim to have people:
 - work together more — thus removing knowledge silos,
 - get to know other people more — by working with them,
 - get out of comfort zones — by working on different setups (be it a team or a product),
-- becoming Craftsmen — by doing all of that.
+- becoming Crafters — by doing all of that.
 
 *[Photo](https://unsplash.com/photos/P90DzgKdNWo) by [Zhen Hu](https://unsplash.com/photos/P90DzgKdNWo) on [Unsplash](https://unsplash.com).*
