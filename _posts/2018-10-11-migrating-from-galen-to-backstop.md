@@ -215,7 +215,7 @@ What about storing reference files inside the repository, then? Should we keep t
 
 ### 1. Differences in rendering
 
-Despite the fact that all of the tests are run in the same browser everywhere (headless Chrome), it is not guaranteed that the rendering will look 100% the same on various OSs. E.g. I am using macOS, my colleague is using some Linux distro. I bet there will be differences. If he were to submit new reference files, tests on my end would fail. So could the ones executed on the pipeline server (yet another OS).
+Despite the fact that all of the tests are run in the same browser everywhere (headless Chrome), it is not guaranteed that the rendering will look 100% the same on various OSs. E.g. I am using macOS, my colleague is using some Linux distro. I bet there will be differences. If they were to submit new reference files, tests on my end would fail. So could the ones executed on the pipeline server (yet another OS).
 
 We could use [Docker](https://www.docker.com/) to ensure we have the very same environment everywhere, but that just adds too much complexity ‘only’ for running visual regression tests.
 
