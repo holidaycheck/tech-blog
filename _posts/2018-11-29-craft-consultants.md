@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Craft Consultants"
-date: 2018-11-29 12:13:14 +0200
+date: 2018-11-29 11:40:11 +0200
 categories: craftsmanship
 author_name: Jacek Smolak
 author_url : /author/jacek_smolak
