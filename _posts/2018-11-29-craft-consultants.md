@@ -4,7 +4,7 @@ title:  "Craft Consultants"
 date: 2018-11-29 11:40:11 +0200
 categories: craft
 author_name: Jacek Smolak
-author_url : /author/jacek_smolak
+author_url : /author/jaceksmolak
 author_avatar: jaceksmolak
 read_time : 4
 show_related_posts: false
