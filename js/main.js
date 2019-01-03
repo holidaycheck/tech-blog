@@ -21,8 +21,11 @@ var s,
                 self.homePostsCatSwitch();
             });
 
-            $('.sub-nav.events').on('click', function () {
-                self.eventsSubNaviToggle();
+            $('.sub-nav.events a').on('click', function (event) {
+                var selectedYear = parseInt(event.target.hash.substr(1));
+                var otherYears = $(this).siblings();
+
+                self.eventsSubNaviToggle(selectedYear, otherYears);
             });
 
             $('.social-icon').on('click', function(){
@@ -42,13 +45,17 @@ var s,
             // Add Bg colour from JS so jPanel has time to initalize
             $('body').css({"background-color":"#002852"});
         },
-        eventsSubNaviToggle: function(){
-            // Toggles between showing the categories and posts on the homepage
-            $('.select-2017').toggleClass("active");
-            $('.select-2018').toggleClass("active");
+        eventsSubNaviToggle: function(selectedYear, otherYears){
+            // Toggles between years of the events in given year, hiding other years
+            $('.select-' + selectedYear).addClass('active');
+            $('.events-' + selectedYear).removeClass('hide');
 
-            $('.events-2017').toggleClass("hide");
-            $('.events-2018').toggleClass("hide");
+            otherYears.each(function() {
+                var year = this.hash.substr(1);
+
+                $('.select-' + year).removeClass('active');
+                $('.events-' + year).addClass('hide');
+            });
         },
         homePostsCatSwitch: function(){
             // Toggles between showing the categories and posts on the homepage
