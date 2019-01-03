@@ -1,0 +1,326 @@
+#
+# In house, at HolidayCheck
+#
+
+#
+# Others
+#
+
+- name: JSCamp 2019
+  start_datetime: 2019-07-18 10:00
+  end_datetime: 2019-07-19 18:00
+  url: https://jscamp.tech/
+  tags: conference, JavaScript
+  location: Barcelona, Spain
+  twitter: jscamptech
+
+- name: JSConfEU 2019
+  start_datetime: 2019-06-01 10:00
+  end_datetime: 2019-06-02 18:00
+  url: https://2019.jsconf.eu
+  tags: conference, JavaScript
+  location: Berlin, Germany
+  twitter: jsconfeu
+
+# unknown date, nothing on the website yet
+#- name: JSConf Iceland 2019
+#  start_datetime: 2019-03-01 10:00
+#  end_datetime: 2019-06-02 18:00
+#  url: https://2019.jsconf.is/
+#  tags: conference, JavaScript
+#  location: Reykjavik, Iceland
+#  twitter: jsconfis
+
+- name: European Testing Conference 2019
+  start_datetime: 2019-02-14 10:00
+  end_datetime: 2019-02-15 18:00
+  url: http://europeantestingconference.eu/2019/
+  location: Fundación Bancaja, Valencia, Spain
+  tags: conference, testing
+  twitter: EuroTestingConf
+
+- name: WeAreDevelopers WorldCongress '19
+  start_datetime: 2019-06-06 10:00
+  end_datetime: 2019-06-07 18:00
+  location: CityCube, Berlin, Germany
+  url: https://www.wearedevelopers.com/world-congress/
+  tags: conference, developers
+  twitter: wearedevs
+
+- name: Nordic.js 2019
+  start_datetime: 2019-10-10 10:00
+  end_datetime: 2019-10-11 18:00
+  location: Magasin 9, Stockholm, Sweden
+  url: http://nordicjs.com/
+  tags: conference, JavaScript
+  twitter: nordicjs
+
+- name: Monadic Party
+  start_datetime: 2019-06-18 10:00
+  end_datetime: 2019-06-21 18:00
+  location: Poznan, Poland
+  url: https://monadic.party/
+  tags: workshops, Haskell, FP
+
+# no website update yet
+#- name: Script 18
+#  start_datetime: 2019-01-19 12:00
+#  location: Linz, Austria
+#  url: https://scriptconf.org/
+#  tags: conference, JavaScript
+#  twitter: scriptconf
+
+- name: ReactEurope
+  start_datetime: 2019-05-23 10:00
+  end_datetime: 2019-05-24 18:00
+  location: Paris, France
+  url: https://www.react-europe.org/
+  tags: conference, JavaScript, reactjs
+  twitter: ReactEurope
+
+# nothing new on the site
+#- name: Front-Trends
+#  start_datetime: 2019-05-24 10:00
+#  end_datetime: 2019-05-25 18:00
+#  location: Warsaw, Poland
+#  url: https://2019.front-trends.com/
+#  tags: conference, frontend
+#  twitter: fronttrends
+
+- name: Frontend United
+  start_datetime: 2019-05-17 10:00
+  end_datetime: 2019-05-18 18:00
+  location: Utrecht, Netherlands
+  url: https://www.frontendunited.org/
+  tags: conference, frontend
+  twitter: frontendunited
+
+- name: CSSconf EU
+  start_datetime: 2019-05-31 10:00
+  location: Berlin, Germany
+  url: https://2019.cssconf.eu/
+  tags: conference, CSS
+  twitter: cssconfeu
+
+- name: BOB 2019
+  start_datetime: 2019-03-22 10:00
+  location: Berlin, Germany
+  url: http://bobkonf.de/2019/en/
+  tags: conference, developers, architects, builders, explore and discover
+  twitter: BOBKonf
+
+- name: The Web Conference
+  start_datetime: 2019-05-13 10:00
+  end_datetime: 2019-05-17 18:00
+  location: San Francisco, USA
+  url: https://www2019.thewebconf.org/
+  tags: conference, developers, www, standards, society, culture
+  twitter: TheWebConf
+
+- name: Frontend NE
+  start_datetime: 2019-04-03 10:00
+  location: Boiler Shop, Newcastle, England
+  url: https://2019.frontendne.co.uk/
+  tags: conference, frontend
+  twitter: frontendne
+
+# not announced on the site yet
+#- name: .concat()
+#  start_datetime: 2019-03-03 10:00
+#  location: The University of Applied Sciences, Salzburg, Austria
+#  url: https://2019.conc.at/
+#  tags: conference, web development, UX
+#  twitter: conc_at
+
+- name: vue.js Amsterdam
+  start_datetime: 2019-02-14 10:00
+  end_datetime: 2019-02-15 18:00
+  location: Theater Amsterdam, Amsterdam, Netherlands
+  url: https://www.vuejs.amsterdam/
+  tags: conference, vuejs, frontend
+  twitter: vuejsamsterdam
+
+- name: Smashing Conference
+  start_datetime: 2019-09-09 10:00
+  end_datetime: 2019-09-10 18:00
+  location: Historic Merchants’ Hall, Freiburg, Germany
+  url: https://smashingconf.com/freiburg-2019/
+  tags: conference, web performance, ads, third-party scripts, A/B testing, HTTP/2, debugging, JAM stack, PWA, web fonts loading, memory/CPU perf, service workers
+  twitter: smashingconf
+
+#- name: ng-europe
+#  start_datetime: 2019-02-01 10:00
+#  end_datetime: 2019-02-02 18:00
+#  location: Paris, France
+#  url: https://ngeurope.org/
+#  tags: conference, angular, JavaScript
+#  twitter: NgEurope
+
+- name: CRAFT
+  start_datetime: 2019-05-07 10:00
+  end_datetime: 2019-05-10 18:00
+  location: Budapest, Hungary
+  url: https://craft-conf.com/
+  tags: conference, software craftsmanship, tools, methods, practices, modern developer and company, new technologies, trends
+
+#- name: JSCodeRetreat
+#  start_datetime: 2019-05-12 09:30
+#  end_datetime: 2019-05-12 17:00
+#  location: Munich, Germany
+#  url: http://jscoderetreat.com
+#  tags: JavaScript, CodeRetreat, Practice, Learn, TDD, Pair programming
+#  twitter: jscoderetreat
+
+- name: WebCraftConf
+  start_datetime: 2019-05-14 10:00
+  end_datetime: 2019-05-15 18:00
+  location: Jamaica
+  url: https://www.webcraft.com.jm/
+  tags: conference, mobile, web, IoT, Software Craftsmanship, DevOps, Continuous Development, UX, Design
+
+- name: AmsterdamJS
+  start_datetime: 2019-06-06 10:00
+  end_datetime: 2019-05-07 18:00
+  location: Amsterdam, Netherlands
+  url: https://amsterdamjs.com/
+  tags: conference, JavaScript
+
+#- name: Software Craftsmanship London
+#  start_datetime: 2019-10-04 10:00
+#  end_datetime: 2019-10-05 18:00
+#  location: CodeNode, 10 South Pl, London EC2M 7EB, UK
+#  url: http://sc-london.com/
+#  tags: conference, Software Craft
+
+- name: NewCrafts.io
+  start_datetime: 2019-05-16 09:30
+  end_datetime: 2019-05-17 19:00
+  location: Paris, France
+  url: http://ncrafts.io/
+  tags: conference, Software Craft, quality code
+  
+- name: You Gotta Love Frontend Conference
+  start_datetime: 2019-05-16 09:30
+  end_datetime: 2019-05-17 19:00
+  location: Vilnius, Lithuania
+  url: https://lithuania.yglfconf.com/
+  tags: conference, frontend, css, javascript, browser, html5
+  
+#
+# Design
+#
+
+#- name: Design Systems Virtual Summit 2019
+#  start_datetime: 2019-02-13 10:00
+#  end_datetime: 2019-02-16 18:00
+#  location: online
+#  url: https://www.uxpin.com/design-systems-virtual-summit-2019
+#  tags: conference, online, design, webinars, UX, product
+
+#
+# Unconfs
+#
+#- name: BusConf 2019
+#  start_datetime: 2019-08-02 16:00
+#  end_datetime: 2019-08-04 16:00
+#  location: Rückersbach, Germany
+#  url: http://www.bus-conf.org/
+#  twitter: _BusConf_
+#  tags: unconference, FP
+
+#- name: JSCraftCamp 2019
+#  start_datetime: 2019-08-10 10:00
+#  end_datetime: 2019-08-11 18:00
+#  location: Munich, Germany
+#  url: http://www.jscraftcamp.org/
+#  twitter: jscraftcamp
+#  tags: unconference, JavaScript
+
+- name: CodeFreeze 2019
+  start_datetime: 2019-01-05 10:00
+  end_datetime: 2019-01-12 18:00
+  location: Kiilopää, Inari, Finland
+  url: http://www.codefreeze.fi/
+  tags: unconference
+
+- name: JSUnconf 2019
+  start_datetime: 2019-04-13 10:00
+  end_datetime: 2019-04-14 18:00
+  location: Hamburg, Germany
+  url: http://2019.jsunconf.eu/
+  tags: unconference, JavaScript
+  twitter: jsunconf
+
+- name: I T.A.K.E. Unconference 2019
+  start_datetime: 2019-05-30 10:00
+  end_datetime: 2019-05-31 18:00
+  location: Radisson Blu, Bucharest, Romania
+  url: https://itakeunconf.com/
+  tags: unconference, DevOps, Architecture, Hardcore programming, Microservices, Software Design, Mobile development, Web Security, Code Quality, Functional Programming, Quality Practices, Business Analysis, Technical & People Leadership
+  twitter: itakeunconf
+
+#- name: SoCraTes Switzerland 2019
+#  start_datetime: 2019-03-15 10:00
+#  end_datetime: 2019-03-18 18:00
+#  location: Hochalpines Institut Ftan, 7551 Ftan, Switzerland
+#  url: https://www.socrates-ch.org/
+#  tags: unconference
+#  twitter: SoCraTes_CH
+
+- name: SoCraTes Canaries 2019
+  start_datetime: 2019-04-25 10:00
+  end_datetime: 2019-04-28 18:00
+  location: NH Imperial Playa, Calle Ferreras, 1, 35008 Las Palmas de Gran Canaria, Las Palmas, Spain
+  url: http://socracan.com/
+  tags: unconference
+  twitter: socracan
+
+#- name: SoCraTes (Germany) 2019
+#  start_datetime: 2019-08-23 16:00
+#  end_datetime: 2019-08-26 18:00
+#  location: Soltau, Germany, Hotel Park Soltau, Winsener Str. 111, 29614 Soltau
+#  url: https://www.socrates-conference.de/home
+#  tags: unconference
+
+#
+# CfPs
+#
+#- name: JSConfEU - Call for Papers
+#  start_datetime: 2019-01-01 00:00
+#  url: https://2019.jsconf.eu/call-for-speakers/
+#  tags: CfP
+
+#- name: WeAreDevelopers 2019 - Call for Papers
+#  start_datetime: 2019-01-16 23:59
+#  url: https://sessionize.com/wearedevelopers
+#  tags: CfP
+
+- name: enterJS 2019 - Call for Papers
+  start_datetime: 2019-01-14 23:59
+  url: https://www.enterjs.de/call-for-proposals-de
+  tags: CfP
+
+#- name: Nordic.js 2019 - Call for Papers
+#  start_datetime: 2019-09-06 00:00
+#  url: http://cfp.nordicjs.com/
+#  tags: CfP
+#
+#- name: Front-Trends - Call for Papers
+#  start_datetime: 2019-03-31 00:00
+#  url: https://2019.front-trends.com/speaking-at-front-trends/
+#  tags: CfP
+#
+#- name: Frontend United - Call for Papers
+#  start_datetime: 2019-05-31 10:00
+#  url: https://www.frontendunited.org/call-for-papers
+#  tags: CfP
+#
+#- name: The Web Conference - Call for Papers
+#  start_datetime: 2019-01-10 00:00
+#  url: https://www2019.thewebconf.org/call-for-papers/developers-track-cfp/
+#  tags: CfP
+#
+#- name: AmsterdamJS - Call for Papers
+#  start_datetime: 2019-02-01 00:00
+#  url: https://docs.google.com/forms/d/19HUzF0niKkdAjV335OVTWrG_i8PnTpW6IYNxHCCYPx8/viewform?edit_requested=true
+#  tags: CfP
