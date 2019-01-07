@@ -36,18 +36,19 @@ Since we introduced OKRs a lot has changed and we optimized our OKR process quit
 
 ### Everything starts with <em>guidance</em>
 
-<img src="/img/posts/2019-01-10-our-okr-process/management.svg" alt="" />
-
 Our management (that is the so-called "C-Level", CEO, CPO, CFO, ...) come up with what we call "guidance": A list of things HolidayCheck wants to tackle in a given quarter or in a given year. So - for example - at the end of 2017 we did get a list of initiatives and things that the management thinks is important for 2018. That could be improving existing things (making them faster or improving UX), starting new things and products like cruises and so on. Each of those topics is supposed to get some resources or team working on it. This guidance should be sent via email a few weeks before the first OKR workshop.
+
+<img src="/img/posts/2019-01-10-our-okr-process/management.svg" alt="" />
 
 Because it is very hard to come up with that list and the management has to do some hard decisions usually it is in the inboxes of everyone only a few days before the workshops. But this also helps teams to come up with their own set of OKRs without already being boxed in, in their thinking and brainstorming.
 
 ### OKR Workshop I
-<img src="/img/posts/2019-01-10-our-okr-process/okr-workshop-1.svg" alt="" />
 
 We do 2 OKR-Workshops every quarter. But the most interesting quarter is always the first quarter of a year and hence the OKR-Workshops in December. Why? Because it is already influenced by the quarterly AND <strong>yearly guidance</strong> we get.
 Teams can prepare OKRs for that workshop - finding things that they would like to work on as a team. Normally that happens in team internal meetings where we do brainstormings and try to plan the next quarter. We also come up with Objectives and Key Results for our own team. They are not final but they will be presented in the OKR-Workshop - either by someone who is part of the team or by another attendee of that OKR-Workshop.
 In the OKR-Workshop the attendees have to then take very hard decisions: Often OKRs end up on what HolidayCheck calls <em>the kill list</em> (basically a list of things we will not work on in the next quarter).
+
+<img src="/img/posts/2019-01-10-our-okr-process/okr-workshop-1.svg" alt="" />
 
 Sometimes the OKR-Workshop people think that the current team setup does not fit together with what we got as guidance. In this case, they also talk about forming new teams, who could be part of such teams and how many resources they might need.
 
@@ -56,12 +57,13 @@ To not demotivate the existing teams this guidance is only communicated after mo
 So before the first big OKR-Workshop nobody can exactly know what he or she will work on and if all the effort that went into creating team-OKRs will pay off or not.
 
 ### OKR-Workshop II
-<img src="/img/posts/2019-01-10-our-okr-process/okr-workshop-2.svg" alt="" />
 
 After the first OKR-Workshop people who attended the workshop start informing all teams about the temporary results of that workshop:
 What ended up on the Kill-List? What might a team work on? How many resources are needed for that new Initiative? At this point, nothing is set in stone and no final decision was taken.
 
 It is still 2 weeks until OKR-Workshop II will take place. And the teams are supposed to use that time to talk with other teams about dependencies, joining forces, broadening or sharpening their scope, reformulating their OKRs and so on.
+
+<img src="/img/posts/2019-01-10-our-okr-process/okr-workshop-2.svg" alt="" />
 
 The second OKR-Workshop is the more important one: All attendees agree on a list of objectives and they also come up with a team setup in or after this workshop. This is a full day workshop and if you're not part of this workshop you just sit and wait for results because that workshop is not public.
 
@@ -69,13 +71,13 @@ And "results" in that case could mean anything: It could mean that you can just 
 
 ### Communication
 
-<img src="/img/posts/2019-01-10-our-okr-process/list.svg" alt="" />
-
 After OKR-Workshop II everyone is waiting for the official communication. The attendees of the OKR workshop are encouraged not to talk about the results because this could lead to rumors and anger. To ensure that everyone IS getting the needed information HolidayCheck uses several ways to communicate the results and changes:
 
 - for some teams, a team member (like the PO) was part of the workshop and can inform the team
 - for others, the line manager directly informs his employees in 1 to 1 talks
 - and to ensure really everyone is informed there is an email with a PDF attachment that contains a list of names and the initiatives that they will work on. Usually, this email is the way most people learn about their assignment. This email also includes an explanation of why certain decisions had to be taken.
+
+<img src="/img/posts/2019-01-10-our-okr-process/list.svg" alt="" />
 
 It is important to note that there are no conversations with individual resources (developers, UX-folks, POs, designers...) what they want to work on or what options they would like most - probably because that would be a lot of <strong>effort</strong> and would cause a lot of <strong>turmoil</strong>. And HolidayCheck wants resources to be able to <strong>fully focus</strong> on their current tasks without disturbing them with such discussions.
 
@@ -87,8 +89,6 @@ There are often big changes on the company level but also for individual resourc
 
 ### Deciding on a new team setup and dealing with the changes
 
-<img src="/img/posts/2019-01-10-our-okr-process/team.svg" alt="" />
-
 Because sometimes in this process old teams are removed and hence some topics, services, and half-finished <strong>stuff is abandoned</strong> we need a clear process to tackle this:
 
 The way we usually do that is that we always try to <strong>launch little MVPs</strong> as fast as possible. This is to avoid working on something that is never launched because your team no longer exists or switches what you're working on. It also means that sometimes those MVPs stay live for months&years - but since the V in MVP stands for <em>viable</em> that shouldn't be a big problem.
@@ -97,6 +97,9 @@ For services & code that no longer have an owner, because the team that created&
 In our Github Enterprise instance, we have one repository that contains a markdown file with abandoned services. And since the people that worked on those services & code are still in the company, management thinks they can also keep maintaining those old things.
 
 #### The List
+
+<img src="/img/posts/2019-01-10-our-okr-process/team.svg" alt="" />
+
 So how exactly do the people in those workshops come up with this list of names and assignments?
 One factor is how many resources an initiative, that made the cut in the OKR-workshop, requested. Another source for this decision is what our management thinks <strong>helps individual people to grow</strong>. It is important for HolidayCheck to offer everyone the possibility to grow. So we collect Peer Feedback about every employee and also talk about each and every employee (without them being present) in a <em>Talent Board Conference</em>.
 
