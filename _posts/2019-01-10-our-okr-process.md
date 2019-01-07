@@ -44,7 +44,7 @@ Because it is very hard to come up with that list and the management has to do s
 
 ### OKR Workshop I
 
-We do 2 OKR-Workshops every quarter. But the most interesting quarter is always the first quarter of a year and hence the OKR-Workshops in December. Why? Because it is already influenced by the quarterly AND <strong>yearly guidance</strong> we get.
+We do 2 OKR-Workshops every quarter. But the most interesting quarter is always the first quarter of a year and hence the OKR-Workshops in December. Why? Because it is already influenced by the quarterly AND yearly guidance we get.
 Teams can prepare OKRs for that workshop - finding things that they would like to work on as a team. Normally that happens in team internal meetings where we do brainstormings and try to plan the next quarter. We also come up with Objectives and Key Results for our own team. They are not final but they will be presented in the OKR-Workshop - either by someone who is part of the team or by another attendee of that OKR-Workshop.
 In the OKR-Workshop the attendees have to then take very hard decisions: Often OKRs end up on what HolidayCheck calls <em>the kill list</em> (basically a list of things we will not work on in the next quarter).
 
@@ -79,7 +79,7 @@ After OKR-Workshop II everyone is waiting for the official communication. The at
 
 <img src="/img/posts/2019-01-10-our-okr-process/list.svg" alt="" class="filler"/>
 
-It is important to note that there are no conversations with individual resources (developers, UX-folks, POs, designers...) what they want to work on or what options they would like most - probably because that would be a lot of <strong>effort</strong> and would cause a lot of <strong>turmoil</strong>. And HolidayCheck wants resources to be able to <strong>fully focus</strong> on their current tasks without disturbing them with such discussions.
+It is important to note that there are no conversations with individual resources (developers, UX-folks, POs, designers...) what they want to work on or what options they would like most - probably because that would be a lot of effort and would cause a lot of turmoil. And HolidayCheck wants resources to be able to fully focus on their current tasks without disturbing them with such discussions.
 
 So, in the end, you can look up your name in a list of around ~150 resources to see what you'll be working on. Especially in the OKR-Workshops for a new year, this list is quite interesting.
 
@@ -89,9 +89,9 @@ There are often big changes on the company level but also for individual resourc
 
 ### Deciding on a new team setup and dealing with the changes
 
-Because sometimes in this process old teams are removed and hence some topics, services, and half-finished <strong>stuff is abandoned</strong> we need a clear process to tackle this:
+Because sometimes in this process old teams are removed and hence some topics, services, and half-finished stuff is abandoned we need a clear process to tackle this:
 
-The way we usually do that is that we always try to <strong>launch little MVPs</strong> as fast as possible. This is to avoid working on something that is never launched because your team no longer exists or switches what you're working on. It also means that sometimes those MVPs stay live for months&years - but since the V in MVP stands for <em>viable</em> that shouldn't be a big problem.
+The way we usually do that is that we always try to launch little MVPs as fast as possible. This is to avoid working on something that is never launched because your team no longer exists or switches what you're working on. It also means that sometimes those MVPs stay live for months&years - but since the V in MVP stands for <em>viable</em> that shouldn't be a big problem.
 
 For services & code that no longer have an owner, because the team that created&maintained it no longer exists, HolidayCheck has another process:
 In our Github Enterprise instance, we have one repository that contains a markdown file with abandoned services. And since the people that worked on those services & code are still in the company, management thinks they can also keep maintaining those old things.
@@ -101,11 +101,11 @@ In our Github Enterprise instance, we have one repository that contains a markdo
 <img src="/img/posts/2019-01-10-our-okr-process/team.svg" alt="" class="filler"/>
 
 So how exactly do the people in those workshops come up with this list of names and assignments?
-One factor is how many resources an initiative, that made the cut in the OKR-workshop, requested. Another source for this decision is what our management thinks <strong>helps individual people to grow</strong>. It is important for HolidayCheck to offer everyone the possibility to grow. So we collect Peer Feedback about every employee and also talk about each and every employee (without them being present) in a <em>Talent Board Conference</em>.
+One factor is how many resources an initiative, that made the cut in the OKR-workshop, requested. Another source for this decision is what our management thinks helps individual people to grow. It is important for HolidayCheck to offer everyone the possibility to grow. So we collect Peer Feedback about every employee and also talk about each and every employee (without them being present) in a <em>Talent Board Conference</em>.
 
-It's important to note that managers & workshop attendees try to not discuss these new assignments with the people who will be affected by those changes beforehand. This will only be a lot of work and since people are always <strong>reluctant to change</strong> it is better to ignore (or not ask for) their wishes - usually some people tend to be "pissed off" for the first months  - but later they tend to get <strong>more happy again</strong>. The expectation is that everybody will get used to this kind of decision process over time and will learn that change is a good thing and that <strong>people managers often know best</strong> what is good for the growth of an employee or team.
+It's important to note that managers & workshop attendees try to not discuss these new assignments with the people who will be affected by those changes beforehand. This will only be a lot of work and since people are always reluctant to change it is better to ignore (or not ask for) their wishes - usually some people tend to be "pissed off" for the first months  - but later they tend to get more happy again. The expectation is that everybody will get used to this kind of decision process over time and will learn that change is a good thing and that people managers often know best what is good for the growth of an employee or team.
 
-But they also give people a chance to <strong>speak up</strong> <em>after</em> they received "the list". Feedback is always valued - on the other hand, it is important to us that nobody just says: "I don't want to work on that project" or "I would like to work with person XY" - instead they have to find someone else, that is a fit skillwise, in the company that likes to switch places with them. HolidayCheck thinks this is a fair way of handling this since managers & workshop attendees already put in a lot of effort by assigning people - why should the burden of fixing those individual people-problems and wishes also lie with them? With offering this possibility to switch positions with others they show everyone that HolidayCheck is open to feedback and better ideas - this is important in a transparent & open company.
+But they also give people a chance to speak up <em>after</em> they received "the list". Feedback is always valued - on the other hand, it is important to us that nobody just says: "I don't want to work on that project" or "I would like to work with person XY" - instead they have to find someone else, that is a fit skillwise, in the company that likes to switch places with them. HolidayCheck thinks this is a fair way of handling this since managers & workshop attendees already put in a lot of effort by assigning people - why should the burden of fixing those individual people-problems and wishes also lie with them? With offering this possibility to switch positions with others they show everyone that HolidayCheck is open to feedback and better ideas - this is important in a transparent & open company.
 
 ## Last Words
 As I said I think we have a very unique way of handling all of this.
