@@ -30,7 +30,7 @@ You can find an overview of how this process looks like in the graphic above - o
 
 ## Our current OKR process in practice, from the perspective of a developer
 
-<img src="/img/posts/2019-01-10-our-okr-process/developer.svg" alt="" />
+<img src="/img/posts/2019-01-10-our-okr-process/developer.svg" alt="" class="filler"/>
 
 Since we introduced OKRs a lot has changed and we optimized our OKR process quite a bit - I think HolidayCheck has kind of a unique take at working with OKRs and especially in setting up teams. So how does it currently work from the perspective of an employee that is working in one of our scrum/product teams? I can at least give you <strong>my subjective perspective as a developer</strong>.
 
@@ -38,7 +38,7 @@ Since we introduced OKRs a lot has changed and we optimized our OKR process quit
 
 Our management (that is the so-called "C-Level", CEO, CPO, CFO, ...) come up with what we call "guidance": A list of things HolidayCheck wants to tackle in a given quarter or in a given year. So - for example - at the end of 2017 we did get a list of initiatives and things that the management thinks is important for 2018. That could be improving existing things (making them faster or improving UX), starting new things and products like cruises and so on. Each of those topics is supposed to get some resources or team working on it. This guidance should be sent via email a few weeks before the first OKR workshop.
 
-<img src="/img/posts/2019-01-10-our-okr-process/management.svg" alt="" />
+<img src="/img/posts/2019-01-10-our-okr-process/management.svg" alt="" class="filler"/>
 
 Because it is very hard to come up with that list and the management has to do some hard decisions usually it is in the inboxes of everyone only a few days before the workshops. But this also helps teams to come up with their own set of OKRs without already being boxed in, in their thinking and brainstorming.
 
@@ -48,7 +48,7 @@ We do 2 OKR-Workshops every quarter. But the most interesting quarter is always 
 Teams can prepare OKRs for that workshop - finding things that they would like to work on as a team. Normally that happens in team internal meetings where we do brainstormings and try to plan the next quarter. We also come up with Objectives and Key Results for our own team. They are not final but they will be presented in the OKR-Workshop - either by someone who is part of the team or by another attendee of that OKR-Workshop.
 In the OKR-Workshop the attendees have to then take very hard decisions: Often OKRs end up on what HolidayCheck calls <em>the kill list</em> (basically a list of things we will not work on in the next quarter).
 
-<img src="/img/posts/2019-01-10-our-okr-process/okr-workshop-1.svg" alt="" />
+<img src="/img/posts/2019-01-10-our-okr-process/okr-workshop-1.svg" alt="" class="filler"/>
 
 Sometimes the OKR-Workshop people think that the current team setup does not fit together with what we got as guidance. In this case, they also talk about forming new teams, who could be part of such teams and how many resources they might need.
 
@@ -63,7 +63,7 @@ What ended up on the Kill-List? What might a team work on? How many resources ar
 
 It is still 2 weeks until OKR-Workshop II will take place. And the teams are supposed to use that time to talk with other teams about dependencies, joining forces, broadening or sharpening their scope, reformulating their OKRs and so on.
 
-<img src="/img/posts/2019-01-10-our-okr-process/okr-workshop-2.svg" alt="" />
+<img src="/img/posts/2019-01-10-our-okr-process/okr-workshop-2.svg" alt="" class="filler"/>
 
 The second OKR-Workshop is the more important one: All attendees agree on a list of objectives and they also come up with a team setup in or after this workshop. This is a full day workshop and if you're not part of this workshop you just sit and wait for results because that workshop is not public.
 
@@ -77,13 +77,13 @@ After OKR-Workshop II everyone is waiting for the official communication. The at
 - for others, the line manager directly informs his employees in 1 to 1 talks
 - and to ensure really everyone is informed there is an email with a PDF attachment that contains a list of names and the initiatives that they will work on. Usually, this email is the way most people learn about their assignment. This email also includes an explanation of why certain decisions had to be taken.
 
-<img src="/img/posts/2019-01-10-our-okr-process/list.svg" alt="" />
+<img src="/img/posts/2019-01-10-our-okr-process/list.svg" alt="" class="filler"/>
 
 It is important to note that there are no conversations with individual resources (developers, UX-folks, POs, designers...) what they want to work on or what options they would like most - probably because that would be a lot of <strong>effort</strong> and would cause a lot of <strong>turmoil</strong>. And HolidayCheck wants resources to be able to <strong>fully focus</strong> on their current tasks without disturbing them with such discussions.
 
 So, in the end, you can look up your name in a list of around ~150 resources to see what you'll be working on. Especially in the OKR-Workshops for a new year, this list is quite interesting.
 
-<img src="/img/posts/2019-01-10-our-okr-process/christmas.svg" alt="" />
+<img src="/img/posts/2019-01-10-our-okr-process/christmas.svg" alt="" class="filler"/>
 
 There are often big changes on the company level but also for individual resources. <em>The list</em> is usually sent a few days after the second OKR-Workshop. That means that most people receive it right before their Christmas vacation or they are already on vacation. But this has also a bright side: People often react reluctant to changes <em>at first</em> - but now they have time to reflect on those changes in their vacation. Or they can relax in their vacation and learn about the changes in the new year: So, in the end, everyone has fresh energy for those changes.
 
@@ -98,7 +98,7 @@ In our Github Enterprise instance, we have one repository that contains a markdo
 
 #### The List
 
-<img src="/img/posts/2019-01-10-our-okr-process/team.svg" alt="" />
+<img src="/img/posts/2019-01-10-our-okr-process/team.svg" alt="" class="filler"/>
 
 So how exactly do the people in those workshops come up with this list of names and assignments?
 One factor is how many resources an initiative, that made the cut in the OKR-workshop, requested. Another source for this decision is what our management thinks <strong>helps individual people to grow</strong>. It is important for HolidayCheck to offer everyone the possibility to grow. So we collect Peer Feedback about every employee and also talk about each and every employee (without them being present) in a <em>Talent Board Conference</em>.
@@ -111,6 +111,14 @@ But they also give people a chance to <strong>speak up</strong> <em>after</em> t
 As I said I think we have a very unique way of handling all of this.
 But maybe I'm wrong and YOUR company is doing it in the same way? I'd like to know how this works in other companies - so why don't you give us a little summary on twitter? Just mention [@holidaychecklab](https://twitter.com/holidaychecklab).
 
-<img src="/img/posts/2019-01-10-our-okr-process/warning.svg" alt="" />
+<img src="/img/posts/2019-01-10-our-okr-process/warning.svg" alt="" class="filler"/>
 
 Our current way of doing things is also quite different from what we publicly presented in our case study at workpath.com - on the one hand because our process is changing continuously and on the other hand because case studies usually only contain the positive parts of a story. But I think it is important to also talk a about the problems and shortcomings of processes and companies publicly.
+
+<style>
+.filler {
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;    
+}
+</style>
