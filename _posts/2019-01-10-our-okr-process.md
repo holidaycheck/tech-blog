@@ -12,14 +12,15 @@ feature_image: posts/2019-01-10-our-okr-process/header.svg
 ---
 
 Around 2015 HolidayCheck introduced OKRs - Objectives and Key Results - to steer the company.
-OKRs are basically a ["framework for defining and tracking objectives and their outcomes"](https://en.wikipedia.org/wiki/OKR). You can find a case story about how we introduced OKRs at HolidayCheck and how our processes used too look like here: [OKRs at HolidayCheck case study [from March 1, 2018]](https://www.workpath.com/en/magazine/okrs-at-holidaycheck-case-study/). In case you are too lazy to read the case study (and aren't we all a bit lazy? You can skip to <em>Our current OKR process in practice, from the perspective of a developer</em>) I'll try to summarize it:
+OKRs are basically a ["framework for defining and tracking objectives and their outcomes"](https://en.wikipedia.org/wiki/OKR). You can find a case story about how we introduced OKRs at HolidayCheck and how our processes used too look like here: [OKRs at HolidayCheck case study [from March 1, 2018]](https://www.workpath.com/en/magazine/okrs-at-holidaycheck-case-study/). In case you are too lazy to read the case study (and aren't we all a bit lazy?) I'll try to summarize it:
 
 ## Our OKR process in theory
+(You can skip to <em>[Our current OKR process in practice, from the perspective of a developer](#our-current-okr-process-in-practice-from-the-perspective-of-a-developer)</em> if you're only interested how it currently works)
 
 We come up with OKRs each quarter. To do that teams (they usually consist of several developers, UX/Design-folks, a PO, ScrumMaster, and Stakeholders) come up with a proposal for their own team objectives for the next quarter. Before that our management is giving us some guidance what might be the most important topics in the next quarter.
 Usually, someone from each team is then attending what we call "OKR-Workshop I". In that workshop, the management and the other attendees talk about all proposed objectives and try to already filter a bit what we can and can't do.
 
-<img src="/img/posts/2019-01-04-our-okr-process/okr-process.png" alt="" />
+<img src="/img/posts/2019-01-10-our-okr-process/okr-process.png" alt="" />
 
 After that workshop, the teams then can do their own workshops to improve & sharpen their OKR proposals. After 2 weeks the "OKR-Workshop II" takes place. The result of this workshop is a final list of objectives that will be tackled in the next quarter. All teams will then be informed on what exactly they will work in the coming quarter.
 
@@ -29,20 +30,20 @@ You can find an overview of how this process looks like in the graphic above - o
 
 ## Our current OKR process in practice, from the perspective of a developer
 
-<img src="/img/posts/2019-01-04-our-okr-process/developer.svg" alt="" />
+<img src="/img/posts/2019-01-10-our-okr-process/developer.svg" alt="" />
 
 Since we introduced OKRs a lot has changed and we optimized our OKR process quite a bit - I think HolidayCheck has kind of a unique take at working with OKRs and especially in setting up teams. So how does it currently work from the perspective of an employee that is working in one of our scrum/product teams? I can at least give you <strong>my subjective perspective as a developer</strong>.
 
 ### Everything starts with <em>guidance</em>
 
-<img src="/img/posts/2019-01-04-our-okr-process/management.svg" alt="" />
+<img src="/img/posts/2019-01-10-our-okr-process/management.svg" alt="" />
 
 Our management (that is the so-called "C-Level", CEO, CPO, CFO, ...) come up with what we call "guidance": A list of things HolidayCheck wants to tackle in a given quarter or in a given year. So - for example - at the end of 2017 we did get a list of initiatives and things that the management thinks is important for 2018. That could be improving existing things (making them faster or improving UX), starting new things and products like cruises and so on. Each of those topics is supposed to get some resources or team working on it. This guidance should be sent via email a few weeks before the first OKR workshop.
 
 Because it is very hard to come up with that list and the management has to do some hard decisions usually it is in the inboxes of everyone only a few days before the workshops. But this also helps teams to come up with their own set of OKRs without already being boxed in, in their thinking and brainstorming.
 
 ### OKR Workshop I
-<img src="/img/posts/2019-01-04-our-okr-process/okr-workshop-1.svg" alt="" />
+<img src="/img/posts/2019-01-10-our-okr-process/okr-workshop-1.svg" alt="" />
 
 We do 2 OKR-Workshops every quarter. But the most interesting quarter is always the first quarter of a year and hence the OKR-Workshops in December. Why? Because it is already influenced by the quarterly AND <strong>yearly guidance</strong> we get.
 Teams can prepare OKRs for that workshop - finding things that they would like to work on as a team. Normally that happens in team internal meetings where we do brainstormings and try to plan the next quarter. We also come up with Objectives and Key Results for our own team. They are not final but they will be presented in the OKR-Workshop - either by someone who is part of the team or by another attendee of that OKR-Workshop.
@@ -55,7 +56,7 @@ To not demotivate the existing teams this guidance is only communicated after mo
 So before the first big OKR-Workshop nobody can exactly know what he or she will work on and if all the effort that went into creating team-OKRs will pay off or not.
 
 ### OKR-Workshop II
-<img src="/img/posts/2019-01-04-our-okr-process/okr-workshop-2.svg" alt="" />
+<img src="/img/posts/2019-01-10-our-okr-process/okr-workshop-2.svg" alt="" />
 
 After the first OKR-Workshop people who attended the workshop start informing all teams about the temporary results of that workshop:
 What ended up on the Kill-List? What might a team work on? How many resources are needed for that new Initiative? At this point, nothing is set in stone and no final decision was taken.
@@ -68,7 +69,7 @@ And "results" in that case could mean anything: It could mean that you can just 
 
 ### Communication
 
-<img src="/img/posts/2019-01-04-our-okr-process/list.svg" alt="" />
+<img src="/img/posts/2019-01-10-our-okr-process/list.svg" alt="" />
 
 After OKR-Workshop II everyone is waiting for the official communication. The attendees of the OKR workshop are encouraged not to talk about the results because this could lead to rumors and anger. To ensure that everyone IS getting the needed information HolidayCheck uses several ways to communicate the results and changes:
 
@@ -80,11 +81,13 @@ It is important to note that there are no conversations with individual resource
 
 So, in the end, you can look up your name in a list of around ~150 resources to see what you'll be working on. Especially in the OKR-Workshops for a new year, this list is quite interesting.
 
+<img src="/img/posts/2019-01-10-our-okr-process/christmas.svg" alt="" />
+
 There are often big changes on the company level but also for individual resources. <em>The list</em> is usually sent a few days after the second OKR-Workshop. That means that most people receive it right before their Christmas vacation or they are already on vacation. But this has also a bright side: People often react reluctant to changes <em>at first</em> - but now they have time to reflect on those changes in their vacation. Or they can relax in their vacation and learn about the changes in the new year: So, in the end, everyone has fresh energy for those changes.
 
 ### Deciding on a new team setup and dealing with the changes
 
-<img src="/img/posts/2019-01-04-our-okr-process/team.svg" alt="" />
+<img src="/img/posts/2019-01-10-our-okr-process/team.svg" alt="" />
 
 Because sometimes in this process old teams are removed and hence some topics, services, and half-finished <strong>stuff is abandoned</strong> we need a clear process to tackle this:
 
@@ -104,5 +107,7 @@ But they also give people a chance to <strong>speak up</strong> <em>after</em> t
 ## Last Words
 As I said I think we have a very unique way of handling all of this.
 But maybe I'm wrong and YOUR company is doing it in the same way? I'd like to know how this works in other companies - so why don't you give us a little summary on twitter? Just mention [@holidaychecklab](https://twitter.com/holidaychecklab).
+
+<img src="/img/posts/2019-01-10-our-okr-process/warning.svg" alt="" />
 
 Our current way of doing things is also quite different from what we publicly presented in our case study at workpath.com - on the one hand because our process is changing continuously and on the other hand because case studies usually only contain the positive parts of a story. But I think it is important to also talk a about the problems and shortcomings of processes and companies publicly.
