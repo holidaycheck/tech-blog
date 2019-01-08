@@ -132,6 +132,19 @@ But maybe I'm wrong and YOUR company is doing it in the same way? I'd like to kn
 
 Our current way of doing things is also quite different from what we publicly presented in our case study at workpath.com - on the one hand because our process is changing continuously and on the other hand because case studies usually only contain the positive parts of a story. But I think it is important to also talk about the problems and shortcomings of processes and companies publicly.
 
+As you might have noticed, in my opinion our current process has lots of flaws. Splitting up teams is problematic, the way we communicate and treat changes is imho just not ok. Maybe you noticed that I used the word "resource" quite often - this is exactly how our current process makes people feel.
+
+So what would I prefer? I don't have a perfect solution and it is also not an easy problem to solve. But I still think there are many things we could improve:
+
+- the "guidance" needs to come earlier. This would avoid that teams invest time into planning or implementing something that never will go live
+- the OKR-Workshops should be earlier so that there is enough time to talk about results and change them
+- the OKR-Workshops itself should be public
+- instead of assigning individual people to  projects and initiatives, only teams should be reassigned (if absolutely necessary)
+- ideally a team is deciding itself what it wants to work on
+- no one is assigned to a new topic or team without being asked first. If there are teams that have too few people working on it we could make that issue public and wait for volunteers willing to step up
+- we should prefer keeping teams stable over adhering strictly to a short-term resource/initiative plan
+- the OKR process should not be mixed up with any kind of career or growth plans of individual people
+
 <style>
 .filler {
     max-width: 500px;
