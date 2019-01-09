@@ -20,13 +20,18 @@ OKRs are basically a ["framework for defining and tracking objectives and their 
 We come up with OKRs each quarter. To do that teams (they usually consist of several developers, UX/Design-folks, a PO, ScrumMaster, and Stakeholders) come up with a proposal for their own team objectives for the next quarter. Before that our management is giving us some guidance what might be the most important topics in the next quarter.
 Usually, someone from each team is then attending what we call "OKR-Workshop I". In that workshop, the management and the other attendees talk about all proposed objectives and try to already filter a bit what we can and can't do.
 
-<img src="/img/posts/2019-01-10-our-okr-process/okr-process.png" alt="" />
+<figure>
+    <img src="/img/posts/2019-01-10-our-okr-process/okr-process.png" alt="" />
+    <figcaption>Image Source: Screenshot of <a href="http://agiletuesday.com/wp-content/uploads/2018/09/180911-OKR-Lightning-Meetup-Agile-Tuesday-Handout.pdf">this slide deck</a></figcaption>
+</figure>
+
+
 
 After that workshop, the teams then can do their own workshops to improve and sharpen their OKR proposals. After 2 weeks the "OKR-Workshop II" takes place. The result of this workshop is a final list of objectives that will be tackled in the next quarter. All teams will then be informed on what exactly they will work in the coming quarter.
 
 After that, we do frequent Retrospectives and CheckIns to figure out what we can and should improve.
 
-You can find an overview of how this process looks like in the graphic above - or read the [full case study]((https://www.workpath.com/en/magazine/okrs-at-holidaycheck-case-study/)) that explains it in a bit more detail.
+You can find an overview of how this process looks like in the graphic above - or read the [full case study](https://www.workpath.com/en/magazine/okrs-at-holidaycheck-case-study/) that explains it in a bit more detail.
 
 ## Our current OKR process in practice, from the perspective of a developer
 
@@ -152,3 +157,8 @@ So what would I prefer? I don't have a perfect solution and it is also not an ea
     display: block;    
 }
 </style>
+
+
+---
+
+The illustrations in this post are from Katerina Limpitsouni's [https://undraw.co/](https://undraw.co/).
