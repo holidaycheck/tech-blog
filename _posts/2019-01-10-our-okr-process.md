@@ -137,7 +137,7 @@ But maybe I'm wrong and YOUR company is doing it in the same way? I'd like to kn
 
 Our current way of doing things is also quite different from what we publicly presented in our case study at workpath.com - on the one hand because our process is changing continuously and on the other hand because case studies usually only contain the positive parts of a story. But I think it is important to also talk about the problems and shortcomings of processes and companies publicly.
 
-As you might have noticed, in my opinion our current process has lots of flaws. Splitting up teams is problematic, the way we communicate and treat changes is imho just not ok. Maybe you noticed that I used the word "resource" quite often - this is exactly how our current process makes people feel.
+As you might have noticed, in my opinion our current process has lots of flaws. Splitting up teams is problematic, the way we communicate and treat changes is imho just not ok. Maybe you noticed that I used the word "resource" quite often - this is how our current process makes some people like me feel.
 
 So what would I prefer? I don't have a perfect solution and it is also not an easy problem to solve. But I still think there are many things we could improve:
 
@@ -158,7 +158,8 @@ So what would I prefer? I don't have a perfect solution and it is also not an ea
 }
 </style>
 
-
 ---
+
+<div style="font-size:11px">Transparent Update: I've changed the sentence "this is exactly how our current process makes people feel" to "this is how our current process makes some people like me feel". This post is only my opinion and I can not generalise how everyone is feeling.</div>
 
 The illustrations in this post are from Katerina Limpitsouni's [https://undraw.co/](https://undraw.co/).
