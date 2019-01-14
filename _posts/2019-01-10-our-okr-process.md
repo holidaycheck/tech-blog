@@ -12,7 +12,7 @@ feature_image: posts/2019-01-10-our-okr-process/header.svg
 ---
 
 Around 2015 HolidayCheck introduced OKRs - Objectives and Key Results - to steer the company.
-OKRs are basically a ["framework for defining and tracking objectives and their outcomes"](https://en.wikipedia.org/wiki/OKR). You can find a case story about how we introduced OKRs at HolidayCheck and how our processes used too look like here: [OKRs at HolidayCheck case study [from March 1, 2018]](https://www.workpath.com/en/magazine/okrs-at-holidaycheck-case-study/). In case you are too lazy to read the case study (and aren't we all a bit lazy?) I'll try to summarize it:
+OKRs are basically a ["framework for defining and tracking objectives and their outcomes"](https://en.wikipedia.org/wiki/OKR). I'll try to summarize how our OKR process was supposed to work back then:
 
 ## Our OKR process in theory
 (You can skip to <em>[Our current OKR process in practice, from the perspective of a developer](#our-current-okr-process-in-practice-from-the-perspective-of-a-developer)</em> if you're only interested in how it currently works)
@@ -30,8 +30,6 @@ Usually, someone from each team is then attending "OKR-Workshop I". In that work
 After that workshop, the teams then can do their own workshops to improve and sharpen their OKR proposals. After 2 weeks the "OKR-Workshop II" takes place. The result of this workshop is a final list of objectives that will be tackled in the next quarter. All teams will then be informed on what exactly they will work in the coming quarter.
 
 After that, we do frequent Retrospectives and CheckIns to figure out what we can and should improve.
-
-You can find an overview of how this process looks like in the graphic above - or read the [full case study](https://www.workpath.com/en/magazine/okrs-at-holidaycheck-case-study/) that explains it in a bit more detail.
 
 ## Our current OKR process in practice, from the perspective of a developer
 
@@ -77,7 +75,7 @@ So before the first big OKR-Workshop nobody can exactly know what he or she will
 ### OKR-Workshop II
 
 After the first OKR-Workshop people who attended the workshop start informing all teams about the temporary results of that workshop:
-What ended up on the final list? What might a team work on? How many people are needed for that new Initiative? At this point, nothing is set in stone and no final decision was taken.
+What ended up on the list of things we'll do? What might a team work on? How many people are needed for that new Initiative? At this point, nothing is set in stone and no final decision was taken.
 
 It is still 2 weeks until OKR-Workshop II will take place. And the teams are supposed to use that time to talk with other teams about dependencies, joining forces, broadening or sharpening their scope, reformulating their OKRs and so on.
 
@@ -99,7 +97,7 @@ After OKR-Workshop II everyone is waiting for the official communication. The at
 
 There are no conversations with individual people (developers, UX-folks, POs, designers...) what they want to work on or what options they would like most - probably because that would be a lot of effort and would cause a lot of turmoil. And HolidayCheck wants employees to be able to fully focus on their current tasks without disturbing them with such discussions.
 
-So, in the end, you can look up your name in a big list employees to see what you'll be working on. Especially in the OKR-Workshops for a new year, this list is quite interesting.
+So, in the end, you can look up your name in a big list of employees to see what you'll be working on. Especially in the OKR-Workshops for a new year, this list is quite interesting.
 
 <img src="/img/posts/2019-01-10-our-okr-process/christmas.svg" alt="" class="filler"/>
 
@@ -135,7 +133,8 @@ But maybe I'm wrong and YOUR company is doing it in the same way? I'd like to kn
 
 <img src="/img/posts/2019-01-10-our-okr-process/warning.svg" alt="" class="filler"/>
 
-Our current way of doing things is also quite different from what we publicly presented in our case study at workpath.com - on the one hand because our process is changing continuously and on the other hand because case studies usually only contain the positive parts of a story. But I think it is important to also talk about the problems and shortcomings of processes and companies publicly.
+Usually you'll only hear about how awesome some process is or read a case study of how much a company improved after applying a new process.
+You'll less often will read about the problems that said processes have - about the things that we don't have figured out yet. But I think it is important to also talk about the problems and shortcomings of processes and companies publicly.
 
 As you might have noticed, in my opinion our current process has lots of flaws. Splitting up teams is problematic, the way we communicate and treat changes is imho just not ok and makes people like me feel like "just a resource".
 
@@ -161,6 +160,6 @@ So what would I prefer? I don't have a perfect solution and it is also not an ea
 ---
 
 <div style="font-size:11px">Transparent Update: I've changed the sentence "this is exactly how our current process makes people feel" to "this is how our current process makes some people like me feel". This post is only my opinion and I can not generalise how everyone is feeling.<br /> <br />
-I've also removed some internal names and details that don't matter to the story and changed some wordings to be more neutral (e.g. resource vs employee).</div>
+I've also removed some internal names, products and details that don't matter to the story and changed some wordings to be more neutral (e.g. resource vs employee).</div>
 
 The illustrations in this post are from Katerina Limpitsouni's [https://undraw.co/](https://undraw.co/).
