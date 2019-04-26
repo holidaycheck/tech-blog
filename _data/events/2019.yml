@@ -206,6 +206,20 @@
   url: https://lithuania.yglfconf.com/
   tags: conference, frontend, css, javascript, browser, html5
   
+- name: Munich Frontend Conference 2019
+  start_datetime: 2019-04-27 09:30
+  end_datetime: 2019-04-27 18:00
+  location: Munich, Germany
+  url: https://frontconf.com/
+  tags: conference, frontend, css, javascript, browser, html5
+  
+- name: Devopsdays Poznań 2019
+  start_datetime: 2019-05-20 09:15
+  end_datetime: 2019-05-20 18:15
+  location: Poznań, Poland
+  url: https://www.devopsdays.org/events/2019-poznan/welcome/
+  tags: conference, devops, sre, kubernetes, serverless
+  
 #
 # Design
 #
