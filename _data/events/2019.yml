@@ -2,6 +2,32 @@
 # In house, at HolidayCheck
 #
 
+- name: JavaScript the Language - Global Object
+  start_datetime: 2019-01-24 19:00
+  url: https://www.meetup.com/JavaScript-The-Language/events/258970667/
+  tags: meetup, JavaScript
+  location: HolidayCheck, Neumarkter Str. 61, München
+
+- name: JavaScript the Language - Async Iterations (for-await-of)
+  start_datetime: 2019-02-14 19:00
+  url: https://www.meetup.com/JavaScript-The-Language/events/258970667/
+  tags: meetup, JavaScript
+  location: HolidayCheck, Neumarkter Str. 61, München
+
+- name: JavaScript the Language - import() as a function
+  start_datetime: 2019-03-07 19:00
+  url: https://www.meetup.com/JavaScript-The-Language/events/258970667/
+  tags: meetup, JavaScript
+  location: HolidayCheck, Neumarkter Str. 61, München
+
+- name: MunichJS - JavaScript Meetup – Micro Frontends
+  start_datetime: 2019-05-13 18:00
+  url: https://www.meetup.com/MunichJS-User-Group/events/261010094/
+  tags: meetup, JavaScript, micro frontends
+  location: HolidayCheck, Neumarkter Str. 61, München
+  twitter: munichjs
+  comment: Terminating the frontend monolith - Trygve Lie 
+
 #
 # Others
 #
@@ -234,21 +260,21 @@
 #
 # Unconfs
 #
-#- name: BusConf 2019
-#  start_datetime: 2019-08-02 16:00
-#  end_datetime: 2019-08-04 16:00
-#  location: Rückersbach, Germany
-#  url: http://www.bus-conf.org/
-#  twitter: _BusConf_
-#  tags: unconference, FP
+- name: BusConf 2019
+  start_datetime: 2019-08-01 16:00
+  end_datetime: 2019-08-03 16:00
+  location: Rückersbach, Germany
+  url: http://www.bus-conf.org/
+  twitter: _BusConf_
+  tags: unconference, FP
 
-#- name: JSCraftCamp 2019
-#  start_datetime: 2019-08-10 10:00
-#  end_datetime: 2019-08-11 18:00
-#  location: Munich, Germany
-#  url: http://www.jscraftcamp.org/
-#  twitter: jscraftcamp
-#  tags: unconference, JavaScript
+- name: JSCraftCamp 2019
+  start_datetime: 2019-07-19 10:00
+  end_datetime: 2019-07-20 18:00
+  location: Munich, Germany
+  url: http://www.jscraftcamp.org/
+  twitter: jscraftcamp
+  tags: unconference, JavaScript, jscc19
 
 - name: CodeFreeze 2019
   start_datetime: 2019-01-05 10:00
