@@ -46,16 +46,14 @@ The interface that the spec defines is called "PerformanceResourceTiming", which
 
 The `duration` is given in milliseconds. The time is measured using the DOMHighResTimestamp interface, which allows for very exact time measuring. Why is this needed? [The spec][7] says `Date.now()` "does not allow for sub-millisecond resolution and is subject to system clock skew". You can see the sub-milliseconds part in the `duration`'s value above. So we have reliable time measuring in the browser available, details will be another blog post in this series.
 
-<hc-live-chart style="padding: 0.5rem; background: lightyellow; font-size: 1.5rem; height: 25rem; width: calc(100% + 20rem); margin-left: -10rem;">
+<hc-live-chart style="padding: 0.5rem; background: lightyellow; font-size: 1.5rem; height: 25rem; ">
 const resources = window.performance.getEntriesByType('resource');
 const durations = resources.map(r => ({label: r.name, value: r.duration}));
 // Show the first ten durations, to make the chart easier to understand.
 return durations.slice(0, 10);
 </hc-live-chart>
 
-> The startTime attribute MUST return a DOMHighResTimeStamp [HR-TIME-2] with the time immediately before the user agent starts to queue the resource for fetching. If there are HTTP redirects or equivalent when fetching the resource, and if the timing allow check algorithm passes, this attribute MUST return the same value as redirectStart. Otherwise, this attribute MUST return the same value as fetchStart.
 
-it all starts with "startTime"
 
 
 
@@ -76,51 +74,6 @@ window.addEventListener('load',() => __updateInlineStats__(2));
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Example 1, the number of resources this website loaded
-
-<hc-live-chart style="padding: 0.5rem; background: lightyellow; font-size: 1.2rem; height: 25rem; width: calc(100% + 20rem); margin-left: -10rem;">
-const resources = window.performance.getEntriesByType('resource');
-return resources.map(r => ({label: r.name, value: r.duration}));
-</hc-live-chart>
-
-      
-## Resource Types
-
-There are many different performance related information we could get from  the browser. If you ever opened the developer tools you know that a lot of things happen under the hood and make up the (perceived) website performance. That's why there are different types of performance entries that the browser provides. 
-We look into resources here. By calling `window.performance.getEntriesByType("resource")` we receive an array of all resources that had been loaded on the current website. Resources are basically all things loaded via HTTP, hence you can also find out which protocol version (HTTP1 or HTTP2) was used for loading.
-Besides "resource" which we used as parameter for `getEntriesByType()` before you can also use "navigation", "paint", "mark" and "measure". But we won't cover those in this blog post, feel free to explore them yourself.
-
-## Inspect Resources
-
-To see all CSS files, we can simply filter the resources by the property `initiatorType="css"` like so  
-```js
-const resources = window.performance.getEntriesByType("resource");
-const cssFiles = resources.filter(r => r.initiatorType==='css');
-return cssFiles.map(r => ({label: r.name, value: r.transferSize}));
-```
-
-That this reads only the CSS files is not entirely correct, actually it reads all ____________.
-
-Let's take a closer look at the objects, the resource entries (`PerformanceResourceTiming` entries, to be correct). First they contain the various size properties that allow us to understand what was invested in transporting the resource to the client and also how big the actual content is. The property `transportSize` is the amount of bytes we can also inspect in the network tabs of the developer tools, the pure size of the asset as transported over the network. This size includes the headers that were sent with the resource.
-Most resources are compressed, either via compression algorithms on the transport layer or certain content encodings.
-____ what about images such as png, jpgs, are decodedSize the full bitmap image size_____????
-The sizes before and after compression are available as `encodedBodySize` and `decodedBodySize`. In the names one can see that the size refers only to the body of the asset, or better said of the HTTP message, excluding the headers as opposed to the `transferSize`.
-
-## Browser Compatibility
 
 
 
