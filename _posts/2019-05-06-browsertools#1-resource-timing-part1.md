@@ -45,24 +45,46 @@ The interface that the spec defines is called "PerformanceResourceTiming", which
 }, {...}]
 ```
 
-The `duration` is given in milliseconds. The time is measured using the DOMHighResTimestamp interface, which allows for very exact time measuring. Why is this needed? [The spec][7] says `Date.now()` "does not allow for sub-millisecond resolution and is subject to system clock skew". You can see the sub-milliseconds part in the `duration`'s value above. So we have reliable time measuring in the browser available, details will be another blog post in this series.
+The `duration` is given in milliseconds. The time is measured using the DOMHighResTimestamp interface, which allows for very exact time measuring. Why is this needed? We could have used `Date.now()`, but [the spec][7] says it "does not allow for sub-millisecond resolution and is subject to system clock skew". Better to have exact timestamps. You can see the sub-milliseconds part in the `duration`'s value above. So we have reliable time measuring in the browser available, details might become another blog post in this series.
 
-<hc-live-chart style="padding: 0.5rem; background: lightyellow; font-size: 1.5rem; height: 25rem; ">
-const resources = window.performance.getEntriesByType('resource');
-const durations = resources.map(r => ({label: r.name, value: r.duration}));
-// Show the first ten durations, to make the chart easier to understand.
-return durations.slice(0, 10);
-</hc-live-chart>
+The `name` is the URL of the resource the website loaded and the API measured.
+Let's sum it all up, by looking at the part of the API we have learned about.
 
+```js
+> // Read all resource that our website has loaded.
+> const resources = window.performance.getEntriesByType('resource');
+> // Filter out the name and the duration. 
+> const durations = resources.map(({name, duration}) => ({name, duration}));
+> console.log(durations);
+[  // shortened for readability
+   {name: ".../css/main.css", duration: 14.42500000121072},
+   {name: ".../img/hc-labs-only-logo.svg", duration: 18.744999993941747},
+   ...
+]
+```
 
+## The `responseEnd` Attribute 
 
+The `duration` attribute seen before, is the result of subtracting the `responseEnd - startTime` attribute ([spec][8]). The `startTime` attribute is the time when fetching the resource started ([MDN][9]). The `responseEnd` is the timestamp when the last byte was received or when the transport connection closes ([MDN][10]). The time taken how long loading all resources took, as you saw at the beginning of the article and as you can see at the end again, is calculated by retreiving all `responseEnd` values, sorting them and taking the biggest one, as you can see below:
 
+```js
+> const resources = window.performance.getEntriesByType('resource');
+> // Filter out the responseEnd attribute only.
+> const allResponseEnds = resources.map(r => r.responseEnd);
+> console.log(resources.length, 'resources,', 
+              allResponseEnds.sort().reverse()[0], 'ms');
+```
+<pre id="inline-stats-result" class="highlight" style="margin-top: -31px;"></pre>
+<script type="text/javascript">
+  (() => {
+    const resources = window.performance.getEntriesByType('resource');
+    const resourcesStr = resources.length + ' resources, ';
+    const timeStr = resources.map(r => r.responseEnd).sort().reverse()[0] + ' ms';
+    document.querySelector('#inline-stats-result').innerHTML = resourcesStr + timeStr;
+  })()
+</script>
 
-
-
-
-
-
+## Finally
 
 Now that you got here, we pick up the thing we did at the beginning of the page again and list the tiny statistics again. After the [event "load"][6] (the whole page has loaded, including all dependent resources such as stylesheets images) this **page loaded <span id="num-assets-loaded-2">??</span> assets** (or resources) and **took <span id="time-taken-loading-2">??</span> seconds to load**. <span id="loading-failed-hint-2">(If you just see "??" then reading the data didn't work, do you have an old browser?)</span>
 {% raw %}
@@ -85,3 +107,6 @@ window.addEventListener('load',() => __updateInlineStats__(2));
 [5]: https://www.w3.org/TR/performance-timeline-2/
 [6]: https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
 [7]: https://www.w3.org/TR/hr-time-2/
+[8]: https://www.w3.org/TR/2017/CR-resource-timing-1-20170330/#performanceresourcetiming
+[9]: https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEntry/startTime
+[10]: https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/responseEnd
