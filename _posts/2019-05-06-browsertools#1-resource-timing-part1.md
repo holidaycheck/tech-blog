@@ -36,11 +36,18 @@ The [specification (or spec)][3] introduces the topic in a very understandable w
 > [The spec] introduces the PerformanceResourceTiming interface to allow JavaScript mechanisms to collect complete timing information related to resources on a [website].
 
 The interface that the spec defines is called "PerformanceResourceTiming", which is in simple terms the collection of many attributes about one resource that the website (or document) loads. For example the `duration` attribute, which tells us how long it took to load a certain resource. For that we have to read all resources that were loaded, which we do via `window.performance.getEntriesByType('resource')`. This returns an array of all resources, which contains the `name` and `duration` properties (among others):
+
+```js
+> window.performance.getEntriesByType('resource')
+```
+
 ```js
 [{
     // ... shortened
-    duration: 142.5950000048033,
+    duration: 14.79000000108499,
     name: "http://techblog.holidaycheck.com/css/main.css",
+    startTime: 18.41499999864027,
+    responseEnd: 33.20499999972526,
     // ... shortened
 }, {...}]
 ```
@@ -55,7 +62,10 @@ Let's sum it all up, by looking at the part of the API we have learned about.
 > const resources = window.performance.getEntriesByType('resource');
 > // Filter out the name and the duration. 
 > const durations = resources.map(({name, duration}) => ({name, duration}));
-> console.log(durations);
+> durations
+```
+
+```js
 [  // shortened for readability
    {name: ".../css/main.css", duration: 14.42500000121072},
    {name: ".../img/hc-labs-only-logo.svg", duration: 18.744999993941747},
@@ -63,18 +73,17 @@ Let's sum it all up, by looking at the part of the API we have learned about.
 ]
 ```
 
-## The `responseEnd` Attribute 
+## The `responseEnd` Attribute In Use
 
 The `duration` attribute seen before, is the result of subtracting the `responseEnd - startTime` attribute ([spec][8]). The `startTime` attribute is the time when fetching the resource started ([MDN][9]). The `responseEnd` is the timestamp when the last byte was received or when the transport connection closes ([MDN][10]). The time taken how long loading all resources took, as you saw at the beginning of the article and as you can see at the end again, is calculated by retreiving all `responseEnd` values, sorting them and taking the biggest one, as you can see below:
 
 ```js
 > const resources = window.performance.getEntriesByType('resource');
 > // Filter out the responseEnd attribute only.
-> const allResponseEnds = resources.map(r => r.responseEnd);
-> console.log(resources.length, 'resources,', 
-              allResponseEnds.sort().reverse()[0], 'ms');
+> const allEnds = resources.map(r => r.responseEnd);
+> resources.length + ' resources, ' + allEnds.sort().reverse()[0], ' ms'
 ```
-<pre id="inline-stats-result" class="highlight" style="margin-top: -31px;"></pre>
+<pre id="inline-stats-result" class="highlight"></pre>
 <script type="text/javascript">
   (() => {
     const resources = window.performance.getEntriesByType('resource');
