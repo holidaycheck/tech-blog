@@ -9,13 +9,13 @@ author_avatar: jaceksmolak
 read_time : 5
 show_related_posts: false
 square_related:
-excerpt: "Recently I saw a video titled \"TDD for those who don't need it\". It was plain and obvious. But then it struck me, as I realized that there are more places where, I believe, teams work based on some plan and later, at some point … they don't. Let's have a look at an example of an idea that is destined to become a production ready feature."
+excerpt: "Recently I saw a video titled \"TDD for those who don't need it\". It was plain and obvious. But then it struck me, as I realized that there are more places where, I believe, teams work based on some plan and later, at some point … they don't. In this post I will show you an example of an idea that is destined to become a production-ready feature. How the work looks like at the beginning, and what happens to it later."
 feature_image: posts/2019-05-24-write-requirements-not-just-tests/poster.jpg
 ---
 
 ## Write requirements, not just tests
 
-Recently I saw a [video](https://www.youtube.com/watch?v=a6oP24CSdUg) titled _"TDD for those who don't need it"_. It was plain and obvious. But then it struck me, as I realized that there are more places where, I believe, teams work based on some plan and later, at some point … they don't. Let's have a look at an example of an idea that is destined to become a production-ready feature.
+Recently I saw a [video](https://www.youtube.com/watch?v=a6oP24CSdUg) titled _"TDD for those who don't need it"_. It was plain and obvious. But then it struck me, as I realized that there are more places where, I believe, teams work based on some plan and later, at some point … they don't. In this post I will show you an example of an idea that is destined to become a production-ready feature. How the work looks like at the beginning, and what happens to it later.
 
 ### Aha, I have a great idea!
 
