@@ -97,6 +97,5 @@ PS: even this very post had had a list of checks for me, to verify if I had not 
 
 <img src="{{site.baseurl}}/img/posts/2019-05-24-write-requirements-not-just-tests/checklist.png" alt="Checklist for the blogpost" />
 
-*Main and idea image by <a href="https://pixabay.com/users/TeroVesalainen-809550/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2077019">TeroVesalainen</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2077019">Pixabay</a>*
-
+*Main and idea image by <a href="https://pixabay.com/users/TeroVesalainen-809550/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2077019">TeroVesalainen</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2077019">Pixabay</a>*<br />
 *Coding image by <a href="https://pixabay.com/users/StockSnap-894430/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2557299">StockSnap</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2557299">Pixabay</a>*
