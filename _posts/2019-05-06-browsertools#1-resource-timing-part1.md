@@ -6,7 +6,8 @@ author_name: Wolfram Kriesing
 author_url : /author/wolframkriesing
 author_avatar: wolframkriesing
 read_time : 10
-excerpt: ""
+excerpt: "A look into the Resource Timing interface, it is part of the Performance interface, which you can reach via 'window.performance' in all modern browsers."
+feature_image: posts/2019-05-06-browsertools-1/header.png
 ---
 
 This post is the start of a series of blog posts about browser tools. Among those we plan to look into any kind of tool in and around the browser, so mostly things web developers eventually find useful. Let's dive right in.
