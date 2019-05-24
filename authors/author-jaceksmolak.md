@@ -15,7 +15,7 @@ title: Jacek Smolak
 
 I began working in IT in 2007, but it was when I came to HolidayCheck I started learning and valuing the meaning of Software Craftsmanship.
 
-My main field of interest is TDD and clean code solutions. After all, we are all engineers talking to each other through code - let it be clear and understandable.
+My main field of interest is TDD and clean code solutions. After all, we are all engineers talking to each other through code—let it be clear and understandable.
 
 You can find me on [Twitter](https://twitter.com/jacek_smolak).
 
