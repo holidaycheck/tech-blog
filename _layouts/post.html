@@ -29,7 +29,7 @@ layout: default
                     </span>
                     <span itemprop="mainEntityOfPage url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></span>
                     <span itemprop="image" content='{{"/img/" | append: page.feature_image | prepend: site.baseurl | prepend: site.url }}'></span>
-                    <span itemprop="headline" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 110 }}"></span>
+                    <span itemprop="headline" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 110 | replace:'"','&quot;' }}"></span>
                     {% include authors.html post=page %}
 
                     in <a href='{{ "/category/" | append: page.categories.first | prepend: site.baseurl }}'>{{ page.categories[0] | capitalize | replace: "-", " " }}</a>
