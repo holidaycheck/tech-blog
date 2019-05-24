@@ -12,7 +12,7 @@ feature_image: posts/2019-05-06-browsertools-1/header.png
 
 This post is the start of a series of blog posts about browser tools. Among those we plan to look into any kind of tool in and around the browser, so mostly things web developers eventually find useful. Let's dive right in.
 
-Up to here this **page loaded <span id="num-assets-loaded-1">??</span> assets** (or resources) and **took <span id="time-taken-loading-1">??</span> seconds to load**. All those information were gathered, just now, via the Resource Timing interface, which we would like to cover in this article. <span id="loading-failed-hint-1">(If you just see "??" then reading the data didn't work, do you have an older browser? Anyways read on so you can try if and how the described API works in your browser?)</span> At the end of the article the same stats with the updated values can be found, watch out.
+Up to here this **page loaded <span id="num-assets-loaded-1">??</span> assets** (or resources) and **took <span id="time-taken-loading-1">??</span> seconds to load**. All those information were gathered, just now, via the `Resource Timing interface`, which we would like to cover in this article. <span id="loading-failed-hint-1">(If you just see "??" then reading the data didn't work, do you have an older browser? Anyways read on so you can try if and how the described API works in your browser?)</span> At the end of the article the same stats with the updated values can be found, watch out.
 If you <a href="">reload</a>, the numbers may change.
 {% raw %}
 <script type="text/javascript">
@@ -30,7 +30,7 @@ __updateInlineStats__(1);
 
 ## Resource Timing Interface
 
-Let us start by looking into the `Resource Timing` interface  ([on MDN][2], [in the spec][4]), it is part of the `Performance` interface ([on MDN][1], [the spec][5]), which you can reach via `window.performance` in all modern browsers. We will learn how it can be useful to better understand the impact on performance of resources that a website loads, e.g. JS, CSS, images, XHRs and alikes.
+Let us start by looking into the `Resource Timing` interface  ([on MDN][2], [in the spec][4]), it is part of the `Performance` interface ([on MDN][1], [the spec][5]), which you can reach via `window.performance` in all modern browsers. We will learn how it can be useful to better understand the impact on performance of resources that a website loads, e.g. JS, CSS, images, XHRs and alike.
 
 The [specification (or spec)][3] introduces the topic in a very understandable way: 
 
