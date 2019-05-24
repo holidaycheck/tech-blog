@@ -1,4 +1,4 @@
-{ pkgs ? import (fetchTarball https://github.com/nixos/nixpkgs-channels/tarball/dafdaa98a5c35e08a9deeabfb7c5d08c10271c3c) { } }:
+{ pkgs ? import (fetchTarball https://github.com/nixos/nixpkgs/tarball/f52505fac8c82716872a616c501ad9eff188f97f) { } }:
 
 let 
   inherit (pkgs) stdenv bundlerEnv lib;
