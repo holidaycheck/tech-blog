@@ -13,14 +13,14 @@ feature_image: posts/2019-05-06-browsertools-1/header.png
 This post is the start of a series of blog posts about browser tools. Among those we plan to look into any kind of tool in and around the browser, so mostly things web developers eventually find useful. Let's dive right in.
 
 Up to here this **page loaded <span id="num-assets-loaded-1">??</span> assets** (or resources) and **took <span id="time-taken-loading-1">??</span> seconds to load**. All those information were gathered, just now, via the `Resource Timing interface`, which we would like to cover in this article. <span id="loading-failed-hint-1">(If you just see "??" then reading the data didn't work, do you have an older browser? Anyways read on so you can try if and how the described API works in your browser?)</span> At the end of the article the same stats with the updated values can be found, watch out.
-If you <a href="">reload</a>, the numbers may change.
+If you <a href="{{ page.url }}">reload</a>, the numbers may change.
 {% raw %}
 <script type="text/javascript">
 const __updateInlineStats__ = (index) => {
   try {
     const r = window.performance.getEntriesByType('resource');
     document.querySelector(`#num-assets-loaded-${index}`).textContent = r.length;
-    document.querySelector(`#time-taken-loading-${index}`).textContent = (r.map(r => r.responseEnd).sort().reverse()[0] / 1000).toFixed(1);
+    document.querySelector(`#time-taken-loading-${index}`).textContent = (r.map(r => r.responseEnd).sort().reverse()[0] / 1000).toFixed(2);
     document.querySelector(`#loading-failed-hint-${index}`).remove();
   } catch (e) { /* swallow errors */ }
 }
@@ -85,6 +85,7 @@ The `duration` attribute seen before, is the result of subtracting the `response
 > resources.length + ' resources, ' + allEnds.sort().reverse()[0], ' ms'
 ```
 <pre id="inline-stats-result" class="highlight"></pre>
+{% raw %}
 <script type="text/javascript">
   (() => {
     const resources = window.performance.getEntriesByType('resource');
@@ -93,6 +94,19 @@ The `duration` attribute seen before, is the result of subtracting the `response
     document.querySelector('#inline-stats-result').innerHTML = resourcesStr + timeStr;
   })()
 </script>
+{% endraw %}
+
+Hit: If you <a id="reload-link-2" href="{{ page.url }}?force-reload=0#the-responseend-attribute-in-use">reload</a>, the numbers may change.
+{% raw %}
+<script type="text/javascript">
+  (() => {
+    const anchor = document.querySelector('#reload-link-2');
+    const href = anchor.getAttribute('href');
+    const counter = +(new URL(location).searchParams.get('force-reload'));
+    anchor.setAttribute('href', href.replace(/force-reload=\d+/, 'force-reload=' + (counter+1)));
+  })()
+</script>
+{% endraw %}
 
 ## Finally
 
