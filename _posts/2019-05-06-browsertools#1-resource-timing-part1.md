@@ -85,6 +85,7 @@ The `duration` attribute seen before, is the result of subtracting the `response
 > resources.length + ' resources, ' + allEnds.sort().reverse()[0], ' ms'
 ```
 <pre id="inline-stats-result" class="highlight"></pre>
+{% raw %}
 <script type="text/javascript">
   (() => {
     const resources = window.performance.getEntriesByType('resource');
@@ -93,6 +94,19 @@ The `duration` attribute seen before, is the result of subtracting the `response
     document.querySelector('#inline-stats-result').innerHTML = resourcesStr + timeStr;
   })()
 </script>
+{% endraw %}
+
+Hit: If you <a id="reload-link-2" href="{{ page.url }}?force-reload=0#the-responseend-attribute-in-use">reload</a>, the numbers may change.
+{% raw %}
+<script type="text/javascript">
+  (() => {
+    const anchor = document.querySelector('#reload-link-2');
+    const href = anchor.getAttribute('href');
+    const counter = +(new URL(location).searchParams.get('force-reload'));
+    anchor.setAttribute('href', href.replace(/force-reload=\d+/, 'force-reload=' + (counter+1)));
+  })()
+</script>
+{% endraw %}
 
 ## Finally
 
