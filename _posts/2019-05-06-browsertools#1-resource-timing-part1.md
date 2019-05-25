@@ -20,7 +20,7 @@ const __updateInlineStats__ = (index) => {
   try {
     const r = window.performance.getEntriesByType('resource');
     document.querySelector(`#num-assets-loaded-${index}`).textContent = r.length;
-    document.querySelector(`#time-taken-loading-${index}`).textContent = (r.map(r => r.responseEnd).sort().reverse()[0] / 1000).toFixed(1);
+    document.querySelector(`#time-taken-loading-${index}`).textContent = (r.map(r => r.responseEnd).sort().reverse()[0] / 1000).toFixed(2);
     document.querySelector(`#loading-failed-hint-${index}`).remove();
   } catch (e) { /* swallow errors */ }
 }
