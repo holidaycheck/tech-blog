@@ -84,7 +84,9 @@ The `duration` attribute seen before, is the result of subtracting the `response
 > const allEnds = resources.map(r => r.responseEnd);
 > resources.length + ' resources, ' + allEnds.sort().reverse()[0], ' ms'
 ```
-<pre id="inline-stats-result" class="highlight"></pre>
+<pre id="inline-stats-result" class="highlight">
+  If you see this either JavaScript is disabled, or something went wrong :(.
+</pre>
 {% raw %}
 <script type="text/javascript">
   (() => {
