@@ -24,7 +24,7 @@ layout: with-sidebar
                         <span itemprop="url" content="{{ '/img/hc-labs-only-logo256x256.png' | prepend: site.baseurl | prepend: site.url }}"></span>
                     </span>
                 </span>
-                <span itemprop="headline" content="{{ post.excerpt | strip_html | strip_newlines | truncate: 110 }}"></span>
+                <span itemprop="headline" content="{{ post.excerpt | strip_html | strip_newlines | truncate: 110 | replace:'"','&quot;' }}"></span>
                 {% include authors.html post=post %}
 
                 in <a href='{{ "/category/" | append: post.categories.first | prepend: site.baseurl }}'>{{ post.categories.first | capitalize | replace: "-", " " }}</a>
