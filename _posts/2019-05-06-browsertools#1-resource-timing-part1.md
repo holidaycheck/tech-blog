@@ -74,6 +74,34 @@ Let's sum it all up, by looking at the part of the API we have learned about.
 ]
 ```
 
+{% comment %} 
+  The chart below should be something like "height: 20rem" instead of px
+  But currently the rem are set to 10px on this page and to fix that all the CSS should be fixed.
+  Basically I (Wolfram) see no reason why there is any custom font-size needed anyways (maybe some rem units sometimes)
+  But in general I am pretty sure we can just use the defaults of the user agent and it should be fine. 
+{% endcomment %}
+<hc-chart id="duration-chart" style="height: 350px;"></hc-chart>
+{% raw %}
+<script type="text/javascript">
+  (() => {
+    const onLoaded = () => {
+      window.customElements.whenDefined('hc-chart').then(() => {
+        const chart = document.querySelector('#duration-chart');
+        const resources = window.performance.getEntriesByType('resource');
+        const durations = resources.map(({name, duration}) => ({label: name, value: duration}));
+        chart.updateChartData(durations);
+      });
+    };
+    const scriptTag = document.createElement('script');
+    scriptTag.onload = onLoaded;
+    scriptTag.setAttribute('type', 'text/javascript');
+    scriptTag.setAttribute('src', 'https://holidaycheck.github.io/hc-live-chart-component/HcChart.js')
+    document.head.insertBefore(scriptTag, document.head.childNodes[0]);
+  })();
+</script>
+{% endraw %}
+
+
 ## The `responseEnd` Attribute In Use
 
 The `duration` attribute seen before, is the result of subtracting the `responseEnd - startTime` attribute ([spec][8]). The `startTime` attribute is the time when fetching the resource started ([MDN][9]). The `responseEnd` is the timestamp when the last byte was received or when the transport connection closes ([MDN][10]). The time taken how long loading all resources took, as you saw at the beginning of the article and as you can see at the end again, is calculated by retreiving all `responseEnd` values, sorting them and taking the biggest one, as you can see below:
