@@ -22,9 +22,7 @@ description: > # this means to ignore newlines until "baseurl:"
   always looking for pationate new colleagues!
 baseurl: "" # the subpath of your site, e.g. /blog
 
-# This is an anti-pattern: https://www.paulirish.com/2010/the-protocol-relative-url/
-# It should be used until the blog's domain is redirecting to https (not happening now)
-url: "//techblog.holidaycheck.com"
+url: "https://techblog.holidaycheck.com"
 
 twitter_username: holidaychecklab
 github_username:  holidaycheck
