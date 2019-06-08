@@ -150,12 +150,9 @@ window.addEventListener('load',() => __updateInlineStats__(2));
 </script>
 {% endraw %}
 
-
-
-
-
-
-
+Hopefully this article shows that getting insights into resource timing of a site is possible not
+only in developer tools, but also right in the browser itself. What you can do with it we leave up
+to your imagination.
 
 [1]: https://developer.mozilla.org/en-US/docs/Web/API/Performance
 [2]: https://developer.mozilla.org/en-US/docs/Web/API/Resource_Timing_API
