@@ -37,9 +37,39 @@ The spec says that the attribute `startTime` is "the time immediately before the
 
 A `startTime` would be 0 the moment when the browsing context was created. This is for example a website reload, or navigating to a new site, opening a tab with a certain URL and alike. That means a `startTime=20` means 20 milliseconds after the browser context was created. Having a timestamp relative to the browser context creation allows us to get insights on our resource timings without any timestamp offset calculations, as we might have done before using `Date.now()` (more in the [previous post][3]). 
 
+
+## The Waterfall Chart
+
+<hc-chart id="waterfall-chart" style="height: 350px;"></hc-chart>
+{% raw %}
+<script type="text/javascript">
+  (() => {
+    const onLoaded = () => {
+      window.customElements.whenDefined('hc-chart').then(() => {
+        window.addEventListener('load', () => {
+          const chart = document.querySelector('#waterfall-chart');
+          const resources = window.performance.getEntriesByType('resource');
+          const durations = resources.map(({name, startTime, responseEnd}) => ({label: name, start: startTime, end: responseEnd}));
+          chart.updateWaterfallData(durations);
+        });
+      });
+    };
+    const scriptTag = document.createElement('script');
+    scriptTag.onload = onLoaded;
+    scriptTag.setAttribute('type', 'text/javascript');
+    scriptTag.setAttribute('src', 'https://holidaycheck.github.io/hc-live-chart-component/HcChart.js')
+    document.head.insertBefore(scriptTag, document.head.childNodes[0]);
+  })();
+</script>
+{% endraw %}
+
+
+
+
+
+
 [1]: https://www.w3.org/TR/hr-time-2/#dfn-time-origin
 [2]: https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/#sec-performanceresourcetiming
 [3]: {% post_url 2019-05-06-browsertools#1-resource-timing-part1 %}
-
 
 *Main photo by <a href="https://unsplash.com/photos/MmPamQEr-ec?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michelle Rosen</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a><br />
