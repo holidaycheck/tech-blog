@@ -37,7 +37,7 @@ The [specification (or spec)][3] introduces the topic in a very understandable w
 
 > [The spec] introduces the PerformanceResourceTiming interface to allow JavaScript mechanisms to collect complete timing information related to resources on a [website].
 
-The interface that the spec defines is called "PerformanceResourceTiming", which is in simple terms the collection of many attributes about one resource that the website (or document) loads. For example the `duration` attribute, which tells us how long it took to load a certain resource. For that we have to read all resources that were loaded, which we do via `window.performance.getEntriesByType('resource')`. This returns an array of all resources, which contains the `name` and `duration` properties (among others):
+The interface that the spec defines is called "PerformanceResourceTiming", which is in simple terms the collection of many attributes about one resource that the website loads. For example the `duration` attribute, which tells us how long it took to load a certain resource. For that we have to read all resources that were loaded, which we do via `window.performance.getEntriesByType('resource')`. This returns an array of all resources, which contains the `name` and `duration` properties (among others):
 
 ```js
 > window.performance.getEntriesByType('resource')
@@ -150,12 +150,9 @@ window.addEventListener('load',() => __updateInlineStats__(2));
 </script>
 {% endraw %}
 
-
-
-
-
-
-
+Hopefully this article shows that getting insights into resource timing of a site is possible not
+only in developer tools, but also right in the browser itself. What you can do with it we leave up
+to your imagination.
 
 [1]: https://developer.mozilla.org/en-US/docs/Web/API/Performance
 [2]: https://developer.mozilla.org/en-US/docs/Web/API/Resource_Timing_API
