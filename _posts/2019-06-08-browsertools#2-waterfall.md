@@ -6,7 +6,7 @@ author_name: Wolfram Kriesing
 author_url : /author/wolframkriesing
 author_avatar: wolframkriesing
 read_time : 10
-excerpt: "This is the second post about the `Resource Timing Interface`, which allows to gather information about resources our site loads. Now we want to go a bit deeper and look at what happens in between the two times."
+excerpt: "This is the second post about the `Resource Timing Interface`, which allows to gather information about resources a site loads. Now we want to go a bit deeper and look at what happens in between the two times."
 feature_image: posts/2019-06-08-browsertools-2/michelle-rosen-390381-unsplash.jpg
 ---
 
@@ -153,7 +153,9 @@ Besides all the mentioned attributes there are some more, which will be document
 
 The chart is [taken from the spec][6] and slightly enhanced, to show the attributes and some comments about them.
 
+## Let's Investigate More
 
+I hope disecting `window.performance` especially the `User ResourceTiming Interface` triggers some interest in diving deeper into page timing insights. The most common use case, of course, is optimizing page speed. Since page speed is a very complex topic I hope this helps getting some handle on how to look at it.
 
 
 [1]: https://www.w3.org/TR/hr-time-2/#dfn-time-origin
