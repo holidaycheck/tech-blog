@@ -136,18 +136,24 @@ For better understandability of these data, the chart below shows each of those 
 </script>
 {% endraw %}
 
+Note: The widths of each bar, in the chart above, are calculated and the time shown in the tooltip is always the difference to the previous attribute. For example if `startTime` and `fetchStart` have the value `23`, the tooltip will show `start at 23.0 ms (startTime)` and `fetchStart took 0.0 ms`.
+
 Often `fetchStart` has the value `0ms`. That is because the according resource started to be fetched right away after the `startTime` was recorded. In the end this is an browser internal, the [spec only says it as the "time immediately before the user agent starts to fetch the resource"][7]. But it also means that **no redirect** took place, see the image from the spec below.
 
-The attribute `requestStart` has the timestamp when the real data are about to be requested, that means after DNS lookup(s), TCP handshakes. The spec says it is the ["time immediately before the user agent starts requesting the resource from the server, or from relevant application caches or from local resources"][8]. That means all optimization on this resource up to here are mostly infrastructure related or connection caching related and require often more effort.
+The attribute `requestStart` has the timestamp when the real data are about to be requested, that means after DNS lookup and TCP handshake. The spec says it is the ["time immediately before the user agent starts requesting the resource from the server, or from relevant application caches or from local resources"][8]. That means all optimization on this resource up to here are mostly infrastructure related or connection caching related and require often more effort.
 
 The next interesting attribute is `responseStart` which the spec describes as the ["time immediately after the user agent receives the first byte of the response from relevant application caches, or from local resources or from the server"][9]. If this time is very high, it is most likely the server that takes it easy delivering the resource, this might be a resource to be optimized.
+
+Besides all the mentioned attributes there are some more, which will be documented in the chart below. It shows well how they all relate to each other and when they might occur in the progress of loading a resource.
 
 <figure>
     <img src="/img/posts/2019-06-08-browsertools-2/resource-timing-overview-modified.png" alt="resource-timing-overview" class="centered" />
     <figcaption>The graph illustrates the timing attributes defined by the PerformanceResourceTiming interface</figcaption>
 </figure>
 
-The image above is [taken from the spec][6] and is just slightly enhanced, to show the attributes that might have the value `0`. It illustrates all the different attributes very well.
+The chart is [taken from the spec][6] and slightly enhanced, to show the attributes and some comments about them.
+
+
 
 
 [1]: https://www.w3.org/TR/hr-time-2/#dfn-time-origin
