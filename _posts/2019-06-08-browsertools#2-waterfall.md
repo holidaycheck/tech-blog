@@ -49,8 +49,8 @@ A `startTime` would be 0 the moment when the browsing context was created. This 
         window.addEventListener('load', () => {
           const chart = document.querySelector('#waterfall-chart');
           const resources = window.performance.getEntriesByType('resource');
-          const durations = resources.map(({name, startTime, responseEnd}) => ({label: name, start: startTime, end: responseEnd}));
-          chart.updateWaterfallData(durations);
+          const durations = resources.map(({name, startTime, responseEnd}) => ({label: name, values: [startTime, responseEnd}));
+          chart.updateStackedWaterfallData(durations, {valueLabels: ['startTime', 'responseEnd']});
         });
       });
     };
