@@ -184,8 +184,7 @@ I hope disecting `window.performance` especially the `User ResourceTiming Interf
     const scriptTag = document.createElement('script');
     scriptTag.onload = onLoaded;
     scriptTag.setAttribute('type', 'module');
-//    scriptTag.setAttribute('src', 'https://holidaycheck.github.io/hc-live-chart-component/HcChart.js');
-    scriptTag.setAttribute('src', 'http://localhost:9898/src/HcChart.js');
+    scriptTag.setAttribute('src', 'https://holidaycheck.github.io/hc-live-chart-component/HcChart.js');
     document.head.insertBefore(scriptTag, document.head.childNodes[0]);
   })();
 </script>
