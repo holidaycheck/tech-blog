@@ -6,7 +6,7 @@ author_name: Wolfram Kriesing
 author_url : /author/wolframkriesing
 author_avatar: wolframkriesing
 read_time : 10
-excerpt: "???????????"
+excerpt: "This is the second post about the `Resource Timing Interface`, which allows to gather information about resources our site loads. Now we want to go a bit deeper and look at what happens in between the two times."
 feature_image: posts/2019-06-08-browsertools-2/michelle-rosen-390381-unsplash.jpg
 ---
 
