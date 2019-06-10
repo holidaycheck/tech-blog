@@ -27,6 +27,7 @@ Let's shortly sum up how we gather those data. There is a built-in functionality
     // ... shortened
     duration: 14.79000000108499,
     name: "http://techblog.holidaycheck.com/css/main.css",
+    initiatorType: "link",
     startTime: 18.41499999864027,
     responseEnd: 33.20499999972526,
     // ... shortened
@@ -79,7 +80,7 @@ This attribute is the type that triggered this resource to be loaded. In the cha
 
 This attribute gives a bit more context to the loading times and makes the loading dependencies talked about in the chapter before easier to understand. A CSS file needs to be loaded by the browser, before it can know what other files are referenced inside of it and need to be loaded. This might also surface the question how much should be inlined, or if [preload][5] should be used to speed up website loading.
 
-## The `fetchStart`, `requestStart` and `responseStart` Attribute
+## The `fetchStart`, `requestStart` and `responseStart` Attributes
 
 For understanding where the data come from, one can run following JavaScript in the developer console:
 
@@ -137,6 +138,10 @@ For better understandability of these data, the chart below shows each of those 
 
 Often `fetchStart` has the value `0ms`. That is because the according resource started to be fetched right away after the `startTime` was recorded. In the end this is an browser internal, the [spec only says it as the "time immediately before the user agent starts to fetch the resource"][7]. But it also means that **no redirect** took place, see the image from the spec below.
 
+The attribute `requestStart` has the timestamp when the real data are about to be requested, that means after DNS lookup(s), TCP handshakes. The spec says it is the ["time immediately before the user agent starts requesting the resource from the server, or from relevant application caches or from local resources"][8]. That means all optimization on this resource up to here are mostly infrastructure related or connection caching related and require often more effort.
+
+The next interesting attribute is `responseStart` which the spec describes as the ["time immediately after the user agent receives the first byte of the response from relevant application caches, or from local resources or from the server"][9]. If this time is very high, it is most likely the server that takes it easy delivering the resource, this might be a resource to be optimized.
+
 <figure>
     <img src="/img/posts/2019-06-08-browsertools-2/resource-timing-overview-modified.png" alt="resource-timing-overview" class="centered" />
     <figcaption>The graph illustrates the timing attributes defined by the PerformanceResourceTiming interface</figcaption>
@@ -152,6 +157,8 @@ The image above is [taken from the spec][6] and is just slightly enhanced, to sh
 [5]: https://html.spec.whatwg.org/multipage/links.html#link-type-preload
 [6]: https://www.w3.org/TR/2017/CR-resource-timing-1-20170330/#processing-model
 [7]: https://www.w3.org/TR/2017/CR-resource-timing-1-20170330/#dom-performanceresourcetiming-fetchstart
+[8]: https://www.w3.org/TR/2017/CR-resource-timing-1-20170330/#dom-performanceresourcetiming-requeststart
+[9]: https://www.w3.org/TR/2017/CR-resource-timing-1-20170330/#dom-performanceresourcetiming-responsestart
 
 *Main photo by <a href="https://unsplash.com/photos/MmPamQEr-ec?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michelle Rosen</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a><br />
 
