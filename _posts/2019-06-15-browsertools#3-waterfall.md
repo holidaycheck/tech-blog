@@ -9,11 +9,11 @@ read_time : 4
 feature_image: posts/2019-06-08-browsertools-2/michelle-rosen-390381-unsplash.jpg
 ---
 
-This is post #3 in the [category "Browser Tools"][0], focusing on understanding the loading times by charting them in a Waterfall Chart. In [part 1] and [part 2 about ResourceTiming][3] we looked at the attributes `responseEnd`, `startTime` and `initiatorType`. Now we want to understand what happens after a resource starts loading and how to understand those numbers.
+This is post #3 in the [category "Browser Tools"][0], focusing on understanding the loading times by charting them in a Waterfall Chart. In [part 1][1] and [part 2 about ResourceTiming][2] we looked at the attributes `responseEnd`, `startTime` and `initiatorType`. Now we want to understand what happens after a resource starts loading and how to understand those numbers.
 
-## The `fetchStart`, `requestStart` and `responseStart` Attributes
+## Setting the Context
 
-For understanding where the data come from, one can run following JavaScript in the developer console:
+Let's shortly sum up how we gather those data. There is a built-in functionality that you see in action, right here:
 
 ```js
 > window.performance.getEntriesByType('resource')
@@ -31,6 +31,14 @@ For understanding where the data come from, one can run following JavaScript in 
     // ... shortened
 }, {...}]
 ```
+
+As you can see above `window.performance` provides these data right in the browser. If you want to understand more details read [part 1][1] and [2][2].
+
+From here on we will take apart some of the data and make sure we understand what they mean.
+
+## A Waterfall Chart
+
+## The `fetchStart`, `requestStart` and `responseStart` Attributes
 
 For better understandability of these data, the chart below shows each of those attributes in a waterfall chart. Hover over (or click) each line to see the detailed numbers for each attribute.
 
@@ -90,11 +98,10 @@ The chart is [taken from the spec][6] and slightly enhanced, to show the attribu
 I hope disecting `window.performance` especially the `User ResourceTiming Interface` triggers some interest in diving deeper into page timing insights. The most common use case, of course, is optimizing page speed. Since page speed is a very complex topic I hope this helps getting some handle on how to look at it.
 
 
-[1]: https://www.w3.org/TR/hr-time-2/#dfn-time-origin
-[2]: https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/#sec-performanceresourcetiming
-[3]: {% post_url 2019-05-06-browsertools#1-resource-timing-part1 %}
-[4]: https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/#dom-performanceresourcetiming-initiatortype
-[5]: https://html.spec.whatwg.org/multipage/links.html#link-type-preload
+[0]: /category/browsertools
+[1]: {% post_url 2019-05-06-browsertools#1-resource-timing-part1 %}
+[2]: {% post_url 2019-06-08-browsertools#2-loading-dependencies %}
+
 [6]: https://www.w3.org/TR/2017/CR-resource-timing-1-20170330/#processing-model
 [7]: https://www.w3.org/TR/2017/CR-resource-timing-1-20170330/#dom-performanceresourcetiming-fetchstart
 [8]: https://www.w3.org/TR/2017/CR-resource-timing-1-20170330/#dom-performanceresourcetiming-requeststart
