@@ -88,7 +88,8 @@ Let's sum it all up, by looking at the part of the API we have learned about.
 <hc-chart id="duration-chart" style="height: 350px;"></hc-chart>
 {% raw %}
 <script type="text/javascript">
-  (() => {
+  window.__runOnloaded__ = [];
+  window.__runOnloaded__.push(() => {
     const onLoaded = () => {
       window.customElements.whenDefined('hc-chart').then(() => {
         const chart = document.querySelector('#duration-chart');
@@ -102,7 +103,7 @@ Let's sum it all up, by looking at the part of the API we have learned about.
     scriptTag.setAttribute('type', 'text/javascript');
     scriptTag.setAttribute('src', 'https://holidaycheck.github.io/hc-live-chart-component/HcChart.js')
     document.head.insertBefore(scriptTag, document.head.childNodes[0]);
-  })();
+  });
 </script>
 {% endraw %}
 
@@ -125,12 +126,12 @@ The `duration` attribute seen before, is the result of subtracting the `response
 </pre>
 {% raw %}
 <script type="text/javascript">
-  (() => {
+  window.__runOnloaded__.push(() => {
     const resources = window.performance.getEntriesByType('resource');
     const resourcesStr = resources.length + ' resources, ';
     const timeStr = getMaxResponseEnd(resources) + ' ms';
     document.querySelector('#inline-stats-result').innerHTML = resourcesStr + timeStr;
-  })()
+  });
 </script>
 {% endraw %}
 
@@ -151,7 +152,8 @@ Hit: If you <a id="reload-link-2" href="{{ page.url }}?force-reload=0#the-respon
 Now that you got here, we pick up the thing we did at the beginning of the page again and list the tiny statistics again. After the [event "load"][6] (the whole page has loaded, including all dependent resources such as stylesheets images) this **page loaded <span id="num-assets-loaded-2">??</span> assets** (or resources) and **took <span id="time-taken-loading-2">??</span> seconds to load**. <span id="loading-failed-hint-2">(If you just see "??" then reading the data didn't work, do you have an old browser?)</span>
 {% raw %}
 <script type="text/javascript">
-window.addEventListener('load',() => __updateInlineStats__(2));
+  window.__runOnloaded__.push(() => __updateInlineStats__(2));
+  window.addEventListener('load',() => window.__runOnloaded__.forEach(fn => fn()));
 </script>
 {% endraw %}
 
