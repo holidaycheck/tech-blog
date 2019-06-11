@@ -25,15 +25,19 @@ I knew this was a false feeling. I was doing my job after all. I just needed som
 I have been doing notes before, but in tools dedicated for this kind of activity: Evernote, OneNote, bunch of text files. None of them however provided me easy ability to look back and track my progress. So I looked back at the old friend of mine: `git`.
 
 First, I have created myself a neat bash wrapper to make notes in files with timestamps:
-```
+
+```shell
 $ cat bin/note 
 #!/bin/bash
 micro ~/Documents/notes/$(date +"%Y-%m-%d")_$1
 ```
+
 I have decided to use small console editor `micro` written in Golang. Inside the file I'm not using any particular style. Sometimes I use markdown, sometimes I don't.
 
 Second, I have written a cronjob that would run once a day, around 4pm and automatically check in my notes to local git repository with timestamp as commit message:
-```commit e41e157afccb06e90679f6a98bfb4faab7e85587 (HEAD -> master)
+
+```shell
+commit e41e157afccb06e90679f6a98bfb4faab7e85587 (HEAD -> master)
 Author: Łukasz Przybył <lukasz.przybyl@holidaycheck.com>
 Date:   Thu Jun 6 16:10:05 2019 +0200
 
@@ -50,14 +54,12 @@ Author: Łukasz Przybył <lukasz.przybyl@holidaycheck.com>
 Date:   Mon Jun 3 09:28:21 2019 +0200
 
     2019-05-28
-
 ```
-
 
 ## The benefits
 
 Now, I can start making notes right in my console and files will be stored in my homedir: `note companymeeting` will create file `~/Documents/notes/2019-06-10_companymeeting`.
 
-And when I am feeling down and pointless about my work, all I need to do is to `gif diff` with commit from 2-3 days ago and I can see my desired tangible proof of progress I have done with my work. 
+And when I am feeling down and pointless about my work, all I need to do is to `git diff` with commit from 2-3 days ago and I can see my desired tangible proof of progress I have done with my work. 
 
 Maybe it will help some of you, it did help me a lot!
