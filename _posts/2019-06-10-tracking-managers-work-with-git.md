@@ -9,6 +9,7 @@ author_avatar: luprzybyl
 read_time : 3
 feature_image: posts/2019-06-10-tracking-managers-work-with-git/notes.jpg
 show_related_posts: false
+excerpt: "I have been using `git` for quite some time now. In the days were engineering work consumed most of my workday it was my weapon of choice for code versioning. Fortunately or not, about a year ago I was promoted to a manager position and I had to give away some coding fun for scheduling meetings in my calendar. Although I'm still trying my best not to be dragged away from technical tasks, sometimes I need to face weeks, where I hardly open my IDE or console."
 square_related: 
 ---
 
