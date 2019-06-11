@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Tracking manager work with git"
+title:  "Tracking manager's work with git"
 date: 2019-06-10 15:30:00 +0200
 categories: culture
 author_name: Łukasz Przybył
 author_url : /author/luprzybyl
 author_avatar: luprzybyl
 read_time : 3
-feature_image: posts/2019-06-10-tracking-manager-work-with-git/notes.jpg
+feature_image: posts/2019-06-10-tracking-managers-work-with-git/notes.jpg
 show_related_posts: false
 square_related: 
 ---
