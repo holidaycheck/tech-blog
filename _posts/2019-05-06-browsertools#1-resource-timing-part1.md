@@ -16,12 +16,17 @@ Up to here this **page loaded <span id="num-assets-loaded-1">??</span> assets** 
 If you <a href="{{ page.url }}">reload</a>, the numbers may change.
 {% raw %}
 <script type="text/javascript">
+
+const getMaxResponseEnd = (resources) => {
+  return resources.map(r => r.responseEnd).reduce((a, b) => Math.max(a, b));
+};
+
 const __updateInlineStats__ = (index) => {
   const numericSort = (a,b) => a - b;
   try {
     const r = window.performance.getEntriesByType('resource');
     document.querySelector(`#num-assets-loaded-${index}`).textContent = r.length;
-    document.querySelector(`#time-taken-loading-${index}`).textContent = (r.map(r => r.responseEnd).sort(numericSort).reverse()[0] / 1000).toFixed(2);
+    document.querySelector(`#time-taken-loading-${index}`).textContent = (getMaxResponseEnd(r) / 1000).toFixed(1);
     document.querySelector(`#loading-failed-hint-${index}`).remove();
   } catch (e) { /* swallow errors */ }
 }
@@ -105,14 +110,14 @@ Let's sum it all up, by looking at the part of the API we have learned about.
 
 ## The `responseEnd` Attribute In Use
 
-The `duration` attribute seen before, is the result of subtracting the `responseEnd - startTime` attribute ([spec][8]). The `startTime` attribute is the time when fetching the resource started ([MDN][9]). The `responseEnd` is the timestamp when the last byte was received or when the transport connection closes ([MDN][10]). The time taken how long loading all resources took, as you saw at the beginning of the article and as you can see at the end again, is calculated by retreiving all `responseEnd` values, sorting them and taking the biggest one, as you can see below:
+The `duration` attribute seen before, is the result of subtracting the `responseEnd - startTime` attribute ([spec][8]). The `startTime` attribute is the time when fetching the resource started ([MDN][9]). The `responseEnd` is the timestamp when the last byte was received or when the transport connection closes ([MDN][10]). The time taken how long loading all resources took, as you saw at the beginning of the article and as you can see at the end again, is calculated by retreiving all `responseEnd` values and taking the biggest one, as you can see below:
 
 ```js
 > const numericSort = (a,b) => a - b;
 > const resources = window.performance.getEntriesByType('resource');
-> // Filter out the responseEnd attribute only.
+> // Filter out the responseEnd attribute only and find the maximum.
 > const allEnds = resources.map(r => r.responseEnd);
-> resources.length + ' resources, ' + allEnds.sort(numericSort).reverse()[0], ' ms'
+> resources.length + ' resources, ' + allEnds.reduce((a, b) => Math.max(a, b)) + ' ms'
 ```
 <pre id="inline-stats-result" class="highlight">
   If you see this either JavaScript is disabled, or something went wrong :(.
@@ -123,7 +128,7 @@ The `duration` attribute seen before, is the result of subtracting the `response
     const numericSort = (a,b) => a - b;
     const resources = window.performance.getEntriesByType('resource');
     const resourcesStr = resources.length + ' resources, ';
-    const timeStr = resources.map(r => r.responseEnd).sort(numericSort).reverse()[0] + ' ms';
+    const timeStr = getMaxResponseEnd(resources) + ' ms';
     document.querySelector('#inline-stats-result').innerHTML = resourcesStr + timeStr;
   })()
 </script>
