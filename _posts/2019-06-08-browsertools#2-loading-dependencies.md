@@ -5,8 +5,8 @@ categories: browsertools
 author_name: Wolfram Kriesing
 author_url : /author/wolframkriesing
 author_avatar: wolframkriesing
-read_time : 10
-feature_image: 
+read_time : 4
+feature_image: posts/2019-06-08-browsertools-2/ben-harritt-75854-unsplash.jpg
 ---
 
 This is post #2 in the [category "Browser Tools"][0], focusing on understanding Loading Dependencies. In [part 1 about ResourceTiming][3] we looked at the attributes `responseEnd` and `startTime`. Now we want to go a bit deeper and look at how the tools allow us to understand the dependencies of the loaded resources.
@@ -103,7 +103,7 @@ This site is quite simple and therefore makes the dependencies easy to understan
 [5]: https://html.spec.whatwg.org/multipage/links.html#link-type-preload
 [6]: https://twitter.com/holidaychecklab
 
-*Main photo by <a href="https://unsplash.com/photos/MmPamQEr-ec?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michelle Rosen</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a><br />
+*Main photo by <a href="https://unsplash.com/photos/4W92z8cNQ_c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ben Harritt</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a><br />
 
 {% raw %}
 <script type="text/javascript">
