@@ -129,7 +129,7 @@ The `duration` attribute seen before, is the result of subtracting the `response
 </script>
 {% endraw %}
 
-Hit: If you <a id="reload-link-2" href="{{ page.url }}?force-reload=0#the-responseend-attribute-in-use">reload</a>, the numbers may change.
+Hint: If you <a id="reload-link-2" href="{{ page.url }}?force-reload=0#the-responseend-attribute-in-use">reload</a>, the numbers may change.
 {% raw %}
 <script type="text/javascript">
   (() => {
