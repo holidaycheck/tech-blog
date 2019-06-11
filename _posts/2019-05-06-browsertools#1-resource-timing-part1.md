@@ -17,10 +17,8 @@ If you <a href="">reload</a>, the numbers may change.
 {% raw %}
 <script type="text/javascript">
 
-const getMaxResponseEnd = (resources) => {  
-  const allEnds = resources.map(r => r.responseEnd);
-  const maxEnd = allEnds.reduce((a, b) => Math.max(a, b));
-  return maxEnd;
+const getMaxResponseEnd = (resources) => {
+  return resources.map(r => r.responseEnd).reduce((a, b) => Math.max(a, b));
 };
 
 const __updateInlineStats__ = (index) => {
@@ -87,11 +85,9 @@ The `duration` attribute seen before, is the result of subtracting the `response
 
 ```js
 > const resources = window.performance.getEntriesByType('resource');
-> // Filter out the responseEnd attribute only.
+> // Filter out the responseEnd attribute only and find the maximum.
 > const allEnds = resources.map(r => r.responseEnd);
-> // Find the maximum response end.
-> const maxEnd = allEnds.reduce((a, b) => Math.max(a, b));
-> resources.length + ' resources, ' + maxEnd + ' ms'
+> resources.length + ' resources, ' + allEnds.reduce((a, b) => Math.max(a, b)) + ' ms'
 ```
 <pre id="inline-stats-result" class="highlight"></pre>
 <script type="text/javascript">
