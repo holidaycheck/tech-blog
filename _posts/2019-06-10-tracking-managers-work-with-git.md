@@ -18,7 +18,7 @@ I have been using `git` for quite some time now. In the days were engineering wo
 
 What also changed with my promotion was my perception of a productive day. Back in the good, old "backlog" days I could look back at tasks I have closed and tell my self "this was a good day". After the turn in my career path I could spot less and less days where I could congratulate myself such achievement. Tasks on the board with my face on them were not moving and I saw a constantly decreasing rate of my commits being pushed to company Github. I was busy all day discussing with my reports, making agreements, advising... but none of this was giving me this tangible feeling of a work being done when you move your task to "done" column.
 
-I knew this was a false feeling. I was doing my job after all. I just needed some assurance of progress I have made - especially after long day filled with meetings. And then I came up with idea to version my notes.
+I knew this was a false feeling. I was doing my job after all. I just needed some assurance of progress I have made—especially after long day filled with meetings. And then I came up with idea to version my notes.
 
 ## The solution
 
