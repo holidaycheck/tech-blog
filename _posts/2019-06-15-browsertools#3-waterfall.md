@@ -6,7 +6,7 @@ author_name: Wolfram Kriesing
 author_url : /author/wolframkriesing
 author_avatar: wolframkriesing
 read_time : 4
-feature_image: posts/2019-06-08-browsertools-2/michelle-rosen-390381-unsplash.jpg
+feature_image: posts/2019-06-15-browsertools-3/michelle-rosen-390381-unsplash.jpg
 ---
 
 This is post #3 in the [category "Browser Tools"][0], focusing on understanding the loading times by charting them in a Waterfall Chart. In [part 1][1] and [part 2 about ResourceTiming][2] we looked at the attributes `responseEnd`, `startTime` and `initiatorType`. Now we want to understand what happens after a resource starts loading and how to understand those numbers.
@@ -87,7 +87,7 @@ The next interesting attribute is `responseStart` which the spec describes as th
 Besides all the mentioned attributes there are some more, which will be documented in the chart below. It shows well how they all relate to each other and when they might occur in the progress of loading a resource.
 
 <figure>
-    <img src="/img/posts/2019-06-08-browsertools-2/resource-timing-overview-modified.png" alt="resource-timing-overview" class="centered" />
+    <img src="/img/posts/2019-06-15-browsertools-3/resource-timing-overview-modified.png" alt="resource-timing-overview" class="centered" />
     <figcaption>The graph illustrates the timing attributes defined by the PerformanceResourceTiming interface</figcaption>
 </figure>
 
