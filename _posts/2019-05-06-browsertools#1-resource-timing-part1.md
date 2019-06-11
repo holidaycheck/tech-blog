@@ -112,10 +112,13 @@ Let's sum it all up, by looking at the part of the API we have learned about.
 The `duration` attribute seen before, is the result of subtracting the `responseEnd - startTime` attribute ([spec][8]). The `startTime` attribute is the time when fetching the resource started ([MDN][9]). The `responseEnd` is the timestamp when the last byte was received or when the transport connection closes ([MDN][10]). The time taken how long loading all resources took, as you saw at the beginning of the article and as you can see at the end again, is calculated by retreiving all `responseEnd` values and taking the biggest one, as you can see below:
 
 ```js
+> // Helper function to find the max value in an array.
+> const findMax = values => values.reduce((a, b) => Math.max(a, b));
+>
 > const resources = window.performance.getEntriesByType('resource');
 > // Filter out the responseEnd attribute only and find the maximum.
 > const allEnds = resources.map(r => r.responseEnd);
-> resources.length + ' resources, ' + allEnds.reduce((a, b) => Math.max(a, b)) + ' ms'
+> resources.length + ' resources, ' + findMax(allEnds) + ' ms'
 ```
 <pre id="inline-stats-result" class="highlight">
   If you see this either JavaScript is disabled, or something went wrong :(.
