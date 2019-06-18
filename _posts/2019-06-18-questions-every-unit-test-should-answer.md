@@ -15,7 +15,9 @@ feature_image: posts/2019-06-18-questions-every-unit-test-should-answer/poster.j
 
 # Questions every unit test should answer
 
-TO BE ADDED (some entry)
+We should write tests to prevent defects from happening. That is one of the key roles tests play. But not everyone knows there is more to writing tests than that.
+
+Tests play a very vital role when it comes to explaining two, very important questions behind the feature they, well, test. Those are: the how and the why. 
 
 ## The 'how'
 
