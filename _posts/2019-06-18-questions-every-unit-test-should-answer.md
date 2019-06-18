@@ -9,7 +9,7 @@ author_avatar: jaceksmolak
 read_time : 5
 show_related_posts: false
 square_related:
-excerpt: "Some entry to be added"
+excerpt: "We should write tests to prevent defects from happening. That is one of the key roles tests play. But not everyone knows there is more to writing tests than that."
 feature_image: posts/2019-06-18-questions-every-unit-test-should-answer/poster.jpg
 ---
 
