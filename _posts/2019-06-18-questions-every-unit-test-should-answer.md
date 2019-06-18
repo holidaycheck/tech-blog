@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Two questions every unit test must answer
+title: Questions every unit test should answer
 date: 2019-06-18 10:20:30 +0200
 categories: testing
 author_name: Jacek Smolak
@@ -10,10 +10,10 @@ read_time : 5
 show_related_posts: false
 square_related:
 excerpt: "Some entry to be added"
-feature_image: posts/2019-06-18-two-questions-every-unit-test-must-answer/poster.jpg
+feature_image: posts/2019-06-18-questions-every-unit-test-should-answer/poster.jpg
 ---
 
-# Two questions every unit test must answer
+# Questions every unit test should answer
 
 TO BE ADDED (some entry)
 
