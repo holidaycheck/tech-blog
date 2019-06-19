@@ -11,4 +11,4 @@ If you like stuff you see here, make sure to [get in touch with us][contact],
 [we are always looking for passionate new colleagues][apply]!
 
 [contact]: https://twitter.com/holidaychecklab
-[apply]: https://github.com/holidaycheck/jobs
+[apply]: https://www.holidaycheckgroup.com/jobs/it-engineering/?lang=en
