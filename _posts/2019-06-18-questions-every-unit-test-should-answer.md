@@ -94,13 +94,21 @@ Now that you know this, the very next time you will want to create a test where 
 
 ## The 'why'
 
-Why is this endpoint called with that payload? Why is number 42 used? Why are we wrapping this string in double quotes? The why is as importans as the how. Without it, the unit under the test lacks context. Here's an example:
+Why is this endpoint called with that payload? Why is number 42 used? Why are we wrapping this string in double quotes? The why is as important as the how. Without it, the unit under the test lacks context. Here's an example:
 
 ```javascript
-it('should have proper width', () => {
-    const width = element.getWidth();
-
-    expect(width).to.equal(500);
+describe('Modal component', () => {
+    context('when open', () => {
+        it('should have proper width', () => {
+            const modal = new Modal();
+            
+            modal.open();
+            
+            const width = modal.getWidth();
+        
+            expect(width).to.equal(500);
+        }); 
+    });
 });
 ```
 
@@ -109,14 +117,21 @@ What is proper? Why 500? Why not 1000 or 200? You are left with so many unanswer
 How about this instead:
 
 ```javascript
-it('should have width big enough to cover the container it is rendered in', () => {
-    const elementsWidth = element.getWidth();
-    const minimumWidthValueToCoverTheContainer = 500;
+describe('Modal component', () => {
+    context('when open', () => {
+        it('should have width big enough to cover the container it is rendered in', () => {
+            const modal = new Modal();
+                        
+            modal.open();
+            
+            const width = modal.getWidth();
 
-    expect(elementsWidth).to.equal(minimumWidthValueToCoverTheContainer);
+            expect(width).to.equal(500);
+        });
+    });
 });
 ```
 
-Now, it is all clear - you know why it is 500. No more proper (whatever it means) or [magic numbers](https://en.wikipedia.org/wiki/Magic_number_(programming)).
+Now, it is all clear - you know why it is 500. No more proper (whatever it means).
 
 ## Some final thoughts - to be added
