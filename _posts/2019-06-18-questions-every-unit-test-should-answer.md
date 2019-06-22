@@ -13,15 +13,19 @@ excerpt: "We should write tests to prevent defects from happening. That is one o
 feature_image: posts/2019-06-18-questions-every-unit-test-should-answer/poster.jpg
 ---
 
-# Questions every unit test should answer
-
 We should write tests to prevent defects from happening. That is one of the key roles tests play. But not everyone knows there is more to writing tests than that.
 
-Tests play a very vital role when it comes to explaining two, very important questions behind the feature they, well, test. Those are: the how and the why. 
+Tests play a very vital role when it comes to explaining two very important questions behind the feature they, well, test. Those are: the how and the why.
 
 ## The 'how'
 
-But not how the code is written, rather than how it is working. I find it the single most important question your (unit) tests must answer. How is this piece of code working? What to expect given certain input? What is happening if something goes wrong or how it will behave under certain conditions? The how, if answered properly, will tell you all about it.
+But not how the code is written, rather than how it is working. I find it the single most important question your tests must answer. 
+
+ - How is this piece of code working?
+ - What to expect given certain input?
+ - What is happening if something goes wrong or how it will behave under certain conditions?
+ 
+The how, if answered properly, will tell you all about it.
 
 Let's take [Fizz Buzz](https://en.wikipedia.org/wiki/Fizz_buzz) as an example. A simple game, with even simpler rules. But is it? Not so while ago I was conducting, with a colleague of mine, an interview for an engineer position for our company. Fizz Buzz came out, and I asked: given that you know how it works, how many tests would you write (yes, that was a trick question). The answer was: around 50. I asked why? Why not 100? OK - perhaps 60, 70 (was the answer). The person interviewed clearly did not understand what I wanted to achieve.
 
