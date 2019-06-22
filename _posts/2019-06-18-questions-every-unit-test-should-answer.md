@@ -112,7 +112,7 @@ describe('Modal component', () => {
 });
 ```
 
-What is proper? Why 500? Why not 1000 or 200? You are left with so many unanswered question, up to the point that in order to find it out, you need to run the application and check it manually to figure it out. But even then you might not get the answer, because how would you know it should cover something? Such a test is misleading and only confuses the reader. I would even risk an opinion, that is it a test that is a bad one, as nobody will know why it is there even if it is passing. What if it will fail at some point?
+What is _proper_? Why 500? Why not 1000 or 200? You are left with so many unanswered question, up to the point that in order to find it out, you need to run the application and check it manually to figure it out. But even then you might not get the answer, because how would you know it should do something specific? Such a test is misleading and only confuses the reader. I would even risk an opinion, that is it a test that is a bad one, as nobody will know why it is there even if it is passing. What if it will fail at some point?
 
 How about this instead:
 
@@ -132,6 +132,26 @@ describe('Modal component', () => {
 });
 ```
 
-Now, it is all clear - you know why it is 500. No more proper (whatever it means).
+Or even better:
+
+```javascript
+describe('Modal component', () => {
+    context('when open', () => {
+        it('should have width big enough to cover the container it is rendered in', () => {
+            const modal = new Modal();
+            const parent = modal.getParent();
+                        
+            modal.open();
+            
+            const modalWidth = modal.getWidth();
+            const parentWidth = parent.getWidth();
+
+            expect(modalWidth).to.be.at.least(parentWidth);
+        });
+    });
+});
+```
+
+Now, it is all clear - you know why the width matters. No more proper (whatever it means) and we got rid of a [magic number](https://en.wikipedia.org/wiki/Magic_number_(programming)).
 
 ## Some final thoughts - to be added
