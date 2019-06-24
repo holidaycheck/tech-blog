@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Questions every unit test should answer
-date: 2019-06-18 10:20:30 +0200
+date: 2019-06-25 12:13:14 +0200
 categories: testing
 author_name: Jacek Smolak
 author_url : /author/jaceksmolak
@@ -166,7 +166,7 @@ describe('Modal component', () => {
             modal.open();
             
             const width = modal.getWidth();
-
+  
             expect(width).to.equal(500);
         });
     });
