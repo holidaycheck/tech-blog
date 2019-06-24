@@ -195,4 +195,6 @@ describe('Modal component', () => {
 
 Now, it is all clear—you know why the width matters. No more proper (whatever it means) and we got rid of a [magic number](https://en.wikipedia.org/wiki/Magic_number_(programming)). Especially that number—should the width of the parent change, and your number not, this test would, again, become invalid (simply lying), as the parent would not have width of 500 (whatever units) anymore.
 
-## Some final thoughts—to be added
+## Summarize
+
+As you can see, tests not only keep you safe when it comes to verifying that your app works. They play a vital role informing you _why_ it works _how_ it works. Any less information and they can become a noise. Eventually getting outdated or even lying. Don't let it happen. 
