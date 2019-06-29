@@ -32,15 +32,9 @@ Let's shortly sum up how we gather those data. There is a built-in `Resource Tim
 }, {...}]
 ```
 
-As you can see above `window.performance` provides these data right in the browser. If you want more details read [part 1][1] and [2][2].
+As you can see above `window.performance` provides these data right in the browser. In the [previous][1] [parts][2] of this series we covered the meaning of the attributes `duration`, `startTime`, `responseEnd` and `initiatorType`. These gave a good high-level view on our resource loading behavior and can answer questions like "How long does each resource need to load?" or "What is the loading order and dependency of resources?".
 
-From here on we will take apart some of the data and make sure we understand what they mean.
-
-## A Waterfall Chart
-
-You might know Waterfall charts from your browser's developer tools or you have seen the very alike Gantt chart. It shows multiple data points on a time axis. In our case, we have multiple resources that the website loads, which we will visualize in such a chart to understand more about the loading behaviour of our website.
-
-responseEnd - startTime
+From here on we will go deeper and look at the attributes `fetchStart`, `requestStart` and `responseStart` in order to see which parts belong to loading one resource. Even though `duration` can give us the overall loading time, the API does also provide more granular information, these we will inspect now.
 
 ## The `fetchStart`, `requestStart` and `responseStart` Attributes
 
