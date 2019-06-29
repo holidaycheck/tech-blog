@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Browser Tools #1: Resource Timing (part 1)"
+title: "Resource Timing (part 1) - The API"
 categories: browsertools
 author_name: Wolfram Kriesing
 author_url : /author/wolframkriesing
