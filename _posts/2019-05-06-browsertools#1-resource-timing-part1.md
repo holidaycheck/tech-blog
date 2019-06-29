@@ -154,6 +154,8 @@ Hopefully this article shows that getting insights into resource timing of a sit
 only in developer tools, but also right in the browser itself. What you can do with it we leave up
 to your imagination.
 
+You want to know more? Read [part 2 of this series about "Loading Dependencies"][11].
+
 [1]: https://developer.mozilla.org/en-US/docs/Web/API/Performance
 [2]: https://developer.mozilla.org/en-US/docs/Web/API/Resource_Timing_API
 [3]: https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/
@@ -164,3 +166,4 @@ to your imagination.
 [8]: https://www.w3.org/TR/2017/CR-resource-timing-1-20170330/#performanceresourcetiming
 [9]: https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEntry/startTime
 [10]: https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/responseEnd
+[11]: {% post_url 2019-06-08-browsertools#2-loading-dependencies %}
