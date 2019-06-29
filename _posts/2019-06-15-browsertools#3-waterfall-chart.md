@@ -63,11 +63,11 @@ For better understandability of these data, the chart below shows each of those 
         resource.responseEnd,
       ]}));
     const valueLabels = [
-      'start at ${value} ms (startTime)', 
-      'fetchStart took ${value} ms', 
-      'requestStart took ${value} ms',
-      'responseStart took ${value} ms',
-      'responseEnd took ${value} ms',
+      'Request started after ${value} ms (startTime)', 
+      'Redirect took ${value} ms (fetchStart)', 
+      'AppCache+DNS+TCP took ${value} ms (requestStart)',
+      'Server responded after ${value} ms (responseStart)',
+      'Response was complete after ${value} ms (responseEnd)',
     ];
     chart.updateStackedWaterfallData(times, {valueLabels, precision: 1});
   });
