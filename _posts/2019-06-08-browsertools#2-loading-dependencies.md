@@ -95,7 +95,7 @@ I hope this post allows to gather better insights and hopefully also decouple th
 
 This site is quite simple and therefore makes the dependencies easy to understand. If you try this out on a more complex page loading dependencies will also be a bit harder to identify. Have fun untangling your loading dependencies. Feel free to [share findings and insights with us on twitter][6].
 
-You want to know more? Read [part 3 of this series about "Waterfall Chart"][11].
+You want to know more? Read [part 3 of this series about "Waterfall Chart"][7].
 
 [0]: /category/browsertools
 [1]: https://www.w3.org/TR/hr-time-2/#dfn-time-origin
