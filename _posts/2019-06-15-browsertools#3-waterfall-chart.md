@@ -42,7 +42,7 @@ For better understandability of these data, the chart below shows each of those 
 
 <figure>
     <hc-chart id="waterfall-chart-2" style="height: 350px;"></hc-chart>
-    <figcaption>The waterfall chart showing the data gathered via the "Resource Timing Interface" (hover shows details)</figcaption>
+    <figcaption>The waterfall chart showing the data gathered via the "Resource Timing API" (hover shows details)</figcaption>
 </figure>
 
 {% raw %}
@@ -93,7 +93,7 @@ The chart is [taken from the spec][6] and slightly enhanced, to show the attribu
 
 ## Let's Investigate More
 
-I hope disecting `window.performance` especially the `User ResourceTiming Interface` triggers some interest in diving deeper into page timing insights. The most common use case, of course, is optimizing page speed. Since page speed is a very complex topic I hope this helps getting some handle on how to look at it.
+I hope disecting `window.performance` especially the `User ResourceTiming API` triggers some interest in diving deeper into page timing insights. The most common use case, of course, is optimizing page speed. Since page speed is a very complex topic I hope this helps getting some handle on how to look at it.
 
 
 [0]: /category/browsertools

@@ -11,7 +11,7 @@ feature_image: posts/2019-06-08-browsertools-2/ben-harritt-75854-unsplash.jpg
 
 This is post #2 in the [category "Browser Tools"][0], focusing on understanding Loading Dependencies. In [part 1 about ResourceTiming][3] we looked at the attributes `responseEnd` and `startTime`. Now we want to go a bit deeper and look at how the tools allow us to understand the dependencies of the loaded resources.
 
-For doing so we are using the `Resource Timing Interface`, which allows to gather information about resources our site loads. This is done by using the `Performance Interface` accessible via JavaScript using `window.performance`. Here we will explore how much details we can gather about each resource that is loaded (JS files, CSS files, fetches, etc.). Especially about their timing and dependencies.
+For doing so we are using the `Resource Timing API`, which allows to gather information about resources our site loads. This is done by using the `Performance API` accessible via JavaScript using `window.performance`. Here we will explore how much details we can gather about each resource that is loaded (JS files, CSS files, fetches, etc.). Especially about their timing and dependencies.
 
 ## Setting the Context
 
@@ -37,7 +37,7 @@ From here on we will take apart some of the data and make sure we understand wha
 
 ## The `startTime` Attribute
 
-The spec says that the attribute `startTime` is ["the time immediately before the [browser] starts to queue the resource for fetching"][2]. This means, e.g. if the browser is about to load the HTML page the `startTime` is recorded. This time is relative from ["the time when the browsing context is first created"][1]. In other words when the browser starts loading a new page. So this is a very browser-internal thing, that we would not be able to get access to without extending the browser itself. That proves that this interface can give us insights which we could not be able to obtain otherwise, especially not on any website itself. These numbers are also way more explicit in regards to what the user expriences.
+The spec says that the attribute `startTime` is ["the time immediately before the [browser] starts to queue the resource for fetching"][2]. This means, e.g. if the browser is about to load the HTML page the `startTime` is recorded. This time is relative from ["the time when the browsing context is first created"][1]. In other words when the browser starts loading a new page. So this is a very browser-internal thing, that we would not be able to get access to without extending the browser itself. That proves that this API can give us insights which we could not be able to obtain otherwise, especially not on any website itself. These numbers are also way more explicit in regards to what the user expriences.
 
 A `startTime` of 0 is the moment when the browsing context was created, when the browser started loading this page. This is for example a website reload, or navigating to a new site, opening a tab with a certain URL and alike. That means a `startTime=20` means 20 milliseconds after the browser context was created. Having a timestamp relative to the browser context creation allows us to get insights on our resource timings without any timestamp offset calculations, as we used to do using `Date.now()` (more in the [previous post][3]).
 
