@@ -13,7 +13,7 @@ This is post #3 in the [category "Browser Tools"][0], focusing on understanding 
 
 ## Setting the Context
 
-Let's shortly sum up how we gather those data. There is a built-in functionality that you see in action, right here:
+Let's shortly sum up how we gather those data. There is a built-in `Resource Timing API` (read more in [part 1][1]) that you see in action, right here:
 
 ```js
 > window.performance.getEntriesByType('resource')
@@ -32,7 +32,7 @@ Let's shortly sum up how we gather those data. There is a built-in functionality
 }, {...}]
 ```
 
-As you can see above `window.performance` provides these data right in the browser. If you want to understand more details read [part 1][1] and [2][2].
+As you can see above `window.performance` provides these data right in the browser. If you want more details read [part 1][1] and [2][2].
 
 From here on we will take apart some of the data and make sure we understand what they mean.
 
