@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Resource Timing (part 3) - Waterfall"
+title: "Resource Timing (part 3) - Waterfall Chart"
 categories: browsertools
 author_name: Wolfram Kriesing
 author_url : /author/wolframkriesing
@@ -37,6 +37,10 @@ As you can see above `window.performance` provides these data right in the brows
 From here on we will take apart some of the data and make sure we understand what they mean.
 
 ## A Waterfall Chart
+
+You might know Waterfall charts from your browser's developer tools or you have seen the very alike Gantt chart. It shows multiple data points on a time axis. In our case, we have multiple resources that the website loads, which we will visualize in such a chart to understand more about the loading behaviour of our website.
+
+responseEnd - startTime
 
 ## The `fetchStart`, `requestStart` and `responseStart` Attributes
 
