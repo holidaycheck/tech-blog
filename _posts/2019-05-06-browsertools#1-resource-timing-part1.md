@@ -16,12 +16,16 @@ Up to here this **page loaded <span id="num-assets-loaded-1">??</span> assets** 
 If you <a href="{{ page.url }}">reload</a>, the numbers may change.
 {% raw %}
 <script type="text/javascript">
+
+const getMaxResponseEnd = (resources) => {
+  return resources.map(r => r.responseEnd).reduce((a, b) => Math.max(a, b));
+};
+
 const __updateInlineStats__ = (index) => {
-  const numericSort = (a,b) => a - b;
   try {
     const r = window.performance.getEntriesByType('resource');
     document.querySelector(`#num-assets-loaded-${index}`).textContent = r.length;
-    document.querySelector(`#time-taken-loading-${index}`).textContent = (r.map(r => r.responseEnd).sort(numericSort).reverse()[0] / 1000).toFixed(2);
+    document.querySelector(`#time-taken-loading-${index}`).textContent = (getMaxResponseEnd(r) / 1000).toFixed(1);
     document.querySelector(`#loading-failed-hint-${index}`).remove();
   } catch (e) { /* swallow errors */ }
 }
@@ -81,10 +85,16 @@ Let's sum it all up, by looking at the part of the API we have learned about.
   Basically I (Wolfram) see no reason why there is any custom font-size needed anyways (maybe some rem units sometimes)
   But in general I am pretty sure we can just use the defaults of the user agent and it should be fine. 
 {% endcomment %}
-<hc-chart id="duration-chart" style="height: 350px;"></hc-chart>
+<figure>
+  <hc-chart id="duration-chart" style="height: 350px;">
+    <img src="/img/posts/2019-05-06-browsertools-1/fallback-chart-1.png">
+  </hc-chart>
+  <figurecaption>The chart above shows the durations it took to load the resources gathered via the Performance API</figurecaption>
+</figure>
 {% raw %}
 <script type="text/javascript">
-  (() => {
+  window.__runOnloaded__ = [];
+  window.__runOnloaded__.push(() => {
     const onLoaded = () => {
       window.customElements.whenDefined('hc-chart').then(() => {
         const chart = document.querySelector('#duration-chart');
@@ -98,34 +108,35 @@ Let's sum it all up, by looking at the part of the API we have learned about.
     scriptTag.setAttribute('type', 'text/javascript');
     scriptTag.setAttribute('src', 'https://holidaycheck.github.io/hc-live-chart-component/HcChart.js')
     document.head.insertBefore(scriptTag, document.head.childNodes[0]);
-  })();
+  });
 </script>
 {% endraw %}
 
 
 ## The `responseEnd` Attribute In Use
 
-The `duration` attribute seen before, is the result of subtracting the `responseEnd - startTime` attribute ([spec][8]). The `startTime` attribute is the time when fetching the resource started ([MDN][9]). The `responseEnd` is the timestamp when the last byte was received or when the transport connection closes ([MDN][10]). The time taken how long loading all resources took, as you saw at the beginning of the article and as you can see at the end again, is calculated by retreiving all `responseEnd` values, sorting them and taking the biggest one, as you can see below:
+The `duration` attribute seen before, is the result of subtracting the `responseEnd - startTime` attribute ([spec][8]). The `startTime` attribute is the time when fetching the resource started ([MDN][9]). The `responseEnd` is the timestamp when the last byte was received or when the transport connection closes ([MDN][10]). The time taken how long loading all resources took, as you saw at the beginning of the article and as you can see at the end again, is calculated by retreiving all `responseEnd` values and taking the biggest one, as you can see below:
 
 ```js
-> const numericSort = (a,b) => a - b;
+> // Helper function to find the max value in an array.
+> const findMax = values => values.reduce((a, b) => Math.max(a, b));
+>
 > const resources = window.performance.getEntriesByType('resource');
-> // Filter out the responseEnd attribute only.
+> // Filter out the responseEnd attribute only and find the maximum.
 > const allEnds = resources.map(r => r.responseEnd);
-> resources.length + ' resources, ' + allEnds.sort(numericSort).reverse()[0], ' ms'
+> resources.length + ' resources, ' + findMax(allEnds) + ' ms'
 ```
 <pre id="inline-stats-result" class="highlight">
   If you see this either JavaScript is disabled, or something went wrong :(.
 </pre>
 {% raw %}
 <script type="text/javascript">
-  (() => {
-    const numericSort = (a,b) => a - b;
+  window.__runOnloaded__.push(() => {
     const resources = window.performance.getEntriesByType('resource');
     const resourcesStr = resources.length + ' resources, ';
-    const timeStr = resources.map(r => r.responseEnd).sort(numericSort).reverse()[0] + ' ms';
+    const timeStr = getMaxResponseEnd(resources) + ' ms';
     document.querySelector('#inline-stats-result').innerHTML = resourcesStr + timeStr;
-  })()
+  });
 </script>
 {% endraw %}
 
@@ -146,7 +157,8 @@ Hint: If you <a id="reload-link-2" href="{{ page.url }}?force-reload=0#the-respo
 Now that you got here, we pick up the thing we did at the beginning of the page again and list the tiny statistics again. After the [event "load"][6] (the whole page has loaded, including all dependent resources such as stylesheets images) this **page loaded <span id="num-assets-loaded-2">??</span> assets** (or resources) and **took <span id="time-taken-loading-2">??</span> seconds to load**. <span id="loading-failed-hint-2">(If you just see "??" then reading the data didn't work, do you have an old browser?)</span>
 {% raw %}
 <script type="text/javascript">
-window.addEventListener('load',() => __updateInlineStats__(2));
+  window.__runOnloaded__.push(() => __updateInlineStats__(2));
+  window.addEventListener('load',() => window.__runOnloaded__.forEach(fn => fn()));
 </script>
 {% endraw %}
 
