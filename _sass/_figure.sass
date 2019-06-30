@@ -1,0 +1,13 @@
+figure
+  page-break-inside: avoid
+  text-align: center
+  margin: 2.5em 0
+  counter-increment: figure-counter 1
+
+figcaption
+  font-style: italic
+  +font-size(16)
+  margin-bottom: 1em
+  
+  &:before
+    content: "Figure " counter(figure-counter) ": "
