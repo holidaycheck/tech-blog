@@ -84,7 +84,7 @@ fetchStart >= startTime + redirectDuration
   // with        
   redirectDuration = redirectEnd - redirectStart
 ```
-(`redirectDuration` is a variable that I introduced, the spec does not define it). 
+("redirectDuration" is a variable that I introduced, the spec does not define it). 
 
 
 
@@ -100,7 +100,7 @@ One interesting aspect is that the [spec][3] defines some kind of logic into the
 
 The attribute `requestStart` has the timestamp when the real data are about to be requested, that means after DNS lookup ("domainLookupDuration") and TCP handshake ("connectDuration"). The spec says it is the ["time immediately before the user agent starts requesting the resource from the server, or from relevant application caches or from local resources"][8]. That means when one thinks about working on the website speed that all optimization on this resource up to here might contains infrastructure work, connection caching or pre-fetching. Depending on what one found out is the bottleneck, knowing what these attributes are made of allows for focusing effort on where to work on page speed.
 
-Taking `requestStart` apart a little bit can even show hints where slow sites have potential. Consider too, that optimization of times that make up `requestStart` might effect many more requests, a speedup might be worth it.  
+Taking `requestStart` apart a little bit can even show hints where slow sites have potential. Also consider that optimization of the parts that make up `requestStart` might effect many more requests, a speedup might be worth it.  
 This attribute contains at least the following times:
 ```js
 requestStart >= startTime + redirectDuration 
@@ -110,8 +110,7 @@ requestStart >= startTime + redirectDuration
   domainLookupDuration = domainLookupEnd - domainLookupStart  
   connectDuration = connectEnd - connectStart
 ```
-(the `*Duration` variables are not defined in the spec, they are here for convinience). 
-
+(the variables "domainLookupDuration" and "connectDuration" are not defined in the spec, they are here for convinience). 
 
 ## The `responseStart` attribute
 
@@ -121,7 +120,7 @@ Besides all the mentioned attributes there are some more, which will be document
 
 <figure>
     <figcaption>The graph illustrates the timing attributes defined by the PerformanceResourceTiming interface.</figcaption>
-    <img src="/img/posts/2019-06-15-browsertools-3/resource-timing-overview-modified.png" alt="resource-timing-overview" />
+    <img src="/img/posts/2019-06-15-browsertools-3/resource-timing-overview-modified.jpg" alt="resource-timing-overview" />
 </figure>
 
 The chart is [taken from the spec][6] and slightly enhanced, to show the attributes and some comments about them.
