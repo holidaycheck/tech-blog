@@ -9,14 +9,13 @@ read_time : 4
 feature_image: posts/2019-06-15-browsertools-3/michelle-rosen-390381-unsplash.jpg
 ---
 
+This is post #3 in the [category "Browser Tools"][0], focusing on understanding the loading times by charting them in a Waterfall chart. In [part 1][1] and [part 2 about ResourceTiming][2] we looked at the attributes `startTime`, `responseEnd`, `duration` and `initiatorType`. Now we want to understand what happens after a resource starts loading and how to understand attributes like `fetchStart`, `requestStart` and `responseStart`, to mention the most relevant ones.
+
 {% raw %}
 <script type="text/javascript">
   window.__loadChartFunctions__ = [];
 </script>
 {% endraw %}
-
-
-This is post #3 in the [category "Browser Tools"][0], focusing on understanding the loading times by charting them in a Waterfall chart. In [part 1][1] and [part 2 about ResourceTiming][2] we looked at the attributes `startTime`, `responseEnd`, `duration` and `initiatorType`. Now we want to understand what happens after a resource starts loading and how to understand attributes like `fetchStart`, `requestStart` and `responseStart`, to mention the most relevant ones.
 
 ## Setting the Context
 
