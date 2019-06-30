@@ -9,7 +9,14 @@ read_time : 4
 feature_image: posts/2019-06-15-browsertools-3/michelle-rosen-390381-unsplash.jpg
 ---
 
-This is post #3 in the [category "Browser Tools"][0], focusing on understanding the loading times by charting them in a Waterfall Chart. In [part 1][1] and [part 2 about ResourceTiming][2] we looked at the attributes `startTime`, `responseEnd`, `duration` and `initiatorType`. Now we want to understand what happens after a resource starts loading and how to understand those numbers.
+{% raw %}
+<script type="text/javascript">
+  window.__loadChartFunctions__ = [];
+</script>
+{% endraw %}
+
+
+This is post #3 in the [category "Browser Tools"][0], focusing on understanding the loading times by charting them in a Waterfall chart. In [part 1][1] and [part 2 about ResourceTiming][2] we looked at the attributes `startTime`, `responseEnd`, `duration` and `initiatorType`. Now we want to understand what happens after a resource starts loading and how to understand attributes like `fetchStart`, `requestStart` and `responseStart`, to mention the most relevant ones.
 
 ## Setting the Context
 
@@ -38,41 +45,18 @@ From here on we will go deeper and look at the attributes `fetchStart`, `request
 
 ## The Waterfall Chart in Action
 
-For better understanding the attributes let's chart them. The Waterfall chart below shows each of those attributes. Hover over (or click) each line to see the value of each attribute.
+For better understanding the attributes, let's chart them. The Waterfall chart below shows each of those attributes **for the first seven requests only**.
+Hover over (or click) each line to see the value of each attribute and read on to find deeper explanation of each of them.
 
 <figure>
     <hc-chart id="waterfall-chart-2" style="height: 350px;"></hc-chart>
-    <figcaption>The waterfall chart showing the data gathered via the "Resource Timing API" (hover shows details)</figcaption>
+    <figcaption>The waterfall chart showing the first seven resources loaded (hover/click the bars in the chart to see details)</figcaption>
+    {% raw %}
+    <script type="text/javascript">
+        window.__loadChartFunctions__.push(() => _renderWaterfallChart(document.querySelector('#waterfall-chart-2'), 7));
+    </script>
+    {% endraw %}
 </figure>
-
-{% raw %}
-<script type="text/javascript">
-  window.__loadChartFunctions__ = [];
-  window.__loadChartFunctions__.push(() => {
-    const chart = document.querySelector('#waterfall-chart-2');
-    const resources = [
-      ...window.performance.getEntriesByType('navigation'),
-      ...window.performance.getEntriesByType('resource'),
-    ];
-    const times = resources.map(
-      resource => ({label: resource.name, values: [
-        resource.startTime,
-        resource.fetchStart,
-        resource.requestStart || resource.fetchStart,
-        resource.responseStart || resource.fetchStart,
-        resource.responseEnd,
-      ]}));
-    const valueLabels = [
-      'Request started after ${value} ms (startTime)', 
-      'Redirect took ${value} ms (fetchStart)', 
-      'AppCache+DNS+TCP took ${value} ms (requestStart)',
-      'Server responded after ${value} ms (responseStart)',
-      'Response was complete after ${value} ms (responseEnd)',
-    ];
-    chart.updateStackedWaterfallData(times, {valueLabels, precision: 1});
-  });
-</script>
-{% endraw %}
 
 Note: The times in the chart above, are calculated differences using the values the API's returned.
 The time shown in the tooltip is always the difference to the previous attribute.  
@@ -150,6 +134,31 @@ I hope disecting `window.performance` especially the `User ResourceTiming API` t
 
 {% raw %}
 <script type="text/javascript">
+
+  const _renderWaterfallChart = (domNodeToRenderInto, numberOfEntriesToShow = Number.POSITIVE_INFINITY) => {
+    const chart = domNodeToRenderInto;
+    const resources = [
+      ...window.performance.getEntriesByType('navigation'),
+      ...window.performance.getEntriesByType('resource').slice(0, numberOfEntriesToShow - 1),
+    ];
+    const times = resources.map(
+      resource => ({label: resource.name, values: [
+        resource.startTime,
+        resource.fetchStart,
+        resource.requestStart || resource.fetchStart,
+        resource.responseStart || resource.fetchStart,
+        resource.responseEnd,
+      ]}));
+    const valueLabels = [
+      'Request started after ${value} ms (startTime)', 
+      'Redirect took ${value} ms (fetchStart)', 
+      'AppCache+DNS+TCP took ${value} ms (requestStart)',
+      'Server responded after ${value} ms (responseStart)',
+      'Response was complete after ${value} ms (responseEnd)',
+    ];
+    chart.updateStackedWaterfallData(times, {valueLabels, precision: 1});
+  };
+
   (() => {
     const onLoaded = () => {
       window.customElements.whenDefined('hc-chart').then(() => {
