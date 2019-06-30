@@ -86,10 +86,10 @@ Let's sum it all up, by looking at the part of the API we have learned about.
   But in general I am pretty sure we can just use the defaults of the user agent and it should be fine. 
 {% endcomment %}
 <figure>
+  <figcaption>The chart above shows the durations it took to load the resources gathered via the Performance API.</figcaption>
   <hc-chart id="duration-chart" style="height: 350px;">
     <img src="/img/posts/2019-05-06-browsertools-1/fallback-chart-1.png">
   </hc-chart>
-  <figurecaption>The chart above shows the durations it took to load the resources gathered via the Performance API</figurecaption>
 </figure>
 {% raw %}
 <script type="text/javascript">
