@@ -82,10 +82,15 @@ For example: if `startTime` and `fetchStart` have the value `23`, the tooltip wi
 
 Often `fetchStart` has the value `0ms`. That is because the according resource started to be fetched right away after the `startTime` was recorded. In the end this is an browser internal, the [spec only says it as the "time immediately before the user agent starts to fetch the resource"][7]. But it also means that **no redirect** took place, see the image from the spec below.
 
-Looking at it from the numbers point of view the `fetchStart` can be calulated like so:  
-`fetchStart = startTime + redirectDuration`, with    
-`redirectDuration = redirectEnd - redirectStart`  
+Looking at it from the numbers point of view the `fetchStart` is at least made up out of:
+```js
+fetchStart >= startTime + redirectDuration
+  // with        
+  redirectDuration = redirectEnd - redirectStart
+```
 (`redirectDuration` is a variable that I introduced, the spec does not define it). 
+
+
 
 One interesting aspect is that the [spec][3] defines some kind of logic into the values of some attributes. Some attributes can have the value 0, for example `redirectStart` and `redirectEnd`. This might not be interpreted as "redirect started at 0ms" but rather as "there was no redirect". Even though it feels strange and requires more effort using the values, I think it's a clever move. See below a screenshot from the spec text.
 
@@ -99,12 +104,18 @@ One interesting aspect is that the [spec][3] defines some kind of logic into the
 
 The attribute `requestStart` has the timestamp when the real data are about to be requested, that means after DNS lookup ("domainLookupDuration") and TCP handshake ("connectDuration"). The spec says it is the ["time immediately before the user agent starts requesting the resource from the server, or from relevant application caches or from local resources"][8]. That means when one thinks about working on the website speed that all optimization on this resource up to here might contains infrastructure work, connection caching or pre-fetching. Depending on what one found out is the bottleneck, knowing what these attributes are made of allows for focusing effort on where to work on page speed.
 
-Taking `requestStart` apart a little bit and may even show more hints where slow sites have potential. An optimization of times that make up `requestStart` might effect many more requests, might sound relevant. This attribute contains at least the following times:  
-`requestStart >= startTime + redirectDuration + domainLookupDuration + connectDuration`, with    
-`redirectDuration = redirectEnd - redirectStart`, and  
-`domainLookupDuration = domainLookupEnd - domainLookupStart`, and  
-`connectDuration = connectEnd - connectStart`  
-(the `*Duration` variables are not defined in the spec). 
+Taking `requestStart` apart a little bit can even show hints where slow sites have potential. Consider too, that optimization of times that make up `requestStart` might effect many more requests, a speedup might be worth it.  
+This attribute contains at least the following times:
+```js
+requestStart >= startTime + redirectDuration 
+                + domainLookupDuration + connectDuration
+  // with        
+  redirectDuration = redirectEnd - redirectStart
+  domainLookupDuration = domainLookupEnd - domainLookupStart  
+  connectDuration = connectEnd - connectStart
+```
+(the `*Duration` variables are not defined in the spec, they are here for convinience). 
+
 
 ## The `responseStart` attribute
 
