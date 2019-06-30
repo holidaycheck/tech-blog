@@ -45,17 +45,21 @@ From here on we will go deeper and look at the attributes `fetchStart`, `request
 
 ## The Waterfall Chart in Action
 
-For better understanding the attributes, let's chart them. The Waterfall chart below shows each of those attributes **for the first seven requests only**.
+For better understanding the attributes, let's chart them. The Waterfall chart below initially shows each of those attributes **for the first seven requests only** (you can show all, see buttons below).
 Hover over (or click) each line to see the value of each attribute and read on to find deeper explanation of each of them.
 
 <figure>
     <hc-chart id="waterfall-chart-2" style="height: 350px;"></hc-chart>
-    <figcaption>The waterfall chart showing the first seven resources loaded (hover/click the bars in the chart to see details)</figcaption>
+    <figcaption>The waterfall chart showing the first seven resources loaded (hover/click the bars in the chart to see details).</figcaption>
     {% raw %}
     <script type="text/javascript">
-        window.__loadChartFunctions__.push(() => _renderWaterfallChart(document.querySelector('#waterfall-chart-2'), 7));
+        const _renderChartWithFirstSevenResources = () => _renderWaterfallChart(document.querySelector('#waterfall-chart-2'), 7)
+        const _renderChartWithAllResources = () => _renderWaterfallChart(document.querySelector('#waterfall-chart-2'))
+        window.__loadChartFunctions__.push(_renderChartWithFirstSevenResources);
     </script>
     {% endraw %}
+    <button onclick="_renderChartWithAllResources()">Show all resources</button>
+    <button onclick="_renderChartWithFirstSevenResources()">Show only first 7 resources</button>
 </figure>
 
 Note: The times in the chart above, are calculated differences using the values the API's returned.
@@ -64,7 +68,15 @@ For example: if `startTime` and `fetchStart` have the value `23`, the tooltip wi
 
 ## The `fetchStart` attribute
 
-Often `fetchStart` has the value `0ms`. That is because the according resource started to be fetched right away after the `startTime` was recorded. In the end this is an browser internal, the [spec only says it as the "time immediately before the user agent starts to fetch the resource"][7]. But it also means that **no redirect** took place, see the image from the spec below.
+Often `fetchStart` has the value `0ms`. That is because the according resource started to be fetched right away after the `startTime` was recorded. In the end this is an browser internal, the [spec only says it as the "time immediately before the user agent starts to fetch the resource"][7]. But it also means that **no redirect** took place, see the image from the spec below.  
+On the other hand be careful interpreting the numbers, the browser might be "working" between each of the measurement points. Even if you see in the chart `Redirect took 1.7 ms (fetchStart)` (instead of 0ms), it is also possible that the browser just started measuring the data later because it was busy with something else. 
+
+<figure>
+    <img src="/img/posts/2019-06-15-browsertools-3/maybe-no-redirect.jpg" alt="maybe-no-redirect" class="centered" style="width: 70%" />
+    <figcaption>A value for "fetchStart>0" does not always mean a redirect took place.</figcaption>
+</figure>
+
+That's why looking at the raw data, as the chart shows them above needs knowledge on how to understand them! If a redirect took place can be seen though by calculating `redirectEnd - redirectStart`, in case of no redirect it will be 0.
 
 Looking at it from the numbers point of view the `fetchStart` is at least made up out of:
 ```js
