@@ -44,8 +44,8 @@ A `startTime` of 0 is the moment when the browsing context was created, when the
 Let's look at some real life numbers:
 
 <figure id="chart-1">
-    <hc-chart id="waterfall-chart-1" style="height: 350px;"></hc-chart>
     <figcaption>The "startTime" for all resources requested by this page</figcaption>
+    <hc-chart id="waterfall-chart-1" style="height: 350px;"></hc-chart>
 </figure>
 {% raw %}
 <script type="text/javascript">
