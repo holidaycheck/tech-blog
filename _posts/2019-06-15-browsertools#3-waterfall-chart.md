@@ -91,7 +91,7 @@ fetchStart >= startTime + redirectDuration
 One interesting aspect is that the [spec][3] defines some kind of logic into the values of some attributes. Some attributes can have the value 0, for example `redirectStart` and `redirectEnd`. This might not be interpreted as "redirect started at 0ms" but rather as "there was no redirect". Even though it feels strange and requires more effort using the values, I think it's a clever move. See below a screenshot from the spec text.
 
 <figure>
-    <figcaption>The spec allows some attributes to be zero</figcaption>
+    <figcaption>The spec allows some attributes to be zero.</figcaption>
     <img src="/img/posts/2019-06-15-browsertools-3/spec-attributes-zero.jpg" alt="spec-attributes-zero.jpg" class="left" style="width: 70%" />
 </figure>
 
@@ -120,7 +120,7 @@ The next interesting attribute is `responseStart` which the spec describes as th
 Besides all the mentioned attributes there are some more, which will be documented in the chart below. It shows well how they all relate to each other and when they might occur in the progress of loading a resource.
 
 <figure>
-    <figcaption>The graph illustrates the timing attributes defined by the PerformanceResourceTiming interface</figcaption>
+    <figcaption>The graph illustrates the timing attributes defined by the PerformanceResourceTiming interface.</figcaption>
     <img src="/img/posts/2019-06-15-browsertools-3/resource-timing-overview-modified.png" alt="resource-timing-overview" class="centered" />
 </figure>
 
