@@ -49,8 +49,8 @@ For better understanding the attributes, let's chart them. The Waterfall chart b
 Hover over (or click) each line to see the value of each attribute and read on to find deeper explanation of each of them.
 
 <figure>
-    <hc-chart id="waterfall-chart-2" style="height: 350px;"></hc-chart>
     <figcaption>The waterfall chart showing the first seven resources loaded (hover/click the bars in the chart to see details).</figcaption>
+    <hc-chart id="waterfall-chart-2" style="height: 350px;"></hc-chart>
     {% raw %}
     <script type="text/javascript">
         const _renderChartWithFirstSevenResources = () => _renderWaterfallChart(document.querySelector('#waterfall-chart-2'), 7)
@@ -72,8 +72,8 @@ Often `fetchStart` has the value `0ms`. That is because the according resource s
 On the other hand be careful interpreting the numbers, the browser might be "working" between each of the measurement points. Even if you see in the chart `Redirect took 1.7 ms (fetchStart)` (instead of 0ms), it is also possible that the browser just started measuring the data later because it was busy with something else. 
 
 <figure>
-    <img src="/img/posts/2019-06-15-browsertools-3/maybe-no-redirect.jpg" alt="maybe-no-redirect" class="centered" style="width: 70%" />
     <figcaption>A value for "fetchStart>0" does not always mean a redirect took place.</figcaption>
+    <img src="/img/posts/2019-06-15-browsertools-3/maybe-no-redirect.jpg" alt="maybe-no-redirect" class="centered" style="width: 70%" />
 </figure>
 
 That's why looking at the raw data, as the chart shows them above needs knowledge on how to understand them! If a redirect took place can be seen though by calculating `redirectEnd - redirectStart`, in case of no redirect it will be 0.
@@ -91,8 +91,8 @@ fetchStart >= startTime + redirectDuration
 One interesting aspect is that the [spec][3] defines some kind of logic into the values of some attributes. Some attributes can have the value 0, for example `redirectStart` and `redirectEnd`. This might not be interpreted as "redirect started at 0ms" but rather as "there was no redirect". Even though it feels strange and requires more effort using the values, I think it's a clever move. See below a screenshot from the spec text.
 
 <figure>
-    <img src="/img/posts/2019-06-15-browsertools-3/spec-attributes-zero.jpg" alt="spec-attributes-zero.jpg" class="left" style="width: 70%" />
     <figcaption>The spec allows some attributes to be zero</figcaption>
+    <img src="/img/posts/2019-06-15-browsertools-3/spec-attributes-zero.jpg" alt="spec-attributes-zero.jpg" class="left" style="width: 70%" />
 </figure>
 
 
@@ -120,8 +120,8 @@ The next interesting attribute is `responseStart` which the spec describes as th
 Besides all the mentioned attributes there are some more, which will be documented in the chart below. It shows well how they all relate to each other and when they might occur in the progress of loading a resource.
 
 <figure>
-    <img src="/img/posts/2019-06-15-browsertools-3/resource-timing-overview-modified.png" alt="resource-timing-overview" class="centered" />
     <figcaption>The graph illustrates the timing attributes defined by the PerformanceResourceTiming interface</figcaption>
+    <img src="/img/posts/2019-06-15-browsertools-3/resource-timing-overview-modified.png" alt="resource-timing-overview" class="centered" />
 </figure>
 
 The chart is [taken from the spec][6] and slightly enhanced, to show the attributes and some comments about them.
