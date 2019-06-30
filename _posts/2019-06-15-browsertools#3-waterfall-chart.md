@@ -73,7 +73,7 @@ On the other hand be careful interpreting the numbers, the browser might be "wor
 
 <figure>
     <figcaption>A value for "fetchStart>0" does not always mean a redirect took place.</figcaption>
-    <img src="/img/posts/2019-06-15-browsertools-3/maybe-no-redirect.jpg" alt="maybe-no-redirect" class="centered" style="width: 70%" />
+    <img src="/img/posts/2019-06-15-browsertools-3/maybe-no-redirect.jpg" alt="maybe-no-redirect" />
 </figure>
 
 That's why looking at the raw data, as the chart shows them above needs knowledge on how to understand them! If a redirect took place can be seen though by calculating `redirectEnd - redirectStart`, in case of no redirect it will be 0.
@@ -92,7 +92,7 @@ One interesting aspect is that the [spec][3] defines some kind of logic into the
 
 <figure>
     <figcaption>The spec allows some attributes to be zero.</figcaption>
-    <img src="/img/posts/2019-06-15-browsertools-3/spec-attributes-zero.jpg" alt="spec-attributes-zero.jpg" class="left" style="width: 70%" />
+    <img src="/img/posts/2019-06-15-browsertools-3/spec-attributes-zero.jpg" alt="spec-attributes-zero.jpg" />
 </figure>
 
 
@@ -121,7 +121,7 @@ Besides all the mentioned attributes there are some more, which will be document
 
 <figure>
     <figcaption>The graph illustrates the timing attributes defined by the PerformanceResourceTiming interface.</figcaption>
-    <img src="/img/posts/2019-06-15-browsertools-3/resource-timing-overview-modified.png" alt="resource-timing-overview" class="centered" />
+    <img src="/img/posts/2019-06-15-browsertools-3/resource-timing-overview-modified.png" alt="resource-timing-overview" />
 </figure>
 
 The chart is [taken from the spec][6] and slightly enhanced, to show the attributes and some comments about them.
