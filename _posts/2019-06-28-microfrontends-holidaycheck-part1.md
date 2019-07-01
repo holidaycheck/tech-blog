@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Micro Frontends at HolidayCheck (part 1)"
-categories: microfrontend web javascript 
+categories: microfrontend javascript 
 author_name: Sebastian Bruckner
 author_url : /author/sebastianbruckner
 author_avatar: sebruck
