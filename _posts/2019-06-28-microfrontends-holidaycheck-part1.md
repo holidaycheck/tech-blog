@@ -6,7 +6,7 @@ author_name: Sebastian Bruckner
 author_url : /author/sebastianbruckner
 author_avatar: sebruck
 read_time : 10
-feature_image: posts/2019-06-28-microfrontends-part1/header.png
+feature_image: posts/2019-06-08-browsertools-2/ben-harritt-75854-unsplash.jpg
 ---
 
 At HolidayCheck we just released our first Micro Frontend, the "new header", which is placed
