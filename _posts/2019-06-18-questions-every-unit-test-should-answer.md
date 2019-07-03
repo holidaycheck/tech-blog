@@ -13,9 +13,7 @@ excerpt: "We should write tests to prevent defects from happening. That is one o
 feature_image: posts/2019-06-18-questions-every-unit-test-should-answer/poster.jpg
 ---
 
-We should write tests to prevent defects from happening. That is one of the key roles tests play. But not everyone knows there is more to writing tests than that.
-
-Tests play a very vital role when it comes to explaining two very important questions behind the feature they, well, test. Those are: the _how_ and the _why_.
+We should write tests to prevent defects from happening. That is one of the key roles tests play. But not everyone knows there is more to writing tests than that. Tests also explain two very important questions behind the feature they, well, test. Those are: the _how_ and the _why_.
 
 ## The 'how'
 
@@ -62,7 +60,7 @@ it('should return that number when it is not divisible by 3 nor 5', () => {
 });
 ```
 
-A little side note: why all of those named variables? For couple of reasons: naming things (to provide extended description), and also, if you were to use [property based testing](https://techblog.holidaycheck.com/post/2017/07/25/property-based-testing-in-javascript) here, it would be as easy as applying the input generator function instead of those numbers. Tests are also code—they should be easy to refactor.
+A little side note: why all of those named variables? For a couple of reasons: naming things (to provide extended description), and also, if you were to use [property based testing](https://techblog.holidaycheck.com/post/2017/07/25/property-based-testing-in-javascript) here, it would be as easy as applying the input generator function instead of those numbers. Tests are also code—they should be easy to refactor.
 
 _"OK, but it's a simple game, thus simple rules and simple tests."_—you might say. Well… yes, and no (see my story up above). Fair enough, let's take something that nobody knows, but you and your team—a part of the application you're developing, say, a form on a page. Here is how it could work:
 
@@ -76,12 +74,12 @@ _"OK, but it's a simple game, thus simple rules and simple tests."_—you might 
 How would the tests look like then? How about:
 
 ```javascript
-context('when the button is clicked', () => {
+context('when the submit button is clicked', () => {
     it('should send a request with data from the form', () => {});
     it('should show the spinner', () => {});
 });
 
-context('when the response is back', () => {
+context('when the response comes back', () => {
     it('should remove the spinner', () => {});
     it('should display confirmation box with a message', () => {});
 });
@@ -89,7 +87,7 @@ context('when the response is back', () => {
 
 Such test suite is readable not only to your fellow engineers, but also to non—technical people (Product Owners for example).
 
-Now that you know this, the very next time you will want to create a test where you check, for instance, that some API `should be called with right payload`—think about the end user (your team mates or yourself in 6 months), how much value does such test description bring? Is it answering _the how_ behind the process this code goes through or not?
+Now that you know this, the very next time you will want to create a test, think about the end users (your team mates or yourself in 6 months). Ask yourself: is it answering _the how_ behind the process this code goes through or not?
 
 ## The 'why'
 
@@ -119,7 +117,7 @@ How about:
 ```javascript
 describe('Action', () => {
     context('when it is resolved', () => {
-        it('should inform some important rest API that it has finished', async () => {
+        it('should inform some important API that it has finished', async () => {
             const apiCallback = sinon.spy();
             const action = createAction(apiCallback);
             
@@ -153,7 +151,7 @@ describe('Modal component', () => {
 });
 ```
 
-What is _proper_? Why 500? Why not 1000 or 200? You are left with so many unknowns, up to the point that in order to figure it out, you need to run the application and check it manually. But even then you might not get the answer, because how would you know it should do something specific? Would you have guessed the reason behind the number 500? Such a test is misleading and only confuses the reader. I would even risk an opinion, that it's a test that is a bad one, as nobody will know why it is there even if it is passing. And what if it will fail at some point?
+What is _proper_? Why 500? Why not 1000 or 200? You are left with so many unknowns, up to the point that in order to figure it out, you need to run the application and check it manually. But even then you might not get the answer, because how would you know it should do something specific? Would you have guessed the reason behind the number 500? Such a test is misleading and only confuses the reader. I would even risk an opinion, that such a test is a bad one, as nobody will know why it is there even if it is passing. And what if it will fail at some point?
 
 How about this instead:
 
@@ -193,8 +191,8 @@ describe('Modal component', () => {
 });
 ```
 
-Now, it is all clear—you know why the width matters. No more proper (whatever it means) and we got rid of a [magic number](https://en.wikipedia.org/wiki/Magic_number_(programming)). Especially that number—should the width of the parent change, and your number not, this test would, again, become invalid (simply lying), as the parent would not have width of 500 (whatever units) anymore.
+Now it is all clear. You know why the width matters. No more _proper_ word (whatever it meant here) and we got rid of a [magic number](https://en.wikipedia.org/wiki/Magic_number_(programming)). Especially that number—should the width of the parent change, and your number did not, this test would, again, become invalid (simply lying), as the parent would not have a width of 500 (whatever units) anymore.
 
 ## Summarize
 
-As you can see, tests not only keep you safe when it comes to verifying that your app works. They play a vital role informing you _why_ it works _how_ it works. Any less information and they can become a noise. Eventually getting outdated or even lying. Don't let it happen. 
+As you can see, tests not only keep you safe when it comes to verifying that your app works. They play a vital role informing you _why_ it works _how_ it works. Any less information and they can become a noise. Eventually getting outdated or even lying. Don't let it happen.
