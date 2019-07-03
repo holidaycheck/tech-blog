@@ -20,7 +20,7 @@ Micro Frontends are currently a big hype and controversially discussed. Cam Jack
  on the ThoughtWorks Technology Radar. If you have not heard about Micro Frontends yet, I recommend you 
  to read Cam's article and the resources on [micro-frontends.org](https://micro-frontends.org/). 
 
-## Why Micro Fronted?
+## Why Micro Frontend?
 
 Why did we decide to jump on the Hype-Train 🚂 and build a Micro Frontend? 
 
@@ -111,7 +111,7 @@ location / {
 }
 ```
 
-Inside the apps which use the micro fronted one has simply to put the SSI tag at the position in the HTML 
+Inside the apps which use the micro frontend one has simply to put the SSI tag at the position in the HTML 
 where it should be rendered. Nginx will pick it up, query the provided URL and embed the response body at the 
 same place.
 
