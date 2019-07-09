@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Questions every unit test should answer
-date: 2019-06-25 12:13:14 +0200
+date: 2019-07-04 12:13:14 +0200
 categories: testing
 author_name: Jacek Smolak
 author_url : /author/jaceksmolak
@@ -13,26 +13,26 @@ excerpt: "We should write tests to prevent defects from happening. That is one o
 feature_image: posts/2019-06-18-questions-every-unit-test-should-answer/poster.jpg
 ---
 
-We should write tests to prevent defects from happening. That is one of the key roles tests play. But not everyone knows there is more to writing tests than that. Tests also explain two very important questions behind the feature they, well, test. Those are: the _how_ and the _why_.
+We should write tests to prevent defects from happening. That is one of the critical roles tests play. But not everyone knows there is more to writing tests than that. Tests also explain two fundamental questions behind the feature they, well, test. Those are the _how_ and the _why_.
 
-## The 'how'
+## The ‘how’
 
-But not how the code is written, rather than how it is working. I find it the single most important question your tests must answer. 
+But not how the code is written, rather than how it is working. I find it the most critical question your tests must answer. 
 
- - How is this piece of code working?
- - What to expect given certain input?
- - What is happening if something goes wrong?
- - How it will behave under certain conditions?
+- How is this piece of code working?
+- What to expect given a particular input?
+- What is happening if something goes wrong?
+- How will it behave under certain conditions?
 
-The how, if answered properly, will tell you all about it.
+The how, if answered correctly, will tell you all about it.
 
-Let's take [Fizz Buzz](https://en.wikipedia.org/wiki/Fizz_buzz) as an example. A simple game, with even simpler rules. But is it? Not so while ago I conducted, with a colleague of mine, an interview for an engineer position for our company. Fizz Buzz came out, and I asked: given that you know how it works, how many tests would you write to explain the rules (yes, that was a trick question). The answer was: around 50. I asked why? Why not 100? OK—perhaps 60, 70 (was the answer). The person interviewed clearly did not understand what I wanted to achieve.
+Let’s take [Fizz Buzz](https://en.wikipedia.org/wiki/Fizz_buzz) as an example. A simple game, with even simpler rules. But is it? Not long ago, a colleague and I interviewed someone for an engineer position at our company. Fizz Buzz came out, and I asked: given that you know how it works, how many tests would you write to explain the rules (yes, that was a trick question). The answer was: around fifty. I asked, “Why?”. Why not a hundred? The answer was, “OK—perhaps sixty, seventy.” The interviewee clearly did not understand what I wanted to achieve.
 
-What is the number of tests, the maximum number of tests, Fizz Buzz requires in order to answer the how behind it?
+What is the number of tests, the maximum number of tests, Fizz Buzz requires to answer the how behind it?
 
 …
 
-It's 4. All you need is four tests, to get to know how Fizz Buz works. Here's the list:
+It’s four. All you need is **four** tests to get to know how Fizz Buz works. Here’s the list:
 
 ```javascript
 it('should return Fizz when the number is divisible by 3', () => {
@@ -60,9 +60,9 @@ it('should return that number when it is not divisible by 3 nor 5', () => {
 });
 ```
 
-A little side note: why all of those named variables? For a couple of reasons: naming things (to provide extended description), and also, if you were to use [property based testing](https://techblog.holidaycheck.com/post/2017/07/25/property-based-testing-in-javascript) here, it would be as easy as applying the input generator function instead of those numbers. Tests are also code—they should be easy to refactor.
+A little side note: why all of those named variables? For a couple of reasons: naming things (to provide an extended description), and also, if you were to use [property based testing](https://techblog.holidaycheck.com/post/2017/07/25/property-based-testing-in-javascript) here, it would be as easy as applying the input generator function instead of those numbers. Tests are also code—they should be easy to refactor.
 
-_"OK, but it's a simple game, thus simple rules and simple tests."_—you might say. Well… yes, and no (see my story up above). Fair enough, let's take something that nobody knows, but you and your team—a part of the application you're developing, say, a form on a page. Here is how it could work:
+“OK, but it’s a simple game, thus simple rules and simple tests.”—you might say. Well… yes, and no (see my story up above). Fair enough, let’s take something that nobody knows, but you and your team—a part of the application you’re developing, say, a form on a page. Here is how it could work:
 
 > As a user when I click the submit button:
 >
@@ -85,13 +85,13 @@ context('when the response comes back', () => {
 });
 ```
 
-Such test suite is readable not only to your fellow engineers, but also to non—technical people (Product Owners for example).
+Such a test suite is readable not only to your fellow engineers but also to non-technical people (product owners, for example).
 
-Now that you know this, the very next time you will want to create a test, think about the end users (your team mates or yourself in 6 months). Ask yourself: is it answering _the how_ behind the process this code goes through or not?
+Now that you know this, the very next time you want to create a test, think about the end users (your teammates or yourself in six months). Ask yourself: is it answering the _how_ behind the process this code goes through or not?
 
-## The 'why'
+## The ‘why’
 
-Why is this endpoint called with that payload? Why is number 42 used? Why are we wrapping this string in double quotes? The why is as important as the how. Without it, the unit under the test lacks context. Here's an example:
+Why is this endpoint called with that payload? Why is number 42 used? Why are we wrapping this string in double quotes? The *why* is as important as the *how*. Without it, the unit under the test lacks context. Here’s an example:
 
 ```javascript
 describe('Action', () => {
@@ -110,7 +110,7 @@ describe('Action', () => {
 });
 ```
 
-Why is this endpoint called? Why does the payload look like it looks? Again, questions left unanswered and we don't know what is this test actually testing.
+Why is this endpoint called? Why does the payload look like it does? Again, questions left unanswered, and we don’t know what this test is actually testing.
 
 How about:
 
@@ -131,9 +131,9 @@ describe('Action', () => {
 });
 ```
 
-Simple change in test's description made it very clear _why_ this endpoint is called. Should there be some significant payload going with it, I would even be tempted to create a separate unit test to explain why such payload.
+A simple change in the test’s description made it very clear _why_ this endpoint is called. Should there be some significant payload going with it, I would even be tempted to create a separate unit test to explain why such payload.
 
-Here's another case you might stumble upon:
+Here’s another case you might stumble upon:
 
 ```javascript
 describe('Modal component', () => {
@@ -151,7 +151,7 @@ describe('Modal component', () => {
 });
 ```
 
-What is _proper_? Why 500? Why not 1000 or 200? You are left with so many unknowns, up to the point that in order to figure it out, you need to run the application and check it manually. But even then you might not get the answer, because how would you know it should do something specific? Would you have guessed the reason behind the number 500? Such a test is misleading and only confuses the reader. I would even risk an opinion, that such a test is a bad one, as nobody will know why it is there even if it is passing. And what if it will fail at some point?
+What is _proper_? Why 500? Why not 1000 or 200? You are left with so many unknowns that you need to run the application and check it manually if you want to figure it out. However, even then you might not get the answer, because how would you know if it should do something specific? Would you have guessed the reason behind the number 500? Such a test is misleading and only confuses the reader. I would even risk an opinion that such a test is a bad one, as nobody will know why it is there—even if it is passing. Also, what if it fails at some point?
 
 How about this instead:
 
@@ -193,6 +193,6 @@ describe('Modal component', () => {
 
 Now it is all clear. You know why the width matters. No more _proper_ word (whatever it meant here) and we got rid of a [magic number](https://en.wikipedia.org/wiki/Magic_number_(programming)). Especially that number—should the width of the parent change, and your number did not, this test would, again, become invalid (simply lying), as the parent would not have a width of 500 (whatever units) anymore.
 
-## Summarize
+## Summary
 
-As you can see, tests not only keep you safe when it comes to verifying that your app works. They play a vital role informing you _why_ it works _how_ it works. Any less information and they can become a noise. Eventually getting outdated or even lying. Don't let it happen.
+As you can see, tests not only keep you safe when it comes to verifying that your app works. They play a vital role informing you _why_ it works _how_ it works. Any less information and they can become noise. Eventually getting outdated or even lying. Don’t let it happen.
