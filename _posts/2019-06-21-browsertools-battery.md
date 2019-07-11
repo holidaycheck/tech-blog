@@ -11,9 +11,34 @@ excerpt:
 feature_image: posts/2019-06-21-browsertools-battery/header.jpg
 ---
 
-Did you know that you can use JavaScript to obtain information about your battery's current charge level and status? In this post, #[insert-number-here] in the [category Browsertools](../../../../category/browsertools/), we take a look at the __Battery Status API__, show how it can be used, provide some ideas on where it can come in handy, as well as explain how its wrong usage has led to many privacy issues in the past years.
+Did you know that you can use JavaScript to obtain information about your battery's current charge level and status? <span id="loading-failed"> For example, your device is currently <span id="charging">??</span> charging and your battery level is at <span id="battery-level">??</span>%. How did I know that? Stay tuned to find out!</span>
+
+In this post, #[insert-number-here] in the [category Browsertools](../../../../category/browsertools/), we take a look at the __Battery Status API__, show how it can be used, provide some ideas on where it can come in handy, as well as explain how its wrong usage has led to many privacy issues in the past years.
 
 The specification defines the Battery Status API as ["means for web developers to programmatically determine the battery status of the hosting device"](https://www.w3.org/TR/battery-status/). It is a very simple API that provides you with battery's charge details, as well as the possibility to get notified whenever a change happens.
+
+{% raw %}
+<script type="text/javascript">
+
+const __updateInlineStats__ = () => {
+  try {
+	navigator.getBattery().then(battery => {
+		if (battery.charging) {
+			document.querySelector(`#charging`).textContent = "";
+		}
+		else {
+			document.querySelector(`#charging`).textContent = "not";
+		}
+		document.querySelector(`#battery-level`).textContent = battery.level * 100;
+    });
+  } catch (e) { 
+	document.querySelector(`#loading-failed`).remove();
+  }
+}
+
+__updateInlineStats__();
+</script>
+{% endraw %}
 
 ## Battery Manager Interface
 
