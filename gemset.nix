@@ -122,10 +122,10 @@
   jekyll = {
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "1p7cyzvf61w6n0ba76yq34lg784ad3zk4q1jw25hdcj4b54xjfxj";
+      sha256 = "1ffe559020092a46c4246a9d7a091a557e7570dcbfef755cfc751741a59401de";
       type = "gem";
     };
-    version = "3.4.3";
+    version = "3.8.6";
   };
   jekyll-avatar = {
     source = {
@@ -394,10 +394,10 @@
   liquid = {
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "033png37ym4jrjz5bi7zb4ic4yxacwvnllm1xxmrnr4swgyyygc2";
+      sha256 = "7e15a957fbeb424dec15b52311880524954ce6e384ba9171e21ff98f142c0f7e";
       type = "gem";
     };
-    version = "3.0.6";
+    version = "4.0.3";
   };
   listen = {
     source = {
