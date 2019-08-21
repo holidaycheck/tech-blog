@@ -418,10 +418,10 @@
   mini_portile2 = {
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "0g5bpgy08q0nc0anisg3yvwc1gc3inl854fcrg48wvg7glqd6dpm";
+      sha256 = "7e178a397ad62bb8a96977986130dc81f1b13201c6dd95a48bd8cec1dda5f797";
       type = "gem";
     };
-    version = "2.2.0";
+    version = "2.4.0";
   };
   minima = {
     source = {
@@ -458,10 +458,10 @@
   nokogiri = {
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "1nffsyx1xjg6v5n9rrbi8y1arrcx2i5f21cp6clgh9iwiqkr7rnn";
+      sha256 = "fbf91c487d7ceb2b0593384f175843f99152322754f6ff267740bff031cead5a";
       type = "gem";
     };
-    version = "1.8.0";
+    version = "1.10.4";
   };
   octokit = {
     source = {
