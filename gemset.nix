@@ -66,10 +66,10 @@
   ffi = {
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "034f52xf7zcqgbvwbl20jwdyjwznvqnwpbaps9nk18v9lgb1dpx0";
+      sha256 = "90ae2a7fe7ac4c0af30650fba8b75d93ff3611803c4937248118797ae5edbb1a";
       type = "gem";
     };
-    version = "1.9.18";
+    version = "1.11.1";
   };
   forwardable-extended = {
     source = {
