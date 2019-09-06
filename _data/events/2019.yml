@@ -28,6 +28,41 @@
   twitter: munichjs
   comment: Terminating the frontend monolith - Trygve Lie 
 
+- name: MunichJS - JavaScript Meetup – prototype
+  start_datetime: 2019-05-13 19:00
+  url: https://www.meetup.com/JavaScript-The-Language/events/261436523/
+  tags: meetup, JavaScript, prototype
+  location: HolidayCheck, Neumarkter Str. 61, München
+  twitter: holidaychecklab
+  
+- name: MunichJS - JavaScript Meetup – Proxy Object
+  start_datetime: 2019-06-27 19:00
+  url: https://www.meetup.com/JavaScript-The-Language/events/261711976/
+  tags: meetup, JavaScript, Proxy
+  location: HolidayCheck, Neumarkter Str. 61, München
+  twitter: holidaychecklab
+
+- name: MunichJS - JavaScript Meetup – ES10 features
+  start_datetime: 2019-07-17 19:00
+  url: https://www.meetup.com/JavaScript-The-Language/events/262681770/
+  tags: meetup, JavaScript, ES10
+  location: HolidayCheck, Neumarkter Str. 61, München
+  twitter: holidaychecklab
+
+- name: MunichJS - JavaScript Meetup – Dynamic Imports
+  start_datetime: 2019-08-29 19:00
+  url: https://www.meetup.com/JavaScript-The-Language/events/263233361/
+  tags: meetup, JavaScript, import, ES10
+  location: HolidayCheck, Neumarkter Str. 61, München
+  twitter: holidaychecklab
+
+- name: MunichJS - JavaScript Meetup – Advanced Promises - clock-in kata
+  start_datetime: 2019-09-18 19:00
+  url: https://www.meetup.com/JavaScript-The-Language/events/264407955/
+  tags: meetup, JavaScript, Promises
+  location: HolidayCheck, Neumarkter Str. 61, München
+  twitter: holidaychecklab
+
 #
 # Others
 #
