@@ -32,6 +32,22 @@
 # Others
 #
 
+- name: View Source Conference
+  start_datetime: 2019-09-30 09:00
+  end_datetime: 2019-10-01 18:00
+  url: https://2019.viewsourceconf.org
+  tags: conference, web, browser, mozilla
+  location: Amsterdam, Netherlands
+  twitter: viewsourceconf
+
+- name: GraphQL Day Bodensee
+  start_datetime: 2019-09-06 09:00
+  end_datetime: 2019-09-06 18:00
+  url: https://www.graphqlday.org/bodensee/
+  tags: graphql
+  location: Kulturzentrum, Konstanz, Germany
+  twitter: graphcms
+
 - name: JSCamp 2019
   start_datetime: 2019-07-18 10:00
   end_datetime: 2019-07-19 18:00
