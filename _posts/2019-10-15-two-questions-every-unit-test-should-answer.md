@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Questions every unit test should answer
-date: 2019-07-04 12:13:14 +0200
+title: Two questions every unit test should answer
+date: 2019-10-15 08:09:10 +0200
 categories: testing
 author_name: Jacek Smolak
 author_url : /author/jaceksmolak
@@ -10,7 +10,7 @@ read_time : 5
 show_related_posts: false
 square_related:
 excerpt: "We should write tests to prevent defects from happening. That is one of the key roles tests play. But not everyone knows there is more to writing tests than that."
-feature_image: posts/2019-06-18-questions-every-unit-test-should-answer/poster.jpg
+feature_image: posts/2019-10-15-two-questions-every-unit-test-should-answer/poster.jpg
 ---
 
 We should write tests to prevent defects from happening. That is one of the critical roles tests play. But not everyone knows there is more to writing tests than that. Tests also explain two fundamental questions behind the feature they, well, test. Those are the _how_ and the _why_.
@@ -35,16 +35,16 @@ What is the number of tests, the maximum number of tests, Fizz Buzz requires to 
 It’s four. All you need is **four** tests to get to know how Fizz Buz works. Here’s the list:
 
 ```javascript
-it('should return Fizz when the number is divisible by 3', () => {
-    const anyNumberDivisibleBy3 = 3;
+it('should return Fizz when the number is divisible only by 3', () => {
+    const anyNumberDivisibleOnlyBy3 = 3;
 
-    expect(fizzBuzz(anyNumberDivisibleBy3)).to.equal('Fizz');
+    expect(fizzBuzz(anyNumberDivisibleOnlyBy3)).to.equal('Fizz');
 });
 
-it('should return Buzz when the number is divisible by 5', () => {
-    const anyNumberDivisibleBy5 = 5;
+it('should return Buzz when the number is divisible only by 5', () => {
+    const anyNumberDivisibleOnlyBy5 = 5;
 
-    expect(fizzBuzz(anyNumberDivisibleBy5)).to.equal('Buzz');
+    expect(fizzBuzz(anyNumberDivisibleOnlyBy5)).to.equal('Buzz');
 });
 
 it('should return FizzBuzz when the number is divisible by 3 and 5', () => {
@@ -61,6 +61,8 @@ it('should return that number when it is not divisible by 3 nor 5', () => {
 ```
 
 A little side note: why all of those named variables? For a couple of reasons: naming things (to provide an extended description), and also, if you were to use [property based testing](https://techblog.holidaycheck.com/post/2017/07/25/property-based-testing-in-javascript) here, it would be as easy as applying the input generator function instead of those numbers. Tests are also code—they should be easy to refactor.
+
+And a second side note: I raised a question about those tests [on Twitter](https://twitter.com/jacek_smolak/status/1153981888702373889), and got some [cool answers](https://gist.github.com/smolak/7ff92ea5d821f2a1b11a0fb0a324d3f2). tl;dr—writing tests for FizzBuzz is not that straightforward as it would seem.
 
 “OK, but it’s a simple game, thus simple rules and simple tests.”—you might say. Well… yes, and no (see my story up above). Fair enough, let’s take something that nobody knows, but you and your team—a part of the application you’re developing, say, a form on a page. Here is how it could work:
 
@@ -196,3 +198,5 @@ Now it is all clear. You know why the width matters. No more _proper_ word (what
 ## Summary
 
 As you can see, tests not only keep you safe when it comes to verifying that your app works. They play a vital role informing you _why_ it works _how_ it works. Any less information and they can become noise. Eventually getting outdated or even lying. Don’t let it happen.
+
+*Main photo by <a href="https://unsplash.com/@photoart2018?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrew Buchanan</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>*
