@@ -15,15 +15,30 @@ Now that Covid-19, the Corona-Virus, forces us to officially stay in home office
  
 Here are our “Remote Cheat Sheets” with a couple of good practices to follow, to make remote collaboration and home office a success for you and your teams.
 
-<div style="display: flex; margin-top: 3rem;">
-  <div style="flex: 1;">
+<style>
+  div.box {
+    display: flex;
+    margin-top: 3rem;
+  }
+  div.box > div {
+    flex: 1;
+  }
+  div.box > p {
+    flex: 2;
+  }
+  @media screen and (max-width: 600px) {
+  }
+</style>
+
+<div class="box">
+  <div>
     <a href="/downloads/remote-cheat-sheet-meetings.pdf">
     <img 
       src="/img/posts/2020-03-27-remote-cheat-sheets/meetings.jpg" alt="meetings" width="150" 
       class="slight-zoomin dropshadow" />
     </a>
   </div>
-  <p style="flex: 2;">
+  <p>
     <b>Remote Meetings Cheat Sheet.</b><br/>
     Optimize your camera, audio settings and more.
     <br/><br/>
@@ -32,15 +47,15 @@ Here are our “Remote Cheat Sheets” with a couple of good practices to follow
   </p>
 </div>
 
-<div style="display: flex; margin-top: 3rem;">
-  <div style="flex: 1;">
+<div class="box">
+  <div>
     <a href="/downloads/remote-cheat-sheet-communication.pdf">
     <img 
       src="/img/posts/2020-03-27-remote-cheat-sheets/communication.jpg" alt="meetings" width="150" 
       class="slight-zoomin dropshadow" />
     </a>
   </div>
-  <p style="flex: 2;">
+  <p>
     <b>Remote Communication Cheat Sheet.</b><br/>  
     Improve the information flow, transparency and how you use slack.
     <br/><br/>
@@ -49,15 +64,15 @@ Here are our “Remote Cheat Sheets” with a couple of good practices to follow
   </p>
 </div>
 
-<div style="display: flex; margin-top: 3rem;">
-  <div style="flex: 1;">
+<div class="box">
+  <div>
     <a href="/downloads/remote-cheat-sheet-mindset.pdf">
     <img 
       src="/img/posts/2020-03-27-remote-cheat-sheets/mindset.jpg" alt="meetings" width="150" 
       class="slight-zoomin dropshadow" />
     </a>
   </div>
-  <p style="flex: 2;">
+  <p>
     <b>Remote Mindset Cheat Sheet.</b><br/>
     Remember the things about your remote mindset, your health and the social connection with your peers.
     <br/><br/>
@@ -66,15 +81,15 @@ Here are our “Remote Cheat Sheets” with a couple of good practices to follow
   </p>
 </div>
 
-<div style="display: flex; margin-top: 3rem;">
-  <div style="flex: 1;">
+<div class="box">
+  <div>
     <a href="/downloads/remote-cheat-sheet-moderation.pdf">
       <img 
         src="/img/posts/2020-03-27-remote-cheat-sheets/moderation.jpg" alt="meetings" width="150" 
         class="slight-zoomin dropshadow" />
     </a>
   </div>
-  <p style="flex: 2;">
+  <p>
     <b>Remote Moderation Cheat Sheet.</b><br/>
     Look up most crucial things about the preparation, running the meeting and remote meetings in a conference room.
     <br/><br/>
