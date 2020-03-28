@@ -27,6 +27,13 @@ Here are our “Remote Cheat Sheets” with a couple of good practices to follow
     flex: 2;
   }
   @media screen and (max-width: 600px) {
+    div.box {
+      margin-top: 5rem;
+      flex-direction: column-reverse; /* Put the text above the image */
+    }
+    div.box > div {
+      text-align: center;
+    }
   }
 </style>
 
@@ -43,7 +50,7 @@ Here are our “Remote Cheat Sheets” with a couple of good practices to follow
     Optimize your camera, audio settings and more.
     <br/><br/>
     <a href="/downloads/remote-cheat-sheet-meetings.pdf">Download the  Remote Meetings Cheat Sheet</a>
-    (PDF, 307 kB) or click the image on the left.
+    (PDF, 307 kB) or click the image.
   </p>
 </div>
 
@@ -60,7 +67,7 @@ Here are our “Remote Cheat Sheets” with a couple of good practices to follow
     Improve the information flow, transparency and how you use slack.
     <br/><br/>
     <a href="/downloads/remote-cheat-sheet-communication.pdf">Download the Remote Communication Cheat Sheet</a>
-    (PDF, 318 kB) or click the image on the left.
+    (PDF, 318 kB) or click the image.
   </p>
 </div>
 
@@ -77,7 +84,7 @@ Here are our “Remote Cheat Sheets” with a couple of good practices to follow
     Remember the things about your remote mindset, your health and the social connection with your peers.
     <br/><br/>
     <a href="/downloads/remote-cheat-sheet-mindset.pdf">Download the Remote Mindset Cheat Sheet</a>
-    (PDF, 403 kB) or click the image on the left.
+    (PDF, 403 kB) or click the image.
   </p>
 </div>
 
@@ -94,7 +101,7 @@ Here are our “Remote Cheat Sheets” with a couple of good practices to follow
     Look up most crucial things about the preparation, running the meeting and remote meetings in a conference room.
     <br/><br/>
     <a href="/downloads/remote-cheat-sheet-moderation.pdf">Download the Remote Moderation Cheat Sheet</a>
-    (PDF, 408 kB) or click the image on the left.
+    (PDF, 408 kB) or click the image.
   </p>
 </div>
 
