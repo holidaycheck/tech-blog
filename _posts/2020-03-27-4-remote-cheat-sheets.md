@@ -49,8 +49,8 @@ Here are our “Remote Cheat Sheets” with a couple of good practices to follow
     <b>Remote Meetings Cheat Sheet.</b><br/>
     Optimize your camera, audio settings and more.
     <br/><br/>
-    <a href="/downloads/remote-cheat-sheet-meetings.pdf" title="Download Remote Cheat Sheet Meetings">Download the  Remote Meetings Cheat Sheet</a>
-    (PDF, 307 kB) or click the image.
+    <a href="/downloads/remote-cheat-sheet-meetings.pdf" title="Download Remote Cheat Sheet Meetings">Download the  Remote Meetings Cheat Sheet</a><br />
+    (PDF, 307 kB)
   </p>
 </div>
 
@@ -66,8 +66,8 @@ Here are our “Remote Cheat Sheets” with a couple of good practices to follow
     <b>Remote Communication Cheat Sheet.</b><br/>  
     Improve the information flow, transparency and how you use slack.
     <br/><br/>
-    <a href="/downloads/remote-cheat-sheet-communication.pdf" title="Download Remote Cheat Sheet Communication">Download the Remote Communication Cheat Sheet</a>
-    (PDF, 318 kB) or click the image.
+    <a href="/downloads/remote-cheat-sheet-communication.pdf" title="Download Remote Cheat Sheet Communication">Download the Remote Communication Cheat Sheet</a><br />
+    (PDF, 318 kB)
   </p>
 </div>
 
@@ -83,8 +83,8 @@ Here are our “Remote Cheat Sheets” with a couple of good practices to follow
     <b>Remote Mindset Cheat Sheet.</b><br/>
     Remember the things about your remote mindset, your health and the social connection with your peers.
     <br/><br/>
-    <a href="/downloads/remote-cheat-sheet-mindset.pdf" title="Download Remote Cheat Sheet Mindset">Download the Remote Mindset Cheat Sheet</a>
-    (PDF, 403 kB) or click the image.
+    <a href="/downloads/remote-cheat-sheet-mindset.pdf" title="Download Remote Cheat Sheet Mindset">Download the Remote Mindset Cheat Sheet</a><br />
+    (PDF, 403 kB)
   </p>
 </div>
 
@@ -100,12 +100,12 @@ Here are our “Remote Cheat Sheets” with a couple of good practices to follow
     <b>Remote Moderation Cheat Sheet.</b><br/>
     Look up most crucial things about the preparation, running the meeting and remote meetings in a conference room.
     <br/><br/>
-    <a href="/downloads/remote-cheat-sheet-moderation.pdf" title="Download Remote Cheat Sheet Moderation">Download the Remote Moderation Cheat Sheet</a>
-    (PDF, 408 kB) or click the image.
+    <a href="/downloads/remote-cheat-sheet-moderation.pdf" title="Download Remote Cheat Sheet Moderation">Download the Remote Moderation Cheat Sheet</a><br />
+    (PDF, 408 kB)
   </p>
 </div>
 
-
+<br/>
 Please take care,
  
 Your HolidayCheck Team
