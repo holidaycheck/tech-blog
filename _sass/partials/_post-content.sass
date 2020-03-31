@@ -7,7 +7,17 @@ img.sizeup-onhover-image
     transform: scale(3)
   &.scale4:hover
     transform: scale(4)
+
   &.origin-left-top:hover
     transform-origin: left top
   &.origin-right-top:hover
     transform-origin: right top
+
+.slight-zoomin
+  transition: .3s ease
+  transform-origin: center
+  &:hover
+    transform: scale(1.1)
+
+.dropshadow
+  box-shadow: 6px 6px 15px #555
