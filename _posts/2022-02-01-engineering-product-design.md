@@ -8,7 +8,7 @@ author_url : author/alvaronistalvalbuena/
 author_avatar: alvaronistalvalbuena
 read_time : 4
 excerpt: At HolidayCheck, we are proud of building and improving products and features that make holidays better. Our users trust HolidayCheck and expect from us the best content, great deals, top-of-the-notch user experience and a stable and fast platform.  
-feature_image: posts/2022-02-02-engineering-product-design/team.jpg
+feature_image: posts/2022-02-01-engineering-product-design/team.jpg
 
 ---
 At HolidayCheck, we are proud of building and improving products and features that make holidays better. Our users trust HolidayCheck and expect from us the best content, great deals, top-of-the-notch user experience and a stable, and fast platform.  
