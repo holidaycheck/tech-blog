@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: The HolidayCheck Tech Blog
-email: ????@holidaycheck.com
+email: holidaychecklab@holidaycheck.com
 description: > # this means to ignore newlines until "baseurl:"
   On this blog employees of HolidayCheck share whatever they like to share.
   Mostly it will be tech stuff, though you surely find surrounding topics too.
@@ -30,7 +30,7 @@ permalink: post/:year/:month/:day/:title
 nav_list:
   Home : ['Home', '/', 'fa-home']
   Events : ['Events', '/events', 'fa-calendar']
-  Jobs : ['Jobs', 'https://www.holidaycheckgroup.com/jobs/it-engineering/?lang=en', 'fa-heart']
+  Jobs : ['Jobs', 'https://holidaycheck.jobs.personio.de/?language=en', 'fa-heart']
   Imprint : ['Imprint', 'https://www.holidaycheck.de/impressum', 'fa-envelope']
   About : ['About', '/about', 'fa-info-circle']
   Twitter : ['Twitter', 'http://twitter.com/holidaychecklab', 'fa-twitter']
