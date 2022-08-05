@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Starting my Journey at HolidayCheck"
+date: 2022-08-04 22:00:00 +0200
+categories: culture
+author_name: Divyam
+read_time : 4
+feature_image: posts/2022-08-04-starting-my-journey-at-holidaycheck/feature-plantpot.jpeg
+---
+
+There are a few transition phases in every persons’ life which play a big role in our development and defining who we are as a person. University, first job, moving in with a partner, getting married, becoming a parent and maybe more, not necessarily taking place in the aforementioned order :)
+
+Here I would like to share my experience of starting my first job in October 2021 at HolidayCheck in Munich, figuring out things and settling in.
+
+After setting up the hardware and other basics on the first day which was a Friday(yay Weekend :D), I was informed about this new onboarding program called ‘HolidayCheck Round Trip’ where incoming newbies have a roughly hour long meeting with each of the teams of the company where they give an overview of who they are, what they do, a peek into their daily lives, how they integrate within the bigger Universe of HolidayCheck and of course, the opportunity to ask questions. I was supposed to be part of the first group of newbies to be taken through this program. The meetings felt like a one-on-one personal interaction with the teams and I appreciated the flexibility to set the pace and ask questions to my hearts content. It took approximately 6 working days averaging 4 to 6 meetings per day to complete the program and at the end, It left me a lingering feeling of nostalgia owing to meeting many new people and and getting exposed to numerous new perspectives in an intensive manner. What could have been better was, if the Round Trip sessions were a bit spaced out, say 3 meetings per day, it would have given more time to my brain to passively process the information and maybe come up with more ideas or questions.
+
+I started as a Junior Software Engineer as part of ‘HolidayCheck Travel’(HCT), our very own Tour Operator, which has a strong focus on customer friendliness and individualisation. What started as young team of motivated people three years ago now offers one of the largest portfolios of Package and Hotel Only deals on the HolidayCheck platform. After the round trips, I got started on my first task with my onboarding buddy while simultaneously learning a new programming language, Scala(more on that in another post soon…..). Phrases like “What can I do for you?” or “If you don’t feel like working, feel free to take the day off” from my teammates and manager contributed to me becoming comfortable and relaxed in my working space. Over the next few days, I got to know my fellow colleagues over coffee and lunch chats and joined my first team event at a trampoline arena. Also, a fellow colleague showing up with with a nerf gun out of nowhere never fails to brighten the mood.
+
+Corona numbers were going down in the mean time and our beloved office managers had prepared the office with some surprises for welcoming us back after a long spell of home office. More or less a couple of weeks had elapsed before we were hit with the inevitable Omicron wave and of course, another home office regulation supposed to last till the end of March 2022. The Christmas Party which was planned to take place in our office located in Bottighofen, Switzerland at lake Constance was given a rain check. For some additional context, we are spread out among 4 locations - Bottighofen in Switzerland, Munich in Germany, Poznań and Warsaw in Poland. Many of our teams are distributed across different offices and hence, are fully remote.
+
+Around the end of Spring 2022, I was done with my onboarding task and had started to explore and understand other services and how they integrate with and contribute to the bigger system. Meanwhile, I got the opportunity to visit the Bottighofen office and meet many of my colleagues for the first time in person and also take part in a 2 day Hackathon where we worked on new ideas and explored their potential to be delivered as new features to our end customers as has been done in the past as well.
+
+I love the fact that I get to experience this kind of variety and novelty in my daily work and not just be limited to my primary domain. At this point, I want to make an active effort to help make fellow new ‘HolidayCheckers’ feel at home and play a part in giving them the same welcoming and comfortable atmosphere which I experienced in my initial days. Eagerly looking forward to the upcoming days of my journey with HolidayCheck, learning new things and many more surprises.
