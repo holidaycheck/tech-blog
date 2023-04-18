@@ -28,7 +28,7 @@ We asked both experts for more information about the HolidayCheck review assista
 
 ***Why did you develop your own AI assistant for HolidayCheck?***
 
-We strive to reduce the barrier to entry for users wanting to write a review. One does not need to be an expert in any language to submit a review, nor does one have to spend hours procrastinating about which words to use or not use. The users can simply start speaking or typing and the assistant helps to write a proper narrative with just a few words.
+We strive to reduce the barrier to entry for users wanting to write a review. One does not need to be an expert in any language to submit a review, nor does one have to spend hours finding the words to use or not use. The users can simply start speaking or typing and the assistant helps to write a proper narrative with just a few words.
 
 ***Is it also possible to upload pictures?***
 
