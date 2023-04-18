@@ -10,7 +10,7 @@ feature_image: posts/2023-04-18-ai-based-assistant/feature-image.jpeg
 
 **AI based Review Assistant: Your review is highly appreciated!**
 
-With over 10 million reviews and holiday photos, HolidayCheck is the largest travel review portal in the German-speaking area. Every day, users upload their holiday impressions, giving other holidaymakers guidance when deciding on and booking their next destination. What is the hotel environment like, the food, the beach, the entertainment? Are there things that could be improved or was the holiday generally positive?
+With over 10 million reviews and holiday photos, [HolidayCheck](https://holidaycheck.de/) is the largest travel review portal in the German-speaking area. Every day, users upload their holiday impressions, giving other holidaymakers guidance when deciding on and booking their next destination. What is the hotel environment like, the food, the beach, the entertainment? Are there things that could be improved or was the holiday generally positive?
 
 All these reviews are extremely helpful for holiday makers. They provide additional information, transparency and help in the decision-making process when going through a wealth of offers. To create a detailed and thus helpful rating, the holiday maker must take some time to evaluate the individual categories, including the location, surrounding area, rooms, food, entertainment, and the hotel in general. 
 
