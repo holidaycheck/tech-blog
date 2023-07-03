@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AI-based Review Assistant: Your review is highly appreciated!"
-date: 2023-04-18 00:00:00 +0200
+date: 2023-07-03 18:00:00 +0200
 categories: culture
 author_name: Team HolidayCheck
 read_time : 10
