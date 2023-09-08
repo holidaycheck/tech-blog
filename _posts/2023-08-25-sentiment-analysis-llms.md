@@ -9,6 +9,7 @@ read_time : 13
 excerpt: "We give an overview of our efforts at HolidayCheck to use language models for sentiment analysis."
 show_related_posts: false
 square_related:
+feature_image: posts/2023-08-25-sentiment-analysis-llms/network-sentiment.jpg
 ---
 
 Large Language Models (LLMs) are a transformative force in NLP due to their ability to understand and generate human-like text. They have shown remarkable capabilities in areas such as text completion, where they can generate meaningful and coherent sentences that can be extended into paragraphs, articles, or even entire stories. They have also shown significant promise in more complex applications, such as drafting emails or other forms of written communication, coding assistance, tutoring in various subjects, and even in creative fields like poetry and script writing.
