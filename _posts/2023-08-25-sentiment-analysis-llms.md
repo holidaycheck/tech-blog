@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Leveraging Large Language Models for Sentiment Classification in hotel reviews"
@@ -6,9 +5,6 @@ date: 2023-08-25 00:00:00 +0200
 categories: machine-learning
 author_name: Thomas Mayer
 read_time : 13
-excerpt: "We give an overview of our efforts at HolidayCheck to use language models for sentiment analysis."
-show_related_posts: false
-square_related:
 feature_image: posts/2023-08-25-sentiment-analysis-llms/network-sentiment.jpg
 ---
 
