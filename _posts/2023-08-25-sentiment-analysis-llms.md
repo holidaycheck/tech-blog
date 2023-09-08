@@ -16,7 +16,7 @@ Large Language Models (LLMs) are a transformative force in NLP due to their abil
 
 LLMs are trained on vast amounts of text data, enabling them to pick up intricate patterns and structures in human language. Their capacity for understanding context and semantics is particularly essential for tasks such as classification and information extraction, where understanding the subtle nuances of text is crucial. In this respect, models like GPT-3 and GPT-4 stand out with their powerful comprehension capabilities, providing a rich toolbox for various NLP tasks.
 
-Information extraction from hotel reviews using LLMs is an exciting application in the hospitality industry. Reviews are often long, unstructured, and cover a broad range of topics, making them ideal candidates for LLMs' advanced natural language understanding capabilities. Using a few-shot learning approach, an LLM can be trained to extract valuable information such as overall sentiment, ratings for specific amenities like cleanliness or service, and even to identify recurring issues mentioned by customers.
+Information extraction from hotel reviews using LLMs is an exciting application in the hospitality industry. Reviews are often long, unstructured, and cover a broad range of topics, making them ideal candidates for LLMs' advanced natural language understanding capabilities. Using a few-shot learning approach, an LLM can be instructed to extract valuable information such as overall sentiment, ratings for specific amenities like cleanliness or service, and even to identify recurring issues mentioned by customers.
 
 ## Sentiment Analysis
 
@@ -24,7 +24,7 @@ Sentiment analysis (or classification) is the task of determining the emotional 
 
 <figure>
     <img src="img/posts/2023-08-25-sentiment-analysis-llms/sentiment-example.jpg" alt="Sentiment example sentences" class="centered" />
-    <figcaption>Example sentiment analysis for a review (red indicates negative sentiments, green positive sentiments, black represents a neutral sentiment.</figcaption>
+    <figcaption>Example sentiment analysis for a review (red indicates negative sentiments, green positive sentiments, grey represents a neutral sentiment.</figcaption>
 </figure>
 
 ## Illustration
@@ -135,6 +135,13 @@ A test sentence that both Google and German-sentiment-BERT classified incorrectl
 Although it might not be their primary use case in the public discussion, LLMs such as GPT-4 thrive in certain classification tasks such as sentiment analysis. Their ability to take a larger context into account, deal with user generated content (UGC), esp. colloquial language and unorthodox punctuation, and infer sentiments on a sub-sentential level make them very powerful for extracting sentiments from hotel review texts. This is so far the best method we have seen at HolidayCheck. We need to extend our test suite to find cases where it doesn't work yet. For this purpose, we devised a tool called "Fool our sentiment classifier" where we ask colleagues to identify cases where the sentiment was incorrectly labeled. 
 
 <figure>
-    <img src="img/posts/2023-08-25-sentiment-analysis-llms/screenshot-sentiment-tool.jpg" alt="Sentiment tool screenshot" class="centered" />
-    <figcaption>Screenshot of our internal sentiment tool where we ask colleagues to find cases where the sentiment is incorrect.</figcaption>
+    <img src="img/posts/2023-08-25-sentiment-analysis-llms/screenshot-sentiment-tool-hc.jpg" alt="Sentiment tool screenshot" class="centered" />
+    <figcaption>Screenshot of our HolidayCheck Sentiment Tool (HC Stimmungsdetektor) where we ask users to find cases where the sentiment is incorrect.</figcaption>
 </figure>
+
+You can play with the tool yourself and give your feedback on the results. Link: https://www.holidaycheck.de/stimmungsdetektor
+
+## Acknowledgment
+
+I would like to extend my gratitude to all those who have contributed their examples and input to improve the underlying sentiment model.
+A special thank you goes to Konark Modi, Adrian Schmid and Bibin Raj for making the HolidayCheck Sentiment Tool available to people outside HC and Konark Modi for helpful advice on the setup. 
