@@ -135,7 +135,7 @@ Although it might not be their primary use case in the public discussion, LLMs s
     <figcaption>Screenshot of our HolidayCheck Sentiment Tool (HC Stimmungsdetektor) where we ask users to find cases where the sentiment is incorrect.</figcaption>
 </figure>
 
-You can play with the tool yourself and give your feedback on the results. Link: https://www.holidaycheck.de/stimmungsdetektor
+You can play with the tool yourself and give your feedback on the results. Link: [https://www.holidaycheck.de/stimmungsdetektor](https://www.holidaycheck.de/stimmungsdetektor)
 
 ## Acknowledgment
 
