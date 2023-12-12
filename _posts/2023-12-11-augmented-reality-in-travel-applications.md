@@ -123,7 +123,7 @@ Admittedly, this doesn't look very appealing. But it shows very well how the dif
 
 This experiment was more of an opportunity to broaden my horizons and test something new, to play with it. Doing this in a product context made it even more exciting.
 
-Fast-forward 2 years, through our explorations at HolidayCheck, we've seen firsthand how the synergy of AI and AR can revolutionize travel experiences.
+Fast-forward 2 years, through our explorations at HolidayCheck, we've seen firsthand how the synergy of AI and AR can revolutionize travel experiences. In this context, I would also like to thank Konark Modi, who, with his expertise in AI, is always on the lookout on how technology can further help our Urlaubers.
 
 Our geo-based camera app is just the beginning. As we continue to blend AI with AR, we're expanding our technological horizons and paving the way for a new era of personalized and immersive travel. Join us in this exciting journey to reshape the future of travel.
 
