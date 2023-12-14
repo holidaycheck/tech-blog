@@ -108,14 +108,14 @@ scene.appendChild(icon);
 And this was the first working version:
 
 <figure>
-    <video src="https://media-cdn.holidaycheck.com/video/upload/v1702298405/videos/blog/elfarxu9nrcjkjpemvvg.mp4"></video>
+    <video controls rc="https://media-cdn.holidaycheck.com/video/upload/v1702298405/videos/blog/elfarxu9nrcjkjpemvvg.mp4"></video>
     <figcaption>The first version of the interactive camera with blue blocks marking the position of the location.</figcaption>
 </figure>
 
 Admittedly, this doesn't look very appealing. But it shows very well how the different locations are displayed in terms of size. While the Fuggerei is closer to my current location, it appears larger than the town hall, which is shown smaller because it is further away. That's super cool!
 
 <figure>
-    <video src="https://media-cdn.holidaycheck.com/video/upload/v1702298408/videos/blog/yhjwymyfd2mtoh8sazn6.mp4"></video>
+    <video controls rc="https://media-cdn.holidaycheck.com/video/upload/v1702298408/videos/blog/yhjwymyfd2mtoh8sazn6.mp4"></video>
     <figcaption>The second version of the interactive camera, which renders the name and a picture of the location.</figcaption>
 </figure>
 
