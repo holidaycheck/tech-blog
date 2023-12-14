@@ -4,6 +4,8 @@ title: "Our previous experiments with augmented reality (AR) in travel applicati
 date: 2023-12-11 00:00:00 +0200
 categories: javascript motivation product
 author_name: Adrian Schmid
+author_url : author/adrianschmid/
+author_avatar: adrianschmid
 read_time: 5
 feature_image: posts/2023-12-11-augmented-reality-in-travel-applications/augmented-reality.jpg
 ---
