@@ -5,7 +5,7 @@ date: 2024-03-11 15:00:00 +0200
 categories: culture
 author_name: Team HolidayCheck
 read_time : 15
-feature_image: posts/2024-03-11-herzlich-willkommen-bei-holiday-check/feature-image.png
+feature_image: posts/2024-03-11-herzlich-willkommen-bei-holiday-check/feature-image.jpeg
 ---
 
 **Herzlich Willkommen bei HolidayCheck: Our AI Journey in understanding our Customers Better!**
@@ -24,7 +24,7 @@ It's like having a treasure map but not knowing where X marks the spot.
 We decided to face the big challenges of understanding our users and product better, at the same time saving money, and keeping our customers' talks private. 
 We used some of the newest AI magic in 2023 to make our own special tool that helps us listen and learn from our calls.
 
-As we wrote at lengthe before, we believein the power of Large Language Models (LLMs), specially when it comes to their ability to understand human like text.
+As we wrote at length before, we believe in the [power of Large Language Models (LLMs)](https://techblog.holidaycheck.com/post/2023/08/24/sentiment-analysis-llms), specially when it comes to their ability to understand human like text.
 Now we wanted to apply this belief to our call recordings and turn them into valuable lessons - It's like turning lead into gold, where every call transcript becomes a chance to make our customer service and product shine brighter.
 
 Several times it felt like walking through a maze, figuring things out step by step. A big moment for us was when we were able to repurpose an [Apple MacBook](https://en.wikipedia.org/wiki/Apple_M3) in a new way, thanks to its strong GPU.
@@ -35,12 +35,17 @@ This wasn't just about saving money; it was a clever move that let us venture in
 
 We care a lot about keeping things safe and private, which means we use a lot of tools are built on Open Source and can be self-hosted with a license for commercial use, remixing them with our own special tricks.
 
-<insert_diagram>
+<figure>
+    <img src="img/posts/2024-03-11-herzlich-willkommen-bei-holiday-check/feature-image.png" alt="diagram" class="centered" />
+    <figcaption>Different actors in our system.</figcaption>
+</figure>
+
 
 ****Example****
+Let's walk through an example, thanks to our colleagues for recording a testing call for the purposes of a demo.
 
 <figure>
-  <audio controls src="posts/2024-03-11-herzlich-willkommen-bei-holiday-check/call.wav"></audio>
+  <audio controls src="img/posts/2024-03-11-herzlich-willkommen-bei-holiday-check/call.wav"></audio>
 </figure>
 
 **Step 1:** We use [Genesys Cloud](https://www.genesys.com/) as our Contact Center solution.
