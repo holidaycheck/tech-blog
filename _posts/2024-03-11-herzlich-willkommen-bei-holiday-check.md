@@ -8,23 +8,24 @@ read_time : 15
 feature_image: posts/2024-03-11-herzlich-willkommen-bei-holiday-check/feature-image.jpeg
 ---
 
-**Herzlich Willkommen bei HolidayCheck: Our AI Journey in understanding our Customers Better!**
+**Herzlich Willkommen bei HolidayCheck: A Privacy-First approach to use AI for understanding our Customers Better!**
 
 Get ready for an exciting story about how HolidayCheckGroup uses AI to transform call centre conversations with their customers into a symphony of insights.
 
-We're not just making waves; we're surfing the AI tide, harnessing the power of open-source models like [whisper-large-v3](https://openai.com/research/whisper) for understanding what people say and [Mistral](https://mistral.ai/) for helping us figure out how to use what they say to make things better. 
+Our design principles are centred on Security and Privacy to safeguard sensitive voice and data information. We're not just making waves; we're surfing the AI tide, harnessing the power of open-source models like [whisper-large-v3](https://openai.com/research/whisper) for understanding what people say and [Mistral](https://mistral.ai/) for helping us figure out how to use what they say to make things better.
 
 Imagine a treasure trove of insights, locked within countless hours of call recordings. That's where we started our quest - Buckle up for an adventure where technology meets human touch, and discover how we're setting new benchmarks in user experience.
 
+
 Let's dive into our story!
 
-***Our Adventure: From Rough Drafts to Winning Strategies***
+**Our Adventure: From Rough Drafts to Winning Strategies**
 
-Think of all the valuable things we can learn from the hours of calls we have - ofcourse the ones which have consented ;)
+Think of all the valuable things we can learn from the hours of calls we have - of course the ones which have consented ;)
 
 It's like having a treasure map but not knowing where X marks the spot. 
 We decided to face the big challenges of understanding our users and product better, at the same time saving money, and keeping our customers' talks private. 
-We used some of the newest AI magic in 2023 to make our own special tool that helps us listen and learn from our calls.
+We used some of the newest advancements in the field of AI in 2023 to make our own special tool that helps us listen and learn from our calls.
 
 As we wrote at length before, we believe in the [power of Large Language Models (LLMs)](https://techblog.holidaycheck.com/post/2023/08/24/sentiment-analysis-llms), specially when it comes to their ability to understand human like text.
 Now we wanted to apply this belief to our call recordings and turn them into valuable lessons - It's like turning lead into gold, where every call transcript becomes a chance to make our customer service and product shine brighter.
@@ -33,9 +34,9 @@ Several times it felt like walking through a maze, figuring things out step by s
 
 This wasn't just about saving money; it was a clever move that let us venture into running [LLMs](https://en.wikipedia.org/wiki/Large_language_model) and [ASR Models](https://huggingface.co/tasks/automatic-speech-recognition) locally - right where we work, keeping our customers' information safe and sound without compromising the efficiency of the results.
 
-***Mixing the Potion: Safe, Private, and Full of Surprises***
+**Mixing the Potion: Safe, Private, and Full of Surprises**
 
-We care a lot about keeping things safe and private, which means we use a lot of tools are built on Open Source and can be self-hosted with a license for commercial use, remixing them with our own special tricks.
+We care a lot about keeping things safe and private, which means, we use a lot of tools that are built on Open Source and can be self-hosted with a license for commercial use, remixing them with our own special tricks.
 
 <figure>
     <img src="img/posts/2024-03-11-herzlich-willkommen-bei-holiday-check/feature-image.png" alt="diagram" class="centered" />
@@ -55,7 +56,7 @@ Calls to which customers have consented to be recorded are periodically pulled f
 
 We also submit a [prompt to Whisper](https://cookbook.openai.com/examples/whisper_prompting_guide) with each chunk that goes into transcription process, this helps us feed our business vocabulary in order to further enhance the quality of the transcription.
 
-*The above call will transcribed as following:*
+*The above call will transcribed as follows:*
 
 |    | Timestamp       | Speaker            | Text                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | [Log probability](https://deepgram.com/learn/exploring-whisper)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 |---:|:----------------|:-------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -76,7 +77,7 @@ We also submit a [prompt to Whisper](https://cookbook.openai.com/examples/whispe
 | 14 | 222.54 - 228.52 | HolidayCheck Agent | Genau, das gilt für die erste Reise. Sie können es heute abschließen, aber erst in zwei Wochen eine Reise buchen. Das ist ganz hinüberlassen.                                                                                                                                                                                                                                                                                                                                                                                   | 0.997, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 0.996, 1.000, 0.999, 1.000, 0.999, 0.998, 0.815, 0.999, 0.958, 1.000, 0.999, 1.000, 0.999, 0.961, 0.808, 0.881, 0.629                                                                                                                                                                                                                                                                                                                                                                                                  |
 | 15 | 229.34 - 237.72 | Customer           | Wunderbar. Prima. Ach, da haben Sie mir aber schon sehr weitergeholfen. Wunderbar. Herzlichen Dank. Sehr gerne. Und auf Wiederhören. Bis dann. Tschüss. Tschüss.                                                                                                                                                                                                                                                                                                                                                                | 0.974, 1.000, 0.947, 1.000, 1.000, 0.999, 1.000, 1.000, 1.000, 1.000, 0.925, 1.000, 0.999, 1.000, 0.993, 0.999, 0.907, 0.986, 0.998, 0.859, 0.993, 0.972, 0.943                                                                                                                                                                                                                                                                                                                                                                                                         |
 
-**Step 2:** Even though we use self-hosted LLMs, but since raw transcripts can contain some form of personal information, we always do multiple scans locally using [Presidio](https://github.com/microsoft/presidio) and some custom prompts with Mistral. This really helps us remove majority of the personal information without loosing bits of conversation.
+**Step 2:** Even though we use self-hosted LLMs, but since raw transcripts can contain some form of personal information, we always do multiple scans locally using [Presidio](https://github.com/microsoft/presidio) and some custom prompts with Mistral. This really helps us remove majority of the personal information without loosing too many bits of the conversation.
 
 <figure>
     <img src="img/posts/2024-03-11-herzlich-willkommen-bei-holiday-check/presidio.png" alt="diagram" class="centered" />
@@ -113,13 +114,20 @@ Even long talks can be understood in just a little over a minute. That's pretty 
 
 *Please note, that only the summarized version are shared even within HolidayCheck, as the raw transcriptions can still contain traces of some personal information, both audio and raw transcripts are purged from the machine as soon as the summary is prepared.*
 
+***Step 4***: Once all of this is done, comes the most crucial part: *Evaluation*.
+ 
+LLMs, by nature, are non-deterministic, and non-determinism can be a double-edged sword. On the one hand, it allows for a broad range of responses and can inject creativity into the content-generation process. On the other hand, inconsistency can lead to confusion and frustration for both the business and its consumers. Therefore, gathering human feedback through data and insights was a crucial step.
 
-***Finding Treasures: New Insights and Happy Customers***
+1. We first evaluated different parts of the system in isolation, gathered feedback, and iterated quickly. This also helped us curate datasets for automating quality checks of different parts of the system.
+2. Once we were sure all the parts were working well, we started stitching them together to create a [Minimal Loveable Product](https://productschool.com/blog/product-strategy/minimum-lovable-product).
+3. Now, as a running system, different teams consume and provide feedback on errors from time to time.
+
+**Finding Treasures: New Insights and Happy Customers**
 
 The results have been nothing short of remarkable. We've discovered intriguing correlations, such as the link between website features (or lack thereof) and customer dissatisfaction, allowing us to address issues proactively.
 The ultimate testament to the transformative power of AI will be when our agents are better equipped and our customers are happier - We are constantly striving to reach this goal.
 
-***Looking Ahead: New Discoveries Await***
+**Looking Ahead: New Discoveries Await**
 
 Using AI has really changed the game for us in customer service. We've found new ways to make things better, work more efficiently, and make our customers' experiences great. And there's more to come!
 
