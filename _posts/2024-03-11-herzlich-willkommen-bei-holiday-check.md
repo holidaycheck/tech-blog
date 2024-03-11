@@ -10,7 +10,7 @@ feature_image: posts/2024-03-11-herzlich-willkommen-bei-holiday-check/feature-im
 
 **Herzlich Willkommen bei HolidayCheck: Our AI Journey in understanding our Customers Better!**
 
-Get ready for an exciting story about how we at HolidayCheckGroup are using AI to transforming call center conversations with our customers into a symphony of insights. 
+Get ready for an exciting story about how HolidayCheckGroup uses AI to transform call centre conversations with their customers into a symphony of insights.
 
 We're not just making waves; we're surfing the AI tide, harnessing the power of open-source models like [whisper-large-v3](https://openai.com/research/whisper) for understanding what people say and [Mistral](https://mistral.ai/) for helping us figure out how to use what they say to make things better. 
 
