@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Herzlich Willkommen bei HolidayCheck: Our AI Journey in understanding our Customers Better"
+title: "Herzlich Willkommen bei HolidayCheck: A Privacy-First approach to use AI for understanding our Customers Better!"
 date: 2024-03-11 15:00:00 +0200
 categories: culture
 author_name: Team HolidayCheck
