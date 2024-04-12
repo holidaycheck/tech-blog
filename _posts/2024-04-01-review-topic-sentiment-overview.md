@@ -3,7 +3,7 @@ layout: post
 title: "Harnessing the Power of Large Language Models for Insightful Review Analysis "
 date: 2024-04-01 00:00:00 +0200
 categories: machine-learning
-author_name: Team HolidayCheck
+author_name: Mateusz Jancy, Richard Knoche, Timon Blauensteiner, Thomas Mayer
 read_time : 8
 feature_image: posts/2024-04-01-review-topic-sentiment-overview/hero-image.jpg
 ---
