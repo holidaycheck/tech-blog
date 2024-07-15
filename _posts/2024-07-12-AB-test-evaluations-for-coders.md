@@ -86,7 +86,7 @@ delta
 10.083333333333329
 ```
 
-The basic assumption of our approach to answer this question is very intuitive. Just assume that both variants A and B are the same, i.e., there is no difference between boths groups. If they are the same, we can also shuffle the results between groups. In other words, we take all elements from both groups as one pool of potential results and then take random samples from the whole pool and group them into A and B (after all, both of them are the same based on our assumption, therefore it should not make a difference where we draw it from). Then we can see what differences we typically get and how these relate to the observed difference of 10.08. Let's look at the individual steps:
+The basic assumption of our approach to answer this question is very intuitive. Just assume that both variants A and B are the same, i.e., there is no difference between both groups. If they are the same, we can also shuffle the results between groups. In other words, we take all elements from both groups as one pool of potential results and then take random samples from the whole pool and group them into A and B (after all, both of them are the same based on our assumption, therefore it should not make a difference where we draw it from). Then we can see what differences we typically get and how these relate to the observed difference of 10.08. Let's look at the individual steps:
 
 1. Assume that A and B are actually the same (which is typically called the Null Hypothesis)
 2. Since A and B are the same, we can shuffle the results from both groups (Step 1) and randomly pick a new selection for both A and B (Step 2)
@@ -205,7 +205,7 @@ This is a trick that makes it possible to compute the chance events mentioned ab
 
 *Question 3:* What does the p-value in an A/B test actually represent? Why does it need to smaller than a certain threshold (usually 5%) for the result to be significant?
 
-The p-value is a key concept in interpreting A/B test results. It represents the probability of observing a result as extreme as, or more extreme than, what we saw in our experiment, assuming there's no difference between the control and treatment groups. In essence, the p-value quantifies how surprising our result is under the assumption of no effect. A smaller p-value suggests that our observed difference is less likely due to chance alone, providing stronger evidence against the null hypothesis of no difference between the groups.
+The p-value is a key concept in interpreting A/B test results. It represents the probability of observing a result as extreme as, or more extreme than, what we saw in our experiment, assuming there's no difference between the control and treatment groups. In essence, the p-value quantifies how surprising our result is under the assumption of no effect. A smaller p-value suggests that our observed difference is less likely due to chance alone, providing stronger evidence against the Null Hypothesis of no difference between the groups.
 
 To transform a gradual difference into a binary decisions (yes/no), we define a threshold upfront (usually 5%) and then take the decision based on whether the p-value lies below that threshold or not. The threshold is an arbitrary cut-off point. The idea is that you define the threshold before you run the experiment so that you are not biased by the outcome when making the decision. It should be clear to you already upfront how much chance you're willing to accept in your evaluation. 
 
