@@ -72,7 +72,7 @@ The problem with A/B testing (and similar cases for hypothesis testing) is that 
 
 Ultimately, the statistical approach provides us with a means to get a standardized score to see how likely such a scenario could happen due to chance. And there is an easy way to achieve this. If you know how to code, use loops and a random number generator, you are good to go.
 
-Let's take the results for these two variants (goupA and groupB). For better illustration, we keep the number of elements per group small, but the same method can be applied to much bigger numbers (as they are typical in A/B test evaluations). The means for both groups are different (groupA has mean 76.75 and groupB has mean 66.67). The difference in their means is 10.08. The question is whether this difference in their means is significant. Put differently, how likely is it that we encounter such a difference merely by chance? 
+Let's take the results for these two variants (groupA and groupB). For better illustration, we keep the number of elements per group small, but the same method can be applied to much bigger numbers (as they are typical in A/B test evaluations). The means for both groups are different (groupA has mean 76.75 and groupB has mean 66.67). The difference in their means is 10.08. The question is whether this difference in their means is significant. Put differently, how likely is it that we encounter such a difference merely by chance? 
 
 ```python
 groupA = np.array([84, 72, 57, 71, 63, 76, 99, 91, 74, 50, 94, 90])
@@ -144,7 +144,7 @@ In the end, we get a distribution that looks like the blue histogram below. The 
 
 <figure>
     <img src="img/posts/2024-07-12-AB-test-evaluations-for-software-engineers/histogram-iterations-absolute.png" alt="Histogram for coin tosses" class="centered" />
-    <figcaption>Histogram for coin tosses</figcaption>
+    <figcaption>Histogram for differences in means</figcaption>
 </figure>
 
 In the histogram for the results we also plotted the original observed difference in means (10.08) that we saw in the A/B experiment for the two groups. Then we compare this value with the rest of the simulated differences (based on the assumption that both variants are the same). If we take the whole area for this distribution as 100% and calculate the percentage of the area that is equal or larger than the 10.08 difference plotted with the red line, we get a percentage of 4.11%. In other words, in slightly more than 4% of the 10,000 simulated experiments where groups A and B were treated the same we saw a difference of 10.08 or larger. And now comes the interesting part: The 4.11% represents the p-value for the statistical test! It is the percentage of times we would see such or a more extreme difference between the groups based on the assumption that both groups are the same.
@@ -152,7 +152,7 @@ In the histogram for the results we also plotted the original observed differenc
 
 <figure>
     <img src="img/posts/2024-07-12-AB-test-evaluations-for-software-engineers/histogram-iterations-relative.png" alt="Histogram for coin tosses" class="centered" />
-    <figcaption>Histogram for coin tosses</figcaption>
+    <figcaption>Histogram for differences in means</figcaption>
 </figure>
 
 As a comparison, take the typical approach of computing the t-test statistics for the same numbers and compare their results with the 4.11% that we calculated above. Using the statsmodels `ttest_ind_stats` we get the following result.
@@ -203,7 +203,7 @@ We need to account for random factors in the result and see how likely it is tha
 
 This is a trick that makes it possible to compute the chance events mentioned above. With the assumption that both groups are the same we can draw randomly from both groups and see what differences we might get purely by chance. Only this Null Hypothesis makes it possible to compute the expected distribution by chance.
 
-*Question 3:* What does the p-value in an A/B test actually represent? Why does it need to smaller than a certain threshold (usually 5%) for the result to be significant?
+*Question 3:* What does the p-value in an A/B test actually represent? Why does it need to be smaller than a certain threshold (usually 5%) for the result to be significant?
 
 The p-value is a key concept in interpreting A/B test results. It represents the probability of observing a result as extreme as, or more extreme than, what we saw in our experiment, assuming there's no difference between the control and treatment groups. In essence, the p-value quantifies how surprising our result is under the assumption of no effect. A smaller p-value suggests that our observed difference is less likely due to chance alone, providing stronger evidence against the Null Hypothesis of no difference between the groups.
 
